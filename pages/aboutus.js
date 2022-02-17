@@ -1,5 +1,11 @@
+import Banner from "@components/Banner";
+
 const AboutUsPage = () => {
-  return <h1>This is about us page</h1>;
+  return (
+    <>
+      <Banner title="About" />
+    </>
+  )
 };
 
 export default AboutUsPage;

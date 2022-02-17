@@ -1,7 +1,6 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
-// props 받아서 data 바꾸기. image src, alt, typography
-const Banner = () => {
+const Banner = (props) => {
     return ( 
         <Card
             maxWidth="lg"
@@ -10,8 +9,8 @@ const Banner = () => {
             <CardMedia
                 component="img"
                 height="380"
-                image="/location-banner.png"
-                alt="location banner"
+                image={`/${props.title}-banner.png`}
+                alt={`${props.title} banner`}
             />
             <CardContent>
                 <Typography
@@ -21,11 +20,10 @@ const Banner = () => {
                     variant="h2"
                     textAlign="center"
                     width="100%"
-                    sx={{
-                        fontFamily: "Nunito"
-                    }}
+                    fontWeight={'fontWeightBold'}
+                    fontFamily={'Nunito'}
                 >
-                    Location
+                    {props.title}
                 </Typography>
             </CardContent>
         </Card>

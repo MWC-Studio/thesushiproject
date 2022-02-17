@@ -1,5 +1,11 @@
+import Banner from "@components/Banner";
+
 const MenuPage = () => {
-  return <h1>This is menu page</h1>;
+  return (
+    <>
+      <Banner title="Menu" />
+    </>
+  )
 };
 
 export default MenuPage;

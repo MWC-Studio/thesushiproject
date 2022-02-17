@@ -1,6 +1,12 @@
+import Banner from "@components/Banner";
+
 const FranchisePage
  = () => {
-  return <h1>This is catering page</h1>;
+  return (
+    <>
+      <Banner title="Franchise" />
+    </>
+  )
 };
 
 export default FranchisePage
