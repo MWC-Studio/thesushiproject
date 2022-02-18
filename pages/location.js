@@ -1,6 +1,10 @@
+import QuiltedImages from "@components/QuiltedImages";
+import Test from "@components/Test";
+
 const LocationPage = () => {
-  return <h1>This is Location
-    page</h1>;
+  return (
+    <QuiltedImages />
+  )
 };
 
 export default LocationPage;
