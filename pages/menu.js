@@ -1,4 +1,5 @@
 import Hero from "@components/Hero";
+import TitlebarBelowImageList from "@components/TitlebarBelowImageList"
 
 const MenuPage = () => {
   return (
@@ -9,6 +10,8 @@ const MenuPage = () => {
     title="Menu"
     subtitle=""
     />
+    
+    <TitlebarBelowImageList />
   </>
   );
 };
