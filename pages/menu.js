@@ -1,5 +1,5 @@
 import Hero from "@components/Hero";
-import TitlebarBelowImageList from "@components/TitlebarBelowImageList"
+import TitlebarBelowImageList from "@components/menu/TitlebarBelowImageList"
 
 const MenuPage = () => {
   return (
