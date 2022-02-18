@@ -1,9 +1,9 @@
-import Banner from "@components/Banner";
+import TopBanner from "@components/TopBanner";
 
 const AboutUsPage = () => {
   return (
     <>
-      <Banner title="About" />
+      <TopBanner title="About" description="About" />
     </>
   )
 };

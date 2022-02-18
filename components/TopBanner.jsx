@@ -1,7 +1,12 @@
-import { Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
-const Banner = (props) => {
+const TopBanner = (props) => {
+    let btn;
+    if (props.title == "Home") {
+        btn = <Button color="secondary" variant="outlined">Franchise</Button>
+    }
+
     return ( 
         <Grid
             component="section"
@@ -36,11 +41,13 @@ const Banner = (props) => {
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
                 >
-                    {props.title}
+                    {props.description}{<br />}
+                    {props.second}
                 </Typography>
+                {btn}
             </Grid>
         </Grid>
      );
 }
  
-export default Banner;
+export default TopBanner;

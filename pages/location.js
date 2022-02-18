@@ -1,9 +1,9 @@
-import Banner from "@components/Banner";
+import TopBanner from "@components/TopBanner";
 
 const LocationPage = () => {
   return (
     <>
-      <Banner title="Location" />
+      <TopBanner title="Location" description="Location" />
     </>
   )
 };

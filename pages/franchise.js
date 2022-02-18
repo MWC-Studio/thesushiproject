@@ -1,10 +1,10 @@
-import Banner from "@components/Banner";
+import TopBanner from "@components/TopBanner";
 
 const FranchisePage
  = () => {
   return (
     <>
-      <Banner title="Franchise" />
+      <TopBanner title="Franchise" description="Franchise" />
     </>
   )
 };

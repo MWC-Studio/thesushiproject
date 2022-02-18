@@ -1,9 +1,9 @@
-import Banner from "@components/Banner";
+import TopBanner from "@components/TopBanner";
 
 const MenuPage = () => {
   return (
     <>
-      <Banner title="Menu" />
+      <TopBanner title="Menu" description="Menu" />
     </>
   )
 };
