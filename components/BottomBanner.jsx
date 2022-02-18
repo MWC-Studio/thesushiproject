@@ -16,7 +16,7 @@ const BottomBanner = () => {
                 //palette 업데이트하고 바꾸기.
                 backgroundColor: "#FBF8ED",
                 pt: 5,
-                pb: 5dfdfsd
+                pb: 5
                 // mb: 15,
               }}
         >
