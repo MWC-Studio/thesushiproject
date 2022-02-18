@@ -1,6 +1,11 @@
+import TopBanner from "@components/TopBanner";
+
 const LocationPage = () => {
-  return <h1>This is Location
-    page</h1>;
+  return (
+    <>
+      <TopBanner title="Location" description="Location" />
+    </>
+  )
 };
 
 export default LocationPage;
