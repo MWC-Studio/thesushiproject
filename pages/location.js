@@ -1,6 +1,9 @@
+import BottomBanner from "@components/BottomBanner";
+
 const LocationPage = () => {
-  return <h1>This is Location
-    page</h1>;
+  return (
+    <BottomBanner />
+  );
 };
 
 export default LocationPage;
