@@ -1,5 +1,13 @@
+import TopBanner from "@components/TopBanner";
+import TitlebarBelowImageList from "@components/TitlebarBelowImageList"
+
 const MenuPage = () => {
-  return <h1>This is menu page</h1>;
+  return (
+    <>
+      <TopBanner title="Menu" description="Menu" />
+      <TitlebarBelowImageList />
+    </>
+  )
 };
 
 export default MenuPage;

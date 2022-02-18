@@ -1,8 +1,12 @@
+import TopBanner from "@components/TopBanner";
 import QuiltedImages from "@components/QuiltedImages";
 
 const LocationPage = () => {
   return (
-    <QuiltedImages />
+    <>
+      <TopBanner title="Location" description="Location" />
+      <QuiltedImages />
+    </>
   )
 };
 

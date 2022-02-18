@@ -1,6 +1,12 @@
+import TopBanner from "@components/TopBanner";
+
 const FranchisePage
  = () => {
-  return <h1>This is catering page</h1>;
+  return (
+    <>
+      <TopBanner title="Franchise" description="Franchise" />
+    </>
+  )
 };
 
 export default FranchisePage
