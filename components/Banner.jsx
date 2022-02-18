@@ -1,32 +1,45 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
+import Image from "next/image";
 
 const Banner = (props) => {
     return ( 
-        <Card
-            maxWidth="lg"
-            position="relative"
+        <Grid
+            component="section"
+            container
+            sx={{
+                position: "relative",
+                height: "30vw",
+                width: "100vw",
+                // mb: 15,
+              }}
         >
-            <CardMedia
-                component="img"
-                height="380"
-                image={`/${props.title}-banner.png`}
-                alt={`${props.title} banner`}
-            />
-            <CardContent>
+           <Image 
+                src={`/${props.title}-banner.png`} 
+                alt={`${props.title} banner`} 
+                layout="fill" 
+                objectFit="cover"
+             /> 
+            <Grid
+                container
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                sx={{
+                    position: "absolute",
+                    inset: 0,
+                }}
+            >
                 <Typography
-                    position="absolute"
-                    top="30%"
                     color="white"
                     variant="h2"
-                    textAlign="center"
-                    width="100%"
+                    align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
                 >
                     {props.title}
                 </Typography>
-            </CardContent>
-        </Card>
+            </Grid>
+        </Grid>
      );
 }
  
