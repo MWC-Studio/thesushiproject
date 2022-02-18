@@ -1,5 +1,11 @@
+import TopBanner from "@components/TopBanner";
+
 const AboutUsPage = () => {
-  return <h1>This is about us page</h1>;
+  return (
+    <>
+      <TopBanner title="About" description="About" />
+    </>
+  )
 };
 
 export default AboutUsPage;

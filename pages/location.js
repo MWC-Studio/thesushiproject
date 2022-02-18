@@ -1,9 +1,15 @@
+import TopBanner from "@components/TopBanner";
+import QuiltedImages from "@components/QuiltedImages";
 import BottomBanner from "@components/BottomBanner";
 
 const LocationPage = () => {
   return (
-    <BottomBanner />
-  );
+    <>
+      <TopBanner title="Location" description="Location" />
+      <QuiltedImages />
+      <BottomBanner />
+    </>
+  )
 };
 
 export default LocationPage;

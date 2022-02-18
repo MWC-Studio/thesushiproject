@@ -20,6 +20,8 @@ let theme = createTheme({
       'Nunito',
       'sans-serif',
     ].join(','),
+    fontWeightLight: 400,
+    fontWeightBold: 700,
   },
 });
 
