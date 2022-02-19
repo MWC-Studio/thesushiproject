@@ -23,7 +23,7 @@ const BottomBanner = () => {
             <Grid item xs={12}>
                 <Typography
                     color="primary"
-                    variant="h3"
+                    variant="h4"
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}

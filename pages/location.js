@@ -10,7 +10,6 @@ const LocationPage = () => {
       <QuiltedImages />
       <LocationInfoSection />
       <BottomBanner />
-      
     </>
   )
 };
