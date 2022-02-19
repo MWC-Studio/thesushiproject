@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cy:open": "./node_modules/.bin/cypress open",
+    "e2e": "start-server-and-test dev 3000 cy:open"
   },
   "dependencies": {
     "@emotion/cache": "^11.4.0",
@@ -24,7 +26,9 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
+    "cypress": "^9.5.0",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "start-server-and-test": "^1.14.0"
   }
 }
