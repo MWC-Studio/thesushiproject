@@ -7,9 +7,9 @@ const LocationPage = () => {
   return (
     <>
       <TopBanner title="Location" description="Location" />
-      <QuiltedImages />
+      {/* <QuiltedImages />
       <LocationInfoSection />
-      <BottomBanner />
+      <BottomBanner /> */}
     </>
   )
 };
