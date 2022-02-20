@@ -5,13 +5,13 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 
 export default function TitlebarBelowImageList() {
   return (
-    <Container sx={{ my: 15, bgcolor: "#FAF6E8" }}>
+    <Container sx={{ my: 15, bgcolor: "#FAF6E8" }} maxWidth="xl">
       {/* <Container> */}
       <Typography variant="h1" textAlign="center" sx={{ mb: 5, pt: 10 }}>
         Special Rolls
       </Typography>
 
-      <ImageList sx={{ p: 10, overflow: 'hidden'}} cols={3}>
+      <ImageList sx={{ p: 10, overflow: "hidden" }} cols={3}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
@@ -20,7 +20,12 @@ export default function TitlebarBelowImageList() {
               alt={item.title}
               loading="lazy"
             />
-            <ImageListItemBar title={item.title} position="below" />
+
+            <ImageListItemBar
+              title={item.title}
+              position="below"
+              align="center"
+            />
           </ImageListItem>
         ))}
       </ImageList>
