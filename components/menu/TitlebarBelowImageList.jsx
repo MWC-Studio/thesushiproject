@@ -20,6 +20,7 @@ export default function TitlebarBelowImageList() {
               alt={item.title}
               loading="lazy"
             />
+
             <ImageListItemBar
               title={item.title}
               position="below"

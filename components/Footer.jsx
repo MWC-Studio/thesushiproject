@@ -34,7 +34,7 @@ const Footer = () => {
         </MuiNextLink>
       </Stack>
       <Typography align="center" color="common.white">
-        © 2022 - {new Date().getFullYear()}, Sushi Rollin'
+        © 2022 Sushi Rollin'
       </Typography>
     </Box>
   );
