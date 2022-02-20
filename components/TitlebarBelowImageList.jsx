@@ -7,11 +7,20 @@ export default function TitlebarBelowImageList() {
   return (
     <Container sx={{ my: 15 }}>
 
-    <Typography variant="h1" textAlign="center" sx={{ mb: 10 }}>
+    <Typography 
+      variant="h1" 
+      textAlign="center" 
+      sx={{ mb: 10 }}
+      fontFamily={'Nunito'}
+      >
     Special Rolls
     </Typography>
 
-    <ImageList sx={{ p: 10}} cols={3} >
+    <ImageList 
+        sx={{ p: 10}} 
+        cols={3}
+        gap={31} 
+        >
         {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
