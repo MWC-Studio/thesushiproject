@@ -1,0 +1,62 @@
+itemData = [
+    {
+        id: 1,
+        name: 'Shrimp Tempura Chef Special Roll',
+        img: '',
+        description: '',
+        type: 'Special Rolls'
+    },
+    {
+        id: 2,
+        name: 'Titanic Chef Special Roll',
+        img: '',
+        description: '',
+        type: 'Special Rolls'
+    },
+    {
+        id: 3,
+        name: 'Flaming Hot Chef Special Roll' ,
+        img: '',
+        description: '',
+        type: 'Special Rolls'
+    },
+    {
+        id: 4,
+        name: 'Crispy Rice SpicyTuna',
+        img: '',
+        description: '',
+        type: 'Special Rolls'
+    },
+    {
+        id: 5,
+        name: 'Red Dragon Roll',
+        img: '',
+        description: '',
+        type: 'Special Rolls'
+    },
+    {
+        id: 6,
+        name: 'Rollin Burrito',
+        img: '',
+        description: '',
+        type: 'Special Rolls'
+    },
+    {
+        id: 7,
+        name: 'Edamame',
+        img: '',
+        description: 'Steamed and served warm with the sprinkle of salt ',
+        type: 'Appetizers'
+    },    {
+        id: 8,
+        name: 'Pork Gyoza',
+        img: '',
+        description: '8pcs of steamed or fried pork gyoza served with soy sauce',
+        type: 'Appetizers'
+    },    {
+        id: 9,
+        name: 'Baked Red Snapper Tempura',
+        img: '',
+        description: '4pcs of red snapper lightly battered, deep-fried & served with sweet eel sauce',
+        type: 'Appetizers'
+    },    
