@@ -1,5 +1,5 @@
 import TopBanner from "@components/TopBanner";
-import TitlebarBelowImageList from "@components/TitlebarBelowImageList"
+import TitlebarBelowImageList from "@components/menu/TitlebarBelowImageList"
 
 const MenuPage = () => {
   return (
