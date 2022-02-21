@@ -12,13 +12,17 @@ let theme = createTheme({
     },
   },
   palette: {
-    primary: { main: '#FAF6E8' },
-    secondary: { main: '#f48a88' },
+    primary: { main: '#40464D' },
+    secondary: { main: '#FBF8ED' },
+    text: { main: '#333333' },
   },
   typography: {
     fontFamily: ['Nunito', 'sans-serif'].join(','),
     fontWeightLight: 400,
     fontWeightBold: 700,
+    h1: {
+      fontSize: 32
+    },
     header1: {
       fontSize: 32,
     },
