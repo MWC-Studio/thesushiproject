@@ -16,9 +16,9 @@ const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 const navLinks = [
   { title: `home`, path: `/` },
-  { title: `menu`, path: `/menu` },
   { title: `about us`, path: `/aboutus` },
   { title: `franchise`, path: `/franchise` },
+  { title: `menu`, path: `/menu` },
   { title: `location`, path: `/location` },
 ];
 
