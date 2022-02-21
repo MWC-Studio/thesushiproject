@@ -37,7 +37,34 @@ let theme = createTheme({
     body3: {
       fontSize: 12,
     },
+    button: {
+      fontWeight: 700,
+      fontSize: 16,
+      textTransform: "none"
+    },
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 100,
+          height: 54,
+          paddingLeft: 48,
+          paddingRight: 48,
+          paddingTop: 16,
+          paddingBottom: 16,
+          backgroundColor: '#40464D',
+          color: '#FFFFFF'
+        },
+        outlined: {
+          backgroundColor: 'transparent',
+          color: '#FAF6E8',
+          borderColor: '#FAF6E8',
+          borderWidth: 2,
+        }
+      },
+    }
+  }
 });
 
 theme = responsiveFontSizes(theme);
