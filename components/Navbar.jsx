@@ -17,7 +17,7 @@ const Navbar = ({ navLinks }) => {
             href={path}
             variant="button"
             underline="none"
-            sx={{ color: `#333333`, opacity: 0.7 }}
+            sx={{ color: `#333333`, opacity: 0.7 , textTransform: 'none'}}
           >
             {title}
           </MuiNextLink>
