@@ -1,245 +1,195 @@
-const  section1 = [
+export const section1 = [
     {
         id: 1,
         name: 'Shrimp Tempura Chef Special Roll',
-        img: '',
+        img: '/menu_page/roll0.svg',
         description: '',
         type: 'Special Rolls'
     },
     {
         id: 2,
         name: 'Titanic Chef Special Roll',
-        img: '',
+        img: '/menu_page/roll1.svg',
         description: '',
         type: 'Special Rolls'
     },
     {
         id: 3,
-        name: 'Flaming Hot Chef Special Roll' ,
-        img: '',
+        name: 'Flaming Hot Chef Special Roll',
+        img: '/menu_page/roll2.svg',
         description: '',
         type: 'Special Rolls'
     },
     {
         id: 4,
         name: 'Crispy Rice SpicyTuna',
-        img: '',
+        img: '/menu_page/roll3.svg',
         description: '',
         type: 'Special Rolls'
     },
     {
         id: 5,
         name: 'Red Dragon Roll',
-        img: '',
+        img: '/menu_page/roll4.svg',
         description: '',
         type: 'Special Rolls'
     },
     {
         id: 6,
         name: 'Rollin Burrito',
-        img: '',
+        img: '/menu_page/roll5.svg',
         description: '',
         type: 'Special Rolls'
     }
 ]
 
-const section2 = [
+export const section2_1 = [
     {
-        id: 7,
-        name: 'Edamame',
-        img: '',
-        description: 'Steamed and served warm with the sprinkle of salt ',
-        type: 'Appetizers'
-    },    
+        id: 1,
+        category: "Appetizers",
+        img: "/menu_page/section2-appetizer-img00.svg",
+        menu: [
+            {
+                name: "Edamame",
+                description: "Steamed and served warm with the sprinkle of salt"
+            },
+            {
+                name: 'Pork Gyoza',
+                description: '8pcs of steamed or fried pork gyoza served with soy sauce',
+            },
+            {
+
+                name: 'Baked Red Snapper Tempura',
+                description: '4pcs of red snapper lightly battered, deep-fried & served with sweet eel sauce',
+            },
+            {
+                name: 'Crispy Rice Spicy Tuna',
+                description: '4pcs of lightly fried crispy sushi rice topped with spicy tuna, jalapeno, avocado & served with house special sauce',
+            },
+        ]
+    },
     {
-        id: 8,
-        name: 'Pork Gyoza',
-        img: '',
-        description: '8pcs of steamed or fried pork gyoza served with soy sauce',
-        type: 'Appetizers'
-    },    
+        id: 2,
+        category: "Fusion Bowls",
+        img: "/menu_page/section2-appetizer-img01.svg",
+        menu: [
+            {
+                name: 'Tuna Tower',
+                description: 'Fresh tuna, crab meat, avocado, spicy tuna on rice w/ house special sauce',
+            },
+            {
+                name: 'Salmon Tower',
+                description: 'Fresh salmon, crab meat, avocado, spicy salmon on rice w/ house special sauce',
+            },
+            {
+                name: 'Bulgogi Bowl',
+                description: 'Marinated beef ribeye, lettuce on rice',
+            },
+            {
+                name: 'Eel Bowl',
+                description: 'Eel, seaweed salad, avocado, squid salad, masago on rice',
+            },
+            {
+                name: 'Poke Bowl',
+                description: 'Spicy crab, spicy tuna, cucumber, avocado on sushi rice',
+            },
+        ]
+    },
     {
-        id: 9,
-        name: 'Baked Red Snapper Tempura',
-        img: '',
-        description: '4pcs of red snapper lightly battered, deep-fried & served with sweet eel sauce',
-        type: 'Appetizers'
-    },    
-    {
-        id: 10,
-        name: 'Crispy Rice Spicy Tuna',
-        img: '',
-        description: '4pcs of lightly fried crispy sushi rice topped with spicy tuna, jalapeno, avocado & served with house special sauce',
-        type: 'Appetizers'
-    },    
-    {
-        id: 11,
-        name: 'Tuna Tower',
-        img: '',
-        description: 'Fresh tuna, crab meat, avocado, spicy tuna on rice w/ house special sauce',
-        type: 'Fusion Bowls'
-    }, 
-    {
-        id: 12,
-        name: 'Salmon Tower',
-        img: '',
-        description: 'Fresh salmon, crab meat, avocado, spicy salmon on rice w/ house special sauce',
-        type: 'Fusion Bowls'
-    }, 
-    {
-        id: 13,
-        name: 'Bulgogi Bowl',
-        img: '',
-        description: 'Marinated beef ribeye, lettuce on rice',
-        type: 'Fusion Bowls'
-    }, 
-    {
-        id: 14,
-        name: 'Eel Bowl',
-        img: '',
-        description: 'Eel, seaweed salad, avocado, squid salad, masago on rice',
-        type: 'Fusion Bowls'
-    }, 
-    {
-        id: 15,
-        name: 'Poke Bowl',
-        img: '',
-        description: 'Spicy crab, spicy tuna, cucumber, avocado on sushi rice',
-        type: 'Fusion Bowls'
-    }, 
-    {
-        id: 16,
-        name: 'Upon Order',
-        img: '',
-        description: 'Tuna, Salmon, Crabstick, Eel, Red Snapper, Shrimp, Flying Fish Roe, Smoked Salmon, White Tuna, Scallop',
-        type: 'Sashimi & Nigiri'
-    }, 
-    {
-        id: 17,
-        name: 'Sushi Combo 1',
-        img: '',
-        description: '2pcs nigiri, 3pcs sashimi & 8pcs of california or spicy tuna roll',
-        type: 'Sashimi & Nigiri'
-    }, 
-    {
-        id: 18,
-        name: 'Sushi Combo 2',
-        img: '',
-        description: '2pcs nigiri, 3pcs sashimi, one any special roll',
-        type: 'Sashimi & Nigiri'
-    }, 
-    {
-        id: 19,
-        name: 'Sushi Combo 3',
-        img: '',
-        description: '2pcs nigiri, 3pcs sashimi, one any special roll & regular roll',
-        type: 'Sashimi & Nigiri'
-    }, 
+        id: 3,
+        category: 'Sashimi & Nigiri',
+        img: "/menu_page/section2-sashimi-img02.svg",
+        menu: [
+            {
+                name: 'Upon Order',
+                description: 'Tuna, Salmon, Crabstick, Eel, Red Snapper, Shrimp, Flying Fish Roe, Smoked Salmon, White Tuna, Scallop',
+            },
+            {
+                name: 'Sushi Combo 1',
+                description: '2pcs nigiri, 3pcs sashimi & 8pcs of california or spicy tuna roll',
+            },
+            {
+                name: 'Sushi Combo 2',
+                description: '2pcs nigiri, 3pcs sashimi, one any special roll',
+            },
+            {
+                name: 'Sushi Combo 3',
+                description: '2pcs nigiri, 3pcs sashimi, one any special roll & regular roll',
+            },
+        ]
+
+    }
 ]
-const section3 = [
+
+export const section2_2 = [
     {
-        id: 20,
-        name: 'Chicken Fried Rice',
-        img: '',
-        description: '',
-        type: 'Fried Rice'
-    }, 
+        id: 1,
+        category: "Fried Rice",
+        img: "/menu_page/section2-fried-img03.svg",
+        menu: ['Chicken Fried Rice', 'Shrimp Fried Rice', 'Combination Fried Rice'],
+    },
     {
-        id: 21,
-        name: 'Shrimp Fried Rice',
-        img: '',
-        description: '',
-        type: 'Fried Rice'
-    }, 
+        id: 2,
+        category: 'Regular Rolls',
+        img: "/menu_page/section2-regularrolls-img04.svg",
+        menu: ['Cucumber Roll', 'Avocado Roll', 'California Roll', 'Rainbow Special Roll',
+            'Spicy Tuna Roll', 'Spicy Shrimp Roll',]
+    },
     {
-        id: 22,
-        name: 'Combination Fried Rice',
-        img: '',
-        description: '',
-        type: 'Fried Rice'
-    }, 
-   {
-        id: 23,
-        name: 'Cucumber Roll',
-        img: '',
-        description: '',
-        type: 'Regular Rolls'
-    }, 
-   {
-        id: 24,
-        name: 'Avocado Roll',
-        img: '',
-        description: '',
-        type: 'Regular Rolls'
-    }, 
-   {
-        id: 25,
-        name: 'California Roll',
-        img: '',
-        description: '',
-        type: 'Regular Rolls'
-    }, 
-   {
-        id: 26,
-        name: 'Rainbow Special Roll',
-        img: '',
-        description: '',
-        type: 'Regular Rolls'
-    }, 
-   {
-        id: 27,
-        name: 'Spicy Tuna Roll',
-        img: '',
-        description: '',
-        type: 'Regular Rolls'
-    }, 
-   {
-        id: 28,
-        name: 'Spicy Shrimp Roll',
-        img: '',
-        description: '',
-        type: 'Regular Rolls'
-    }, 
-   {
-        id: 29,
-        name: 'California',
-        img: '',
-        description: '',
-        type: 'Hand Rolls'
-    }, 
-   {
-        id: 30,
-        name: 'Philadelphia',
-        img: '',
-        description: '',
-        type: 'Hand Rolls'
-    }, 
-   {
-        id: 31,
-        name: 'Tuna',
-        img: '',
-        description: '',
-        type: 'Hand Rolls'
-    }, 
-   {
-        id: 32,
-        name: 'Spicy Tuna',
-        img: '',
-        description: '',
-        type: 'Hand Rolls'
-    }, 
-   {
-        id: 33,
-        name: 'Salmon',
-        img: '',
-        description: '',
-        type: 'Hand Rolls'
-    }, 
-   {
-        id: 34,
-        name: 'Spicy Salmon',
-        img: '',
-        description: '',
-        type: 'Hand Rolls'
-    }, 
+        id: 3,
+        category: 'Hand Rolls',
+        img: "/menu_page/section2-handrolls-img05.svg",
+        menu: ['California', 'Philadelphia', 'Tuna', 'Spicy Tuna', 'Salmon', 'Spicy Salmon']
+    }
 ]
+
+export const section3 = [
+    {
+        img: `/menu_page/section3-img00.svg`,
+        title: "img00",
+    },
+    {
+        img: `/menu_page/section3-img01.svg`,
+        title: "img01",
+    },
+    {
+        img: `/menu_page/section3-img02.svg`,
+        title: "img02",
+    },
+    {
+        img: `/menu_page/section3-img03.svg`,
+        title: "img03",
+    },
+    {
+        img: `/menu_page/section3-img04.svg`,
+        title: "img04",
+    },
+    {
+        img: `/menu_page/section3-img05.svg`,
+        title: "img05",
+    },
+    {
+        img: `/menu_page/section3-img06.svg`,
+        title: "img06",
+    },
+    {
+        img: `/menu_page/section3-img07.svg`,
+        title: "img07",
+    },
+    {
+        img: `/menu_page/section3-img08.svg`,
+        title: "img08",
+    },
+    {
+        img: `/menu_page/section3-img09.svg`,
+        title: "img09",
+    },
+    {
+        img: `/menu_page/section3-img10.svg`,
+        title: "img10",
+    },
+    {
+        img: `/menu_page/section3-img11.svg`,
+        title: "img11",
+    },
+];
