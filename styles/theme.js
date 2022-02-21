@@ -48,7 +48,7 @@ let theme = createTheme({
         outlined: {
           backgroundColor: 'transparent',
           color: '#FAF6E8',
-          borderColor: 'green',
+          borderColor: '#FAF6E8',
           borderWidth: 2,
         }
       },
