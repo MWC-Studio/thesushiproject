@@ -41,7 +41,7 @@ const BottomBanner = () => {
                 <Grid item align="center" xs={2}><OrderAppIcon3 /></Grid>
             </Grid>
             <Grid item xs={12} align="center">
-                <Button variant="outlined">View Menu in PDF</Button>
+                <Button>View Menu in PDF</Button>
             </Grid>
         </Grid>
      );
