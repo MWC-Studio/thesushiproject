@@ -14,10 +14,6 @@ let theme = createTheme({
   palette: {
     primary: { main: '#40464d' },
     secondary: { main: '#f48a88' },
-    // white: {
-    //   main: '#40464D',
-    //   contrastText: '#40464D',
-    // },
   },
   typography: {
     fontFamily: [
@@ -52,17 +48,6 @@ let theme = createTheme({
           borderWidth: 2,
         }
       },
-      // variants: [
-      //   {
-      //       props: { variant: 'white' },
-      //       style: {
-      //           backgroundColor: '#FFFFFF',
-      //           color: '#40464D',
-      //           borderColor: 'green',
-      //           borderWidth: 2
-      //       }
-      //   }
-      // ]
     }
   }
 });
