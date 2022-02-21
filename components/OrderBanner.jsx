@@ -31,12 +31,12 @@ const OrderBanner = () => {
                     Call for Pickup or Get it Delivered now!
                 </Typography>
             </Grid>
-            <Grid item xs={6}
+            <Grid item xs={7}
                 container
                 justifyContent="center"
                 alignItems="center"
             >
-                <Grid item align="center" xs={2}><OrderAppIcon1 /></Grid>
+                <Grid item align="center" xs={3}><OrderAppIcon1 /></Grid>
                 <Grid item align="center" xs={3}><OrderAppIcon2 /></Grid>
                 <Grid item align="center" xs={1}><OrderAppIcon3 /></Grid>
             </Grid>
