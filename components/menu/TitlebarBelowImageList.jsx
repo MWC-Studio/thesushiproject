@@ -18,7 +18,7 @@ export default function TitlebarBelowImageList() {
           
     <Container sx={{ my: 7 }}>
       <Typography
-       sx={{ fontFamily: 'Monospace',fontSize: 'h1.fontSize',textAlign:"center"}}
+       sx={{fontSize: 'h1.fontSize',textAlign:"center"}}
       >Special Rolls
       </Typography>
 
@@ -34,7 +34,7 @@ export default function TitlebarBelowImageList() {
 
             <ImageListItemBar 
               title={item.title} position="below" align="center" 
-              sx={{ fontFamily: 'Monospace',fontSize: 'h3.fontSize'}} />
+              sx={{fontSize: 'h3.fontSize'}} />
           </ImageListItem>
         ))}
       </ImageList>
