@@ -1,6 +1,6 @@
-import { Button, Container, Grid, Typography } from "@mui/material";
-import Image from "next/image";
-import MuiNextLink from "@components/MuiNextLink";
+import { Button, Container, Grid, Typography } from '@mui/material';
+import Image from 'next/image';
+import MuiNextLink from '@components/MuiNextLink';
 
 const SectionAbout = () => {
   return (
