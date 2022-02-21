@@ -13,7 +13,11 @@ let theme = createTheme({
   },
   palette: {
     primary: { main: '#40464d' },
-    secondary: { main: '#f48a88' }
+    secondary: { main: '#f48a88' },
+    // white: {
+    //   main: '#40464D',
+    //   contrastText: '#40464D',
+    // },
   },
   typography: {
     fontFamily: [
@@ -22,7 +26,45 @@ let theme = createTheme({
     ].join(','),
     fontWeightLight: 400,
     fontWeightBold: 700,
+    button: {
+      fontWeight: 700,
+      fontSize: 16,
+      textTransform: "none"
+    }
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 100,
+          height: 54,
+          paddingLeft: 48,
+          paddingRight: 48,
+          paddingTop: 16,
+          paddingBottom: 16,
+          backgroundColor: '#40464D',
+          color: '#FFFFFF'
+        },
+        outlined: {
+          backgroundColor: 'transparent',
+          color: '#FAF6E8',
+          borderColor: 'green',
+          borderWidth: 2,
+        }
+      },
+      // variants: [
+      //   {
+      //       props: { variant: 'white' },
+      //       style: {
+      //           backgroundColor: '#FFFFFF',
+      //           color: '#40464D',
+      //           borderColor: 'green',
+      //           borderWidth: 2
+      //       }
+      //   }
+      // ]
+    }
+  }
 });
 
 theme = responsiveFontSizes(theme);

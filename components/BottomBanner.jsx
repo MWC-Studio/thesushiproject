@@ -41,7 +41,11 @@ const BottomBanner = () => {
                 <Grid item align="center" xs={2}><OrderAppIcon3 /></Grid>
             </Grid>
             <Grid item xs={12} align="center">
-                <Button variant="outlined">View Menu in PDF</Button>
+                <Button 
+                    // variant="outlined"
+                    // color="white"
+                    //color="primary" 이런 식으로 추가해야할듯?
+                >View Menu in PDF</Button>
             </Grid>
         </Grid>
      );
