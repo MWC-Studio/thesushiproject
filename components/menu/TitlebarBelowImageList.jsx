@@ -3,19 +3,27 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 
+
 export default function TitlebarBelowImageList() {
   return (
-    <Container sx={{ my: 15, bgcolor: "#FAF6E8" }}>
+    <Grid
+            component="section"
+            container
+            sx={{
+                position: "relative",
+                width: "100vw",
+                bgcolor: "#FAF6E8"
+                //mb: 15
+              }}
+        >
+          
+    <Container sx={{ my: 7 }}>
       <Typography
-        variant="h1"
-        textAlign="center"
-        sx={{ mb: 10 }}
-        fontFamily={"Nunito"}
-      >
-        Special Rolls
+       sx={{ fontFamily: 'Monospace',fontSize: 'h1.fontSize',textAlign:"center"}}
+      >Special Rolls
       </Typography>
 
-      <ImageList sx={{ p: 10 }} cols={3} gap={31}>
+      <ImageList sx={{ p: 7 }} cols={3} gap={33}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
@@ -24,11 +32,14 @@ export default function TitlebarBelowImageList() {
               alt={item.title}
               loading="lazy"
             />
-            <ImageListItemBar title={item.title} position="below" />
+            <ImageListItemBar 
+              title={item.title} position="below" align="center" 
+              sx={{ fontFamily: 'Monospace',fontSize: 'h3.fontSize'}} />
           </ImageListItem>
         ))}
       </ImageList>
     </Container>
+    </Grid>
   );
 }
 
