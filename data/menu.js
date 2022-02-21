@@ -1,4 +1,4 @@
-const itemData = [
+const  section1 = [
     {
         id: 1,
         name: 'Shrimp Tempura Chef Special Roll',
@@ -40,7 +40,10 @@ const itemData = [
         img: '',
         description: '',
         type: 'Special Rolls'
-    },
+    }
+]
+
+const section2 = [
     {
         id: 7,
         name: 'Edamame',
@@ -132,6 +135,8 @@ const itemData = [
         description: '2pcs nigiri, 3pcs sashimi, one any special roll & regular roll',
         type: 'Sashimi & Nigiri'
     }, 
+]
+const section3 = [
     {
         id: 20,
         name: 'Chicken Fried Rice',
