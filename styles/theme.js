@@ -20,6 +20,26 @@ let theme = createTheme({
       'Nunito',
       'sans-serif',
     ].join(','),
+    fontWeightLight: 400,
+    fontWeightBold: 700,
+    header1: {
+      fontSize: 32,
+    },
+    header2: {
+      fontSize: 20,
+    },
+    header3: {
+      fontSize: 16,
+    },
+    body1: {
+      fontSize: 16,
+    },
+    body2: {
+      fontSize: 14,
+    },
+    body3: {
+      fontSize: 12,
+    },
   },
 });
 

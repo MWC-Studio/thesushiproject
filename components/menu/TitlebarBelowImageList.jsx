@@ -3,7 +3,6 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 
-
 export default function TitlebarBelowImageList() {
   return (
     <Grid
@@ -32,6 +31,7 @@ export default function TitlebarBelowImageList() {
               alt={item.title}
               loading="lazy"
             />
+
             <ImageListItemBar 
               title={item.title} position="below" align="center" 
               sx={{ fontFamily: 'Monospace',fontSize: 'h3.fontSize'}} />
