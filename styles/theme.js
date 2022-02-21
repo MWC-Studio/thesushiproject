@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 // Create a theme instance.
 let theme = createTheme({
@@ -12,14 +12,11 @@ let theme = createTheme({
     },
   },
   palette: {
-    primary: { main: '#40464d' },
-    secondary: { main: '#f48a88' }
+    primary: { main: '#FAF6E8' },
+    secondary: { main: '#f48a88' },
   },
   typography: {
-    fontFamily: [
-      'Nunito',
-      'sans-serif',
-    ].join(','),
+    fontFamily: ['Nunito', 'sans-serif'].join(','),
     fontWeightLight: 400,
     fontWeightBold: 700,
     header1: {

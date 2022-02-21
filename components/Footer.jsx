@@ -119,7 +119,7 @@ const Footer = () => {
 
         <Grid>
           <Typography align="center" color="common.white">
-            Copyright by ©{new Date().getFullYear()} Sushi Rollin'. All rights
+            Copyright by ©{new Date().getFullYear()} Sushi Rollin. All rights
             reserved.
           </Typography>
         </Grid>
