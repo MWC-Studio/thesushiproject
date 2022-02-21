@@ -3,35 +3,30 @@ export const section1 = [
         id: 1,
         name: 'Shrimp Tempura Chef Special Roll',
         img: '/menu_page/roll0.svg',
-        description: '',
         type: 'Special Rolls'
     },
     {
         id: 2,
         name: 'Titanic Chef Special Roll',
         img: '/menu_page/roll1.svg',
-        description: '',
         type: 'Special Rolls'
     },
     {
         id: 3,
         name: 'Flaming Hot Chef Special Roll',
         img: '/menu_page/roll2.svg',
-        description: '',
         type: 'Special Rolls'
     },
     {
         id: 4,
         name: 'Crispy Rice SpicyTuna',
         img: '/menu_page/roll3.svg',
-        description: '',
         type: 'Special Rolls'
     },
     {
         id: 5,
         name: 'Red Dragon Roll',
         img: '/menu_page/roll4.svg',
-        description: '',
         type: 'Special Rolls'
     },
     {
@@ -71,7 +66,7 @@ export const section2_1 = [
     {
         id: 2,
         category: "Fusion Bowls",
-        img: "/menu_page/section2-appetizer-img01.svg",
+        img: "/menu_page/section2-fusion-img01.svg",
         menu: [
             {
                 name: 'Tuna Tower',
