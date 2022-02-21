@@ -6,10 +6,12 @@ import SectionAbout from "@components/SectionAbout";
 import SectionImage from "@components/SectionImage";
 import SectionReview from "@components/SectionReview";
 import NavigationCard from "@components/NavigationCard";
+import TopBanner from "@components/TopBanner";
 
 const Homepage = () => {
   return (
     <>
+      <TopBanner title="Home" description="Re-thinking the" second="Sushi Experience" />
       <Hero
         imgSrc="/home-hero.jpg"
         imgAlt="satified woman eating in restaurant"
@@ -32,7 +34,7 @@ const Homepage = () => {
               imgAlt="food menu"
               title="Menu"
               desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, minus."
-              pagePath="./menu"
+              pagePath="/menu"
               ctaText="Check Out"
             />
           </Grid>
@@ -42,7 +44,7 @@ const Homepage = () => {
               imgAlt="catering"
               title="Catering"
               desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, minus."
-              pagePath="./catering"
+              pagePath="/catering"
               ctaText="Find Out"
             />
           </Grid>
