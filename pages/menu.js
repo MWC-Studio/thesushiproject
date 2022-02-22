@@ -1,15 +1,16 @@
 import TopBanner from "@components/TopBanner";
 
-import TitlebarBelowImageList from "@components/menu/TitlebarBelowImageList";
-import BottomMenuImageList from "@components/menu/BottomMenuImageList";
-import CenterDetailedMenuList from "@components/menu/CenterDetailedMenuList";
-import Findus from "@components/menu/Findus"
+import TitlebarBelowImageList from "@components/TitlebarBelowImageList";
+import BottomMenuImageList from "@components/BottomMenuImageList";
+import CenterDetailedMenuList from "@components/CenterDetailedMenuList";
+import OrderBanner from "@components/OrderBanner"
+import FindUs from "@components/FindUs"
 
 const MenuPage = () => {
   return (
     <>
       <TopBanner title="Menu" description="Menu" />
-      <Findus />
+      <OrderBanner style={{ backgroundColor: "#ffffff" }} />
       <TitlebarBelowImageList />
       <CenterDetailedMenuList />
       <BottomMenuImageList />

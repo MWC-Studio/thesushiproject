@@ -2,7 +2,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-import { section1 } from "../../data/menu";
+import { section1 } from "../data/menu";
 
 export default function TitlebarBelowImageList() {
   return (
@@ -16,7 +16,13 @@ export default function TitlebarBelowImageList() {
       }}
     >
       <Container sx={{ my: 7 }}>
-        <Typography sx={{ fontSize: "h1.fontSize", textAlign: "center" }}>
+        <Typography
+                    color="text"
+                    variant="h1"
+                    align="center"
+                    fontWeight={'fontWeightBold'}
+                    fontFamily={'Nunito'}
+        >
           Special Rolls
         </Typography>
 

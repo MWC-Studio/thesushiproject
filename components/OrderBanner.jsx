@@ -2,9 +2,10 @@ import { Button, Grid, Typography } from "@mui/material";
 import OrderAppIcon1 from "../public/icons/doordash.svg";
 import OrderAppIcon2 from "../public/icons/grubhub.svg";
 import OrderAppIcon3 from "../public/icons/yelp.svg";
+import MuiNextLink from "@components/MuiNextLink";
 
 const OrderBanner = () => {
-    return ( 
+    return (
         <Grid
             component="section"
             container
@@ -36,9 +37,36 @@ const OrderBanner = () => {
                 justifyContent="center"
                 alignItems="center"
             >
-                <Grid item align="center" xs={3}><OrderAppIcon1 /></Grid>
-                <Grid item align="center" xs={3}><OrderAppIcon2 /></Grid>
-                <Grid item align="center" xs={1}><OrderAppIcon3 /></Grid>
+                 <Grid item align="center" xs={3}>
+                  <MuiNextLink
+                  sx={{ textDecoration: "none", color: "common.white" }}
+                  href="https://www.doordash.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                    <OrderAppIcon1 />
+                  </MuiNextLink>
+                </Grid>
+                <Grid item align="center" xs={3}>
+                 <MuiNextLink
+                 sx={{ textDecoration: "none", color: "common.white" }}
+                 href="https://www.grubhub.com/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 >
+                    <OrderAppIcon2 />
+                 </MuiNextLink>
+                </Grid>
+                <Grid item align="center" xs={1}>
+                  <MuiNextLink
+                  sx={{ textDecoration: "none", color: "common.white" }}
+                  href="https://www.yelp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                     <OrderAppIcon3 />
+                  </MuiNextLink>
+                 </Grid>
             </Grid>
             <Grid item xs={12} align="center">
                 <Button>View Menu in PDF</Button>
