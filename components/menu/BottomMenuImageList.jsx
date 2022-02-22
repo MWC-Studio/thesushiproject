@@ -1,10 +1,10 @@
 import { Container, Grid, Typography } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
-import { section1 } from "../../data/menu";
 
-export default function TitlebarBelowImageList() {
+import { section3 } from "data/menu";
+
+export default function BottomMenuImageList() {
   return (
     <Grid
       component="section"
@@ -15,26 +15,19 @@ export default function TitlebarBelowImageList() {
         bgcolor: "#FAF6E8",
       }}
     >
-      <Container sx={{ my: 7 }}>
+      <Container sx={{ mt: 7 }}>
         <Typography sx={{ fontSize: "h1.fontSize", textAlign: "center" }}>
-          Special Rolls
+          Sushi Rollin' Experience
         </Typography>
 
-        <ImageList sx={{ p: 7 }} cols={3} gap={33}>
-          {section1.map((item) => (
+        <ImageList sx={{ p: 7 }} cols={4} gap={33}>
+          {section3.map((item) => (
             <ImageListItem key={item.img}>
               <img
-                src={`${item.img}?w=380&h=380&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=380&h=380&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.img}?w=278&h=278&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=278&h=278&fit=crop&auto=format&dpr=2 2x`}
                 alt={item.title}
                 loading="lazy"
-              />
-
-              <ImageListItemBar
-                title={item.name}
-                position="below"
-                align="center"
-                sx={{ fontSize: "h3.fontSize" }}
               />
             </ImageListItem>
           ))}
