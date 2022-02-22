@@ -30,21 +30,7 @@ const AboutPage = () => {
           </Typography>
         </Grid>
       </Box>
-      <Box>
-        {/* 가운데 정렬 */}
-        <Grid
-          container
-          item
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
-          xs={12}
-          flexDirection="column"
-          justifyContent="center"
-        >
-          a
-        </Grid>
-      </Box>
+      <Box></Box>
       <Box sx={{ mt: 2, mb: 2 }}>
         <Grid
           container
@@ -101,14 +87,28 @@ const AboutPage = () => {
       </Box>
 
       <Box sx={{ mt: 2, mb: 2 }}>
-        <Grid item>
+        <Grid
+          container
+          item
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          sx={{ pt: 2, pb: 2 }}
+        >
           <MuiNextLink href="/menu" underline="none">
             <Button variant="fill" size="large">
               Franchise Oppurtunity
             </Button>
           </MuiNextLink>
         </Grid>
-        <Grid item>
+        <Grid
+          container
+          item
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          sx={{ pt: 2, pb: 2 }}
+        >
           <MuiNextLink href="/menu" underline="none">
             <Button variant="outlined" size="large">
               View Our Menu
@@ -123,13 +123,15 @@ const AboutPage = () => {
 
 export default AboutPage;
 
-<Grid
+{
+  /* <Grid
   container
   item
   flexDirection="column"
   justifyContent="center"
   alignItems="center"
-></Grid>;
+></Grid>; */
+}
 
 // <Container maxwidth="lg">
 //           <Grid
@@ -210,3 +212,19 @@ export default AboutPage;
 //           </Grid>
 //         </Container>
 //       </Box>
+
+{
+  /* 가운데 정렬 */
+}
+<Grid
+  container
+  item
+  flexDirection="column"
+  justifyContent="center"
+  alignItems="center"
+  xs={12}
+  flexDirection="column"
+  justifyContent="center"
+>
+  a
+</Grid>;
