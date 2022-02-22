@@ -4,7 +4,7 @@ import Image from "next/image";
 const TopBanner = (props) => {
     let btn;
     if (props.title == "Home") {
-        btn = <Button color="secondary" variant="outlined">Franchise</Button>
+        btn = <Button variant="outlined">Franchise</Button>
     }
 
     return ( 
