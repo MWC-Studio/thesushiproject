@@ -61,6 +61,7 @@ let theme = createTheme({
           paddingRight: 48,
           paddingTop: 16,
           paddingBottom: 16,
+          // TODO: update palette
           backgroundColor: '#40464D',
           color: '#FFFFFF'
         },

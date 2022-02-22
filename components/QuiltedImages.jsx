@@ -44,41 +44,41 @@ export default function QuiltedImageList() {
 
 const itemData = [
     {
-        img: '/location-topleft.png',
+        img: '/location-topleft.svg',
         title: 'location image 1',
         rows: 2,
         cols: 2
     },
     {
-        img: '/location-topright-1.png',
+        img: '/location-topright-1.svg',
         title: 'location image 2',
         cols: 2
     },
     {
-        img: '/location-topright-2.png',
+        img: '/location-topright-2.svg',
         title: 'location image 3',
     },
     {
-        img: '/location-topright-3.png',
+        img: '/location-topright-3.svg',
         title: 'location image 4',
     },
     {
-        img: '/location-bottomleft-1.png',
+        img: '/location-bottomleft-1.svg',
         title: 'location image 5',
         cols: 2
     },
     {
-        img: '/location-bottomright.png',
+        img: '/location-bottomright.svg',
         title: 'location image 6',
         rows: 2,
         cols: 2
     },
     {
-        img: '/location-bottomleft-2.png',
+        img: '/location-bottomleft-2.svg',
         title: 'location image 7',
     },
     {
-        img: '/location-bottomleft-3.png',
+        img: '/location-bottomleft-3.svg',
         title: 'location image 8',
     },
 ];
