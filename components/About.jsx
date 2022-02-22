@@ -113,7 +113,7 @@ const AboutPage = () => {
               </MuiNextLink>
             </Box>
             <Box sx={{ mb: 2, mt: 2 }}>
-              <MuiNextLink href="/franchise" underline="none">
+              <MuiNextLink href="/menu" underline="none">
                 <Image
                   src="/aboutpage/button_viewmenu.svg"
                   alt="Francise oppurtunity"
