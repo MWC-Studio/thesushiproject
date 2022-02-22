@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 export default function Findus() {
     return (
 
-<Box sx={{ py: 5}}>
+<Box sx={{ py: 5}} >
     <Typography
          sx={{fontSize: 'h1.fontSize',textAlign:"center"}}
         >People Can Find Us Here
