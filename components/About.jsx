@@ -13,12 +13,14 @@ const AboutPage = () => {
       alignItems="center"
       xs={12}
       md={6}
+      sx={{ mb: 3, mt: 3 }}
     >
       <Grid
         container
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
+        sx={{ mb: 3, mt: 3 }}
       >
         <Grid
           item
@@ -28,13 +30,13 @@ const AboutPage = () => {
           xs={12}
           flexDirection="column"
           justifyContent="center"
-          sx={{ mb: 2, mt: 2 }}
+          sx={{ mb: 2, mt: 4 }}
         >
-          <Typography textAlign="center" color="#F48A88" gutterBottom>
+          <Typography textAlign="center" color="#F48A88" gutterBottom py={1}>
             Quick & Approachable while Keeping the Quality
           </Typography>
           {/* font size = 36px */}
-          <Typography textAligh="center" variant="header1" gutterBottom>
+          <Typography textAligh="center" variant="header1" gutterBottom py={1}>
             That’s How We’re Rollin’
           </Typography>
         </Grid>
@@ -110,10 +112,10 @@ const AboutPage = () => {
               </Button> */}
               </MuiNextLink>
             </Box>
-            <Box>
+            <Box sx={{ mb: 2, mt: 2 }}>
               <MuiNextLink href="/franchise" underline="none">
                 <Image
-                  src="/aboutpage/button_franchise.svg"
+                  src="/aboutpage/button_viewmenu.svg"
                   alt="Francise oppurtunity"
                   width="264"
                   height="55"
