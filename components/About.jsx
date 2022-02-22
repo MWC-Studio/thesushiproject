@@ -38,7 +38,16 @@ const AboutPage = () => {
             That’s How We’re Rollin’
           </Typography>
         </Grid>
-        <Grid item>
+        <Grid
+          item
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          xs={12}
+          flexDirection="column"
+          justifyContent="center"
+          sx={{ mb: 2, mt: 2 }}
+        >
           <Image
             src="/aboutpage/about_img_outline.svg"
             alt="Cooking"
@@ -50,7 +59,16 @@ const AboutPage = () => {
             also the CEO of
           </Typography>
         </Grid>
-        <Grid item>
+        <Grid
+          item
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          xs={12}
+          flexDirection="column"
+          justifyContent="center"
+          sx={{ mb: 2, mt: 2 }}
+        >
           <Image
             src="/aboutpage/ceo_frame.svg"
             alt="CEO"
@@ -58,13 +76,22 @@ const AboutPage = () => {
             width="606"
             height="546"
           />
-          <Typography variant="body1" textAlign="center">
+          {/* <Typography variant="body1" textAlign="center">
             “When people think about Sushi, It’s pricey and not an everyday kind
             of experience. But with Sushi Rollin, the experience gets more
             approachable but still unique." -The Chef CEO, June Kim-
-          </Typography>
+          </Typography> */}
         </Grid>
-        <Grid item>
+        <Grid
+          item
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          xs={12}
+          flexDirection="column"
+          justifyContent="center"
+          sx={{ mb: 2, mt: 2 }}
+        >
           <Container
             flexDirection="column"
             justifyContent="center"
