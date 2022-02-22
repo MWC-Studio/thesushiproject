@@ -17,8 +17,8 @@ export default function CenterDetailedMenuList() {
     >
       <Container sx={{ my: 7 }}>
         <ImageList sx={{ width: 1280, p: 7 }} cols={3} gap={33}>
-          {section2_1.map((item) => (
-            <ImageListItem key={item.img}>
+          {section2_1.map((item, idx) => (
+            <ImageListItem key={idx}>
               <Typography>
                 <h2 sx={{ fontSize: "h2.fontSize", textAlign: "left" }}>
                   {item.category}
@@ -32,8 +32,8 @@ export default function CenterDetailedMenuList() {
               />
             </ImageListItem>
           ))}
-          {section2_1.map((item) => (
-             <MenuDescription data={item.menu} />
+          {section2_1.map((item, idx) => (
+            <MenuDescription data={item.menu} key={idx} />
           ))}
           {section2_2.map((item, idx) => (
             <ImageListItem key={idx}>
@@ -50,8 +50,8 @@ export default function CenterDetailedMenuList() {
               />
             </ImageListItem>
           ))}
-          {section2_2.map((item) => (
-             <MenuDescription data={item.menu} />
+          {section2_2.map((item, idx) => (
+            <MenuDescription data={item.menu} key={idx} />
           ))}
         </ImageList>
       </Container>
@@ -63,9 +63,9 @@ const MenuDescription = ({ data }) => {
   return (
     <div>
       {data.map((food, idx) => (
-        <Typography nowrap="true" key={idx}>
+        <Typography nowrap="true" key={idx} wrapper="span">
           <h3 sx={{ py: 2, fontSize: "h3.fontSize" }}>{food.name}</h3>
-          <span>{food.description}</span>
+          <div>{food.description}</div>
         </Typography>
       ))}
     </div>
