@@ -9,7 +9,7 @@ const LocationPage = () => {
       <TopBanner title="Location" description="Location" />
       <QuiltedImages />
       <LocationInfoSection />
-      <OrderBanner />
+      <OrderBanner bgColor="secondary.main" />
     </>
   )
 };

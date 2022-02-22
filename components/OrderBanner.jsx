@@ -3,7 +3,7 @@ import OrderAppIcon1 from "../public/icons/doordash.svg";
 import OrderAppIcon2 from "../public/icons/grubhub.svg";
 import OrderAppIcon3 from "../public/icons/yelp.svg";
 
-const OrderBanner = () => {
+const OrderBanner = (props) => {
     return ( 
         <Grid
             component="section"
@@ -13,8 +13,7 @@ const OrderBanner = () => {
             sx={{
                 height: "29vw",
                 width: "100vw",
-                //palette 업데이트하고 바꾸기.
-                backgroundColor: "#FBF8ED",
+                backgroundColor: props.bgColor,
                 pt: 5,
                 pb: 5
                 // mb: 15,
