@@ -12,8 +12,8 @@ let theme = createTheme({
     },
   },
   palette: {
-    primary: { main: '#40464D' },
-    secondary: { main: '#FBF8ED' },
+    primary: { main: '#40464D', dark: '#262626', contrastText: '#FFFFFF' },
+    secondary: { main: '#FBF8ED', contrastText: '#F48A88' },
     text: { main: '#333333' },
   },
   typography: {
