@@ -3,7 +3,7 @@ import OrderAppIcon1 from "../public/icons/doordash.svg";
 import OrderAppIcon2 from "../public/icons/grubhub.svg";
 import OrderAppIcon3 from "../public/icons/yelp.svg";
 
-const BottomBanner = () => {
+const OrderBanner = () => {
     return ( 
         <Grid
             component="section"
@@ -22,8 +22,8 @@ const BottomBanner = () => {
         >
             <Grid item xs={12}>
                 <Typography
-                    color="primary"
-                    variant="h4"
+                    color="text"
+                    variant="h1"
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
@@ -31,20 +31,20 @@ const BottomBanner = () => {
                     Call for Pickup or Get it Delivered now!
                 </Typography>
             </Grid>
-            <Grid item xs={12}
+            <Grid item xs={7}
                 container
                 justifyContent="center"
                 alignItems="center"
             >
-                <Grid item align="center" xs={2}><OrderAppIcon1 /></Grid>
-                <Grid item align="center" xs={2}><OrderAppIcon2 /></Grid>
-                <Grid item align="center" xs={2}><OrderAppIcon3 /></Grid>
+                <Grid item align="center" xs={3}><OrderAppIcon1 /></Grid>
+                <Grid item align="center" xs={3}><OrderAppIcon2 /></Grid>
+                <Grid item align="center" xs={1}><OrderAppIcon3 /></Grid>
             </Grid>
             <Grid item xs={12} align="center">
-                <Button variant="outlined">View Menu in PDF</Button>
+                <Button>View Menu in PDF</Button>
             </Grid>
         </Grid>
      );
 }
  
-export default BottomBanner;
+export default OrderBanner;

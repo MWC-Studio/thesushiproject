@@ -10,23 +10,23 @@ import HideOnScroll from "./HideOnScroll";
 import Fab from "@mui/material/Fab";
 import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
 import BackToTop from "./BackToTop";
-import Logo from "../public/rollinlogowhite.svg";
+import Logo from "../public/rollinlogodark.svg";
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 const navLinks = [
-  { title: `home`, path: `/` },
-  { title: `menu`, path: `/menu` },
-  { title: `about us`, path: `/aboutus` },
-  { title: `franchise`, path: `/franchise` },
-  { title: `location`, path: `/location` },
+  { title: `Home`, path: `/` },
+  { title: `About`, path: `/aboutus` },
+  { title: `Franchise`, path: `/franchise` },
+  { title: `Menu`, path: `/menu` },
+  { title: `Location`, path: `/location` },
 ];
 
 const Header = () => {
   return (
     <>
       <HideOnScroll>
-        <AppBar position="fixed">
+        <AppBar sx = {{ bgcolor :"#FBF8ED" }} position="fixed">
           <Toolbar>
             <Container
               maxWidth="lg"
