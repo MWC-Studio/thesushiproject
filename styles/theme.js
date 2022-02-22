@@ -49,6 +49,7 @@ let theme = createTheme({
   },
   components: {
     MuiButton: {
+      // TODO: update hover, active pseudo class
       styleOverrides: {
         root: {
           borderRadius: 100,
