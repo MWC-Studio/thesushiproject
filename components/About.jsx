@@ -48,7 +48,7 @@ const AboutPage = () => {
           xs={12}
           flexDirection="column"
           justifyContent="center"
-          sx={{ mb: 2, mt: 2 }}
+          sx={{ mb: 3, mt: 2 }}
         >
           <Image
             src="/aboutpage/about_img_outline.svg"
@@ -56,7 +56,7 @@ const AboutPage = () => {
             width="588"
             height="426"
           />
-          <Typography variant="body1" textAlign="center">
+          <Typography variant="body1" textAlign="center" py={2}>
             Founded in 2019, Sushi Rollin’ has started with a chef who Chef Kim,
             also the CEO of
           </Typography>
@@ -69,7 +69,7 @@ const AboutPage = () => {
           xs={12}
           flexDirection="column"
           justifyContent="center"
-          sx={{ mb: 2, mt: 2 }}
+          sx={{ mb: 3, mt: 2 }}
         >
           <Image
             src="/aboutpage/ceo_frame.svg"
