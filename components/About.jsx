@@ -56,7 +56,8 @@ const AboutPage = () => {
             width="588"
             height="426"
           />
-          <Typography variant="body1" textAlign="center" py={2}>
+          {/* need to change text color code */}
+          <Typography variant="body1" textAlign="center" color="#333333" py={2}>
             Founded in 2019, Sushi Rollin’ has started with a chef who Chef Kim,
             also the CEO of
           </Typography>
@@ -112,6 +113,8 @@ const AboutPage = () => {
               </Button> */}
               </MuiNextLink>
             </Box>
+
+            {/* might need to change button  */}
             <Box sx={{ mb: 2, mt: 2 }}>
               <MuiNextLink href="/menu" underline="none">
                 <Image
@@ -133,111 +136,3 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-
-{
-  /* <Grid
-  container
-  item
-  flexDirection="column"
-  justifyContent="center"
-  alignItems="center"
-></Grid>; */
-}
-
-// <Container maxwidth="lg">
-//           <Grid
-//             container
-//             direction="column"
-//             justifyContent="center"
-//             alignItems="center"
-//             xs={12}
-//             md={6}
-//           >
-//             <Grid
-//               item
-//               xs={12}
-//               sm={6}
-//               container
-//               flexDirection="column"
-//               justifyContent="center"
-//               alignItems="center"
-//             >
-//               <Typography
-//                 textAlign="center"
-//                 color="background: #F48A88;
-// "
-//               >
-//                 {`Quick, Approachable, but keeping the Quality`}
-//               </Typography>
-//               <Typography
-//                 component="h2"
-//                 variant="h4"
-//                 textAlign="center"
-//                 gutterBottom
-//               >
-//                 That's How We're Rollin'
-//               </Typography>
-//               <Grid
-//                 item
-//                 xs={12}
-//                 sm={6}
-//                 container
-//                 flexDirection="column"
-//                 justifyContent="center"
-//                 alignItems="center"
-//               >
-//                 <Image
-//                   src="/about-page/about_img_outline.svg"
-//                   alt="Cooking"
-//                   layout="responsive"
-//                   width="588"
-//                   height="426"
-//                 />
-//                 <Typography></Typography>
-//               </Grid>
-//             </Grid>
-//             <Grid item>
-//               <Image
-//                 src="/about-page/ceo_frame.svg"
-//                 alt="Ceo"
-//                 layout="responsive"
-//                 width="606"
-//                 height="546"
-//               />
-//               <Typography></Typography>
-//             </Grid>
-//             <Grid item>
-//               <MuiNextLink href="/menu" underline="none">
-//                 <Button variant="fill" size="large">
-//                   Franchise Oppurtunity
-//                 </Button>
-//               </MuiNextLink>
-//             </Grid>
-//             <Grid item>
-//               <MuiNextLink href="/menu" underline="none">
-//                 <Button variant="outlined" size="large">
-//                   View Our Menu
-//                 </Button>
-//               </MuiNextLink>
-//             </Grid>
-//           </Grid>
-//         </Container>
-//       </Box>
-
-{
-  /* 가운데 정렬 */
-}
-{
-  /* <Grid
-  container
-  item
-  flexDirection="column"
-  justifyContent="center"
-  alignItems="center"
-  xs={12}
-  flexDirection="column"
-  justifyContent="center"
->
-  a
-</Grid>; */
-}
