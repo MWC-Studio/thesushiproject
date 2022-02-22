@@ -121,20 +121,84 @@ export const section2_2 = [
         id: 1,
         category: "Fried Rice",
         img: "/menu_page/section2-fried-img03.svg",
-        menu: ['Chicken Fried Rice', 'Shrimp Fried Rice', 'Combination Fried Rice'],
+        menu: [
+            {
+                name:'Chicken Fried Rice',
+                description:'',
+            },
+            {
+                name:'Shrimp Fried Rice',
+                description:'',
+            },
+            {
+                name:'Combination Fried Rice',
+                description:'',
+            },
+        ]
     },
     {
         id: 2,
         category: 'Regular Rolls',
         img: "/menu_page/section2-regularrolls-img04.svg",
-        menu: ['Cucumber Roll', 'Avocado Roll', 'California Roll', 'Rainbow Special Roll',
-            'Spicy Tuna Roll', 'Spicy Shrimp Roll',]
+        menu: 
+        [
+            {
+                name:'Cucumber Roll',
+                description:'',
+            },
+            {
+                name:'Avocado Roll',
+                description:'',
+            },
+            {
+                name:'California Roll',
+                description:'',
+            },
+            {
+                name:'Rainbow Special Roll',
+                description:'',
+            },
+            {
+                name:'Spicy Tuna Roll',
+                description:'',
+            },
+            {
+                name:'Spicy Shrimp Roll',
+                description:'',
+            },
+        ]
     },
     {
         id: 3,
         category: 'Hand Rolls',
         img: "/menu_page/section2-handrolls-img05.svg",
-        menu: ['California', 'Philadelphia', 'Tuna', 'Spicy Tuna', 'Salmon', 'Spicy Salmon']
+        menu: 
+        [
+            {
+                name:'California',
+                description:'',
+            },
+            {
+                name:'Philadelphia',
+                description:'',
+            },
+            {
+                name:'Tuna',
+                description:'',
+            },
+            {
+                name:'Spicy Tuna',
+                description:'',
+            },
+            {
+                name:'Salmon',
+                description:'',
+            },
+            {
+                name:'Spicy Salmon',
+                description:'',
+            },
+        ]
     }
 ]
 

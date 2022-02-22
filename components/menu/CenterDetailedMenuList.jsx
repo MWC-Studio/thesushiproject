@@ -30,8 +30,10 @@ export default function CenterDetailedMenuList() {
                 alt={item.title}
                 loading="lazy"
               />
-              <MenuDescription data={item.menu} />;
             </ImageListItem>
+          ))}
+          {section2_1.map((item) => (
+             <MenuDescription data={item.menu} />
           ))}
           {section2_2.map((item, idx) => (
             <ImageListItem key={idx}>
@@ -46,8 +48,10 @@ export default function CenterDetailedMenuList() {
                 alt={item.title}
                 loading="lazy"
               />
-              <MenuDescription data={item.menu} />;
             </ImageListItem>
+          ))}
+          {section2_2.map((item) => (
+             <MenuDescription data={item.menu} />
           ))}
         </ImageList>
       </Container>
