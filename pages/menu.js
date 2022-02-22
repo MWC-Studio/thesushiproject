@@ -5,8 +5,8 @@ import OrderBanner from "@components/OrderBanner";
 const MenuPage = () => {
   return (
     <>
-      <OrderBanner bgColor="common.white" />
       <TopBanner title="Menu" description="Menu" />
+      <OrderBanner bgColor="common.white" />
       <TitlebarBelowImageList />
     </>
   );
