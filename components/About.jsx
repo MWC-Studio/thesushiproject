@@ -100,10 +100,22 @@ const AboutPage = () => {
         </Grid>
       </Box>
 
-      <Box>
-        <Box></Box>
+      <Box sx={{ mt: 2, mb: 2 }}>
+        <Grid item>
+          <MuiNextLink href="/menu" underline="none">
+            <Button variant="fill" size="large">
+              Franchise Oppurtunity
+            </Button>
+          </MuiNextLink>
+        </Grid>
+        <Grid item>
+          <MuiNextLink href="/menu" underline="none">
+            <Button variant="outlined" size="large">
+              View Our Menu
+            </Button>
+          </MuiNextLink>
+        </Grid>
       </Box>
-      <Box>a</Box>
       <Box>a</Box>
     </Container>
   );
