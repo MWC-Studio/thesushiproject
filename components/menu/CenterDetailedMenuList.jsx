@@ -16,10 +16,10 @@ export default function CenterDetailedMenuList() {
       }}
     >
       <Container sx={{ my: 7 }}>
-        <ImageList sx={{ width: 1280, p: 7 }} cols={3} gap={33}>
+        <ImageList sx={{ p: 7 }} cols={3} gap={33}>
           {section2_1.map((item, idx) => (
             <ImageListItem key={idx}>
-              <Typography>
+              <Typography component={"div"}>
                 <h2 sx={{ fontSize: "h2.fontSize", textAlign: "left" }}>
                   {item.category}
                 </h2>
@@ -37,7 +37,7 @@ export default function CenterDetailedMenuList() {
           ))}
           {section2_2.map((item, idx) => (
             <ImageListItem key={idx}>
-              <Typography>
+              <Typography component={"div"}>
                 <h2 sx={{ fontSize: "h2.fontSize", textAlign: "left" }}>
                   {item.category}
                 </h2>
@@ -63,7 +63,7 @@ const MenuDescription = ({ data }) => {
   return (
     <div>
       {data.map((food, idx) => (
-        <Typography nowrap="true" key={idx} wrapper="span">
+        <Typography nowrap="true" key={idx} component={"div"}>
           <h3 sx={{ py: 2, fontSize: "h3.fontSize" }}>{food.name}</h3>
           <div>{food.description}</div>
         </Typography>
