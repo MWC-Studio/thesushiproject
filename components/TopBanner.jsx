@@ -15,7 +15,6 @@ const TopBanner = (props) => {
                 position: "relative",
                 height: "30vw",
                 width: "100vw",
-                // mb: 15,
               }}
         >
            <Image 
@@ -35,7 +34,7 @@ const TopBanner = (props) => {
                 }}
             >
                 <Typography
-                    color="white"
+                    color="primary.contrastText"
                     variant="h2"
                     align="center"
                     fontWeight={'fontWeightBold'}
