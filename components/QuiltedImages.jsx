@@ -20,21 +20,19 @@ export default function QuiltedImageList() {
         justifyContent="center"
         alignItems="center"
         mt={8}
-        px={20}
+        px={10}
         sx={{
             backgroundColor: {
-                sm: "blue",
                 md: "green",
                 lg: "yellow"
             },
         }}
     >
         <ImageList
-        // sx={{ width: 1038, height: 1015 }}
-        variant="quilted"
-        cols={4}
-        rowHeight={230}
-        gap={30}
+            variant="quilted"
+            cols={4}
+            rowHeight={230}
+            gap={30}
         >
         {itemData.map((item) => (
             <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
