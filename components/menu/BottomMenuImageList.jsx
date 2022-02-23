@@ -16,13 +16,13 @@ export default function BottomMenuImageList() {
       }}
     >
       <Container sx={{ mt: 7 }}>
-       <Typography
-                    color="text"
-                    variant="h1"
-                    align="center"
-                    fontWeight={'fontWeightBold'}
-                    fontFamily={'Nunito'}
-                >
+        <Typography
+          color="text"
+          variant="h1"
+          align="center"
+          fontWeight={"fontWeightBold"}
+          fontFamily={"Nunito"}
+        >
           Sushi Rollin' Experience
         </Typography>
 
@@ -33,7 +33,7 @@ export default function BottomMenuImageList() {
                 src={`${item.img}?w=278&h=278&fit=crop&auto=format`}
                 srcSet={`${item.img}?w=278&h=278&fit=crop&auto=format&dpr=2 2x`}
                 alt={item.title}
-                loading="lazy"
+                loading="eager"
               />
             </ImageListItem>
           ))}
