@@ -39,7 +39,7 @@ const OrderBanner = (props) => {
                 <Grid item align="center" xs={1}><OrderAppIcon3 /></Grid>
             </Grid>
             <Grid item xs={12} align="center">
-                <Button>View Menu in PDF</Button>
+                <Button>View Store Menu</Button>
             </Grid>
         </Grid>
      );
