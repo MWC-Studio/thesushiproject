@@ -21,15 +21,21 @@ let theme = createTheme({
     fontWeightLight: 400,
     fontWeightBold: 700,
     h1: {
-      fontSize: 32
+      fontSize: 60
     },
-    header1: {
+    h2: {
       fontSize: 32,
     },
-    header2: {
+    h3: {
       fontSize: 20,
     },
-    header3: {
+    h4: {
+      fontSize: 18,
+    },
+    h5: {
+      fontSize: 12,
+    },
+    subject1: {
       fontSize: 16,
     },
     body1: {
@@ -37,9 +43,6 @@ let theme = createTheme({
     },
     body2: {
       fontSize: 14,
-    },
-    body3: {
-      fontSize: 12,
     },
     button: {
       fontWeight: 700,
