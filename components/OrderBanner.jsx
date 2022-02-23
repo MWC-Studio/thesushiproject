@@ -18,7 +18,6 @@ const OrderBanner = (props) => {
                 backgroundColor: "#FBF8ED",
                 pt: 5,
                 pb: 5
-                // mb: 15,
               }}
         >
             <Grid item xs={12}>
@@ -29,7 +28,7 @@ const OrderBanner = (props) => {
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
                 >
-                    Call for Pickup or Get it Delivered now!
+                    {props.text}
                 </Typography>
             </Grid>
             <Grid item xs={7}
@@ -69,7 +68,7 @@ const OrderBanner = (props) => {
                  </Grid>
             </Grid>
             <Grid item xs={12} align="center">
-                <Button>View Menu in PDF</Button>
+                <Button>View Store Menu</Button>
             </Grid>
         </Grid>
      );
