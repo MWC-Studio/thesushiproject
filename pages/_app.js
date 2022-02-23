@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useTheme, useMediaQuery } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider } from "@emotion/react";
@@ -15,6 +16,8 @@ const clientSideEmotionCache = createEmotionCache();
 
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const themes = useTheme();
+  const isMobile = useMediaQuery(themes.breakpoints.down('md'));
 
   return (
     <CacheProvider value={emotionCache}>
@@ -25,7 +28,7 @@ export default function MyApp(props) {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Header />
-        <Component {...pageProps} />
+        <Component {...pageProps} isMobile={isMobile} />
         <Footer />
       </ThemeProvider>
     </CacheProvider>
