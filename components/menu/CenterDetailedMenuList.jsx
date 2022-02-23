@@ -16,13 +16,18 @@ export default function CenterDetailedMenuList() {
       }}
     >
       <Container sx={{ my: 7 }}>
-        <ImageList sx={{ width: 1280, p: 7 }} cols={3} gap={33}>
+        <ImageList sx={{ p: 7 }} cols={3} gap={33}>
           {section2_1.map((item, idx) => (
             <ImageListItem key={idx}>
-              <Typography>
-                <h2 sx={{ fontSize: "h2.fontSize", textAlign: "left" }}>
-                  {item.category}
-                </h2>
+              <Typography
+                component={"div"}
+                color="text"
+                variant="h4"
+                align="left"
+                fontWeight={"fontWeightBold"}
+                fontFamily={"Nunito"}
+              >
+                <h4>{item.category}</h4>
               </Typography>
               <img
                 src={`${item.img}?w=380&h=380&fit=crop&auto=format`}
@@ -37,10 +42,17 @@ export default function CenterDetailedMenuList() {
           ))}
           {section2_2.map((item, idx) => (
             <ImageListItem key={idx}>
-              <Typography>
-                <h2 sx={{ fontSize: "h2.fontSize", textAlign: "left" }}>
+              <Typography
+                component={"div"}
+                color="text"
+                variant="h4"
+                align="left"
+                fontWeight={"fontWeightBold"}
+                fontFamily={"Nunito"}
+              >
+                <h4 sx={{ fontSize: "h2.fontSize", textAlign: "left" }}>
                   {item.category}
-                </h2>
+                </h4>
               </Typography>
               <img
                 src={`${item.img}?w=380&h=380&fit=crop&auto=format`}
@@ -63,7 +75,7 @@ const MenuDescription = ({ data }) => {
   return (
     <div>
       {data.map((food, idx) => (
-        <Typography nowrap="true" key={idx} wrapper="span">
+        <Typography nowrap="true" key={idx} component={"div"}>
           <h3 sx={{ py: 2, fontSize: "h3.fontSize" }}>{food.name}</h3>
           <div>{food.description}</div>
         </Typography>
