@@ -8,7 +8,7 @@ const MenuPage = () => {
   return (
     <>
       <TopBanner title="Menu" description="Menu" />
-      <OrderBanner bgColor="common.white" />
+      <OrderBanner bgColor="common.white" text="People Can Find Us Here" />
       <TitlebarBelowImageList />
       <CenterDetailedMenuList />
       <BottomMenuImageList />
