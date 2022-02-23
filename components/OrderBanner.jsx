@@ -14,8 +14,7 @@ const OrderBanner = (props) => {
             sx={{
                 height: "29vw",
                 width: "100vw",
-                //palette 업데이트하고 바꾸기.
-                backgroundColor: "#FBF8ED",
+                backgroundColor: props.bgColor,
                 pt: 5,
                 pb: 5
               }}
