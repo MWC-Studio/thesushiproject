@@ -16,7 +16,6 @@ const OrderBanner = (props) => {
                 backgroundColor: props.bgColor,
                 pt: 5,
                 pb: 5
-                // mb: 15,
               }}
         >
             <Grid item xs={12}>
