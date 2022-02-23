@@ -16,7 +16,13 @@ export default function TitlebarBelowImageList() {
       }}
     >
       <Container sx={{ my: 7 }}>
-        <Typography sx={{ fontSize: "h1.fontSize", textAlign: "center" }}>
+       <Typography
+                    color="text"
+                    variant="h1"
+                    align="center"
+                    fontWeight={'fontWeightBold'}
+                    fontFamily={'Nunito'}
+                >
           Special Rolls
         </Typography>
 
