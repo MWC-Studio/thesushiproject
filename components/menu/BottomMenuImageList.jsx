@@ -26,7 +26,7 @@ export default function BottomMenuImageList() {
           Sushi Rollin' Experience
         </Typography>
 
-        <ImageList sx={{ p: 7 }} cols={4} gap={33}>
+        <ImageList sx={{ p: 7, overflow: "hidden" }} cols={4} gap={33}>
           {section3.map((item) => (
             <ImageListItem key={item.img}>
               <img
