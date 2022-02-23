@@ -19,10 +19,15 @@ export default function CenterDetailedMenuList() {
         <ImageList sx={{ p: 7 }} cols={3} gap={33}>
           {section2_1.map((item, idx) => (
             <ImageListItem key={idx}>
-              <Typography component={"div"}>
-                <h2 sx={{ fontSize: "h2.fontSize", textAlign: "left" }}>
-                  {item.category}
-                </h2>
+              <Typography
+                component={"div"}
+                color="text"
+                variant="h4"
+                align="left"
+                fontWeight={"fontWeightBold"}
+                fontFamily={"Nunito"}
+              >
+                <h4>{item.category}</h4>
               </Typography>
               <img
                 src={`${item.img}?w=380&h=380&fit=crop&auto=format`}
@@ -37,10 +42,17 @@ export default function CenterDetailedMenuList() {
           ))}
           {section2_2.map((item, idx) => (
             <ImageListItem key={idx}>
-              <Typography component={"div"}>
-                <h2 sx={{ fontSize: "h2.fontSize", textAlign: "left" }}>
+              <Typography
+                component={"div"}
+                color="text"
+                variant="h4"
+                align="left"
+                fontWeight={"fontWeightBold"}
+                fontFamily={"Nunito"}
+              >
+                <h4 sx={{ fontSize: "h2.fontSize", textAlign: "left" }}>
                   {item.category}
-                </h2>
+                </h4>
               </Typography>
               <img
                 src={`${item.img}?w=380&h=380&fit=crop&auto=format`}
