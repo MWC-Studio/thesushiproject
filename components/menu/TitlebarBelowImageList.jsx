@@ -26,7 +26,7 @@ export default function TitlebarBelowImageList() {
           Special Rolls
         </Typography>
 
-        <ImageList sx={{ p: 7 }} cols={3} gap={33}>
+        <ImageList sx={{ p: 7, overflow: "hidden" }} cols={3} gap={33}>
           {section1.map((item) => (
             <ImageListItem key={item.img}>
               <img

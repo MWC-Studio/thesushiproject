@@ -16,7 +16,7 @@ export default function CenterDetailedMenuList() {
       }}
     >
       <Container sx={{ my: 7 }}>
-        <ImageList sx={{ p: 7 }} cols={3} gap={33}>
+        <ImageList sx={{ p: 7, overflow: "hidden" }} cols={3} gap={33}>
           {section2_1.map((item, idx) => (
             <ImageListItem key={idx}>
               <Typography
@@ -58,7 +58,7 @@ export default function CenterDetailedMenuList() {
                 src={`${item.img}?w=380&h=380&fit=crop&auto=format`}
                 srcSet={`${item.img}?w=380&h=380&fit=crop&auto=format&dpr=2 2x`}
                 alt={item.title}
-                loading="lazy"
+                loading="eager"
               />
             </ImageListItem>
           ))}
