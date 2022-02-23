@@ -13,8 +13,10 @@ let theme = createTheme({
   },
   palette: {
     primary: { main: '#40464D', dark: '#262626', contrastText: '#FFFFFF' },
-    secondary: { main: '#FBF8ED', contrastText: '#F48A88' },
+    secondary: { main: '#F48A88' },
     text: { main: '#333333' },
+    neutral: { main: 'green' },
+    // common.beige #FBF8ED
   },
   typography: {
     fontFamily: ['Nunito', 'sans-serif'].join(','),

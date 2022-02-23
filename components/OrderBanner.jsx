@@ -68,6 +68,7 @@ const OrderBanner = (props) => {
             </Grid>
             <Grid item xs={12} align="center">
                 <Button>View Store Menu</Button>
+                <Typography color="neutral.main">hihi</Typography>
             </Grid>
         </Grid>
      );
