@@ -27,7 +27,7 @@ const OrderBanner = (props) => {
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
                 >
-                    Call for Pickup or Get it Delivered now!
+                    {props.text}
                 </Typography>
             </Grid>
             <Grid item xs={7}
