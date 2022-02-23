@@ -17,7 +17,6 @@ const TopBanner = (props) => {
                 width: "100vw",
               }}
         >
-            {/* TODO: isMobile ? different image src : */}
            <Image
                 src={ props.isMobile ? '/mobile-topbanner.svg' : `/${props.title}-banner.png` }
                 alt={`${props.title} banner`} 
