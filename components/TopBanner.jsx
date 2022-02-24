@@ -35,8 +35,7 @@ const TopBanner = (props) => {
             >
                 <Typography
                     color={'primary.contrastText'}
-                    // TODO: Update typography after PR
-                    variant={ props.isMobile ? "h3" : "h2" }
+                    variant={ props.isMobile ? "h2" : "h1" }
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}

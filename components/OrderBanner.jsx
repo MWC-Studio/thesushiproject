@@ -22,7 +22,7 @@ const OrderBanner = (props) => {
             <Grid item xs={12}>
                 <Typography
                     color="text"
-                    variant="h1"
+                    variant="h2"
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
