@@ -31,6 +31,7 @@ const TopBanner = (props) => {
                 sx={{
                     position: "absolute",
                     inset: 0,
+                    // TODO: Update value
                     left: props.isMobile ? '25%' : 0,
                 }}
             >
