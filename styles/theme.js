@@ -57,13 +57,19 @@ let theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 100,
-          // TODO: update mobile version
           height: 54,
           paddingLeft: 48,
           paddingRight: 48,
           paddingTop: 16,
           paddingBottom: 16,
-          //
+          // mobile button
+          '@media (max-width: 900px)': {
+            height: 43,
+            paddingLeft: 32,
+            paddingRight: 32,
+            paddingTop: 12,
+            paddingBottom: 12,
+          },
           backgroundColor: '#40464D',
           color: '#FFFFFF'
         },
