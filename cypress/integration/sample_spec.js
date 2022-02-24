@@ -1,9 +1,9 @@
 describe('Home page', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/');
+    cy.visit('/');
   })
   it('Should header have text', () => {
-    cy.contains('Best Sushi Roll')
+    cy.contains('Sushi Experience')
     cy.get("header").should("be.exist");
   })
 })

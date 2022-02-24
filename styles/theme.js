@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 // Create a theme instance.
 let theme = createTheme({
@@ -12,23 +12,30 @@ let theme = createTheme({
     },
   },
   palette: {
-    primary: { main: '#40464d' },
-    secondary: { main: '#f48a88' }
+    primary: { main: '#40464D', dark: '#262626', contrastText: '#FFFFFF' },
+    secondary: { main: '#FBF8ED', contrastText: '#F48A88' },
+    text: { main: '#333333' },
   },
   typography: {
-    fontFamily: [
-      'Nunito',
-      'sans-serif',
-    ].join(','),
+    fontFamily: ['Nunito', 'sans-serif'].join(','),
     fontWeightLight: 400,
     fontWeightBold: 700,
-    header1: {
+    h1: {
+      fontSize: 60
+    },
+    h2: {
       fontSize: 32,
     },
-    header2: {
+    h3: {
       fontSize: 20,
     },
-    header3: {
+    h4: {
+      fontSize: 18,
+    },
+    h5: {
+      fontSize: 12,
+    },
+    subject1: {
       fontSize: 16,
     },
     body1: {
@@ -37,10 +44,37 @@ let theme = createTheme({
     body2: {
       fontSize: 14,
     },
-    body3: {
-      fontSize: 12,
-    },    
+    button: {
+      fontWeight: 700,
+      fontSize: 16,
+      textTransform: "none"
+    },
   },
+  components: {
+    MuiButton: {
+      // TODO: update hover, active pseudo class
+      styleOverrides: {
+        root: {
+          borderRadius: 100,
+          // TODO: update mobile version
+          height: 54,
+          paddingLeft: 48,
+          paddingRight: 48,
+          paddingTop: 16,
+          paddingBottom: 16,
+          //
+          backgroundColor: '#40464D',
+          color: '#FFFFFF'
+        },
+        outlined: {
+          backgroundColor: 'transparent',
+          color: '#FAF6E8',
+          borderColor: '#FAF6E8',
+          borderWidth: 2,
+        }
+      },
+    }
+  }
 });
 
 theme = responsiveFontSizes(theme);

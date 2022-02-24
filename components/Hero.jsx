@@ -1,7 +1,7 @@
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import ArrowDownward from "@mui/icons-material/ArrowDownward";
-import Image from "next/image";
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import ArrowDownward from '@mui/icons-material/ArrowDownward';
+import Image from 'next/image';
 
 const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
   return (
@@ -10,7 +10,7 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
       container
       sx={{
         position: `relative`,
-        height: "100vh",
+        height: '100vh',
         width: `100vw`,
         overflow: `hidden`,
         zIndex: -100,
@@ -21,9 +21,9 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
       <Grid
         container
         sx={{
-          position: "absolute",
+          position: 'absolute',
           inset: 0,
-          backgroundColor: "rgba(0,0,0, .7)",
+          backgroundColor: 'rgba(0,0,0, .7)',
         }}
       >
         <Grid
@@ -38,7 +38,7 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
             align="center"
             gutterBottom
             sx={{
-              color: "secondary.main",
+              color: 'secondary.main',
               fontWeight: 400,
             }}
           >
@@ -66,3 +66,16 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
 };
 
 export default Hero;
+
+// const SectionAbout = () => {
+//   return (
+//     <Container component="section" maxWidth="md" sx={{ mb: 15 }}>
+//       <Grid container spacing={3}>
+//         <Grid item xs={12} sm={6}></Grid>
+//         <Grid item xs={12} sm={6}></Grid>
+//       </Grid>
+//     </Container>
+//   );
+// };
+
+// export default SectionAbout;
