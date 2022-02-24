@@ -4,7 +4,7 @@ import Image from "next/image";
 const TopBanner = (props) => {
     let btn;
     if (props.title == "Home") {
-        btn = <Button variant="outlined">Franchise</Button>
+        btn = <Button variant="outlined" sx={{marginTop: '2%'}}>Franchise</Button>
     }
 
     return ( 
@@ -31,14 +31,18 @@ const TopBanner = (props) => {
                 sx={{
                     position: "absolute",
                     inset: 0,
-                    // TODO: Update value
-                    left: props.isMobile ? '25%' : 0,
+                    left: props.isMobile ? '24%' : 0,
                 }}
             >
                 <Typography
                     color={'primary.contrastText'}
                     // TODO: isMobile should be h2 but seems too small.
-                    variant={ props.isMobile ? "h1" : "h1" }
+                    variant={ 
+                        props.isMobile ? 
+                            props.title == "Home" ?
+                                "h2" : "h1" 
+                            : 
+                            "h1" }
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
