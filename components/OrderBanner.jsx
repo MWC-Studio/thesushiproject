@@ -22,7 +22,7 @@ const OrderBanner = (props) => {
             <Grid item xs={12}>
                 <Typography
                     color="text"
-                    variant="h1"
+                    variant="h2"
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
@@ -37,7 +37,7 @@ const OrderBanner = (props) => {
             >
                  <Grid item align="center" xs={3}>
                   <MuiNextLink
-                  sx={{ textDecoration: "none", color: "common.white" }}
+                  sx={{ textDecoration: "none", color: "primary.contrastText" }}
                   href="https://www.doordash.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -47,7 +47,7 @@ const OrderBanner = (props) => {
                 </Grid>
                 <Grid item align="center" xs={3}>
                  <MuiNextLink
-                 sx={{ textDecoration: "none", color: "common.white" }}
+                 sx={{ textDecoration: "none", color: "primary.contrastText" }}
                  href="https://www.grubhub.com/"
                  target="_blank"
                  rel="noopener noreferrer"
@@ -57,7 +57,7 @@ const OrderBanner = (props) => {
                 </Grid>
                 <Grid item align="center" xs={1}>
                   <MuiNextLink
-                  sx={{ textDecoration: "none", color: "common.white" }}
+                  sx={{ textDecoration: "none", color: "primary.contrastText" }}
                   href="https://www.yelp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
