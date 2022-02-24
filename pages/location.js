@@ -14,7 +14,7 @@ const LocationPage = (props) => {
           <QuiltedImages /> 
       }
       <LocationInfoSection />
-      <OrderBanner bgColor="common.beige" text="Call for Pickup or Get it Delivered now!" />
+      <OrderBanner bgColor="common.beige" isMobile={props.isMobile} text="Call for Pickup or Get it Delivered now!" mText="Find us here!" />
     </>
   )
 };
