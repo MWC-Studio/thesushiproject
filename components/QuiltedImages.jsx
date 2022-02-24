@@ -21,12 +21,6 @@ export default function QuiltedImageList() {
         alignItems="center"
         mt={8}
         px={10}
-        // sx={{
-        //     backgroundColor: {
-        //         md: "green",
-        //         lg: "yellow"
-        //     },
-        // }}
     >
         <ImageList
             variant="quilted"
