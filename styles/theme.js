@@ -53,14 +53,17 @@ let theme = createTheme({
   },
   components: {
     MuiButton: {
+      // TODO: update hover, active pseudo class
       styleOverrides: {
         root: {
           borderRadius: 100,
+          // TODO: update mobile version
           height: 54,
           paddingLeft: 48,
           paddingRight: 48,
           paddingTop: 16,
           paddingBottom: 16,
+          //
           backgroundColor: '#40464D',
           color: '#FFFFFF'
         },

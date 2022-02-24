@@ -4,7 +4,7 @@ import Image from "next/image";
 const TopBanner = (props) => {
     let btn;
     if (props.title == "Home") {
-        btn = <Button color="secondary" variant="outlined">Franchise</Button>
+        btn = <Button variant="outlined">Franchise</Button>
     }
 
     return ( 
@@ -17,8 +17,8 @@ const TopBanner = (props) => {
                 width: "100vw",
               }}
         >
-           <Image 
-                src={`/${props.title}-banner.png`} 
+           <Image
+                src={ props.isMobile ? '/mobile-topbanner.svg' : `/${props.title}-banner.png` }
                 alt={`${props.title} banner`} 
                 layout="fill" 
                 objectFit="cover"
@@ -34,8 +34,8 @@ const TopBanner = (props) => {
                 }}
             >
                 <Typography
-                    color="primary.contrastText"
-                    variant="h2"
+                    color={'primary.contrastText'}
+                    variant={ props.isMobile ? "h2" : "h1" }
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
