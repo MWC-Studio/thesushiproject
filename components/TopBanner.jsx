@@ -15,10 +15,10 @@ const TopBanner = (props) => {
                 position: "relative",
                 height: "30vw",
                 width: "100vw",
-              }}
+            }}
         >
            <Image
-                src={ props.isMobile ? '/mobile-topbanner.svg' : `/${props.title}-banner.png` }
+                src={ props.isMobile ? `/${props.title}-mobile-banner.svg` : `/${props.title}-banner.svg` }
                 alt={`${props.title} banner`} 
                 layout="fill" 
                 objectFit="cover"
@@ -31,11 +31,13 @@ const TopBanner = (props) => {
                 sx={{
                     position: "absolute",
                     inset: 0,
+                    left: props.isMobile ? '25%' : 0,
                 }}
             >
                 <Typography
                     color={'primary.contrastText'}
-                    variant={ props.isMobile ? "h2" : "h1" }
+                    // TODO: isMobile should be h2 but seems too small.
+                    variant={ props.isMobile ? "h1" : "h1" }
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
@@ -46,7 +48,7 @@ const TopBanner = (props) => {
                 {btn}
             </Grid>
         </Grid>
-     );
+    );
 }
  
 export default TopBanner;
