@@ -27,7 +27,6 @@ let theme = createTheme({
     },
     header2: {
       fontSize: 20,
-      fontWeight: 'bold'
     },
     header3: {
       fontSize: 16,
