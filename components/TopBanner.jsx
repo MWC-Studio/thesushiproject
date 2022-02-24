@@ -19,7 +19,7 @@ const TopBanner = (props) => {
               }}
         >
            <Image 
-                src={`/${props.title}-banner.png`} 
+                src={`/${props.title}-banner.svg`} 
                 alt={`${props.title} banner`} 
                 layout="fill" 
                 objectFit="cover"
@@ -36,7 +36,7 @@ const TopBanner = (props) => {
             >
                 <Typography
                     color="white"
-                    variant="h2"
+                    variant="h1"
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
