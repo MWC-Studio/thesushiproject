@@ -15,7 +15,7 @@ export default function TitlebarBelowImageList() {
         bgcolor: "#FAF6E8",
       }}
     >
-      <Container sx={{ my: 7 }}>
+      <Container sx={{ mt: 8 }}>
         <Typography
           color="text"
           variant="h1"
@@ -35,13 +35,16 @@ export default function TitlebarBelowImageList() {
                 alt={item.title}
                 loading="eager"
               />
-
               <ImageListItemBar
-                title={item.name}
-                position="below"
+                position="below" />
+               <Typography
+                component={"div"}
+                color="text"
+                variant="body1"
                 align="center"
-                sx={{ fontSize: "h3.fontSize" }}
-              />
+                fontWeight={"fontWeightBold"}
+                fontFamily={"Nunito"}
+              >{item.name}</Typography>
             </ImageListItem>
           ))}
         </ImageList>
