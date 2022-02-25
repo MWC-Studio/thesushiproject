@@ -2,14 +2,14 @@ import TopBanner from "@components/TopBanner";
 import QuiltedImages from "@components/QuiltedImages";
 import LocationInfoSection from "@components/LocationInfoSection";
 import OrderBanner from "@components/OrderBanner";
+import CarouselMobileImage from "@components/CarouselMobileImage";
 
 const LocationPage = (props) => {
   return (
     <>
       <TopBanner title="Locations" description="Locations" isMobile={props.isMobile} />
-      {/* TODO: Update carousel here */}
       { props.isMobile ? 
-          <h1>hi</h1> 
+          <CarouselMobileImage />
           : 
           <QuiltedImages /> 
       }
