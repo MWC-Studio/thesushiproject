@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 
 import Hero from "@components/Hero";
 import SectionAbout from "@components/SectionAbout";
-import SectionImage from "@components/SectionImage";
+import SectionMenu from "@components/SectionMenu";
 import SectionReview from "@components/SectionReview";
 import NavigationCard from "@components/NavigationCard";
 import TopBanner from "@components/TopBanner";
@@ -15,11 +15,11 @@ const Homepage = () => {
      
       <SectionAbout />
 
-      <SectionImage imgSrc="/fusion-food.jpg" imgAlt="fusion food" />
+      <SectionMenu imgSrc="/fusion-food.jpg" imgAlt="fusion food" />
 
       <SectionReview />
 
-      <SectionImage imgSrc="/sushi.jpg" imgAlt="fusion sushi" />
+      <SectionMenu imgSrc="/sushi.jpg" imgAlt="fusion sushi" />
 
       <Container maxWidth="lg" sx={{ my: 15 }}>
         <Grid container spacing={2}>
