@@ -156,7 +156,7 @@ const Footer = () => {
           </Grid>
         </Box>
         {/* Copyright */}
-        <Grid item sx={12}>
+        <Grid item xs={12}>
           <Typography align="center" color="common.white">
             Copyright by ©{new Date().getFullYear()} Sushi Rollin. All rights
             reserved.

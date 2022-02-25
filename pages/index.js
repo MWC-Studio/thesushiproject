@@ -8,10 +8,10 @@ import SectionReview from "@components/SectionReview";
 import NavigationCard from "@components/NavigationCard";
 import TopBanner from "@components/TopBanner";
 
-const Homepage = () => {
+const Homepage = (props) => {
   return (
     <>
-      <TopBanner title="Home" description="Re-thinking the" second="Sushi Experience" />
+      <TopBanner title="Home" isMobile={props.isMobile} description="Re-thinking the" second="Sushi Experience" />
      
       <SectionAbout />
 
