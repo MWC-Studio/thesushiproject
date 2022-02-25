@@ -4,11 +4,11 @@ import BottomMenuImageList from "@components/menu/BottomMenuImageList";
 import CenterDetailedMenuList from "@components/menu/CenterDetailedMenuList";
 import OrderBanner from "@components/OrderBanner";
 
-const MenuPage = () => {
+const MenuPage = (props) => {
   return (
     <>
-      <TopBanner title="Menu" description="Menu" />
-      <OrderBanner bgColor="common.white" text="People Can Find Us Here" />
+      <TopBanner title="Menu" description="Menu" isMobile={props.isMobile} />
+      <OrderBanner bgColor="common.white" isMobile={props.isMobile} text="People Can Find Us Here" />
       <TitlebarBelowImageList />
       <CenterDetailedMenuList />
       <BottomMenuImageList />

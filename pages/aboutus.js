@@ -1,10 +1,10 @@
 import TopBanner from '@components/TopBanner';
 import About from '@components/About';
 
-const AboutUsPage = () => {
+const AboutUsPage = (props) => {
   return (
     <>
-      <TopBanner title="About" description="About" />
+      <TopBanner title="About" description="About" isMobile={props.isMobile} />
       <About />
     </>
   );
