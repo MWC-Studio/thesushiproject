@@ -25,7 +25,8 @@
     "next": "^11.1.2",
     "next-images": "^1.8.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-material-ui-carousel": "^3.2.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
