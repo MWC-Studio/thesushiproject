@@ -27,19 +27,56 @@ const OrderBanner = (props) => {
           fontWeight={"fontWeightBold"}
           fontFamily={"Nunito"}
         >
-          {props.text}
-        </Typography>
-      </Grid>
-      <Grid item xs={7} container justifyContent="center" alignItems="center">
-        <Grid item align="center" xs={3}>
-          <MuiNextLink
-            sx={{ textDecoration: "none", color: "common.white" }}
-            href="https://www.doordash.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <OrderAppIcon1 />
-          </MuiNextLink>
+            <Grid item xs={12}>
+                <Typography
+                    color="text"
+                    variant="h2"
+                    align="center"
+                    fontWeight={'fontWeightBold'}
+                    fontFamily={'Nunito'}
+                >
+                    {props.text}
+                </Typography>
+            </Grid>
+            <Grid item xs={7}
+                container
+                justifyContent="center"
+                alignItems="center"
+            >
+                 <Grid item align="center" xs={3}>
+                  <MuiNextLink
+                  sx={{ textDecoration: "none", color: "primary.contrastText" }}
+                  href="https://www.doordash.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                    <OrderAppIcon1 />
+                  </MuiNextLink>
+                </Grid>
+                <Grid item align="center" xs={3}>
+                 <MuiNextLink
+                 sx={{ textDecoration: "none", color: "primary.contrastText" }}
+                 href="https://www.grubhub.com/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 >
+                    <OrderAppIcon2 />
+                 </MuiNextLink>
+                </Grid>
+                <Grid item align="center" xs={1}>
+                  <MuiNextLink
+                  sx={{ textDecoration: "none", color: "primary.contrastText" }}
+                  href="https://www.yelp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                     <OrderAppIcon3 />
+                  </MuiNextLink>
+                 </Grid>
+            </Grid>
+            <Grid item xs={12} align="center">
+                <Button>View Store Menu</Button>
+            </Grid>
         </Grid>
         <Grid item align="center" xs={3}>
           <MuiNextLink
