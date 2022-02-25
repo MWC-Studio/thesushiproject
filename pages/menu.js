@@ -10,19 +10,19 @@ const MenuPage = (props) => {
   return (
     <>
       <TopBanner title="Menu" description="Menu" isMobile={props.isMobile} />
-      { props.isMobile ? 
-          <>
-            <CarouselSpecialRoll />
-            <CategoriList />
-            <OrderBanner bgColor="common.white" isMobile={props.isMobile} text="People Can Find Us Here" />
-          </>
-          : 
-          <>
-            <OrderBanner bgColor="common.white" isMobile={props.isMobile} text="People Can Find Us Here" />
-            <TitlebarBelowImageList />
-            <CenterDetailedMenuList />
-            <BottomMenuImageList />
-          </>
+      {props.isMobile ?
+        <>
+          <CarouselSpecialRoll />
+          <CategoriList />
+          <OrderBanner bgColor="common.white" isMobile={props.isMobile} text="People Can Find Us Here" />
+        </>
+        :
+        <>
+          <OrderBanner bgColor="common.white" isMobile={props.isMobile} text="People Can Find Us Here" />
+          <TitlebarBelowImageList />
+          <CenterDetailedMenuList />
+          <BottomMenuImageList />
+        </>
       }
     </>
   );
