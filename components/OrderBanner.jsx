@@ -19,15 +19,7 @@ const OrderBanner = (props) => {
         pb: 5,
       }}
     >
-      <Grid item xs={12}>
-        <Typography
-          color="text"
-          variant="h1"
-          align="center"
-          fontWeight={"fontWeightBold"}
-          fontFamily={"Nunito"}
-        >
-            <Grid item xs={12}>
+          <Grid item xs={12}>
                 <Typography
                     color="text"
                     variant="h2"
@@ -74,31 +66,6 @@ const OrderBanner = (props) => {
                   </MuiNextLink>
                  </Grid>
             </Grid>
-            <Grid item xs={12} align="center">
-                <Button>View Store Menu</Button>
-            </Grid>
-        </Grid>
-        <Grid item align="center" xs={3}>
-          <MuiNextLink
-            sx={{ textDecoration: "none", color: "common.white" }}
-            href="https://www.grubhub.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <OrderAppIcon2 />
-          </MuiNextLink>
-        </Grid>
-        <Grid item align="center" xs={1}>
-          <MuiNextLink
-            sx={{ textDecoration: "none", color: "common.white" }}
-            href="https://www.yelp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <OrderAppIcon3 />
-          </MuiNextLink>
-        </Grid>
-      </Grid>
       <Grid item xs={12} align="center">
         <Button>
           <MuiNextLink
