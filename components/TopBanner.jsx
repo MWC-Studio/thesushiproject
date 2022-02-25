@@ -4,7 +4,7 @@ import Image from "next/image";
 const TopBanner = (props) => {
     let btn;
     if (props.title == "Home") {
-        btn = <Button variant="outlined">Franchise</Button>
+        btn = <Button variant="outlined" sx={{marginTop: '2%'}}>Franchise</Button>
     }
 
     return ( 
@@ -13,12 +13,12 @@ const TopBanner = (props) => {
             container
             sx={{
                 position: "relative",
-                height: "30vw",
+                height: props.isMobile ? "40vw" : "30vw",
                 width: "100vw",
-              }}
+            }}
         >
            <Image
-                src={ props.isMobile ? '/mobile-topbanner.svg' : `/${props.title}-banner.png` }
+                src={ props.isMobile ? `/${props.title}-mobile-banner.svg` : `/${props.title}-banner.svg` }
                 alt={`${props.title} banner`} 
                 layout="fill" 
                 objectFit="cover"
@@ -31,11 +31,18 @@ const TopBanner = (props) => {
                 sx={{
                     position: "absolute",
                     inset: 0,
+                    left: props.isMobile ? '24%' : 0,
                 }}
             >
                 <Typography
                     color={'primary.contrastText'}
-                    variant={ props.isMobile ? "h2" : "h1" }
+                    // TODO: isMobile should be h2 but seems too small.
+                    variant={ 
+                        props.isMobile ? 
+                            props.title == "Home" ?
+                                "h2" : "h1" 
+                            : 
+                            "h1" }
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
@@ -46,7 +53,7 @@ const TopBanner = (props) => {
                 {btn}
             </Grid>
         </Grid>
-     );
+    );
 }
  
 export default TopBanner;
