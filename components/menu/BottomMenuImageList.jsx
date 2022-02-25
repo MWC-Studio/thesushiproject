@@ -15,7 +15,7 @@ export default function BottomMenuImageList() {
         bgcolor: "#FAF6E8",
       }}
     >
-      <Container sx={{ mt: 9 }} >
+      <Container sx={{ mt: 9 }}>
         <Typography
           color="text"
           variant="h2"
@@ -27,8 +27,8 @@ export default function BottomMenuImageList() {
         </Typography>
 
         <ImageList sx={{ p: 7, overflow: "hidden" }} cols={4} gap={33}>
-          {section3.map((item) => (
-            <ImageListItem key={item.img}>
+          {section3.map((item, idx) => (
+            <ImageListItem key={idx}>
               <img
                 src={`${item.img}?w=278&h=278&fit=crop&auto=format`}
                 srcSet={`${item.img}?w=278&h=278&fit=crop&auto=format&dpr=2 2x`}
