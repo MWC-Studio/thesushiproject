@@ -8,7 +8,7 @@ const MenuPage = (props) => {
   return (
     <>
       <TopBanner title="Menu" description="Menu" isMobile={props.isMobile} />
-      <OrderBanner bgColor="common.white" text="People Can Find Us Here" />
+      <OrderBanner bgColor="common.white" isMobile={props.isMobile} text="People Can Find Us Here" />
       <TitlebarBelowImageList />
       <CenterDetailedMenuList />
       <BottomMenuImageList />

@@ -1,7 +1,8 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 // Create a theme instance.
-let theme = createTheme({
+let theme = createTheme()
+theme = createTheme(theme , {
   breakpoints: {
     values: {
       xs: 0,
@@ -57,6 +58,7 @@ let theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 100,
+          // TODO: update mobile version, [theme.breakpoints.down('md')]
           height: 54,
           paddingLeft: 48,
           paddingRight: 48,

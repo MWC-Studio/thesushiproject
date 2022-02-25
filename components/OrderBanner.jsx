@@ -3,6 +3,7 @@ import OrderAppIcon1 from "../public/icons/doordash.svg";
 import OrderAppIcon2 from "../public/icons/grubhub.svg";
 import OrderAppIcon3 from "../public/icons/yelp.svg";
 import MuiNextLink from "@components/MuiNextLink";
+import { grey } from "@mui/material/colors";
 
 const OrderBanner = (props) => {
     return (
@@ -12,30 +13,30 @@ const OrderBanner = (props) => {
             justifyContent="center"
             alignItems="center"
             sx={{
-                height: "29vw",
+                height: props.isMobile ? "50vw" : "29vw",
                 width: "100vw",
-                backgroundColor: props.bgColor,
-                pt: 5,
-                pb: 5
+                backgroundColor: props.isMobile ? "common.white" : props.bgColor,
+                py: '4%',
               }}
         >
-            <Grid item xs={12}>
+            <Grid item lg={7} md={7} sm={9} xs={12}>
                 <Typography
                     color="text"
-                    variant="h2"
+                    // TODO: should be h3 in mobile, but seems too small
+                    variant={props.isMobile ? "h2" : "h2"}
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
                 >
-                    {props.text}
+                    { props.isMobile ? props.mText : props.text }
                 </Typography>
             </Grid>
-            <Grid item xs={7}
+            <Grid item lg={7} md={7} sm={9} xs={11}
                 container
                 justifyContent="center"
                 alignItems="center"
             >
-                 <Grid item align="center" xs={3}>
+                 <Grid item align="center" lg={3} md={4} sm={4} xs={5}>
                   <MuiNextLink
                   sx={{ textDecoration: "none", color: "primary.contrastText" }}
                   href="https://www.doordash.com/"
@@ -45,7 +46,7 @@ const OrderBanner = (props) => {
                     <OrderAppIcon1 />
                   </MuiNextLink>
                 </Grid>
-                <Grid item align="center" xs={3}>
+                <Grid item align="center" lg={3} md={4} sm={4} xs={4}>
                  <MuiNextLink
                  sx={{ textDecoration: "none", color: "primary.contrastText" }}
                  href="https://www.grubhub.com/"
@@ -55,7 +56,7 @@ const OrderBanner = (props) => {
                     <OrderAppIcon2 />
                  </MuiNextLink>
                 </Grid>
-                <Grid item align="center" xs={1}>
+                <Grid item align="center" lg={1} md={2} sm={2} xs={2}>
                   <MuiNextLink
                   sx={{ textDecoration: "none", color: "primary.contrastText" }}
                   href="https://www.yelp.com/"
@@ -66,7 +67,7 @@ const OrderBanner = (props) => {
                   </MuiNextLink>
                  </Grid>
             </Grid>
-            <Grid item xs={12} align="center">
+            <Grid item lg={7} md={7} sm={9} xs={12} align="center">
                 <Button>View Store Menu</Button>
             </Grid>
         </Grid>
