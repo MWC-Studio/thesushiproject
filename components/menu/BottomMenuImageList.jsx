@@ -15,10 +15,10 @@ export default function BottomMenuImageList() {
         bgcolor: "#FAF6E8",
       }}
     >
-      <Container sx={{ mt: 7 }}>
+      <Container sx={{ mt: 9 }} >
         <Typography
           color="text"
-          variant="h1"
+          variant="h2"
           align="center"
           fontWeight={"fontWeightBold"}
           fontFamily={"Nunito"}

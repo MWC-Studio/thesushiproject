@@ -22,7 +22,7 @@ export default function CenterDetailedMenuList() {
               <Typography
                 component={"div"}
                 color="text"
-                variant="h1"
+                variant="h2"
                 align="left"
                 fontWeight={"fontWeightBold"}
                 fontFamily={"Nunito"}
@@ -46,7 +46,7 @@ export default function CenterDetailedMenuList() {
               <Typography
                 component={"div"}
                 color="text"
-                variant="h1"
+                variant="h2"
                 align="left"
                 fontWeight={"fontWeightBold"}
                 fontFamily={"Nunito"}
@@ -79,7 +79,7 @@ const MenuDescription = ({ data }) => {
           <Typography
                 component={"div"}
                 color="text"
-                variant="header2"
+                variant="h3"
                 align="left"
                 fontWeight={"fontWeightBold"}
                 fontFamily={"Nunito"}

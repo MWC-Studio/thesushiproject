@@ -13,23 +13,30 @@ let theme = createTheme({
   },
   palette: {
     primary: { main: '#40464D', dark: '#262626', contrastText: '#FFFFFF' },
-    secondary: { main: '#FBF8ED', contrastText: '#F48A88' },
+    secondary: { main: '#F48A88' },
     text: { main: '#333333' },
+    common: { beige: '#FBF8ED' },
   },
   typography: {
     fontFamily: ['Nunito', 'sans-serif'].join(','),
     fontWeightLight: 400,
     fontWeightBold: 700,
     h1: {
-      fontSize: 32
+      fontSize: 60
     },
-    header1: {
+    h2: {
       fontSize: 32,
     },
-    header2: {
+    h3: {
       fontSize: 20,
     },
-    header3: {
+    h4: {
+      fontSize: 18,
+    },
+    h5: {
+      fontSize: 12,
+    },
+    subject1: {
       fontSize: 16,
     },
     body1: {
@@ -37,9 +44,6 @@ let theme = createTheme({
     },
     body2: {
       fontSize: 14,
-    },
-    body3: {
-      fontSize: 12,
     },
     button: {
       fontWeight: 700,
