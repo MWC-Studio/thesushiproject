@@ -3,7 +3,6 @@ import OrderAppIcon1 from "../public/icons/doordash.svg";
 import OrderAppIcon2 from "../public/icons/grubhub.svg";
 import OrderAppIcon3 from "../public/icons/yelp.svg";
 import MuiNextLink from "@components/MuiNextLink";
-import { grey } from "@mui/material/colors";
 
 const OrderBanner = (props) => {
     return (
