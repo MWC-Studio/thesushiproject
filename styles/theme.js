@@ -58,14 +58,13 @@ theme = createTheme(theme , {
       styleOverrides: {
         root: {
           borderRadius: 100,
-          // TODO: update mobile version, [theme.breakpoints.down('md')]
           height: 54,
           paddingLeft: 48,
           paddingRight: 48,
           paddingTop: 16,
           paddingBottom: 16,
           // mobile button
-          '@media (max-width: 900px)': {
+          [theme.breakpoints.down('md')]: {
             height: 43,
             paddingLeft: 32,
             paddingRight: 32,
