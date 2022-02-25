@@ -4,6 +4,7 @@ import BottomMenuImageList from "@components/menu/BottomMenuImageList";
 import CenterDetailedMenuList from "@components/menu/CenterDetailedMenuList";
 import OrderBanner from "@components/OrderBanner";
 import CarouselSpecialRoll from "@components/menu/CarouselSpecialRoll";
+import CategoriList from "@components/menu/CategoriList";
 
 const MenuPage = (props) => {
   return (
@@ -12,7 +13,7 @@ const MenuPage = (props) => {
       { props.isMobile ? 
           <>
             <CarouselSpecialRoll />
-            <TitlebarBelowImageList />
+            <CategoriList />
             <OrderBanner bgColor="common.white" isMobile={props.isMobile} text="People Can Find Us Here" />
           </>
           : 
@@ -20,9 +21,9 @@ const MenuPage = (props) => {
             <OrderBanner bgColor="common.white" isMobile={props.isMobile} text="People Can Find Us Here" />
             <TitlebarBelowImageList />
             <CenterDetailedMenuList />
+            <BottomMenuImageList />
           </>
       }
-      <BottomMenuImageList />
     </>
   );
 };
