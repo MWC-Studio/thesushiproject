@@ -67,11 +67,18 @@ const OrderBanner = (props) => {
                   </MuiNextLink>
                  </Grid>
             </Grid>
-            <Grid item lg={7} md={7} sm={9} xs={12} align="center">
-                <Button>View Store Menu</Button>
-            </Grid>
-        </Grid>
-     );
-}
- 
+      <Grid item lg={7} md={7} sm={9} xs={12} align="center">
+        <Button>
+          <MuiNextLink
+            sx={{ textDecoration: "none", color: "common.white" }}
+            href="/menu_page/menu.pdf"
+          >
+            View Store Menu
+          </MuiNextLink>
+        </Button>
+      </Grid>
+    </Grid>
+  );
+};
+
 export default OrderBanner;
