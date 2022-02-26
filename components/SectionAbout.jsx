@@ -20,25 +20,19 @@ const SectionAbout = () => {
           alignItems="center"
         >
           <Typography
-            component="header1"
-            variant="h4"
-            textAlign="center"
-            gutterBottom
-          >
-            About us
-          </Typography>
-          <Typography textAlign="center" sx={{ mb: 5 }}>
-            {`We mix Japanese and Western ingredients and cooking methods. Provide you
-    with a different tasting dimension with the fusion food in our restaurant.
-    Don't miss the chance to surprise your tongue!`}
+          color="text"
+          variant="h2"
+          align="center"
+          fontWeight={"fontWeightBold"}
+          fontFamily={"Nunito"}
+        >
+          About Us
+        </Typography>
+          <Typography textAlign="left" sx={{ my: 5 }}>
+            {`Your sushi experience should be special. Sushi Rollin’ provides quick, and Our food stays fresh `}
           </Typography>
           <MuiNextLink href="/aboutus" underline="none">
-          
-                <Button> Read More</Button>
-                {/*button color changed
-            <Button variant="outlined" size="large">
-            Read More
-            </Button>  */}
+            <Button> Read More</Button>
           </MuiNextLink>
         </Grid>
         {/*top image*/}
@@ -50,8 +44,7 @@ const SectionAbout = () => {
             width={800}
             height={600}
           />
-        </Grid>
-      
+        </Grid> 
       </Grid>
       {/*bottom*/}
       <Grid container spacing={3}>
@@ -74,18 +67,19 @@ const SectionAbout = () => {
           alignItems="center"
         >
           <Typography
-            component="header1"
-            variant="h4"
-            textAlign="center"
-            gutterBottom
-          >
-            Roll with us, It’s an opportunity that keeps rolling.
-          </Typography>
-          <Typography textAlign="center" sx={{ mb: 5 }}>
-            {`We mix Japanese and Western ingredients and cooking methods.`}
+          color="text"
+          variant="h2"
+          align="center"
+          fontWeight={"fontWeightBold"}
+          fontFamily={"Nunito"}
+        >
+          Roll with us, It’s an opportunity that keeps rolling.
+        </Typography>
+        <Typography textAlign="left" sx={{ my: 5 }}>
+            {`will be updated `}
           </Typography>
           <MuiNextLink href="/aboutus" underline="none">
-            <Button> Read More</Button>
+            <Button> Join Us Today</Button>
           </MuiNextLink>
         </Grid>
       </Grid>
