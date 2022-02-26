@@ -1,4 +1,6 @@
 export default function SectionLocationsInfo () {
-    return 
+    return (
+        <h2>Here is Location Info</h2>
+    )
 }
 
