@@ -40,7 +40,7 @@ const CarouselMobileImage = () => {
 
 function Item(props) {
     return (
-        <Paper>
+        <Paper elevation={0}>
             <Image src={props.item.src} width={300} height={300} layout="responsive" alt={props.item.name} />
         </Paper>
     )
