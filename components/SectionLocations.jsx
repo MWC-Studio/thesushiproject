@@ -4,6 +4,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import { section1 } from "/data/homelocations";
 import MuiNextLink from '@components/MuiNextLink';
+import SectionLocationsInfo from "@components/SectionLocationsInfo";
 
 export default function SectionLocations() {
   return (
@@ -36,21 +37,19 @@ export default function SectionLocations() {
                 alt={item.title}
                 loading="eager"
               />
-              <ImageListItemBar
-                position="below" />
-               <Typography
-                component={"div"}
-                color="text"
-                variant="body1"
-                align="center"
-                fontWeight={"fontWeightBold"}
-                fontFamily={"Nunito"}
-              >{item.name}</Typography>
             </ImageListItem>
           ))}
         </ImageList>
-        {/*<Grid item lg={7} md={7} sm={9} xs={12} align="center">
-        */}<Grid align="center"gutterBottom pb={10}>
+        <SectionLocationsInfo />
+        <Grid align="center"gutterBottom pb={10}>
+            <Button>
+                <MuiNextLink
+                    sx={{ textDecoration: "none", color: "common.white" }}
+                    href="/"
+                >
+                View Locations
+                </MuiNextLink>
+            </Button>
       </Grid>
       </Container>
     </Grid>
