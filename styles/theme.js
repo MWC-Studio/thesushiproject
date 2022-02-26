@@ -13,10 +13,11 @@ theme = createTheme(theme , {
     },
   },
   palette: {
-    primary: { main: '#40464D', dark: '#262626', contrastText: '#FFFFFF' },
+    primary: { main: '#40464D', contrastText: '#FFFFFF' },
     secondary: { main: '#F48A88' },
     text: { main: '#333333' },
     common: { beige: '#FBF8ED' },
+    footer: { main: '#262626' }
   },
   typography: {
     fontFamily: ['Nunito', 'sans-serif'].join(','),
