@@ -5,7 +5,7 @@ import MuiNextLink from '@components/MuiNextLink';
 
 const SectionAbout = () => {
   return (
-    <Container maxWidth="md" sx={{ my: 10 }}>
+    <Container maxWidth="lg" sx={{ my: 10 }}>
       <Grid container spacing={2}></Grid>
     {/*<Container component="section" maxWidth="md" sx={{ mb: 15 }}>chaged for up spacing*/}
       <Grid container spacing={3}>
