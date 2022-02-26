@@ -5,9 +5,18 @@ import ShanenReview from "./ReviewCard/Shanen";
 
 const SectionReview = () => {
   return (
-    <Container maxWidth="md" sx={{ my: 15 }}>
-      <Typography variant="h2" textAlign="center" sx={{ mb: 10 }}>
-        Customer Review
+    <Grid
+      component="section"
+      container
+      sx={{
+        position: "relative",
+        width: "100vw",
+        bgcolor: "#FAF6E8",
+      }}
+    >
+    <Container  maxWidth="md" sx={{ my: 8 }}>
+      <Typography variant="h2" textAlign="center" fontFamily={'Nunito'} fontWeight={'fontWeightBold'} sx={{ mb: 10 }}>
+      Here’s What the Customers Say
       </Typography>
       <Grid container spacing={2}>
         <Grid container item justifyContent="center" xs={12} sm={6} md={4}>
@@ -21,6 +30,7 @@ const SectionReview = () => {
         </Grid>
       </Grid>
     </Container>
+    </Grid>
   );
 };
 
