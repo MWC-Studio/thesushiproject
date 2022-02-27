@@ -55,6 +55,7 @@ theme = createTheme(theme , {
     },
     button: {
       fontWeight: 700,
+      fontFamily: 'Nunito',
       fontSize: 16,
       textTransform: "none"
     },
