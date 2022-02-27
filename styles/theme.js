@@ -36,10 +36,16 @@ theme = createTheme(theme , {
       fontSize: 18,
     },
     h5: {
+      fontSize: 16,
+    },
+    h6: {
       fontSize: 12,
     },
-    subject1: {
+    subtitle1: {
       fontSize: 16,
+    },
+    subtitle2: {
+      fontSize: 12,
     },
     body1: {
       fontSize: 16,
