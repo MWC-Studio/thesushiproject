@@ -14,7 +14,7 @@ const ContactUsBanner = (props) => {
                 py: '4%',
               }}
         >
-            <Grid item lg={7} md={7} sm={9} xs={12}>
+            <Grid item xs={12}>
                 <Typography
                     color="text"
                     variant={props.isMobile ? "h3" : "h2"}
@@ -25,7 +25,7 @@ const ContactUsBanner = (props) => {
                     Sounds Like A Good Opportunity?
                 </Typography>
             </Grid>
-            <Grid item lg={7} md={7} sm={9} xs={12}>
+            <Grid item xs={12}>
                 {props.isMobile ?
                     <Typography
                         color="text"
@@ -46,7 +46,7 @@ const ContactUsBanner = (props) => {
                         Contact us via Email or call us. You can also visit one of our locations.<br />Open to anyone who is passionate and is ready to get this rollin’.<br />Join us today!
                     </Typography> }
             </Grid>
-      <Grid item lg={7} md={7} sm={9} xs={12} align="center">
+      <Grid item xs={12} align="center">
           {/* TODO: Update an email address */}
         <Button 
             rel="noopener noreferrer"
