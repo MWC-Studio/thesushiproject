@@ -4,13 +4,17 @@ import Image from "next/image";
 
 // carousel 까지 최종 완성 후 sx에 있는 bgcolor 제거 할 것
 
-const LocationInfoSection = () => {
+const LocationInfoSection = (props) => {
   return (
-    <Container maxWidth="lg" sx={{ my: 15, bgcolor: "", padding: 1, width: 1100 }}>
-        <Grid container spacing={1} sx={{ bgcolor: "", width: 1043 }}>
-
-            <Grid container  spacing={0} justifyContent="top" sx={{ minHeight: 420, bgcolor: "" }} xs={12} md={6}>
-                <Grid item spacing={0} sx={{ height: 40, bgcolor: "" }} xs={12}>
+    <Container sx={{ my: 15, bgcolor: "" }}>
+        <Grid
+        container
+        justifyContent="center"
+        alignItems="center"
+        sx={{ bgcolor: "" }}
+        >
+            <Grid container padding={2} sx={{ minHeight: 420, bgcolor: "" }} xs={12} md={6} lg={6}>
+                <Grid item sx={{bgcolor: "" , paddingY: 3 }}>
                     <Image src={'/icons/logodot2.svg'} width={31} height={31}  />
                     <Typography 
                         color="primary"
@@ -24,8 +28,8 @@ const LocationInfoSection = () => {
                     Sushi Rollin' Garland
                     </Typography>
                 </Grid> 
-                <Grid container spacing={0} sx={{ paddingY: 3,  bgcolor: "" }} xs={12}>
-                    <Grid item xs={12} sx={{ paddingY: 2}}>
+                <Grid container sx={{ paddingY: 1 }}>
+                    <Grid item xs={12}>
                         <Typography 
                             color="primary"
                             variant="h3"
@@ -70,17 +74,15 @@ const LocationInfoSection = () => {
                         Service Offered
                         </Typography>
                         <Typography variant="body1" color="text.secondary" sx={{ mt: 1}}>
-                        service : 'Dine in, To-go, Delivery'
+                        Dine in, To-go, Delivery
                         </Typography>
                     </Grid>
                 </Grid>
             </Grid>
 
-            {/* <Grid container spacing={0} justifyContent="top" sx={{ bgcolor: "" }} xs={12} md={6}>
-                <Grid container spacing={1} sx={{ height: 40, bgcolor: "" }} xs={12}>
-                <Grid item spacing={0} sx={{ height: 40, bgcolor: "green" }} xs={12}> */}
-            <Grid container  spacing={0} justifyContent="top" sx={{ minHeight: 420, bgcolor: "" }} xs={12} md={6}>
-                <Grid item spacing={0} sx={{ height: 40, bgcolor: "" }} xs={12}>
+            {/* <Grid container padding={2} sx={{ minHeight: 400, bgcolor: props.isMobile ? "common.beige" : props.bgColor }} xs={12} md={6} lg={6}> */}
+            <Grid container padding={2} sx={{ minHeight: 400 }} xs={12} md={6} lg={6}>
+                <Grid item sx={{ height: 40, bgcolor: "" }} sx={{ paddingY: 3 }}>
             
                     <Image src={'/icons/logodot2.svg'} width={31} height={31}  />
                     <Typography 
@@ -96,8 +98,8 @@ const LocationInfoSection = () => {
                     </Typography>
                     
                 </Grid> 
-                <Grid container spacing={1} sx={{ paddingY: 3 }} xs={12}>
-                    <Grid item xs={12} sx={{ paddingY: 2}}>
+                <Grid container sx={{ paddingY: 1 }}>
+                    <Grid item xs={12}>
                         <Typography 
                             color="primary"
                             variant="h3"
