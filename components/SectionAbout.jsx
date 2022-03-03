@@ -4,10 +4,10 @@ import MuiNextLink from '@components/MuiNextLink';
 
 const SectionAbout = () => {
   return (
-    <Container maxWidth="lg" sx={{ my: 10 }}>
-      <Grid container spacing={2}></Grid>
+    <Container component="section" maxWidth="lg" sx={{ my: 10 }}>
+      {/* <Grid container></Grid> */}
       {/*<Container component="section" maxWidth="md" sx={{ mb: 15 }}>chaged for up spacing*/}
-      <Grid container spacing={1}>
+      <Grid container>
         {/*top text*/}
         <Grid
           item
@@ -46,7 +46,7 @@ const SectionAbout = () => {
         </Grid>
       </Grid>
       {/*bottom*/}
-      <Grid container spacing={3}>
+      <Grid container>
         <Grid item xs={12} sm={6}>
           <Image
             src="/sectionabout_bottom.svg"
