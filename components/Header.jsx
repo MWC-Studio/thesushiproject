@@ -1,18 +1,18 @@
-import AppBar from "@mui/material/AppBar";
-import Container from "@mui/material/Container";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import MuiNextLink from "@components/MuiNextLink";
-import { styled } from "@mui/system";
-import Navbar from "./Navbar";
-import SideDrawer from "./SideDrawer";
-import HideOnScroll from "./HideOnScroll";
-import Fab from "@mui/material/Fab";
-import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
-import BackToTop from "./BackToTop";
-import Logo from "../public/rollinlogodark.svg";
+import AppBar from '@mui/material/AppBar';
+import Container from '@mui/material/Container';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import MuiNextLink from '@components/MuiNextLink';
+import { styled } from '@mui/system';
+import Navbar from './Navbar';
+import SideDrawer from './SideDrawer';
+import HideOnScroll from './HideOnScroll';
+import Fab from '@mui/material/Fab';
+import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
+import BackToTop from './BackToTop';
+import Logo from '../public/rollinlogodark.svg';
 
-const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
+const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
 const navLinks = [
   { title: `Home`, path: `/` },
@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <>
       <HideOnScroll>
-        <AppBar sx = {{ bgcolor :"#FBF8ED" }} position="fixed">
+        <AppBar sx={{ bgcolor: 'common.beige' }} position="fixed">
           <Toolbar>
             <Container
               maxWidth="lg"
