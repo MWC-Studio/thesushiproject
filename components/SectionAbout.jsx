@@ -7,7 +7,7 @@ const SectionAbout = () => {
     <Container maxWidth="lg" sx={{ my: 10 }}>
       <Grid container spacing={2}></Grid>
       {/*<Container component="section" maxWidth="md" sx={{ mb: 15 }}>chaged for up spacing*/}
-      <Grid container spacing={3}>
+      <Grid container spacing={1}>
         {/*top text*/}
         <Grid
           item

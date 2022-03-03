@@ -30,7 +30,7 @@ export default function SectionMenu() {
           Rollin’ Experience
         </Typography>
 
-        <ImageList sx={{ p: 1, overflow: 'hidden' }} cols={3} gap={33}>
+        <ImageList sx={{ overflow: 'hidden' }} cols={3} gap={33}>
           {section1.map((item) => (
             <ImageListItem key={item.img}>
               <img
