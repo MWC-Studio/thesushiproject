@@ -39,7 +39,11 @@ const SideDrawer = ({ navLinks }) => {
             textTransform: `uppercase`,
           }}
         >
-          <MuiNextLink sx={{ color: 'text' }} href={path} underline="none">
+          <MuiNextLink
+            sx={{ color: 'primary.contrastText' }}
+            href={path}
+            underline="none"
+          >
             {title}
           </MuiNextLink>
         </Typography>
@@ -54,7 +58,7 @@ const SideDrawer = ({ navLinks }) => {
         aria-label="menu"
         onClick={toggleDrawer('right', true)}
         sx={{
-          color: `#40464D`,
+          color: 'primary.main',
           display: { xs: `inline`, md: `none` },
         }}
       >
@@ -66,7 +70,7 @@ const SideDrawer = ({ navLinks }) => {
         onClose={toggleDrawer('right', false)}
         sx={{
           '.MuiDrawer-paper': {
-            bgcolor: '#FBF8ED',
+            bgcolor: 'primary.main',
           },
         }}
       >
