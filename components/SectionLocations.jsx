@@ -1,10 +1,6 @@
 import { Button, Container, Grid, Typography } from '@mui/material';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { section1 } from '/data/homelocations';
+import Image from 'next/image';
 import MuiNextLink from '@components/MuiNextLink';
-import SectionLocationsInfo from '@components/SectionLocationsInfo';
 
 export default function SectionLocations() {
   return (
@@ -23,34 +19,28 @@ export default function SectionLocations() {
           align="center"
           fontWeight={'fontWeightBold'}
           fontFamily={'Nunito'}
+          sx={{ mb: 4 }}
         >
           Locations
         </Typography>
-        <ImageList sx={{ p: 7, overflow: 'hidden' }} cols={2} gap={33}>
-          {section1.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=380&h=380&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=380&h=380&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading="eager"
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
 
-        {/* TODO how we can arrange these two sections?
-        <SectionLocationsInfo /> */}
-
-        <Grid container sx={{ mb: 1 }}>
+        <Grid container sx={{ mb: 1 }} spacing={2}>
           <Grid item xs={12} sm={6}>
+            <Image
+              src="/home_page/location-garland.svg"
+              alt="Location Shshi Rollin"
+              // layout="responsive"
+              width="592"
+              height="420"
+            />
+
             <Typography
               color="text"
               variant="h3"
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={{ mb: 1 }}
+              sx={{ mb: 1, mt: 1 }}
             >
               Sushi Rollin'
             </Typography>
@@ -82,14 +72,23 @@ export default function SectionLocations() {
               (469) 798-7831
             </Typography>
           </Grid>
+
           <Grid item xs={12} sm={6}>
+            <Image
+              src="/home_page/location-lewisville.svg"
+              alt="about-us"
+              layout="responsive"
+              width="592"
+              height="420"
+            />
+
             <Typography
               color="text"
               variant="h3"
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={{ mb: 1 }}
+              sx={{ mb: 1, mt: 2 }}
             >
               Sushi Rollin' Lewisville
             </Typography>
