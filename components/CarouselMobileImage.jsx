@@ -7,19 +7,35 @@ const CarouselMobileImage = () => {
     var items = [
         {
             name: "Sushi Rollin Image 1",
-            src: "/location-topleft.svg",
+            src: "/locations/locations-carousel-1.svg",
         },
         {
             name: "Sushi Rollin Image 2",
-            src: "/location-bottomright.svg",
+            src: "/locations/locations-carousel-2.svg",
         },
         {
             name: "Sushi Rollin Image 3",
-            src: "/carousel-location-topright-3.svg",
+            src: "/locations/locations-carousel-3.svg",
         },
         {
             name: "Sushi Rollin Image 4",
-            src: "/carousel-location-topright-2.svg",
+            src: "/locations/locations-carousel-4.svg",
+        },
+        {
+            name: "Sushi Rollin Image 5",
+            src: "/locations/locations-carousel-5.svg",
+        },
+        {
+            name: "Sushi Rollin Image 6",
+            src: "/locations/locations-carousel-6.svg",
+        },
+        {
+            name: "Sushi Rollin Image 7",
+            src: "/locations/locations-carousel-7.svg",
+        },
+        {
+            name: "Sushi Rollin Image 8",
+            src: "/locations/locations-carousel-8.svg",
         },
     ]
 
@@ -40,9 +56,7 @@ const CarouselMobileImage = () => {
 
 function Item(props) {
     return (
-        <Paper>
-            <Image src={props.item.src} width={300} height={300} layout="responsive" alt={props.item.name} />
-        </Paper>
+        <Image src={props.item.src} width={343} height={266} layout="responsive" alt={props.item.name} />
     )
 }
  
