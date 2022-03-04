@@ -8,7 +8,7 @@ const CarouselMobileImage = () => {
            <Carousel
                 duration={500}
                 navButtonsAlwaysInVisible="true"
-                sx={{ p: 2}}
+                sx={{ p:2, mt:2 }}
                 indicatorIconButtonProps={{
                     style: {
                         padding: '10px',
