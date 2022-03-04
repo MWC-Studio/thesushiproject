@@ -9,6 +9,17 @@ const CarouselMobileImage = () => {
                 duration={500}
                 navButtonsAlwaysInVisible="true"
                 sx={{ p: 2}}
+                indicatorIconButtonProps={{
+                    style: {
+                        padding: '10px',
+                        color: '#40464D'
+                    }
+                }}
+                activeIndicatorIconButtonProps={{
+                    style: {
+                        color: '#F48A88'
+                    }
+                }}
             >
                {
                    items.map((item, index) => {
