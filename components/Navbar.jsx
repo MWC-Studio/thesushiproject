@@ -16,8 +16,10 @@ const Navbar = ({ navLinks }) => {
             key={`${title}${i}`}
             href={path}
             variant="button"
-            underline="none"
-            sx={{ color: 'text', opacity: 0.7, textTransform: 'none' }}
+            underline="hover"
+            // onClick={() => {
+            //   console.info("I'm a button.")
+            sx={{ color: 'text', opacity: 1, textTransform: 'none' }}
           >
             {title}
           </MuiNextLink>

@@ -1,7 +1,7 @@
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
+// import IconButton from '@mui/material/IconButton';
 import MuiNextLink from '@components/MuiNextLink';
 import { styled } from '@mui/system';
 import Navbar from './Navbar';
@@ -36,11 +36,11 @@ const Header = () => {
                 alignItems: `center`,
               }}
             >
-              <IconButton edge="start" aria-label="home">
-                <MuiNextLink activeClassName="active" href="/">
-                  <Logo />
-                </MuiNextLink>
-              </IconButton>
+              {/* <IconButton edge="start" aria-label="home"> */}
+              <MuiNextLink activeClassName="active" href="/">
+                <Logo />
+              </MuiNextLink>
+              {/* </IconButton> */}
               <Navbar navLinks={navLinks} />
               <SideDrawer navLinks={navLinks} />
             </Container>
