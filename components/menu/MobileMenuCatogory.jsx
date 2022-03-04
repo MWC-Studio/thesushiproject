@@ -1,15 +1,45 @@
-import React from "react";
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
 import { Typography } from "@mui/material";
+
+const preventDefault = (event) => event.preventDefault();
 
 function MobileMenuCatogory() {
   return (
-    <div>
+    <Box
+      sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        typography: 'body1',
+        '& > :not(style) + :not(style)': {
+          ml: 2,
+        },
+      }}
+      onClick={preventDefault}
+    >
      {categoryList.map((item, i) => (
-        <Item key={i} item={item} />
+        <Link 
+          href="#" 
+          underline="hover" 
+          key={i}
+          component={"div"}
+          color="text"
+          variant="h5"
+          fontWeight={"fontWeightBold"}
+          fontFamily={"Nunito"}
+          my={2}
+          mx={2}
+          align="center"
+        >
+          {item}
+        </Link>
       ))}
-    </div>
+    </Box>
   );
 }
+
 
 function Item(props) {
   return (
