@@ -19,7 +19,7 @@ const navLinks = [
   { title: `About`, path: `/aboutus` },
   { title: `Franchise`, path: `/franchise` },
   { title: `Menu`, path: `/menu` },
-  { title: `Locations`, path: `/location` },
+  { title: `Locations`, path: `/locations` },
 ];
 
 const Header = () => {
