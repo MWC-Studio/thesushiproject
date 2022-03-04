@@ -20,7 +20,6 @@ export default function QuiltedImageList() {
         justifyContent="center"
         alignItems="center"
         mt={8}
-        px={10}
     >
         <ImageList
             variant="quilted"

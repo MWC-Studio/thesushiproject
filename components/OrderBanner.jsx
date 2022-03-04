@@ -14,7 +14,7 @@ const OrderBanner = (props) => {
             sx={{
                 height: props.isMobile ? "50vw" : "29vw",
                 width: "100vw",
-                backgroundColor: props.isMobile ? "common.white" : props.bgColor,
+                backgroundColor: props.bgColor,
                 py: '4%',
               }}
         >
@@ -22,7 +22,7 @@ const OrderBanner = (props) => {
                 <Typography
                     color="text"
                     // TODO: should be h3 in mobile, but seems too small
-                    variant={props.isMobile ? "h2" : "h2"}
+                    variant={props.isMobile ? "h3" : "h2"}
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
