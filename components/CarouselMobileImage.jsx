@@ -33,10 +33,6 @@ const CarouselMobileImage = () => {
             name: "Sushi Rollin Image 7",
             src: "/locations/locations-carousel-7.svg",
         },
-        {
-            name: "Sushi Rollin Image 8",
-            src: "/locations/locations-carousel-8.svg",
-        },
     ]
 
     return (
