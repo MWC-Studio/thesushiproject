@@ -96,7 +96,7 @@ const LocationsContent = (props) => {
                     </Grid>
                 </Grid>
             </Grid>
-            { props.isMobile ? <Divider style={{ width:'100%'}} /> : null }
+            { props.isMobile ? <Divider sx={{ backgroundColor:'secondary.main' }} style={{ width:'100%'}} /> : null }
             
             <Grid container item lg={5} 
                 gap={ (props.isMobile) ? 3 : 5 }
