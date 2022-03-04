@@ -12,7 +12,7 @@ function srcset(image, size, rows = 1, cols = 1) {
   };
 }
 
-export default function QuiltedImageList() {
+export default function QuiltedImages() {
   return (
     <Grid
         container
@@ -43,41 +43,41 @@ export default function QuiltedImageList() {
 
 const itemData = [
     {
-        img: '/location-topleft.svg',
+        img: '/locations/location-topleft.svg',
         title: 'location image 1',
         rows: 2,
         cols: 2
     },
     {
-        img: '/location-topright-1.svg',
+        img: '/locations/location-topright-1.svg',
         title: 'location image 2',
         cols: 2
     },
     {
-        img: '/location-topright-2.svg',
+        img: '/locations/location-topright-2.svg',
         title: 'location image 3',
     },
     {
-        img: '/location-topright-3.svg',
+        img: '/locations/location-topright-3.svg',
         title: 'location image 4',
     },
     {
-        img: '/location-bottomleft-1.svg',
+        img: '/locations/location-bottomleft-1.svg',
         title: 'location image 5',
         cols: 2
     },
     {
-        img: '/location-bottomright.svg',
+        img: '/locations/location-bottomright.svg',
         title: 'location image 6',
         rows: 2,
         cols: 2
     },
     {
-        img: '/location-bottomleft-2.svg',
+        img: '/locations/location-bottomleft-2.svg',
         title: 'location image 7',
     },
     {
-        img: '/location-bottomleft-3.svg',
+        img: '/locations/location-bottomleft-3.svg',
         title: 'location image 8',
     },
 ];
