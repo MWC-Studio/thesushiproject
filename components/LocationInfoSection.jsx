@@ -17,6 +17,7 @@ const LocationInfoSection = (props) => {
                 <Grid item sx={{bgcolor: "" , paddingY: 3 }}>
                     <Image src={'/icons/logodot2.svg'} width={31} height={31}  />
                     <Typography 
+                    // color="text"
                         color="primary"
                         variant="h2"
                         align="left"

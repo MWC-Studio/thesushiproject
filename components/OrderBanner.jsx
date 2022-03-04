@@ -3,7 +3,6 @@ import OrderAppIcon1 from "../public/icons/doordash.svg";
 import OrderAppIcon2 from "../public/icons/grubhub.svg";
 import OrderAppIcon3 from "../public/icons/yelp.svg";
 import MuiNextLink from "@components/MuiNextLink";
-import { grey } from "@mui/material/colors";
 
 const OrderBanner = (props) => {
     return (
@@ -15,7 +14,7 @@ const OrderBanner = (props) => {
             sx={{
                 height: props.isMobile ? "50vw" : "29vw",
                 width: "100vw",
-                backgroundColor: props.isMobile ? "common.white" : props.bgColor,
+                backgroundColor: props.bgColor,
                 py: '4%',
               }}
         >
@@ -23,7 +22,7 @@ const OrderBanner = (props) => {
                 <Typography
                     color="text"
                     // TODO: should be h3 in mobile, but seems too small
-                    variant={props.isMobile ? "h2" : "h2"}
+                    variant={props.isMobile ? "h3" : "h2"}
                     align="center"
                     fontWeight={'fontWeightBold'}
                     fontFamily={'Nunito'}
