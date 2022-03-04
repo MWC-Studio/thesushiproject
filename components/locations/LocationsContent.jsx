@@ -1,6 +1,6 @@
 import { Grid, Typography, Divider } from "@mui/material";
-import Logo from "../public/icons/logo-circle-big.svg";
-import LogoS from "../public/icons/logo-circle-small.svg";
+import Logo from "../../public/icons/logo-circle-big.svg";
+import LogoS from "../../public/icons/logo-circle-small.svg";
 
 const LocationsContent = (props) => {
     return ( 

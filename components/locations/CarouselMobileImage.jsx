@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import Image from 'next/dist/client/image';
-import { Paper } from '@mui/material';
 
 const CarouselMobileImage = () => {
     var items = [

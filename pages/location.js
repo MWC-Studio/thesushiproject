@@ -1,8 +1,8 @@
 import TopBanner from "@components/TopBanner";
-import QuiltedImages from "@components/QuiltedImages";
+import QuiltedImages from "@components/locations/QuiltedImages";
 import OrderBanner from "@components/OrderBanner";
-import CarouselMobileImage from "@components/CarouselMobileImage";
-import LocationsContent from "@components/LocationsContent";
+import CarouselMobileImage from "@components/locations/CarouselMobileImage";
+import LocationsContent from "@components/locations/LocationsContent";
 
 const LocationPage = (props) => {
   return (
