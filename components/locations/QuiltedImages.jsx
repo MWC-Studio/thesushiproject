@@ -2,6 +2,7 @@ import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { Grid } from "@mui/material";
+import { items } from 'data/locationsQuiltedImgs';
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -27,7 +28,7 @@ export default function QuiltedImages() {
             rowHeight={230}
             gap={30}
         >
-        {itemData.map((item) => (
+        {items.map((item) => (
             <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
             <img
                 {...srcset(item.img, 230, item.rows, item.cols)}
@@ -40,44 +41,3 @@ export default function QuiltedImages() {
     </Grid>
   );
 }
-
-const itemData = [
-    {
-        img: '/locations/location-topleft.svg',
-        title: 'location image 1',
-        rows: 2,
-        cols: 2
-    },
-    {
-        img: '/locations/location-topright-1.svg',
-        title: 'location image 2',
-        cols: 2
-    },
-    {
-        img: '/locations/location-topright-2.svg',
-        title: 'location image 3',
-    },
-    {
-        img: '/locations/location-topright-3.svg',
-        title: 'location image 4',
-    },
-    {
-        img: '/locations/location-bottomleft-1.svg',
-        title: 'location image 5',
-        cols: 2
-    },
-    {
-        img: '/locations/location-bottomright.svg',
-        title: 'location image 6',
-        rows: 2,
-        cols: 2
-    },
-    {
-        img: '/locations/location-bottomleft-2.svg',
-        title: 'location image 7',
-    },
-    {
-        img: '/locations/location-bottomleft-3.svg',
-        title: 'location image 8',
-    },
-];
