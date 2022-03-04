@@ -1,16 +1,11 @@
 import React from "react";
 import { Typography } from "@mui/material";
-import { section1, section2 } from "data/menu";
-
 
 function MobileMenuCatogory() {
   return (
     <div>
-     {section1.map((item, i) => (
+     {categoryList.map((item, i) => (
         <Item key={i} item={item} />
-      ))}
-     {section2.map((item, i) => (
-        <Item2 key={i} item={item} />
       ))}
     </div>
   );
@@ -27,27 +22,14 @@ function Item(props) {
                   fontFamily={"Nunito"}
                   my={2}
       >
-      {props.item.type}
+      {props.item}
       </Typography>     
     </div>
   )
 }
 
-function Item2(props) {
-    return (
-      <div>
-        <Typography
-                    component={"div"}
-                    color="text"
-                    variant="h4"
-                    fontWeight={"fontWeightBold"}
-                    fontFamily={"Nunito"}
-                    my={2}
-        >
-        {props.item.category}
-        </Typography>     
-      </div>
-    )
-  }
+const categoryList = [
+  'Special Rolls', 'Appetizers', 'Fusion Bowl', 'Sashimi & Nigiri', 'Fried Rice', 'Regular Rolls', 'Hand Rolls'
+];
 
 export default MobileMenuCatogory;
