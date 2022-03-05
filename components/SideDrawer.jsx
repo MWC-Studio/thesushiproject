@@ -1,10 +1,10 @@
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import Menu from "@mui/icons-material/Menu";
-import MuiNextLink from "./MuiNextLink";
-import { useState } from "react";
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import Menu from '@mui/icons-material/Menu';
+import MuiNextLink from './MuiNextLink';
+import { useState } from 'react';
 
 const SideDrawer = ({ navLinks }) => {
   const [state, setState] = useState({
@@ -13,8 +13,8 @@ const SideDrawer = ({ navLinks }) => {
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
+      event.type === 'keydown' &&
+      (event.key === 'Tab' || event.key === 'Shift')
     ) {
       return;
     }
@@ -39,7 +39,11 @@ const SideDrawer = ({ navLinks }) => {
             textTransform: `uppercase`,
           }}
         >
-          <MuiNextLink sx={{ color: "#333333" }} href={path} underline="none" >
+          <MuiNextLink
+            sx={{ color: 'primary.contrastText' }}
+            href={path}
+            underline="none"
+          >
             {title}
           </MuiNextLink>
         </Typography>
@@ -52,9 +56,9 @@ const SideDrawer = ({ navLinks }) => {
       <IconButton
         edge="start"
         aria-label="menu"
-        onClick={toggleDrawer("right", true)}
+        onClick={toggleDrawer('right', true)}
         sx={{
-          color: `#40464D`,
+          color: 'primary.main',
           display: { xs: `inline`, md: `none` },
         }}
       >
@@ -63,14 +67,14 @@ const SideDrawer = ({ navLinks }) => {
       <Drawer
         anchor="right"
         open={state.right}
-        onClose={toggleDrawer("right", false)}
+        onClose={toggleDrawer('right', false)}
         sx={{
-          ".MuiDrawer-paper": {
-            bgcolor: "#FBF8ED",
+          '.MuiDrawer-paper': {
+            bgcolor: 'primary.main',
           },
         }}
       >
-        {list("right")}
+        {list('right')}
       </Drawer>
     </>
   );
