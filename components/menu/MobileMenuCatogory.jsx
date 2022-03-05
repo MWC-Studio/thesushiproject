@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import { Typography } from "@mui/material";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const preventDefault = (event) => event.preventDefault();
 
@@ -20,8 +19,8 @@ function MobileMenuCatogory() {
       onClick={preventDefault}
     >
      {categoryList.map((item, i) => (
-        <Link 
-          href="#" 
+        <AnchorLink 
+          href={"#" + item}
           underline="hover" 
           key={i}
           component={"div"}
@@ -34,32 +33,13 @@ function MobileMenuCatogory() {
           align="center"
         >
           {item}
-        </Link>
+        </AnchorLink>
       ))}
     </Box>
   );
 }
-
-
-function Item(props) {
-  return (
-    <div>
-      <Typography
-                  component={"div"}
-                  color="text"
-                  variant="h4"
-                  fontWeight={"fontWeightBold"}
-                  fontFamily={"Nunito"}
-                  my={2}
-      >
-      {props.item}
-      </Typography>     
-    </div>
-  )
-}
-
 const categoryList = [
-  'Special Rolls', 'Appetizers', 'Fusion Bowl', 'Sashimi & Nigiri', 'Fried Rice', 'Regular Rolls', 'Hand Rolls'
+  'Special Rolls', 'Appetizers', 'Fusion Bowls', 'Sashimi & Nigiri', 'Fried Rice', 'Regular Rolls', 'Hand Rolls'
 ];
 
 export default MobileMenuCatogory;
