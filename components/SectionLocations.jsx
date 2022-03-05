@@ -1,6 +1,6 @@
-import { Button, Container, Grid, Typography } from '@mui/material';
-import Image from 'next/image';
-import MuiNextLink from '@components/MuiNextLink';
+import { Button, Container, Grid, Typography } from "@mui/material";
+import Image from "next/image";
+import MuiNextLink from "@components/MuiNextLink";
 
 export default function SectionLocations() {
   return (
@@ -8,8 +8,8 @@ export default function SectionLocations() {
       component="section"
       container
       sx={{
-        position: 'relative',
-        width: '100vw',
+        position: "relative",
+        width: "100vw",
       }}
     >
       <Container sx={{ mt: 8 }}>
@@ -17,8 +17,8 @@ export default function SectionLocations() {
           color="text"
           variant="h2"
           align="center"
-          fontWeight={'fontWeightBold'}
-          fontFamily={'Nunito'}
+          fontWeight={"fontWeightBold"}
+          fontFamily={"Nunito"}
           sx={{ mb: 4 }}
         >
           Locations
@@ -38,8 +38,8 @@ export default function SectionLocations() {
               color="text"
               variant="h3"
               align="center"
-              fontWeight={'fontWeightBold'}
-              fontFamily={'Nunito'}
+              fontWeight={"fontWeightBold"}
+              fontFamily={"Nunito"}
               sx={{ mb: 1, mt: 1 }}
             >
               Sushi Rollin'
@@ -48,7 +48,7 @@ export default function SectionLocations() {
               color="text"
               variant="body1"
               align="center"
-              fontFamily={'Nunito'}
+              fontFamily={"Nunito"}
               sx={{ mb: 1 }}
             >
               6850 N Shiloh Rd, Garland, TX 75044
@@ -57,7 +57,7 @@ export default function SectionLocations() {
               color="text"
               variant="body1"
               align="center"
-              fontFamily={'Nunito'}
+              fontFamily={"Nunito"}
               sx={{ mb: 1 }}
             >
               6Opens Daily 11 a.m. - 9:30 p.m.
@@ -66,7 +66,7 @@ export default function SectionLocations() {
               color="text"
               variant="body1"
               align="center"
-              fontFamily={'Nunito'}
+              fontFamily={"Nunito"}
               sx={{ mb: 1 }}
             >
               (469) 798-7831
@@ -86,8 +86,8 @@ export default function SectionLocations() {
               color="text"
               variant="h3"
               align="center"
-              fontWeight={'fontWeightBold'}
-              fontFamily={'Nunito'}
+              fontWeight={"fontWeightBold"}
+              fontFamily={"Nunito"}
               sx={{ mb: 1, mt: 2 }}
             >
               Sushi Rollin' Lewisville
@@ -96,7 +96,7 @@ export default function SectionLocations() {
               color="text"
               variant="body1"
               align="center"
-              fontFamily={'Nunito'}
+              fontFamily={"Nunito"}
               sx={{ mb: 1 }}
             >
               1288 W Main St #142, Lewisville, TX 75067
@@ -105,7 +105,7 @@ export default function SectionLocations() {
               color="text"
               variant="body1"
               align="center"
-              fontFamily={'Nunito'}
+              fontFamily={"Nunito"}
               sx={{ mb: 1 }}
             >
               Opens Daily 11 a.m. - 9:00
@@ -114,7 +114,7 @@ export default function SectionLocations() {
               color="text"
               variant="body1"
               align="center"
-              fontFamily={'Nunito'}
+              fontFamily={"Nunito"}
               sx={{ mb: 1 }}
             >
               (817) 320-3722
@@ -122,10 +122,10 @@ export default function SectionLocations() {
           </Grid>
         </Grid>
 
-        <Grid align="center" gutterBottom pt={4} pb={4}>
+        <Grid align="center" pt={4} pb={4}>
           <Button>
             <MuiNextLink
-              sx={{ textDecoration: 'none', color: 'common.white' }}
+              sx={{ textDecoration: "none", color: "common.white" }}
               href="/"
             >
               View Locations

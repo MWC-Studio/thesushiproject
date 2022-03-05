@@ -17,7 +17,7 @@ const clientSideEmotionCache = createEmotionCache();
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   const themes = useTheme();
-  const isMobile = useMediaQuery(themes.breakpoints.down('md'));
+  const isMobile = useMediaQuery(themes.breakpoints.down("md"));
 
   return (
     <CacheProvider value={emotionCache}>
@@ -29,7 +29,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <Header />
         <Component {...pageProps} isMobile={isMobile} />
-        <Footer />
+        <Footer isMobile={isMobile} />
       </ThemeProvider>
     </CacheProvider>
   );

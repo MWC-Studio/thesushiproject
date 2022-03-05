@@ -1,9 +1,9 @@
-import { Button, Container, Grid, Typography } from '@mui/material';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { section1 } from '../data/homemenu';
-import MuiNextLink from '@components/MuiNextLink';
+import { Button, Container, Grid, Typography } from "@mui/material";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
+import { section1 } from "../data/homemenu";
+import MuiNextLink from "@components/MuiNextLink";
 
 export default function SectionMenu() {
   return (
@@ -11,9 +11,9 @@ export default function SectionMenu() {
       component="section"
       container
       sx={{
-        position: 'relative',
-        width: '100vw',
-        bgcolor: '#FAF6E8',
+        position: "relative",
+        width: "100vw",
+        bgcolor: "#FAF6E8",
       }}
     >
       <Container sx={{ mt: 8 }}>
@@ -24,13 +24,13 @@ export default function SectionMenu() {
           color="text"
           variant="h2"
           align="center"
-          fontWeight={'fontWeightBold'}
-          fontFamily={'Nunito'}
+          fontWeight={"fontWeightBold"}
+          fontFamily={"Nunito"}
         >
           Rollin’ Experience
         </Typography>
 
-        <ImageList sx={{ overflow: 'hidden' }} cols={3} gap={33}>
+        <ImageList sx={{ overflow: "hidden" }} cols={3} gap={33}>
           {section1.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -41,12 +41,12 @@ export default function SectionMenu() {
               />
               <ImageListItemBar position="below" />
               <Typography
-                component={'div'}
+                component={"div"}
                 color="text"
                 variant="body1"
                 align="center"
-                fontWeight={'fontWeightBold'}
-                fontFamily={'Nunito'}
+                fontWeight={"fontWeightBold"}
+                fontFamily={"Nunito"}
               >
                 {item.name}
               </Typography>
@@ -55,10 +55,10 @@ export default function SectionMenu() {
         </ImageList>
         {/*<Grid item lg={7} md={7} sm={9} xs={12} align="center">
          */}
-        <Grid align="center" gutterBottom pb={10}>
+        <Grid align="center" pb={10}>
           <Button>
             <MuiNextLink
-              sx={{ textDecoration: 'none', color: 'common.white' }}
+              sx={{ textDecoration: "none", color: "common.white" }}
               href="/menu"
             >
               View Store Menu
