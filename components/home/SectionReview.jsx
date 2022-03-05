@@ -1,7 +1,7 @@
 import { Container, Grid, Typography } from "@mui/material";
-import AlexReview from "./ReviewCard/Alex";
-import MonaReview from "./ReviewCard/Mona";
-import ShanenReview from "./ReviewCard/Shanen";
+import AlexReview from "@components/ReviewCard/Alex";
+import MonaReview from "@components/ReviewCard/Mona";
+import ShanenReview from "@components/ReviewCard/Shanen";
 
 const SectionReview = () => {
   return (

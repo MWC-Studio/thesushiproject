@@ -1,7 +1,7 @@
-import SectionAbout from "@components/SectionAbout";
-import SectionMenu from "@components/SectionMenu";
-import SectionReview from "@components/SectionReview";
-import SectionLocations from "@components/SectionLocations";
+import SectionAbout from "@components/home/SectionAbout";
+import SectionMenu from "@components/home/SectionMenu";
+import SectionReview from "@components/home/SectionReview";
+import SectionLocations from "@components/home/SectionLocations";
 import TopBanner from "@components/TopBanner";
 
 const Homepage = (props) => {
