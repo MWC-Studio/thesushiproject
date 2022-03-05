@@ -14,8 +14,9 @@ export default function MobileSpecialRolls() {
         width: "100vw",
         bgcolor: "#fff",
       }}
+      id='Special Rolls'
     >
-      <Container >
+      <Container>
         <ImageList sx={{ overflow: "hidden" }} cols={2} gap={16}>
           {section1.map((item, idx) => (
             <div key={idx} sx={{ width: 170, height: 171.5 }}>
