@@ -30,16 +30,21 @@ const AboutPage = () => {
           xs={12}
           sx={{ mb: 2, mt: 4 }}
         >
-         <Typography textAlign="center" color="#F48A88" gutterBottom py={1}>
-         Quick & Approachable while Keeping the Quality
-        </Typography>
-        <Typography
-          color="text"
-          variant="h2"
-          align="center"
-          fontWeight={"fontWeightBold"}
-          fontFamily={"Nunito"}
-          sx={{ mb: 8}}
+          <Typography textAlign="center" color="#F48A88" gutterBottom py={1}>
+            Quick & Approachable while Keeping the Quality
+          </Typography>
+          {/* font size = 36px */}
+          <Typography textAligh="center" variant="header1" gutterBottom py={1}>
+            That’s How We’re Rollin’
+          </Typography>
+        </Grid>
+        <Grid
+          item
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          xs={12}
+          sx={{ mb: 3, mt: 2 }}
         >
           That’s How We’re Rollin’
         </Typography>
@@ -63,29 +68,65 @@ const AboutPage = () => {
           container
           direction="column"
           justifyContent="center"
-          alignItems="left"
-          width={596}
-        > 
-          <Typography variant="body1" textAlign="left" color="#333333" pt={2}>
-          Your friendly neighborhood sushi place is here! 
-          </Typography>
-          <Typography>
-          In Sushi Rollin’ we offer freshness, variety, and authentic experience. A true hole in the wall where you expect something ordinary but walk out with a content belly and heart. We’ve been rolling since 2019.
-          </Typography>
+          alignItems="center"
+          xs={12}
+          sx={{ mb: 3, mt: 2 }}
+        >
+          <Image
+            src="/aboutpage/ceo_frame.svg"
+            alt="CEO"
+            // layout="responsive"
+            width="606"
+            height="546"
+          />
+          {/* <Typography variant="body1" textAlign="center">
+            “When people think about Sushi, It’s pricey and not an everyday kind
+            of experience. But with Sushi Rollin, the experience gets more
+            approachable but still unique." -The Chef CEO, June Kim-
+          </Typography> */}
         </Grid>
         <Grid
           container
           direction="column"
           justifyContent="center"
-          alignItems="left"
-          width={604} //596으로 하면 줄이 3줄이 됨 604부터 2줄
-        > 
-          <Typography variant="body1" textAlign="center" color="#333333" pt={12}>
-          “When people think about Sushi, It’s pricey and not an everyday kind of experience. But with Sushi Rollin, the experience gets more approachable but still unique."
-          </Typography>
-          <Typography variant="body1" textAlign="center" color="#333333" py={3} pb={5}>
-          -The Chef CEO, June Kim-
-          </Typography>
+          alignItems="center"
+          xs={12}
+          sx={{ mb: 2, mt: 2 }}
+        >
+          <Container
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Box>
+              <MuiNextLink href="/franchise" underline="none">
+                <Image
+                  src="/aboutpage/button_franchise.svg"
+                  alt="Francise oppurtunity"
+                  width="264"
+                  height="55"
+                />
+                {/* <Button variant="fill" size="large">
+                Franchise Oppurtunity
+              </Button> */}
+              </MuiNextLink>
+            </Box>
+
+            {/* might need to change button  */}
+            <Box sx={{ mb: 2, mt: 2 }}>
+              <MuiNextLink href="/menu" underline="none">
+                <Image
+                  src="/aboutpage/button_viewmenu.svg"
+                  alt="Francise oppurtunity"
+                  width="264"
+                  height="55"
+                />
+                {/* <Button variant="outlined" size="large">
+                View Our Menu
+              </Button> */}
+              </MuiNextLink>
+            </Box>
+          </Container>
         </Grid>
       {/*</Grid> */}  
           <MuiNextLink href="/franchise" underline="none" sx={{ my: 5 }} >
