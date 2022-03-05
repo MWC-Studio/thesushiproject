@@ -28,8 +28,6 @@ const AboutPage = () => {
           justifyContent="center"
           alignItems="center"
           xs={12}
-          flexDirection="column"
-          justifyContent="center"
           sx={{ mb: 2, mt: 4 }}
         >
           <Typography textAlign="center" color="#F48A88" gutterBottom py={1}>
@@ -46,8 +44,6 @@ const AboutPage = () => {
           justifyContent="center"
           alignItems="center"
           xs={12}
-          flexDirection="column"
-          justifyContent="center"
           sx={{ mb: 3, mt: 2 }}
         >
           <Image
@@ -68,8 +64,6 @@ const AboutPage = () => {
           justifyContent="center"
           alignItems="center"
           xs={12}
-          flexDirection="column"
-          justifyContent="center"
           sx={{ mb: 3, mt: 2 }}
         >
           <Image
@@ -91,8 +85,6 @@ const AboutPage = () => {
           justifyContent="center"
           alignItems="center"
           xs={12}
-          flexDirection="column"
-          justifyContent="center"
           sx={{ mb: 2, mt: 2 }}
         >
           <Container

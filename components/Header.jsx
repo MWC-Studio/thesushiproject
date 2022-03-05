@@ -6,11 +6,9 @@ import { styled } from '@mui/system';
 import Navbar from './Navbar';
 import SideDrawer from './SideDrawer';
 import Image from 'next/image';
-// import HideOnScroll from './HideOnScroll';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
 import BackToTop from './BackToTop';
-// import Logo from '../public/rollinlogodark.svg';
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
@@ -37,8 +35,12 @@ const Header = () => {
             }}
           >
             <MuiNextLink activeClassName="active" href="/">
-              {/* <Logo /> */}
-              <Image src="/rollindark.svg" alt="logo" width="257" height="44" />
+              <Image
+                src="/rollinlogodark.svg"
+                alt="logo"
+                width="257"
+                height="44"
+              />
             </MuiNextLink>
 
             <Navbar navLinks={navLinks} />
