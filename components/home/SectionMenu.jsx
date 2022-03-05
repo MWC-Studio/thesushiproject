@@ -2,7 +2,7 @@ import { Button, Container, Grid, Typography } from '@mui/material';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { section1 } from '../data/homemenu';
+import { section1 } from '../../data/homemenu';
 import MuiNextLink from '@components/MuiNextLink';
 
 export default function SectionMenu() {
@@ -17,7 +17,7 @@ export default function SectionMenu() {
       }}
     >
       <Container sx={{ mt: 8 }}>
-        <Typography textAlign="center" color="#F48A88" gutterBottom py={1}>
+        <Typography textAlign="center" color="#F48A88" >
           FAST & TASTY
         </Typography>
         <Typography
@@ -26,6 +26,7 @@ export default function SectionMenu() {
           align="center"
           fontWeight={'fontWeightBold'}
           fontFamily={'Nunito'}
+          pb={4}
         >
           Rollin’ Experience
         </Typography>
