@@ -17,7 +17,7 @@ export default function SectionMenu() {
       }}
     >
       <Container sx={{ mt: 8 }}>
-        <Typography textAlign="center" color="#F48A88" >
+        <Typography textAlign="center" color="#F48A88">
           FAST & TASTY
         </Typography>
         <Typography
@@ -56,7 +56,7 @@ export default function SectionMenu() {
         </ImageList>
         {/*<Grid item lg={7} md={7} sm={9} xs={12} align="center">
          */}
-        <Grid align="center" gutterBottom pb={10}>
+        <Grid align="center" pb={10}>
           <Button>
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'common.white' }}
