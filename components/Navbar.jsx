@@ -1,6 +1,6 @@
-import Stack from "@mui/material/Stack";
-import Toolbar from "@mui/material/Toolbar";
-import MuiNextLink from "./MuiNextLink";
+import Stack from '@mui/material/Stack';
+import Toolbar from '@mui/material/Toolbar';
+import MuiNextLink from './MuiNextLink';
 
 const Navbar = ({ navLinks }) => {
   return (
@@ -16,8 +16,17 @@ const Navbar = ({ navLinks }) => {
             key={`${title}${i}`}
             href={path}
             variant="button"
-            underline="none"
-            sx={{ color: `#333333`, opacity: 0.7 , textTransform: 'none'}}
+            underline="hover"
+            sx={{
+              color: 'text',
+              opacity: 1,
+              textTransform: 'none',
+              '&:hover': {
+                color: 'secondary.main',
+                backgroundColor: 'transparent',
+                textUnderlineOffset: '50%',
+              },
+            }}
           >
             {title}
           </MuiNextLink>

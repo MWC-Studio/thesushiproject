@@ -28,8 +28,6 @@ const AboutPage = () => {
           justifyContent="center"
           alignItems="center"
           xs={12}
-          flexDirection="column"
-          justifyContent="center"
           sx={{ mb: 2, mt: 4 }}
         >
           <Typography textAlign="center" color="#F48A88" gutterBottom py={1}>
@@ -46,30 +44,32 @@ const AboutPage = () => {
           justifyContent="center"
           alignItems="center"
           xs={12}
-          flexDirection="column"
-          justifyContent="center"
           sx={{ mb: 3, mt: 2 }}
         >
+          That’s How We’re Rollin’
+        </Typography>
+        {/*Image*/}
+         <Grid
+        container
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+        > 
           <Image
-            src="/aboutpage/about_img_outline.svg"
+            src="/aboutpage/about_img.svg"
             alt="Cooking"
-            width="588"
-            height="426"
+            width={592}
+            height={420}
           />
-          {/* need to change text color code */}
-          <Typography variant="body1" textAlign="center" color="#333333" py={2}>
-            Founded in 2019, Sushi Rollin’ has started with a chef who Chef Kim,
-            also the CEO of
-          </Typography>
         </Grid>
+      </Grid>
+          {/* need to change text color code */}
         <Grid
-          item
-          flexDirection="column"
+          container
+          direction="column"
           justifyContent="center"
           alignItems="center"
           xs={12}
-          flexDirection="column"
-          justifyContent="center"
           sx={{ mb: 3, mt: 2 }}
         >
           <Image
@@ -86,13 +86,11 @@ const AboutPage = () => {
           </Typography> */}
         </Grid>
         <Grid
-          item
-          flexDirection="column"
+          container
+          direction="column"
           justifyContent="center"
           alignItems="center"
           xs={12}
-          flexDirection="column"
-          justifyContent="center"
           sx={{ mb: 2, mt: 2 }}
         >
           <Container
@@ -130,8 +128,25 @@ const AboutPage = () => {
             </Box>
           </Container>
         </Grid>
+      {/*</Grid> */}  
+          <MuiNextLink href="/franchise" underline="none" sx={{ my: 5 }} >
+            <Button> Franchise Opportunity</Button>
+          </MuiNextLink>
+          <MuiNextLink href="/menu" underline="none" sx={{ mb: 10 }}>
+            <Button 
+            style={{maxWidth: '263px', minWidth: '263px'}}
+            variant="outlined" 
+            sx={{ 
+            borderColor: "primary.main", 
+            color: "primary.main"
+            }}
+          >
+          View Our Menu
+          </Button>
+          </MuiNextLink>
       </Grid>
     </Container>
+
   );
 };
 
