@@ -57,7 +57,8 @@ theme = createTheme(theme , {
       fontWeight: 700,
       fontFamily: 'Nunito',
       fontSize: 16,
-      textTransform: "none"
+      textTransform: "none",
+      fontFamily: 'Nunito'
     },
   },
   components: {

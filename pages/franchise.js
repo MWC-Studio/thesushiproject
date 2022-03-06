@@ -1,7 +1,7 @@
 import ContactUsBanner from "@components/ContactUsBanner";
 import TextImgGrid from "@components/TextImgGrid";
 import TextImgGridMobile from "@components/TextImgGridMobile";
-import FranchiseProcess from "@components/Franchise/FranchiseProcess";
+import FranchiseProcess from "@components/franchise/FranchiseProcess";
 import TopBanner from "@components/TopBanner";
 
 const FranchisePage = (props) => {
