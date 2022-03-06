@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import * as React from "react";
-import clsx from "clsx";
-import { useRouter } from "next/router";
-import NextLink from "next/link";
-import MuiLink from "@mui/material/Link";
+import * as React from 'react';
+import clsx from 'clsx';
+import { useRouter } from 'next/router';
+import NextLink from 'next/link';
+import MuiLink from '@mui/material/Link';
 
 export const NextLinkComposed = React.forwardRef(function NextLinkComposed(
   props,
@@ -42,7 +42,7 @@ export const NextLinkComposed = React.forwardRef(function NextLinkComposed(
 // https://nextjs.org/docs/#with-link
 const Link = React.forwardRef(function Link(props, ref) {
   const {
-    activeClassName = "active",
+    activeClassName = 'active',
     as: linkAs,
     className: classNameProps,
     href,
@@ -52,14 +52,14 @@ const Link = React.forwardRef(function Link(props, ref) {
   } = props;
 
   const router = useRouter();
-  const pathname = typeof href === "string" ? href : href.pathname;
+  const pathname = typeof href === 'string' ? href : href.pathname;
   const className = clsx(classNameProps, {
     [activeClassName]: router.pathname === pathname && activeClassName,
   });
 
   const isExternal =
-    typeof href === "string" &&
-    (href.indexOf("http") === 0 || href.indexOf("mailto:") === 0);
+    typeof href === 'string' &&
+    (href.indexOf('http') === 0 || href.indexOf('mailto:') === 0);
 
   if (isExternal) {
     if (noLinkStyle) {
