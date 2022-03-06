@@ -18,7 +18,7 @@ const TopBanner = (props) => {
             }}
         >
            <Image
-                src={ props.isMobile ? `/${props.title}-mobile-banner.svg` : `/${props.title}-banner.svg` }
+                src={ props.isMobile ? `/topbanner/${props.title}-mobile-banner.svg` : `/topbanner/${props.title}-banner.svg` }
                 alt={`${props.title} banner`} 
                 layout="fill" 
                 objectFit="cover"
