@@ -2,8 +2,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { section2 } from "data/menu";
-import { Divider } from '@mui/material';
-
+import { Divider } from "@mui/material";
 
 export default function MobileMenuDetails() {
   return (
@@ -16,13 +15,17 @@ export default function MobileMenuDetails() {
         bgcolor: "#fff",
       }}
     >
-       <Container sx={{ my: 2 }}>
+      <Container sx={{ my: 2 }}>
         <ImageList sx={{ p: 2, overflow: "hidden" }} cols={1}>
           {section2.map((item, idx) => (
-            <section id={item.category}>
-              <div key={idx}>
-                <Divider variant="fullWidth" color="red" classId={`s2menu${item.id}`} /> 
-                <ImageListItem sx={{ mt: 2 }} >
+            <section id={item.category} key={idx}>
+              <div>
+                <Divider
+                  variant="fullWidth"
+                  color="red"
+                  classID={`s2menu${item.id}`}
+                />
+                <ImageListItem sx={{ mt: 2 }}>
                   <Typography
                     component={"div"}
                     color="text"
