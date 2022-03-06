@@ -24,7 +24,6 @@ const Navbar = ({ navLinks }) => {
               '&:hover': {
                 color: 'secondary.main',
                 backgroundColor: 'transparent',
-                textUnderlineOffset: '50%',
               },
             }}
           >
