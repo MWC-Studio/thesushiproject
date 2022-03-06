@@ -1,13 +1,26 @@
-import { Button, Container, Grid, Typography } from '@mui/material';
+import {
+  Button,
+  Container,
+  Grid,
+  Typography,
+  Box,
+  useMediaQuery,
+} from '@mui/material';
 import Image from 'next/image';
 import MuiNextLink from '@components/MuiNextLink';
 
-const SectionAbout = () => {
+const SectionAbout = ({ isMobile }) => {
+  console.log('string', isMobile);
   return (
     <Container component="section" maxWidth="lg" sx={{ my: 10 }}>
-      {/* <Grid container></Grid> */}
       {/*<Container component="section" maxWidth="md" sx={{ mb: 15 }}>chaged for up spacing*/}
-      <Grid container>
+
+      <Grid
+        container
+        justifyContent="center"
+        alignItems="center"
+        direction={isMobile ? 'column-reverse' : 'row'}
+      >
         {/*top text*/}
         <Grid
           item
@@ -27,8 +40,9 @@ const SectionAbout = () => {
           >
             About Us
           </Typography>
-          <Typography textAlign="left" sx={{ my: 5 }}>
-            {`Your sushi experience should be special. Sushi Rollin’ provides quick, and Our food stays fresh `}
+          <Typography textAlign="left" sx={{ my: 5, px: 2 }}>
+            {`Your friendly neighborhood sushi place is here! 
+            In Sushi Rollin’ we offer freshness, variety, and authentic experience. A true hole in the wall where you expect something ordinary but walk out with a content belly and heart. We’ve been rolling since 2019.`}
           </Typography>
           <MuiNextLink href="/aboutus" underline="none">
             <Button> Read More</Button>
@@ -45,8 +59,9 @@ const SectionAbout = () => {
           />
         </Grid>
       </Grid>
+
       {/*bottom*/}
-      <Grid container>
+      <Grid container justifyContent="center" alignItems="center">
         <Grid item xs={12} sm={6}>
           <Image
             src="/sectionabout_bottom.svg"
@@ -72,10 +87,11 @@ const SectionAbout = () => {
             fontWeight={'fontWeightBold'}
             fontFamily={'Nunito'}
           >
-            Roll with us, It’s an opportunity that keeps rolling.
+            Roll with Us
           </Typography>
-          <Typography textAlign="left" sx={{ my: 5 }}>
-            {`will be updated `}
+          <Typography textAlign="left" sx={{ my: 5, px: 2 }}>
+            {`Sushi Rollin’ started its journey in the middle of Pandemic. Our business model successfully supported delivery focus experience. Over 500+ customer reviews prove that success! Now that we’re expanding, our focus has also evolved to provide a more approachable and enjoyable sushi experience. 
+            It’s an opportunity that keeps rolling. Join us today!  `}
           </Typography>
           <MuiNextLink href="/aboutus" underline="none">
             <Button> Join Us Today</Button>
