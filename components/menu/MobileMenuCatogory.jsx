@@ -1,8 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Typography } from "@mui/material";
-import Container from "@mui/material/Container";
+import { Grid, Typography } from "@mui/material";
 
 const preventDefault = (event) => event.preventDefault();
 
@@ -53,11 +52,11 @@ const categoryCSS = (categoryList) => {
 
 function MobileMenuCatogory() {
   return (
-    <Container>
+    <Grid my={5}>
       {categoryCSS(categoryList1)}
       {categoryCSS(categoryList2)}
       {categoryCSS(categoryList3)}
-    </Container>
+    </Grid>
   );
 }
 const categoryList1 = [

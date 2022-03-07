@@ -9,8 +9,6 @@ export default function MobileMenuDetails() {
      {section2.map((item, idx) => (
         <section id={item.category} key={idx}>
          <Grid
-          component="section"
-          container
           sx={{
           position: "relative",
           width: "100vw",
@@ -26,7 +24,7 @@ export default function MobileMenuDetails() {
                     align="center"
                     fontWeight={"fontWeightBold"}
                     fontFamily={"Nunito"}
-                    mb={3}
+                    my={3}
                 >
                     {item.category}
                 </Typography>

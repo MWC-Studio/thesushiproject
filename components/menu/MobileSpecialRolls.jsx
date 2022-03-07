@@ -2,7 +2,6 @@ import { Container, Grid, Typography } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { section1 } from "data/menu";
-import { borderRadius } from "@mui/system";
 
 export default function MobileSpecialRolls() {
   return (
