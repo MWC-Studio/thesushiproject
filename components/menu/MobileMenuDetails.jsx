@@ -38,10 +38,11 @@ export default function MobileMenuDetails() {
                     {item.category}
                   </Typography>
                   <img
-                    src={`${item.img}?w=343&h=130&fit=crop&auto=format`}
-                    srcSet={`${item.img}?w=343&h=130&fit=crop&auto=format&dpr=2 2x`}
+                    src={`${item.mobileImg}?w=343&h=130&fit=crop&auto=format`}
+                    srcSet={`${item.mobileImg}?w=343&h=130&fit=crop&auto=format&dpr=2 2x`}
                     alt={item.title}
                     loading="eager"
+                    //style={{width: '343px', height: '130px', objectFit: 'cover'}}
                   />
                 </ImageListItem>
                 <MenuDescription data={item.menu} key={idx} />
