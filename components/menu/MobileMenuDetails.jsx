@@ -42,6 +42,7 @@ export default function MobileMenuDetails() {
                     srcSet={`${item.img}?w=343&h=130&fit=crop&auto=format&dpr=2 2x`}
                     alt={item.title}
                     loading="eager"
+                    style={{width: '343px', height: '130px', objectFit: 'cover'}}
                   />
                 </ImageListItem>
                 <MenuDescription data={item.menu} key={idx} />
