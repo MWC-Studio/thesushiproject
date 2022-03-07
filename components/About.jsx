@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import Image from 'next/image';
 
 const AboutPage = () => {
+  console.log("TEST - please delete")
   return (
     <Container
       justify="center"
