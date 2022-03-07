@@ -13,7 +13,7 @@ const categoryCSS = (categoryList) => {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        my: 2,
+        my: 3,
         '& > :not(style) + :not(style)': {
           ml: 3
         },
@@ -25,6 +25,7 @@ const categoryCSS = (categoryList) => {
         href={"#" + item}
         style={{ textDecoration: 'none' }}
         key={i}
+        offset='50'
       >
       <Typography
         component={"div"}
@@ -33,7 +34,7 @@ const categoryCSS = (categoryList) => {
         align="center"
         fontWeight={"fontWeightBold"}
         fontFamily={"Nunito"}
-        mt={3}
+        my={1}
         sx={{
           '&:hover': {
             color: 'secondary.main',
