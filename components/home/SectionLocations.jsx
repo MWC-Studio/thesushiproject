@@ -122,7 +122,7 @@ export default function SectionLocations() {
           </Grid>
         </Grid>
 
-        <Grid align="center" gutterBottom pt={4} pb={4}>
+        <Grid align="center" pt={4} pb={4}>
           <Button>
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'common.white' }}
