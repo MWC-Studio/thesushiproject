@@ -38,8 +38,10 @@ function MobileMenuCatogory() {
                   mt={3}
                   sx={{
                     '&:hover': {
-                        color: '#F48A88',
-                        textDecoration: 'underline'
+                      color: 'secondary.main',
+                      backgroundColor: 'transparent',
+                      textUnderlineOffset: '50%',
+                      textDecoration: 'underline'
                   }}}
          >
             {item}
@@ -76,8 +78,10 @@ function MobileMenuCatogory() {
                   mt={3}
                   sx={{
                     '&:hover': {
-                        color: '#F48A88',
-                        textDecoration: 'underline'
+                      color: 'secondary.main',
+                      backgroundColor: 'transparent',
+                      textUnderlineOffset: '50%',
+                      textDecoration: 'underline'
                   }}}
          >
             {item}
@@ -114,8 +118,10 @@ function MobileMenuCatogory() {
                   my={3}
                   sx={{
                     '&:hover': {
-                        color: '#F48A88',
-                        textDecoration: 'underline'
+                      color: 'secondary.main',
+                      backgroundColor: 'transparent',
+                      textUnderlineOffset: '50%',
+                      textDecoration: 'underline'
                   }}}
          >
             {item}
