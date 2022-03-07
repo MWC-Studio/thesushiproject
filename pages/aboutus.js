@@ -1,6 +1,6 @@
 import TopBanner from '@components/TopBanner';
-import TextImgGridMobile from "@components/TextImgGridMobile";
 import About from '@components/About';
+import AboutMobile from '@components/AboutMobile' ;
 
 const AboutUsPage = (props) => {
   return (
@@ -12,3 +12,4 @@ const AboutUsPage = (props) => {
 };
 
 export default AboutUsPage;
+
