@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import IconButton from '@material-ui/core/IconButton';
 
 
@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.up('xs')]: {
             right: '5%',
-            backgroundColor: 'rgb(220,220,220,0.7)',
         },
         [theme.breakpoints.up('lg')]: {
             right: '6.5%',
@@ -60,7 +59,7 @@ const ScrollToTop = ({
            {show &&
                 <IconButton 
                 onClick={handleClick} className={classes.toTop} aria-label="to top" component="span">
-                    <ExpandLessIcon />
+                    <ArrowUpwardIcon />
                 </IconButton>
             }
         </div>
