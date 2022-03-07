@@ -8,7 +8,7 @@ export const section1 = [
     {
         id: 2,
         name: 'Titanic Chef Special Roll',
-        img: '/menu_page/roll1.svg',
+        img: '/menu_page/roll1.jpg',
         type: 'Special Rolls'
     },
     {
@@ -32,7 +32,7 @@ export const section1 = [
     {
         id: 6,
         name: 'Rollin Burrito',
-        img: '/menu_page/roll5.svg',
+        img: '/menu_page/roll5.jpg',
         description: '',
         type: 'Special Rolls'
     }

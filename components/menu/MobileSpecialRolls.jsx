@@ -1,10 +1,10 @@
 import { Container, Grid, Typography } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import { section2 } from "data/menu";
+import { section1 } from "data/menu";
 import { borderRadius } from "@mui/system";
 
-export default function CategoriList() {
+export default function MobileSpecialRolls() {
   return (
     <Grid
       component="section"
@@ -14,28 +14,29 @@ export default function CategoriList() {
         width: "100vw",
         bgcolor: "#fff",
       }}
+      id='Special Rolls'
     >
-      <Container sx={{ my: 2 }}>
+      <Container>
         <ImageList sx={{ overflow: "hidden" }} cols={2} gap={16}>
-          {section2.map((item, idx) => (
+          {section1.map((item, idx) => (
             <div key={idx} sx={{ width: 170, height: 171.5 }}>
               <ImageListItem>
                 <img
-                  src={`${item.img}?w=110&h=110&fit=crop&auto=format`}
-                  srcSet={`${item.img}?w=110&h=110&fit=crop&auto=format&dpr=2 2x`}
-                  alt={item.title}
+                  src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                  srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                  alt={item.name}
                   loading="eager"
                 />
                 <Typography
                   component={"div"}
                   color="text"
-                  variant="h4"
+                  variant="subtitle2"
                   align="center"
                   fontWeight={"fontWeightBold"}
                   fontFamily={"Nunito"}
                   my={2}
                 >
-                  {item.category}
+                  {item.name}
                 </Typography>
               </ImageListItem>
             </div>
