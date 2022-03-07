@@ -28,24 +28,27 @@ export default function TitlebarBelowImageList() {
 
         <ImageList sx={{ p: 7, overflow: "hidden" }} cols={3} gap={33}>
           {section1.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=380&h=380&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=380&h=380&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading="eager"
-              />
-              <ImageListItemBar
-                position="below" />
-               <Typography
-                component={"div"}
-                color="text"
-                variant="body1"
-                align="center"
-                fontWeight={"fontWeightBold"}
-                fontFamily={"Nunito"}
-              >{item.name}</Typography>
-            </ImageListItem>
+            <div key={item.img}>
+              <ImageListItem>
+                <img
+                  src={`${item.img}?w=380&h=380&fit=crop&auto=format`}
+                  srcSet={`${item.img}?w=380&h=380&fit=crop&auto=format&dpr=2 2x`}
+                  alt={item.title}
+                  loading="eager"
+                />
+                <ImageListItemBar position="below" />
+                <Typography
+                  component={"div"}
+                  color="text"
+                  variant="body1"
+                  align="center"
+                  fontWeight={"fontWeightBold"}
+                  fontFamily={"Nunito"}
+                >
+                  {item.name}
+                </Typography>
+              </ImageListItem>
+            </div>
           ))}
         </ImageList>
       </Container>

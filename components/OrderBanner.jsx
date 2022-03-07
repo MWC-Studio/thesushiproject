@@ -5,6 +5,7 @@ import OrderAppIcon3 from "../public/icons/yelp.svg";
 import MuiNextLink from "@components/MuiNextLink";
 
 const OrderBanner = (props) => {
+
     return (
         <Grid
             component="section"
@@ -70,7 +71,7 @@ const OrderBanner = (props) => {
         <Button>
           <MuiNextLink
             sx={{ textDecoration: "none", color: "common.white" }}
-            href="/menu_page/menu.pdf"
+            href="/menu_page/menu.jpg"
           >
             View Store Menu
           </MuiNextLink>
