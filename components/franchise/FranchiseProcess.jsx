@@ -1,14 +1,15 @@
-import { Grid, Typography, Avatar } from "@mui/material";
+import { Container, Grid, Typography, Avatar } from "@mui/material";
 
 const FranchiseProcess = (props) => {
     return (
+    <Container sx={{ mb: 3, mt: 3 }} >        
         <Grid container bgcolor=""
-            spacing={2}
+            flexDirection="column"
             justifyContent="center"
-            alignItems="center" 
-            py={8}
+            alignItems="center"
+            sx={{ mb: 3, mt: 8 }}
         >
-            <Grid item lg={12} my={7} bgcolor="">
+            <Grid item xs={12} sx={{ my: 7 }} bgcolor="">
                 <Typography 
                     variant={props.isMobile ? "h3" : "h2"}
                     color={'text'}
@@ -21,7 +22,7 @@ const FranchiseProcess = (props) => {
             </Grid>
             
             {itemProcess.map((item, idx) => (
-            <Grid container wrap="nowrap" spacing={2} padding={2} lg={9} mx={7}>
+            <Grid container item wrap="nowrap" spacing={2} padding={2} xs={11}>
                 <Grid item>
                     {props.isMobile ?
                     <Avatar sx={{ bgcolor: 'primary.main', width: 36, height: 36 }}>
@@ -69,9 +70,9 @@ const FranchiseProcess = (props) => {
             </Grid>
             ))}
             
-            
+              
         </Grid>
-
+    </Container> 
     )
 }
 
