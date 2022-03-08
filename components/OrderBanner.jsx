@@ -1,7 +1,5 @@
 import { Button, Grid, Typography } from "@mui/material";
-import OrderAppIcon1 from "../public/icons/doordash.svg";
-import OrderAppIcon2 from "../public/icons/grubhub.svg";
-import OrderAppIcon3 from "../public/icons/yelp.svg";
+import Image from 'next/image';
 import MuiNextLink from "@components/MuiNextLink";
 
 const OrderBanner = (props) => {
@@ -30,39 +28,39 @@ const OrderBanner = (props) => {
                     { props.isMobile ? props.mText : props.text }
                 </Typography>
             </Grid>
-            <Grid item lg={7} md={7} sm={9} xs={11}
+            <Grid item lg={7} md={8} sm={10} xs={11}
                 container
                 justifyContent="center"
                 alignItems="center"
             >
-                 <Grid item align="center" lg={3} md={4} sm={4} xs={5}>
+                 <Grid item align="center" lg={3} md={3} sm={4} xs={5}>
                   <MuiNextLink
                   sx={{ textDecoration: "none", color: "primary.contrastText" }}
                   href="https://www.doordash.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   >
-                    <OrderAppIcon1 />
+                    <Image src={'/icons/doordash.svg'} width={154} height={18} />
                   </MuiNextLink>
                 </Grid>
-                <Grid item align="center" lg={3} md={4} sm={4} xs={4}>
+                <Grid item align="center" lg={2} md={3} sm={3} xs={3}>
                  <MuiNextLink
                  sx={{ textDecoration: "none", color: "primary.contrastText" }}
                  href="https://www.grubhub.com/"
                  target="_blank"
                  rel="noopener noreferrer"
                  >
-                    <OrderAppIcon2 />
+                    <Image src={'/icons/grubhub.svg'} width={130} height={18} />
                  </MuiNextLink>
                 </Grid>
-                <Grid item align="center" lg={1} md={2} sm={2} xs={2}>
+                <Grid item align="center" lg={2} md={2} sm={3} xs={3}>
                   <MuiNextLink
                   sx={{ textDecoration: "none", color: "primary.contrastText" }}
                   href="https://www.yelp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   >
-                     <OrderAppIcon3 />
+                     <Image src={'/icons/yelp.svg'} width={85} height={30} />
                   </MuiNextLink>
                  </Grid>
             </Grid>
