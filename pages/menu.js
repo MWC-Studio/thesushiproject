@@ -18,7 +18,7 @@ const MenuPage = (props) => {
           <MobileMenuCatogory />
           <MobileSpecialRolls />
           <MobileMenuDetails />
-          <OrderBanner bgColor="common.white" isMobile={props.isMobile} text="People Can Find Us Here" />
+          <OrderBanner bgColor="common.white" isMobile={props.isMobile} mText="Find us here!" />
         </>
         :
         <>

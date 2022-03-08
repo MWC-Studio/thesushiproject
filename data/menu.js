@@ -1,5 +1,4 @@
-export const section1 = [
-    {
+export const section1 = [{
         id: 1,
         name: 'Shrimp Tempura Chef Special Roll',
         img: '/menu_page/roll0.svg',
@@ -38,13 +37,12 @@ export const section1 = [
     }
 ]
 
-export const section2 = [
-    {
+export const section2 = [{
         id: 1,
         category: "Appetizers",
         img: "/menu_page/section2-appetizer-img00.svg",
-        menu: [
-            {
+        mobileImg: "/menu_page/section2-appetizer-img00_mobile.jpeg",
+        menu: [{
                 name: "Edamame",
                 description: "Steamed and served warm with the sprinkle of salt"
             },
@@ -67,8 +65,8 @@ export const section2 = [
         id: 2,
         category: "Fusion Bowls",
         img: "/menu_page/section2-fusion-img01.svg",
-        menu: [
-            {
+        mobileImg: "/menu_page/section2-fusion-img01_mobile.jpeg",
+        menu: [{
                 name: 'Tuna Tower',
                 description: 'Fresh tuna, crab meat, avocado, spicy tuna on rice w/ house special sauce',
             },
@@ -94,8 +92,8 @@ export const section2 = [
         id: 3,
         category: 'Sashimi & Nigiri',
         img: "/menu_page/section2-sashimi-img02.svg",
-        menu: [
-            {
+        mobileImg: "/menu_page/section2-sashimi-img02_mobile.jpeg",
+        menu: [{
                 name: 'Upon Order',
                 description: 'Tuna, Salmon, Crabstick, Eel, Red Snapper, Shrimp, Flying Fish Roe, Smoked Salmon, White Tuna, Scallop',
             },
@@ -117,8 +115,8 @@ export const section2 = [
         id: 4,
         category: "Fried Rice",
         img: "/menu_page/section2-fried-img03.svg",
-        menu: [
-            {
+        mobileImg: "/menu_page/section2-fried-img03_mobile.jpeg",
+        menu: [{
                 name: 'Chicken Fried Rice',
                 description: '',
             },
@@ -136,70 +134,67 @@ export const section2 = [
         id: 5,
         category: 'Regular Rolls',
         img: "/menu_page/section2-regularrolls-img04.svg",
-        menu:
-            [
-                {
-                    name: 'Cucumber Roll',
-                    description: '',
-                },
-                {
-                    name: 'Avocado Roll',
-                    description: '',
-                },
-                {
-                    name: 'California Roll',
-                    description: '',
-                },
-                {
-                    name: 'Rainbow Special Roll',
-                    description: '',
-                },
-                {
-                    name: 'Spicy Tuna Roll',
-                    description: '',
-                },
-                {
-                    name: 'Spicy Shrimp Roll',
-                    description: '',
-                },
-            ]
+        mobileImg: "/menu_page/section2-regularrolls-img04_mobile.jpeg",
+        menu: [{
+                name: 'Cucumber Roll',
+                description: '',
+            },
+            {
+                name: 'Avocado Roll',
+                description: '',
+            },
+            {
+                name: 'California Roll',
+                description: '',
+            },
+            {
+                name: 'Rainbow Special Roll',
+                description: '',
+            },
+            {
+                name: 'Spicy Tuna Roll',
+                description: '',
+            },
+            {
+                name: 'Spicy Shrimp Roll',
+                description: '',
+            },
+        ]
     },
     {
         id: 6,
         category: 'Hand Rolls',
         img: "/menu_page/section2-handrolls-img05.svg",
-        menu:
-            [
-                {
-                    name: 'California',
-                    description: '',
-                },
-                {
-                    name: 'Philadelphia',
-                    description: '',
-                },
-                {
-                    name: 'Tuna',
-                    description: '',
-                },
-                {
-                    name: 'Spicy Tuna',
-                    description: '',
-                },
-                {
-                    name: 'Salmon',
-                    description: '',
-                },
-                {
-                    name: 'Spicy Salmon',
-                    description: '',
-                },
-            ]
+        mobileImg: "/menu_page/section2-handrolls-img05_mobile.jpeg",
+        menu: [{
+                name: 'California',
+                description: '',
+            },
+            {
+                name: 'Philadelphia',
+                description: '',
+            },
+            {
+                name: 'Tuna',
+                description: '',
+            },
+            {
+                name: 'Spicy Tuna',
+                description: '',
+            },
+            {
+                name: 'Salmon',
+                description: '',
+            },
+            {
+                name: 'Spicy Salmon',
+                description: '',
+            },
+        ]
     }
 ]
 
-export const section3 = [
-    {
+export const section3 = [{
         img: `/menu_page/section3-img00.svg`,
         title: "img00",
     },
