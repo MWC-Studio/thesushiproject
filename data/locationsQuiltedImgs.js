@@ -34,7 +34,7 @@ export const items = [
         title: 'location image 7',
     },
     {
-        img: '/locations/location-bottomleft-3.svg',
+        img: '/locations/location-bottomleft-3.jpg',
         title: 'location image 8',
     },
 ]
