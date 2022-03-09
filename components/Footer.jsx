@@ -1,19 +1,12 @@
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import {
-  CopyrightTwoTone,
-  Facebook,
-  Instagram,
-  Twitter,
-} from '@mui/icons-material';
+import { CopyrightTwoTone, Instagram } from '@mui/icons-material';
 import MuiNextLink from '@components/MuiNextLink';
 import { Container, Grid, Typography, useMediaQuery } from '@mui/material';
 //Add logo and icons
-import FooterLogo from '../public/footer/footer_rollinlogo_white.svg';
-import Email from '../public/footer/email.svg';
-import Phone from '../public/footer/phone.svg';
+
 import Link from '@mui/material/Link';
-// future use
+
 // import IconButton from '@mui/material/IconButton';
 import NextLink from 'next/link';
 import Image from 'next/image';
@@ -135,19 +128,11 @@ const Footer = () => {
                     </MuiNextLink>
                     <MuiNextLink
                       sx={{ textDecoration: 'none', color: 'common.white' }}
-                      href="https://YourFacebookLink/"
+                      href="https://YourInstagramLink/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Facebook fontSize="large" />
-                    </MuiNextLink>
-                    <MuiNextLink
-                      sx={{ textDecoration: 'none', color: 'common.white' }}
-                      href="https://YourTwitterLink/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Twitter fontSize="large" />
+                      <Instagram fontSize="large" />
                     </MuiNextLink>
                   </Stack>
                 </Box>
