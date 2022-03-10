@@ -1,6 +1,6 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
-const fontBold = 400;
+const fontBold = 700;
 
 // Create a theme instance.
 let theme = createTheme({
