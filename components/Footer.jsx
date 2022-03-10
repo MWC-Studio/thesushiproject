@@ -250,7 +250,7 @@ const Footer = ({ isMobile }) => {
           </Grid>
         </Container>
         {/* Copyright */}
-        <Grid item xs={12} sx={{ mb: 1, mt: 9 }}>
+        <Grid item xs={12} sx={{ mb: 1, mt: 7 }}>
           <Typography
             align="center"
             color="common.white"
