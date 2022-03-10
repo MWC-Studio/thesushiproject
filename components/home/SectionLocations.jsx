@@ -77,7 +77,7 @@ export default function SectionLocations() {
             <Image
               src="/home_page/location-lewisville.svg"
               alt="about-us"
-              layout="responsive"
+              // layout="responsive"
               width="592"
               height="420"
             />
@@ -88,7 +88,7 @@ export default function SectionLocations() {
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={{ mb: 1, mt: 2 }}
+              sx={{ mb: 1, mt: 1 }}
             >
               Sushi Rollin' Lewisville
             </Typography>
