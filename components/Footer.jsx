@@ -69,7 +69,7 @@ const Footer = ({ isMobile }) => {
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
                     sx={{ textDecoration: 'none', color: 'common.white' }}
-                    href="mailto:info@rollinsushi.com"
+                    href="wnsrl91@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -101,7 +101,7 @@ const Footer = ({ isMobile }) => {
               <Grid item sx={{ mt: 4 }}>
                 <Image
                   src="/footer/findus.svg"
-                  alt="email"
+                  alt="find us"
                   // layout="responsive"
                   width="114"
                   height="16"
@@ -111,13 +111,13 @@ const Footer = ({ isMobile }) => {
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
                     sx={{ textDecoration: 'none', color: 'common.white' }}
-                    href="mailto:info@rollinsushi.com"
+                    href="https://www.instagram.com/sushi__rollin/?hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
                       src="/footer/insta1.svg"
-                      alt="email"
+                      alt="Garland Instagram"
                       // layout="responsive"
                       width="240"
                       height="28"
@@ -143,13 +143,13 @@ const Footer = ({ isMobile }) => {
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
                     sx={{ textDecoration: 'none', color: 'common.white' }}
-                    href="mailto:info@rollinsushi.com"
+                    href="https://www.instagram.com/sushi_rollin_lewisville/?utm_medium=copy_link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
                       src="/footer/insta2.svg"
-                      alt="email"
+                      alt="Lewisville Instagram"
                       // layout="responsive"
                       width="258"
                       height="28"
