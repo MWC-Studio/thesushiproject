@@ -54,6 +54,7 @@ const Footer = ({ isMobile }) => {
               justifyContent="space-between"
               alignItems="center"
               flexWrap="wrap"
+
               // need to edit
               // spacing={1}
             >
