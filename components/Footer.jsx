@@ -3,23 +3,23 @@ import Stack from '@mui/material/Stack';
 import { CopyrightTwoTone, Instagram } from '@mui/icons-material';
 import MuiNextLink from '@components/MuiNextLink';
 import { Container, Grid, Typography, useMediaQuery } from '@mui/material';
-//Add logo and icons
 
+//Add logo and icons
 import Link from '@mui/material/Link';
 
 // import IconButton from '@mui/material/IconButton';
 import NextLink from 'next/link';
 import Image from 'next/image';
+// TODO CLEAN CODE
 
-const Footer = () => {
-  const mobileView = useMediaQuery('(min-width: 375px)');
+const Footer = ({ isMobile }) => {
+  // const mobileView = useMediaQuery('(min-width: 375px)');
   return (
     <Container
       component="footer"
       sx={{
         py: 5,
-        px: mobileView ? 4 : 8,
-        bgcolor: '#262626',
+        bgcolor: 'footer.main',
         textDecoration: 'none',
         color: 'common.white',
       }}
@@ -40,11 +40,10 @@ const Footer = () => {
               width={195.18}
               height={23.86}
             />
-            {/* <FooterLogo /> weppack*/}
           </MuiNextLink>
         </Grid>
         {/* Contaact us and Find us on */}
-        <Box>
+        <Container>
           <Grid item xs={12}>
             <Grid
               container
@@ -55,7 +54,7 @@ const Footer = () => {
               alignItems="center"
               flexWrap="wrap"
               // need to edit
-              spacing={47}
+              // spacing={1}
             >
               {/* Contact us */}
               <Grid item sx={{ mt: 2 }}>
@@ -67,10 +66,6 @@ const Footer = () => {
                   height="16"
                 />
 
-                {/* <Typography sx={{ mb: 3 }} gutterBottom>
-                CONTACT US
-              </Typography> */}
-                {/* <Box sx={{ mb: 3 }}>CONTACT US</Box> */}
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
                     sx={{ textDecoration: 'none', color: 'common.white' }}
@@ -112,12 +107,76 @@ const Footer = () => {
                   height="16"
                 />
                 {/* <Box sx={{ mt: 3 }}>FOLLOW ON US</Box> */}
-                {/* <Typography textAlign="left" gutterBottom>
-                FOLLOW ON US
-              </Typography> */}
 
-                <Box>
-                  <Stack direction="row" spacing={5} sx={{ mb: 5, py: 2 }}>
+                <Box sx={{ mb: 2, mt: 2 }}>
+                  <Link
+                    sx={{ textDecoration: 'none', color: 'common.white' }}
+                    href="mailto:info@rollinsushi.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="/footer/insta1.svg"
+                      alt="email"
+                      // layout="responsive"
+                      width="240"
+                      height="28"
+                    />
+                  </Link>
+                  {/* <MuiNextLink
+                    sx={{ textDecoration: 'none', color: 'common.white' }}
+                    href="https://YourInstagramLink/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Instagram fontSize="large" />
+                    <Typography
+                      variant={isMobile ? 'body2' : 'h3'}
+                      fontWeight="700"
+                      fontFamily="Nunito"
+                    >
+                      Sushi Rollin’ Garland
+                    </Typography>
+                  </MuiNextLink> */}
+                </Box>
+
+                <Box sx={{ mb: 2, mt: 2 }}>
+                  <Link
+                    sx={{ textDecoration: 'none', color: 'common.white' }}
+                    href="mailto:info@rollinsushi.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="/footer/insta2.svg"
+                      alt="email"
+                      // layout="responsive"
+                      width="258"
+                      height="28"
+                    />
+                  </Link>
+                </Box>
+
+                {/* <Container>
+                  <Stack direction="column" spacing={5} sx={{ mb: 5, py: 2 }}>
+                    <Grid item direction="row">
+                      <MuiNextLink
+                        sx={{ textDecoration: 'none', color: 'common.white' }}
+                        href="https://YourInstagramLink/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Instagram fontSize="large" />
+                        <Typography
+                          variant={isMobile ? 'body2' : 'h3'}
+                          fontWeight="700"
+                          fontFamily="Nunito"
+                        >
+                          Sushi Rollin’ Garland
+                        </Typography>
+                      </MuiNextLink>{' '}
+                    </Grid>{' '}
+                    <Grid item direction="row"></Grid>
                     <MuiNextLink
                       sx={{ textDecoration: 'none', color: 'common.white' }}
                       href="https://YourInstagramLink/"
@@ -125,24 +184,28 @@ const Footer = () => {
                       rel="noopener noreferrer"
                     >
                       <Instagram fontSize="large" />
-                    </MuiNextLink>
-                    <MuiNextLink
-                      sx={{ textDecoration: 'none', color: 'common.white' }}
-                      href="https://YourInstagramLink/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Instagram fontSize="large" />
+                      <Typography
+                        variant={isMobile ? 'body2' : 'h3'}
+                        fontWeight="700"
+                        fontFamily="Nunito"
+                      >
+                        Sushi Rollin’ Lewisville
+                      </Typography>
                     </MuiNextLink>
                   </Stack>
-                </Box>
+                </Container> */}
               </Grid>
             </Grid>
           </Grid>
-        </Box>
+        </Container>
         {/* Copyright */}
-        <Grid item xs={12}>
-          <Typography align="center" color="common.white">
+        <Grid item xs={12} sx={{ mb: 1, mt: 9 }}>
+          <Typography
+            align="center"
+            color="common.white"
+            varoant="h6"
+            fontFamily="Nunito"
+          >
             Copyright by ©{new Date().getFullYear()} Sushi Rollin. All rights
             reserved.
           </Typography>
@@ -153,137 +216,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// 2/20
-
-// const Footer = () => {
-//   return (
-//     <Box
-//       component="footer"
-//       sx={{
-//         py: 5,
-//         bgcolor: '#262626',
-//         textDecoration: 'none',
-//         color: 'common.white',
-//       }}
-//     >
-//       <Container maxwidth="sm">
-//         {/* Logo Grid */}
-//         <Grid
-//           container
-//           direction="column"
-//           justifyContent="center"
-//           alignItems="center"
-//           // margin bottom
-//           sx={{ mb: 2 }}
-//         >
-//           <Grid item sx={12}>
-//             <Box sx={{ align: 'center' }}>
-//               <MuiNextLink href="/" underline="none">
-//                 {/* <Image
-//                   src="/footer_rollinlogo_white.svg"
-//                   alt="logo"
-//                   layout="responsive"
-//                   width={195.18}
-//                   height={23.86}
-//                 /> */}
-//                 <FooterLogo />
-//               </MuiNextLink>
-//             </Box>
-//           </Grid>
-//         </Grid>
-//         {/* Second Grid with Contact and Follow on us */}
-//         <Container>
-//           <Grid container spacing={2} direction="row">
-//             <Grid item xs={8}>
-//               <Box>CONTACT US</Box>
-//               <Box sx={{ py: 1 }}></Box>
-//               {/* <Box>Email 956-249-0167</Box> */}
-//               <Box>
-//                 <Link
-//                   sx={{ textDecoration: 'none', color: 'common.white' }}
-//                   href="mailto:info@rollinsushi.com"
-//                   target="_blank"
-//                   // rel="noopener noreferrer"
-//                 >
-//                   <Email />
-//                 </Link>
-//               </Box>
-//               <Box>
-//                 {/* <Link href=""> */}
-//                 <Phone />
-//                 {/* </Link> */}
-//               </Box>
-
-//               {/* <Box>Phone 956-249-0167</Box> */}
-//             </Grid>
-
-//             {/* Follow on us Grid */}
-
-//             <Grid item xs={4}>
-//               <Box>FOLLOW ON US</Box>
-//               <Box>
-//                 <Stack direction="row" spacing={5} sx={{ mb: 5, py: 2 }}>
-//                   <MuiNextLink
-//                     sx={{ textDecoration: 'none', color: 'common.white' }}
-//                     href="https://YourInstagramLink/"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                   >
-//                     <Instagram fontSize="large" />
-//                   </MuiNextLink>
-//                   <MuiNextLink
-//                     sx={{ textDecoration: 'none', color: 'common.white' }}
-//                     href="https://YourFacebookLink/"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                   >
-//                     <Facebook fontSize="large" />
-//                   </MuiNextLink>
-//                   <MuiNextLink
-//                     sx={{ textDecoration: 'none', color: 'common.white' }}
-//                     href="https://YourTwitterLink/"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                   >
-//                     <Twitter fontSize="large" />
-//                   </MuiNextLink>
-//                 </Stack>
-//               </Box>
-//             </Grid>
-//           </Grid>
-//         </Container>
-
-//         <Grid>
-//           <Typography align="center" color="common.white">
-//             © 2022 Sushi Rollin'
-//           </Typography>
-//         </Grid>
-//       </Container>
-//     </Box>
-//   );
-// };
-
-// export default Footer;
-//
-
-// 2/20 svg image
-{
-  /* <Image
-                  src="/footer_rollinlogo_white.svg"
-                  alt="logo"
-                  layout="responsive"
-                  width={205}
-                  height={35}
-                /> */
-}
-
-{
-  /* <Image
-                      src="/footer/email-icon.svg"
-                      alt="Phone"
-                      layout="responsive"
-                      width={29}
-                      height={29}
-                    /> */
-}
