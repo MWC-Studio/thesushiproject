@@ -37,7 +37,7 @@ const OrderBanner = (props) => {
                  <Grid item align="center" lg={3} md={3} sm={4} xs={5}>
                   <MuiNextLink
                   sx={{ textDecoration: "none", color: "primary.contrastText" }}
-                  href="https://www.doordash.com/"
+                  href="https://www.doordash.com/store/sushi-rollin-garland-1775965/"
                   target="_blank"
                   rel="noopener noreferrer"
                   >
@@ -47,7 +47,7 @@ const OrderBanner = (props) => {
                 <Grid item align="center" lg={2} md={3} sm={3} xs={3}>
                  <MuiNextLink
                  sx={{ textDecoration: "none", color: "primary.contrastText" }}
-                 href="https://www.grubhub.com/"
+                 href="https://www.grubhub.com/restaurant/sushi-rollin-6850-n-shiloh-rd-garland/2769858"
                  target="_blank"
                  rel="noopener noreferrer"
                  >
@@ -57,7 +57,7 @@ const OrderBanner = (props) => {
                 <Grid item align="center" lg={2} md={2} sm={3} xs={3}>
                   <MuiNextLink
                   sx={{ textDecoration: "none", color: "primary.contrastText" }}
-                  href="https://www.yelp.com/"
+                  href="https://www.yelp.com/biz/sushi-rollin-garland"
                   target="_blank"
                   rel="noopener noreferrer"
                   >

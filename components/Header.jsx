@@ -6,9 +6,7 @@ import { styled } from '@mui/system';
 import Navbar from './Navbar';
 import SideDrawer from './SideDrawer';
 import Image from 'next/image';
-import Fab from '@mui/material/Fab';
-import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
-import BackToTop from './BackToTop';
+import ScrollToTop from './menu/ScrollToTop';
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
@@ -49,13 +47,9 @@ const Header = () => {
           </Container>
         </Toolbar>
       </AppBar>
+      <ScrollToTop showBelow={500} />
       {/* </HideOnScroll> */}
       <Offset id="back-to-top-anchor" />
-      <BackToTop>
-        <Fab color="secondary" size="large" aria-label="back to top">
-          <KeyboardArrowUp />
-        </Fab>
-      </BackToTop>
     </>
   );
 };
