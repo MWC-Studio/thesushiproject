@@ -77,7 +77,7 @@ export default function SectionLocations() {
             <Image
               src="/home_page/location-lewisville.svg"
               alt="about-us"
-              layout="responsive"
+              // layout="responsive"
               width="592"
               height="420"
             />
