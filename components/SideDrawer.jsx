@@ -40,9 +40,19 @@ const SideDrawer = ({ navLinks }) => {
           }}
         >
           <MuiNextLink
-            sx={{ color: 'primary.contrastText' }}
             href={path}
-            underline="none"
+            variant="button"
+            underline="hover"
+            sx={{
+              color: 'primary.contrastText',
+              opacity: 1,
+              textTransform: 'none',
+              '&:hover': {
+                color: 'secondary.main',
+                backgroundColor: 'transparent',
+                textUnderlineOffset: '50%',
+              },
+            }}
           >
             {title}
           </MuiNextLink>
