@@ -10,7 +10,8 @@ import Link from '@mui/material/Link';
 // import IconButton from '@mui/material/IconButton';
 import NextLink from 'next/link';
 import Image from 'next/image';
-// TODO CLEAN CODE
+
+// TODO Need to CLEAN CODE
 
 const Footer = ({ isMobile }) => {
   // const mobileView = useMediaQuery('(min-width: 375px)');
@@ -67,9 +68,9 @@ const Footer = ({ isMobile }) => {
                 />
 
                 <Box sx={{ mb: 2, mt: 2 }}>
-                  <Link
+                  {/* <Link
                     sx={{ textDecoration: 'none', color: 'common.white' }}
-                    href="wnsrl91@gmail.com"
+                    href="mailto:wnsrl91@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -80,7 +81,56 @@ const Footer = ({ isMobile }) => {
                       width="313"
                       height="29"
                     />
-                    {/* <Email /> */}
+                   
+                  </Link> */}
+
+                  {/* <MuiNextLink
+                    sx={{ textDecoration: 'none', color: 'common.white' }}
+                    href="mailto:wnsrl91@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  > */}
+
+                  <Link
+                    href="mailto:wnsrl91@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      display: 'grid',
+                      gridTemplateColumns: isMobile
+                        ? '20px 40px 1fr'
+                        : '30px 80px 1fr',
+                      columnGap: '12px',
+                      rowGap: '16px',
+                      textDecoration: 'none',
+                      color: 'common.white',
+                    }}
+                  >
+                    <Image
+                      src="/footer/icon_email.svg"
+                      alt="email"
+                      // width={isMobile ? '20' : '24'}
+                      // height={isMobile ? '16' : '18.67'}
+                      width="28"
+                      height="28"
+                    />
+                    <Typography
+                      variant={isMobile ? 'body2' : 'h3'}
+                      color="primary.contrastText"
+                      fontWeight="700"
+                      fontFamily="Nunito"
+                    >
+                      Email
+                    </Typography>
+                    <Typography
+                      variant={isMobile ? 'body2' : 'h3'}
+                      color="primary.contrastText"
+                      fontWeight="400"
+                      fontFamily="Nunito"
+                    >
+                      wnsrl91@gmail.com
+                    </Typography>
+                    {/* </MuiNextLink> */}
                   </Link>
                 </Box>
                 <Box>
