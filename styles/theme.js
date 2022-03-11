@@ -90,6 +90,10 @@ theme.components = {
         },
         backgroundColor: "#40464D",
         color: "#FFFFFF",
+        '&:hover': {
+          backgroundColor: "#F48A88",
+          color: "#40464D",
+        }
       },
       outlined: {
         backgroundColor: "transparent",

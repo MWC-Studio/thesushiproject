@@ -66,14 +66,15 @@ const OrderBanner = (props) => {
                  </Grid>
             </Grid>
       <Grid item lg={7} md={7} sm={9} xs={12} align="center">
-        <Button>
           <MuiNextLink
-            sx={{ textDecoration: "none", color: "common.white" }}
+            underline="none"
             href="/menu_page/menu.jpg"
           >
+            <Button>
             View Store Menu
+            </Button>
           </MuiNextLink>
-        </Button>
+  
       </Grid>
     </Grid>
   );
