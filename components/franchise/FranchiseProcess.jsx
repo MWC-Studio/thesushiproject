@@ -11,7 +11,7 @@ const FranchiseProcess = (props) => {
         >
             <Grid item xs={12} sx={{ my: 7 }} bgcolor="">
                 <Typography 
-                    variant={props.isMobile ? "h3" : "h2"}
+                    variant={'h2'}
                     color={'text'}
                     fontFamily={'Nunito'}
                     fontWeight={'fontWeightBold'}
@@ -22,7 +22,7 @@ const FranchiseProcess = (props) => {
             </Grid>
             
             {itemProcess.map((item, idx) => (
-            <Grid container item wrap="nowrap" spacing={2} padding={2} xs={11}>
+            <Grid container item wrap="nowrap" spacing={2} xs={11}>
                 <Grid item>
                     {props.isMobile ?
                     <Avatar sx={{ bgcolor: 'primary.main', width: 36, height: 36 }}>
@@ -49,7 +49,7 @@ const FranchiseProcess = (props) => {
                 </Grid>
                 <Grid item xs zeroMinWidth  bgcolor="">
                     <Typography 
-                        variant={props.isMobile ? "subtitle1" : "h4"}
+                        variant={'h4'}
                         color={'secondary.main'}
                         fontFamily={'Nunito'}
                         fontWeight={'fontWeightBold'}
@@ -58,7 +58,7 @@ const FranchiseProcess = (props) => {
                         {item.title}
                     </Typography>
                     <Typography
-                        variant={props.isMobile ? "body2" : "body1"}
+                        variant={'body1'}
                         color={'text'}
                         fontFamily={'Nunito'}
                         mb={3}
@@ -77,7 +77,6 @@ const FranchiseProcess = (props) => {
 }
 
  
-
 
 const itemProcess = [
     {
