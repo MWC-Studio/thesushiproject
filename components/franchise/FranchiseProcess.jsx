@@ -78,6 +78,7 @@ const FranchiseProcess = (props) => {
 
  
 
+
 const itemProcess = [
     {
         num : "01",
