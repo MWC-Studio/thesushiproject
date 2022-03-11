@@ -33,7 +33,7 @@ const AboutPage = (isMobile) => {
           xs={12}
           sx={{ mb: 2, mt: 4 }}
         >
-         <Typography textAlign="center" color="#F48A88" gutterBottom py={1}>
+         <Typography textAlign="center" color="#F48A88" gutterbottom="true" py={1}>
          Fresh, Various, and Authentic
         </Typography>
         <Typography
