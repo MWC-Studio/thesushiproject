@@ -1,17 +1,17 @@
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
-import { CopyrightTwoTone, Instagram } from '@mui/icons-material';
-import MuiNextLink from '@components/MuiNextLink';
-import { Container, Grid, Typography, useMediaQuery } from '@mui/material';
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import { CopyrightTwoTone, Instagram } from "@mui/icons-material";
+import MuiNextLink from "@components/MuiNextLink";
+import { Container, Grid, Typography, useMediaQuery } from "@mui/material";
 
 //Add logo and icons
-import Link from '@mui/material/Link';
+import Link from "@mui/material/Link";
 
 // import IconButton from '@mui/material/IconButton';
-import NextLink from 'next/link';
-import Image from 'next/image';
+import NextLink from "next/link";
+import Image from "next/image";
 
-// TODO Need to CLEAN CODE
+// Test ::: TODO Need to CLEAN CODE
 
 const Footer = ({ isMobile }) => {
   // const mobileView = useMediaQuery('(min-width: 375px)');
@@ -20,9 +20,9 @@ const Footer = ({ isMobile }) => {
       component="footer"
       sx={{
         py: 5,
-        bgcolor: 'footer.main',
-        textDecoration: 'none',
-        color: 'common.white',
+        bgcolor: "footer.main",
+        textDecoration: "none",
+        color: "common.white",
       }}
     >
       <Grid
@@ -32,7 +32,7 @@ const Footer = ({ isMobile }) => {
         alignItems="center"
       >
         {/* Logo */}
-        <Grid item sx={{ align: 'center' }}>
+        <Grid item sx={{ align: "center" }}>
           <MuiNextLink href="/" underline="none">
             <Image
               src="/footer/footer_rollinlogo_white.svg"
@@ -97,14 +97,14 @@ const Footer = ({ isMobile }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                     sx={{
-                      display: 'grid',
+                      display: "grid",
                       gridTemplateColumns: isMobile
-                        ? '20px 40px 1fr'
-                        : '30px 80px 1fr',
-                      columnGap: '12px',
-                      rowGap: '16px',
-                      textDecoration: 'none',
-                      color: 'common.white',
+                        ? "20px 40px 1fr"
+                        : "30px 80px 1fr",
+                      columnGap: "12px",
+                      rowGap: "16px",
+                      textDecoration: "none",
+                      color: "common.white",
                     }}
                   >
                     <Image
@@ -116,7 +116,7 @@ const Footer = ({ isMobile }) => {
                       height="28"
                     />
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? "body2" : "h3"}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
@@ -124,7 +124,7 @@ const Footer = ({ isMobile }) => {
                       Email
                     </Typography>
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? "body2" : "h3"}
                       color="primary.contrastText"
                       fontWeight="400"
                       fontFamily="Nunito"
@@ -161,7 +161,7 @@ const Footer = ({ isMobile }) => {
 
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
-                    sx={{ textDecoration: 'none', color: 'common.white' }}
+                    sx={{ textDecoration: "none", color: "common.white" }}
                     href="https://www.instagram.com/sushi__rollin/?hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -193,7 +193,7 @@ const Footer = ({ isMobile }) => {
 
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
-                    sx={{ textDecoration: 'none', color: 'common.white' }}
+                    sx={{ textDecoration: "none", color: "common.white" }}
                     href="https://www.instagram.com/sushi_rollin_lewisville/?utm_medium=copy_link"
                     target="_blank"
                     rel="noopener noreferrer"
