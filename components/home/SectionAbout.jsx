@@ -11,7 +11,7 @@ import MuiNextLink from '@components/MuiNextLink';
 
 const SectionAbout = ({ isMobile }) => {
   return (
-    <Container component="section" maxWidth="lg" sx={{ my: 10 }}>
+    <Container component="section" maxWidth="lg" sx={{ my: 4 }}>
       <Grid
         container
         direction={isMobile ? 'column-reverse' : 'row'}
@@ -27,6 +27,8 @@ const SectionAbout = ({ isMobile }) => {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
+          width= {isMobile? "343": "576"} 
+          pt = {2}
         >
           <Typography
             color="text"
@@ -37,11 +39,11 @@ const SectionAbout = ({ isMobile }) => {
           >
             About Us
           </Typography>
-          <Typography textAlign="center" sx={{ my: 5, px: 2 }}>
+          <Typography textAlign={isMobile? "left": "center"} sx={{ my: 2 }}>
             {`Your friendly neighborhood sushi place is here! 
             In Sushi Rollin’ we offer freshness, variety, and authentic experience. A true hole in the wall where you expect something ordinary but walk out with a content belly and heart. We’ve been rolling since 2019.`}
           </Typography>
-          <MuiNextLink href="/aboutus" underline="none">
+          <MuiNextLink href="/aboutus" underline="none" sx={{ my: 4}}>
             <Button> Read More</Button>
           </MuiNextLink>
         </Grid>
@@ -94,16 +96,16 @@ const SectionAbout = ({ isMobile }) => {
             align="center"
             fontWeight={'fontWeightBold'}
             fontFamily={'Nunito'}
+            pt = {5}
           >
             Roll with Us
           </Typography>
-          <Typography textAlign="center" sx={{ my: 5, px: 2 }}>
-            {`Sushi Rollin’ started its journey in the middle of Pandemic. Our business model successfully supported delivery focus experience. Over 500+ customer reviews prove that success! Now that we’re expanding, our focus has also evolved to provide a more approachable and enjoyable sushi experience.`}
-            <Typography textAlign="left" sx={{ mt: 3, px: 2 }}>
-              {`It’s an opportunity that keeps rolling. Join us today!`}
+          <Typography textAlign={isMobile? "left": "center"} sx={{ my: 4 }}>
+            Sushi Rollin’ started its journey in the middle of Pandemic. Our business model successfully supported delivery focus experience. Over 500+ customer reviews prove that success! Now that we’re expanding, our focus has also evolved to provide a more approachable and enjoyable sushi experience.
+            <br/><br/>
+            It’s an opportunity that keeps rolling. Join us today!
             </Typography>
-          </Typography>
-          <MuiNextLink href="/aboutus" underline="none">
+          <MuiNextLink href="/aboutus" underline="none" sx = {{ mb : 2 }}>
             <Button> Join Us Today</Button>
           </MuiNextLink>
         </Grid>

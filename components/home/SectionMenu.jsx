@@ -16,7 +16,7 @@ export default function SectionMenu() {
         bgcolor: '#FAF6E8',
       }}
     >
-      <Container sx={{ mt: 8 }}>
+      <Container sx={{ mt: 4}}>
         <Typography textAlign="center" color="secondary.main">
           FAST & TASTY
         </Typography>
