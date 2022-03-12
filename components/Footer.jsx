@@ -23,6 +23,7 @@ const Footer = ({ isMobile }) => {
         bgcolor: 'footer.main',
         textDecoration: 'none',
         color: 'common.white',
+        width: '100vw',
       }}
     >
       <Grid
