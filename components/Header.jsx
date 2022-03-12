@@ -22,34 +22,32 @@ const navLinks = [
 const Header = () => {
   return (
     <>
-      <HideOnScroll>     
-      <AppBar sx={{ bgcolor: 'common.beige' }} position="fixed">
-        <Toolbar>
-          <Container
-            maxWidth="lg"
-            sx={{
-              display: `flex`,
-              justifyContent: `space-between`,
-              alignItems: `center`,
-            }}
-          >
-            <MuiNextLink activeClassName="active" href="/">
-              <Image
-                src="/rollinlogodark.svg"
-                alt="logo"
-                width="257"
-                height="44"
-              />
-            </MuiNextLink>
-
-            <Navbar navLinks={navLinks} />
-            <SideDrawer navLinks={navLinks} />
-            
-          </Container>
-        </Toolbar>
-      </AppBar>
+      <HideOnScroll>
+        <AppBar sx={{ bgcolor: 'common.beige' }} position="fixed">
+          <Toolbar>
+            <Container
+              maxWidth="lg"
+              sx={{
+                display: `flex`,
+                justifyContent: `space-between`,
+                alignItems: `center`,
+              }}
+            >
+              <SideDrawer navLinks={navLinks} />
+              <MuiNextLink activeClassName="active" href="/">
+                <Image
+                  src="/rollinlogodark.svg"
+                  alt="logo"
+                  width="257"
+                  height="44"
+                />
+              </MuiNextLink>
+              <Navbar navLinks={navLinks} />
+            </Container>
+          </Toolbar>
+        </AppBar>
       </HideOnScroll>
-      
+
       <ScrollToTop showBelow={500} />
       <Offset id="back-to-top-anchor" />
     </>
