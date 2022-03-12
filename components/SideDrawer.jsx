@@ -167,8 +167,8 @@ const SideDrawer = ({ navLinks }) => {
               src="/home_page/yelp.svg"
               alt="Yelp"
               // layout="responsive"
-              width="28"
-              height="29"
+              width="59"
+              height="21"
             />
           </MuiNextLink>
         </Grid>
