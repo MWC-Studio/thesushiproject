@@ -2,14 +2,14 @@ import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
 import MuiNextLink from '@components/MuiNextLink';
-//import { styled } from '@mui/system';
+import { styled } from '@mui/system';
 import Navbar from './Navbar';
 import SideDrawer from './SideDrawer';
 import Image from 'next/image';
 import ScrollToTop from './menu/ScrollToTop';
 import HideOnScroll from './HideOnScroll';
 
-//const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
+const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
 const navLinks = [
   { title: `Home`, path: `/` },
@@ -51,7 +51,7 @@ const Header = () => {
       </HideOnScroll>
       
       <ScrollToTop showBelow={500} />
-      {/* <Offset id="back-to-top-anchor" /> */}
+      <Offset id="back-to-top-anchor" />
     </>
   );
 };
