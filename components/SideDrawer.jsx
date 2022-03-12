@@ -40,11 +40,13 @@ const SideDrawer = ({ navLinks }) => {
         {navLinks.map(({ title, path }, i) => (
           <Typography
             variannt="button"
+            vaariant="h3"
             key={`${title}${i}`}
             sx={{
               ml: 5,
               my: 2,
               textTransform: `uppercase`,
+              fontSize: 'h3',
             }}
           >
             <MuiNextLink
@@ -80,7 +82,8 @@ const SideDrawer = ({ navLinks }) => {
             sx={{
               ml: 5,
               my: 2,
-              textTransform: `uppercase`,
+              // textTransform: `uppercase`,
+              color: 'secondary.main',
             }}
           >
             Find Sushi Rollin’ On
@@ -92,14 +95,15 @@ const SideDrawer = ({ navLinks }) => {
 
         <Grid item direction="column">
           <MuiNextLink
-            href=""
+            href="https://www.instagram.com/sushi_rollin_lewisville/?utm_medium=copy_link"
             variant="button"
             underline="hover"
             sx={{
               ml: 5,
               my: 2,
 
-              textTransform: 'none',
+              opacity: 1,
+
               '&:hover': {
                 color: 'secondary.main',
                 backgroundColor: 'transparent',
