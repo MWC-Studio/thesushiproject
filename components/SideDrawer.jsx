@@ -97,6 +97,8 @@ const SideDrawer = ({ navLinks }) => {
           <MuiNextLink
             href="https://www.doordash.com/store/sushi-rollin-garland-1775965/"
             variant="button"
+            target="_blank"
+            rel="noopener noreferrer"
             underline="hover"
             sx={{
               ml: 5,
@@ -124,6 +126,8 @@ const SideDrawer = ({ navLinks }) => {
           <MuiNextLink
             href="https://www.ubereats.com/store/sushi-rollin/6P3FSDejTAuapBvlNZGQaQ?diningMode=DELIVERY&ps=1"
             variant="button"
+            target="_blank"
+            rel="noopener noreferrer"
             underline="hover"
             sx={{
               color: 'text',
@@ -152,6 +156,8 @@ const SideDrawer = ({ navLinks }) => {
           <MuiNextLink
             href="https://www.grubhub.com/restaurant/sushi-rollin-6850-n-shiloh-rd-garland/2769858"
             variant="button"
+            target="_blank"
+            rel="noopener noreferrer"
             underline="hover"
             sx={{
               color: 'text',
