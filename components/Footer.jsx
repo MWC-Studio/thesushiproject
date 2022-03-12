@@ -253,7 +253,7 @@ const Footer = ({ isMobile }) => {
           <Typography
             align="center"
             color="common.white"
-            varoant="h6"
+            variant="subtitle2"
             fontFamily="Nunito"
           >
             Copyright by ©{new Date().getFullYear()} Sushi Rollin. All rights
