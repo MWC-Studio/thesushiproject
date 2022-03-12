@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import { CopyrightTwoTone, Instagram } from '@mui/icons-material';
+// import { CopyrightTwoTone, Instagram } from '@mui/icons-material';
 import MuiNextLink from '@components/MuiNextLink';
 import { Container, Grid, Typography, useMediaQuery } from '@mui/material';
 
@@ -33,14 +33,14 @@ const Footer = ({ isMobile }) => {
         alignItems="center"
       >
         {/* Logo */}
-        <Grid item sx={{ align: 'center' }}>
+        <Grid item sx={{ align: 'center', mb: 1 }}>
           <MuiNextLink href="/" underline="none">
             <Image
               src="/footer/footer_rollinlogo_white.svg"
               alt="logo"
               // layout="responsive"
-              width={195.18}
-              height={23.86}
+              width="205"
+              height="35"
             />
           </MuiNextLink>
         </Grid>
@@ -55,9 +55,7 @@ const Footer = ({ isMobile }) => {
               justifyContent="space-between"
               alignItems="center"
               flexWrap="wrap"
-
-              // need to edit
-              // spacing={1}
+              px={3}
             >
               {/* Contact us */}
               <Grid item sx={{ mt: 2 }}>
