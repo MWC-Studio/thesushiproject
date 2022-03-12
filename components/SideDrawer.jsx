@@ -68,10 +68,6 @@ const SideDrawer = ({ navLinks }) => {
         ))}
       </Box>
 
-      <hr></hr>
-
-      {/* <Divider variant="middle" /> */}
-
       {/* TODO ICONS */}
 
       <Stack direction="column" spacing={2}>
@@ -90,6 +86,10 @@ const SideDrawer = ({ navLinks }) => {
             Find Sushi Rollin’ On
           </Typography>
         </Box>
+        <hr></hr>
+        {/* <Divider variant="middle" /> */}
+        {/* <Divider /> */}
+
         <Grid item direction="column">
           <MuiNextLink
             href=""
@@ -113,6 +113,34 @@ const SideDrawer = ({ navLinks }) => {
               // layout="responsive"
               width="154"
               height="19"
+            />
+          </MuiNextLink>
+        </Grid>
+        <Grid item direction="column">
+          <MuiNextLink
+            href=""
+            variant="button"
+            underline="hover"
+            sx={{
+              color: 'text',
+              ml: 5,
+              my: 2,
+              textTransform: `uppercase`,
+              opacity: 1,
+              textTransform: 'none',
+              '&:hover': {
+                color: 'secondary.main',
+                backgroundColor: 'transparent',
+                textUnderlineOffset: '50%',
+              },
+            }}
+          >
+            <Image
+              src="/home_page/ubereats.svg"
+              alt="Grub hub"
+              // layout="responsive"
+              width="100"
+              height="16"
             />
           </MuiNextLink>
         </Grid>
