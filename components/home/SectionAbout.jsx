@@ -17,6 +17,8 @@ const SectionAbout = ({ isMobile }) => {
         direction={isMobile ? 'column-reverse' : 'row'}
         alignItems="center"
         justifyContent="center"
+        sx = {isMobile ? {mb : 2} : {mb :-3.2}} // 사진 모서리 맞추기 위한 간격 조절 화면 사이즈에 따라 변화 체크 필요
+
       >
         {/*top text*/}
         <Grid
@@ -27,7 +29,6 @@ const SectionAbout = ({ isMobile }) => {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          width= {isMobile? "343": "576"} 
           pt = {2}
         >
           <Typography
@@ -39,16 +40,16 @@ const SectionAbout = ({ isMobile }) => {
           >
             About Us
           </Typography>
-          <Typography textAlign={isMobile? "left": "center"} sx={{ my: 2 }}>
+          <Typography textAlign={isMobile? "left": "center"} sx={isMobile ? { my: 2 } : { my : 2, px : 2 }}>
             {`Your friendly neighborhood sushi place is here! 
             In Sushi Rollin’ we offer freshness, variety, and authentic experience. A true hole in the wall where you expect something ordinary but walk out with a content belly and heart. We’ve been rolling since 2019.`}
           </Typography>
-          <MuiNextLink href="/aboutus" underline="none" sx={{ my: 4}}>
+          <MuiNextLink href="/aboutus" underline="none" sx={{ my: 2}}>
             <Button> Read More</Button>
           </MuiNextLink>
         </Grid>
         {/*top image*/}
-        <Grid item xs={12} sm={6}>
+        <Grid xs={12} sm={6}>
           <Image
             src="/sectionabout_top.svg"
             alt="about-us"
@@ -57,22 +58,22 @@ const SectionAbout = ({ isMobile }) => {
           />
         </Grid>
       </Grid>
-
-      {/*bottom*/}
+       {/*bottom*/}
       <Grid
         container
         direction={isMobile ? 'column' : 'row'}
         alignItems="center"
         justifyContent="center"
+        
       >
         <Grid
           item
           xs={12}
           sm={6}
-          container
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
+          
         >
           <Image
             src="/sectionabout_bottom.svg"
@@ -96,16 +97,17 @@ const SectionAbout = ({ isMobile }) => {
             align="center"
             fontWeight={'fontWeightBold'}
             fontFamily={'Nunito'}
-            pt = {5}
+            sx = {{pt : 2}}
+          
           >
             Roll with Us
           </Typography>
-          <Typography textAlign={isMobile? "left": "center"} sx={{ my: 4 }}>
+          <Typography textAlign={isMobile? "left": "center"} sx={isMobile ? { my: 1} : { my : 1 , px : 1 }}>
             Sushi Rollin’ started its journey in the middle of Pandemic. Our business model successfully supported delivery focus experience. Over 500+ customer reviews prove that success! Now that we’re expanding, our focus has also evolved to provide a more approachable and enjoyable sushi experience.
-            <br/><br/>
+            <br/> <br/>
             It’s an opportunity that keeps rolling. Join us today!
             </Typography>
-          <MuiNextLink href="/aboutus" underline="none" sx = {{ mb : 2 }}>
+          <MuiNextLink href="/aboutus" underline="none" sx = {{ my : 2}}>
             <Button> Join Us Today</Button>
           </MuiNextLink>
         </Grid>
