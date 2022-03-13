@@ -44,12 +44,15 @@ const SectionAbout = ({ isMobile }) => {
             {`Your friendly neighborhood sushi place is here! 
             In Sushi Rollin’ we offer freshness, variety, and authentic experience. A true hole in the wall where you expect something ordinary but walk out with a content belly and heart. We’ve been rolling since 2019.`}
           </Typography>
-          <MuiNextLink href="/aboutus" underline="none" sx={{ py: 1}}>
+          <MuiNextLink href="/aboutus" underline="none" sx={{ py: 2}}>
             <Button> Read More</Button>
           </MuiNextLink>
         </Grid>
         {/*top image*/}
-        <Grid xs={12} sm={6}>
+        <Grid item xs={12} sm={6}
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center">
           <Image
             src="/sectionabout_top.svg"
             alt="about-us"
