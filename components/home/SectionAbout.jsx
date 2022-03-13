@@ -44,7 +44,7 @@ const SectionAbout = ({ isMobile }) => {
             {`Your friendly neighborhood sushi place is here! 
             In Sushi Rollin’ we offer freshness, variety, and authentic experience. A true hole in the wall where you expect something ordinary but walk out with a content belly and heart. We’ve been rolling since 2019.`}
           </Typography>
-          <MuiNextLink href="/aboutus" underline="none" sx={{ my: 2}}>
+          <MuiNextLink href="/aboutus" underline="none" sx={{ py: 1}}>
             <Button> Read More</Button>
           </MuiNextLink>
         </Grid>
@@ -107,7 +107,7 @@ const SectionAbout = ({ isMobile }) => {
             <br/> <br/>
             It’s an opportunity that keeps rolling. Join us today!
             </Typography>
-          <MuiNextLink href="/aboutus" underline="none" sx = {{ my : 2}}>
+          <MuiNextLink href="/aboutus" underline="none" sx = {{ py : 1}}>
             <Button> Join Us Today</Button>
           </MuiNextLink>
         </Grid>
