@@ -93,7 +93,7 @@ const SideDrawer = ({ navLinks }) => {
         {/* <Divider variant="middle" /> */}
         {/* <Divider /> */}
 
-        <Grid item direction="column">
+        <Grid container item direction="column">
           <MuiNextLink
             href="https://www.doordash.com/store/sushi-rollin-garland-1775965/"
             variant="button"
@@ -122,7 +122,7 @@ const SideDrawer = ({ navLinks }) => {
             />
           </MuiNextLink>
         </Grid>
-        <Grid item direction="column">
+        <Grid container item direction="column">
           <MuiNextLink
             href="https://www.ubereats.com/store/sushi-rollin/6P3FSDejTAuapBvlNZGQaQ?diningMode=DELIVERY&ps=1"
             variant="button"
@@ -152,7 +152,7 @@ const SideDrawer = ({ navLinks }) => {
             />
           </MuiNextLink>
         </Grid>
-        <Grid item direction="column">
+        <Grid container item direction="column">
           <MuiNextLink
             href="https://www.grubhub.com/restaurant/sushi-rollin-6850-n-shiloh-rd-garland/2769858"
             variant="button"
@@ -182,7 +182,7 @@ const SideDrawer = ({ navLinks }) => {
             />
           </MuiNextLink>
         </Grid>
-        <Grid item direction="column">
+        <Grid container item direction="column">
           <MuiNextLink
             href="https://www.yelp.com/biz/sushi-rollin-garland"
             variant="button"
