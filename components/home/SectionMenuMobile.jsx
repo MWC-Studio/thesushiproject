@@ -1,7 +1,8 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Button, Grid, Typography } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { section1 } from "../../data/homemenu";
+import MuiNextLink from '@components/MuiNextLink';
 
 export default function SectionMenuMobile() {
   return (
@@ -64,6 +65,16 @@ export default function SectionMenuMobile() {
             </div>
           ))}
         </ImageList>
+        <Grid align="center" pt = {2} pb={1}>
+          <Button>
+            <MuiNextLink
+              sx={{ textDecoration: 'none', color: 'common.white' }}
+              href="/menu"
+            >
+              View Store Menu
+            </MuiNextLink>
+          </Button>
+        </Grid>
       </Container>
     </Grid>
   );
