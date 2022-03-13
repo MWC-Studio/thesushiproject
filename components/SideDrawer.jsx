@@ -40,11 +40,13 @@ const SideDrawer = ({ navLinks }) => {
         {navLinks.map(({ title, path }, i) => (
           <Typography
             variannt="button"
+            vaariant="h3"
             key={`${title}${i}`}
             sx={{
               ml: 5,
               my: 2,
               textTransform: `uppercase`,
+              fontSize: 'h3',
             }}
           >
             <MuiNextLink
@@ -68,10 +70,6 @@ const SideDrawer = ({ navLinks }) => {
         ))}
       </Box>
 
-      <hr></hr>
-
-      {/* <Divider variant="middle" /> */}
-
       {/* TODO ICONS */}
 
       <Stack direction="column" spacing={2}>
@@ -84,22 +82,30 @@ const SideDrawer = ({ navLinks }) => {
             sx={{
               ml: 5,
               my: 2,
-              textTransform: `uppercase`,
+              // textTransform: `uppercase`,
+              color: 'secondary.main',
             }}
           >
             Find Sushi Rollin’ On
           </Typography>
         </Box>
+        <hr></hr>
+        {/* <Divider variant="middle" /> */}
+        {/* <Divider /> */}
+
         <Grid item direction="column">
           <MuiNextLink
-            href=""
+            href="https://www.doordash.com/store/sushi-rollin-garland-1775965/"
             variant="button"
+            target="_blank"
+            rel="noopener noreferrer"
             underline="hover"
             sx={{
               ml: 5,
               my: 2,
 
-              textTransform: 'none',
+              opacity: 1,
+
               '&:hover': {
                 color: 'secondary.main',
                 backgroundColor: 'transparent',
@@ -118,8 +124,40 @@ const SideDrawer = ({ navLinks }) => {
         </Grid>
         <Grid item direction="column">
           <MuiNextLink
-            href=""
+            href="https://www.ubereats.com/store/sushi-rollin/6P3FSDejTAuapBvlNZGQaQ?diningMode=DELIVERY&ps=1"
             variant="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            underline="hover"
+            sx={{
+              color: 'text',
+              ml: 5,
+              my: 2,
+              textTransform: `uppercase`,
+              opacity: 1,
+              textTransform: 'none',
+              '&:hover': {
+                color: 'secondary.main',
+                backgroundColor: 'transparent',
+                textUnderlineOffset: '50%',
+              },
+            }}
+          >
+            <Image
+              src="/home_page/ubereats.svg"
+              alt="Grub hub"
+              // layout="responsive"
+              width="100"
+              height="16"
+            />
+          </MuiNextLink>
+        </Grid>
+        <Grid item direction="column">
+          <MuiNextLink
+            href="https://www.grubhub.com/restaurant/sushi-rollin-6850-n-shiloh-rd-garland/2769858"
+            variant="button"
+            target="_blank"
+            rel="noopener noreferrer"
             underline="hover"
             sx={{
               color: 'text',
@@ -146,7 +184,7 @@ const SideDrawer = ({ navLinks }) => {
         </Grid>
         <Grid item direction="column">
           <MuiNextLink
-            href=""
+            href="https://www.yelp.com/biz/sushi-rollin-garland"
             variant="button"
             underline="hover"
             sx={{
@@ -167,8 +205,8 @@ const SideDrawer = ({ navLinks }) => {
               src="/home_page/yelp.svg"
               alt="Yelp"
               // layout="responsive"
-              width="28"
-              height="29"
+              width="59"
+              height="21"
             />
           </MuiNextLink>
         </Grid>
