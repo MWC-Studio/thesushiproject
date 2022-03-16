@@ -11,7 +11,8 @@ import MuiNextLink from './MuiNextLink';
 import Link from '@mui/material/Link';
 import Image from 'next/image';
 import { useState } from 'react';
-import CloseIcon from '@material-ui/icons/Close';
+import CloseIcon from '@mui/icons-material/Close';
+
 
 
 const SideDrawer = ({ navLinks }) => {
@@ -44,6 +45,7 @@ const SideDrawer = ({ navLinks }) => {
         role="presentation"
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
+        on
       >
         
         {navLinks.map(({ title, path }, i) => (
