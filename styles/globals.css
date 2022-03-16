@@ -3,3 +3,7 @@
 .active {
   opacity: 1;
 }
+
+.highlight:hover path {
+  fill: #F48A88;
+}
