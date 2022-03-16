@@ -20,6 +20,7 @@ const OrderBanner = (props) => {
       }}
     >
       <Grid item lg={7} md={7} sm={9} xs={12}>
+        <div className="display-linebreak">
         <Typography
           color="text"
           // TODO: should be h3 in mobile, but seems too small
@@ -28,6 +29,7 @@ const OrderBanner = (props) => {
         >
           {props.text}
         </Typography>
+        </div>
       </Grid>
       <Grid item lg={7} md={8} sm={12} xs={12}
         container

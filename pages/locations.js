@@ -16,13 +16,11 @@ const LocationPage = (props) => {
       />
       {props.isMobile ? <CarouselMobileImage /> : <QuiltedImages />}
       <LocationsContent isMobile={props.isMobile} />
-      <div className="display-linebreak">
         <OrderBanner
           bgColor="common.beige"
           isMobile={props.isMobile}
           text={props.isMobile ? mtext : text}
         />
-      </div>
     </>
   );
 };
