@@ -19,8 +19,6 @@ const ContactUsBanner = (props) => {
                     color="text"
                     variant={props.isMobile ? "h3" : "h2"}
                     align="center"
-                    fontWeight={'fontWeightBold'}
-                    fontFamily={'Nunito'}
                 >
                     Sounds Like A Good Opportunity?
                 </Typography>
@@ -31,7 +29,6 @@ const ContactUsBanner = (props) => {
                         color="text"
                         variant={props.isMobile ? "body2" : "body1"}
                         align="center"
-                        fontFamily={'Nunito'}
                         mb={2}
                     >
                         Contact us via Email or call us.<br />You can also visit one of our locations.<br />Open to anyone who is passionate and<br />is ready to get this rollin’.<br />Join us today!
@@ -41,7 +38,6 @@ const ContactUsBanner = (props) => {
                         color="text"
                         variant={props.isMobile ? "body2" : "body1"}
                         align="center"
-                        fontFamily={'Nunito'}
                     >
                         Contact us via Email or call us. You can also visit one of our locations.<br />Open to anyone who is passionate and is ready to get this rollin’.<br />Join us today!
                     </Typography> }
