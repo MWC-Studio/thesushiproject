@@ -26,8 +26,6 @@ const OrderBanner = (props) => {
                     // TODO: should be h3 in mobile, but seems too small
                     variant={ props.isMobile ? "h3" : "h2" }
                     align="center"
-                    fontWeight={'fontWeightBold'}
-                    fontFamily={'Nunito'}
                 >
                     { props.text }
                 </Typography>
