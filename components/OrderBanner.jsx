@@ -1,10 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import MuiNextLink from "@components/MuiNextLink";
-import { useTheme, useMediaQuery } from "@mui/material";
 
 const OrderBanner = (props) => {
-  const themes = useTheme();
-
   return (
     <Grid
       component="section"
