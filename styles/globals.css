@@ -5,11 +5,15 @@
 }
 
 .highlight:hover path {
-  fill: #F48A88;
+  fill: #f48a88;
 }
 
 .menucategory:hover {
   color: #f48a88;
   text-decoration: underline;
   text-underline-offset: 0.3em;
+}
+
+.display-linebreak {
+  white-space: pre-line;
 }
