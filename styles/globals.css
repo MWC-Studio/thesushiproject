@@ -4,6 +4,10 @@
   opacity: 1;
 }
 
+.highlight:hover path {
+  fill: #F48A88;
+}
+
 .menucategory:hover {
   color: #f48a88;
   text-decoration: underline;
