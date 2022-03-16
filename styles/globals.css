@@ -4,6 +4,10 @@
   opacity: 1;
 }
 
+.highlight {
+  max-width: 160px;
+}
+
 .highlight:hover path {
   fill: #f48a88;
 }
