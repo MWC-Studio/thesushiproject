@@ -2,45 +2,34 @@ import { Container, Grid, Typography, Avatar } from "@mui/material";
 
 const FranchiseProcess = (props) => {
     return (
-    <Container sx={{ mb: 3, mt: 3 }} >        
+    <Container>
         <Grid container bgcolor=""
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
-            sx={{ mb: 3, mt: 8 }}
+            py={8} px={ props.isMobile ? 0 : 4}
         >
-            <Grid item xs={12} sx={{ my: 7 }} bgcolor="">
+            <Grid item xs={12} sx={{ mb:8}} bgcolor="">
                 <Typography 
                     variant={'h2'}
                     color={'text'}
-                    fontFamily={'Nunito'}
-                    fontWeight={'fontWeightBold'}
-                    textAlign="center"
                 >
                     Franchise Process
                 </Typography>
             </Grid>
             
             {itemProcess.map((item, idx) => (
-            <Grid container item wrap="nowrap" spacing={2} xs={11}>
+            <Grid container item wrap="nowrap" gap={ props.isMobile ? 1 : 3 } xs={11} >
                 <Grid item>
                     {props.isMobile ?
                     <Avatar sx={{ bgcolor: 'primary.main', width: 36, height: 36 }}>
-                        <Typography 
-                            variant={'subtitle1'}
-                            fontFamily={'Nunito'}
-                            fontWeight={'fontWeightBold'}
-                        >
+                        <Typography variant={'subtitle1'} >
                         {item.num}
                         </Typography>
                     </Avatar>                        
                     :
                     <Avatar sx={{ bgcolor: 'primary.main', width: 72, height: 72 }}>
-                        <Typography 
-                            variant={'h2'}
-                            fontFamily={'Nunito'}
-                            fontWeight={'fontWeightBold'}
-                        >
+                        <Typography variant={'h2'} >
                         {item.num}
                         </Typography>
                     </Avatar>
@@ -51,8 +40,6 @@ const FranchiseProcess = (props) => {
                     <Typography 
                         variant={'h4'}
                         color={'secondary.main'}
-                        fontFamily={'Nunito'}
-                        fontWeight={'fontWeightBold'}
                         mb={1}
                     >
                         {item.title}
@@ -60,7 +47,6 @@ const FranchiseProcess = (props) => {
                     <Typography
                         variant={'body1'}
                         color={'text'}
-                        fontFamily={'Nunito'}
                         mb={3}
                     >
                         {item.content}

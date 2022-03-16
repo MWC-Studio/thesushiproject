@@ -44,8 +44,6 @@ const TopBanner = (props) => {
                             : 
                             "h1" }
                     align="center"
-                    fontWeight={'fontWeightBold'}
-                    fontFamily={'Nunito'}
                 >
                     {props.description}{<br />}
                     {props.second}
