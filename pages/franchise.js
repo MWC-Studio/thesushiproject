@@ -4,6 +4,7 @@ import TextImgGridMobile from "@components/franchise/TextImgGridMobile";
 import FranchiseProcess from "@components/franchise/FranchiseProcess";
 import TopBanner from "@components/TopBanner";
 import WhatWeOffer from "@components/franchise/WhatWeOffer";
+import CustomerReview from "@components/CustomerReview"
 
 const FranchisePage = (props) => {
   return (
@@ -12,6 +13,7 @@ const FranchisePage = (props) => {
       { props.isMobile ? <TextImgGridMobile /> : <TextImgGrid /> }
       <WhatWeOffer />
       <FranchiseProcess isMobile={props.isMobile} />
+      <CustomerReview  isMobile={props.isMobile} reviewTitle="Proven by Customers" />
       <ContactUsBanner isMobile={props.isMobile} />
     </>
   )
