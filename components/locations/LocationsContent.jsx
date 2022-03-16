@@ -23,8 +23,6 @@ const LocationsContent = (props) => {
                     <Grid item alignSelf="center">
                         <Typography 
                             variant={ (props.isMobile) ? "h3" : "h2" } 
-                            fontFamily="Nunito" 
-                            fontWeight="fontWeightBold"
                             sx={{
                                 display:"inline-block",
                             }}
@@ -37,21 +35,17 @@ const LocationsContent = (props) => {
                     <Grid item xs={12} mb={3}>
                         <Typography
                             variant={ (props.isMobile) ? "h4" : "h3" } 
-                            fontFamily="Nunito" 
-                            fontWeight="fontWeightBold"
                             mb={2}
                         >
                             Contact
                         </Typography>
                         <Typography
                             variant={ (props.isMobile) ? "body2" : "body1" } 
-                            fontFamily="Nunito"
                         >
                             6850 N Shiloh Rd, Garland, TX 75044
                         </Typography>
                         <Typography
                             variant={ (props.isMobile) ? "body2" : "body1" } 
-                            fontFamily="Nunito"
                         >
                             (469) 798-7831
                         </Typography>
@@ -59,37 +53,30 @@ const LocationsContent = (props) => {
                     <Grid item xs={12} mb={3}>
                         <Typography
                             variant={ (props.isMobile) ? "h4" : "h3" } 
-                            fontFamily="Nunito" 
-                            fontWeight="fontWeightBold"
                             mb={2}
                         >
                             Hours of Operation
                         </Typography>
                         <Typography
                             variant={ (props.isMobile) ? "body2" : "body1" } 
-                            fontFamily="Nunito"
                         >
                             Opens Daily 11 a.m. - 9:30 p.m.
                         </Typography>
                         <Typography
                             variant={ (props.isMobile) ? "body2" : "body1" } 
-                            fontFamily="Nunito"
                         >
                             (Last Call: 9:15 p.m.)
                         </Typography>
                     </Grid>
                     <Grid item xs={12} mb={3}>
                         <Typography
-                            variant={ (props.isMobile) ? "h4" : "h3" } 
-                            fontFamily="Nunito" 
-                            fontWeight="fontWeightBold"
+                            variant={ (props.isMobile) ? "h4" : "h3" }
                             mb={2}
                         >
                             Service Offered
                         </Typography>
                         <Typography
                             variant={ (props.isMobile) ? "body2" : "body1" } 
-                            fontFamily="Nunito"
                         >
                             Dine in, To-go, Delivery
                         </Typography>
@@ -111,8 +98,6 @@ const LocationsContent = (props) => {
                     <Grid item alignSelf="center">
                         <Typography 
                             variant={ (props.isMobile) ? "h3" : "h2" } 
-                            fontFamily="Nunito" 
-                            fontWeight="fontWeightBold"
                             sx={{
                                 display:"inline-block",
                             }}
@@ -125,21 +110,17 @@ const LocationsContent = (props) => {
                     <Grid item xs={12} mb={3}>
                         <Typography
                             variant={ (props.isMobile) ? "h4" : "h3" } 
-                            fontFamily="Nunito" 
-                            fontWeight="fontWeightBold"
                             mb={2}
                         >
                             Contact
                         </Typography>
                         <Typography
                             variant={ (props.isMobile) ? "body2" : "body1" } 
-                            fontFamily="Nunito"
                         >
                             1288 W Main St #142, Lewisville, TX 75067
                         </Typography>
                         <Typography
                             variant={ (props.isMobile) ? "body2" : "body1" } 
-                            fontFamily="Nunito"
                         >
                             (817) 320-3722
                         </Typography>
@@ -147,21 +128,17 @@ const LocationsContent = (props) => {
                     <Grid item xs={12} mb={3}>
                         <Typography
                             variant={ (props.isMobile) ? "h4" : "h3" } 
-                            fontFamily="Nunito" 
-                            fontWeight="fontWeightBold"
                             mb={2}
                         >
                             Hours of Operation
                         </Typography>
                         <Typography
                             variant={ (props.isMobile) ? "body2" : "body1" } 
-                            fontFamily="Nunito"
                         >
                             Opens Daily 11 a.m. - 9:00 p.m.
                         </Typography>
                         <Typography
                             variant={ (props.isMobile) ? "body2" : "body1" } 
-                            fontFamily="Nunito"
                         >
                             (Last Call: 8:45 p.m.)
                         </Typography>
@@ -169,15 +146,12 @@ const LocationsContent = (props) => {
                     <Grid item xs={12} mb={3}>
                         <Typography
                             variant={ (props.isMobile) ? "h4" : "h3" } 
-                            fontFamily="Nunito" 
-                            fontWeight="fontWeightBold"
                             mb={2}
                         >
                             Service Offered
                         </Typography>
                         <Typography
                             variant={ (props.isMobile) ? "body2" : "body1" } 
-                            fontFamily="Nunito"
                         >
                             Dine in, To-go, Delivery
                         </Typography>
