@@ -19,7 +19,7 @@ const FranchiseProcess = (props) => {
             </Grid>
             
             {itemProcess.map((item, idx) => (
-            <Grid container item wrap="nowrap" gap={ props.isMobile ? 1 : 3 } xs={11} >
+            <Grid container item wrap="nowrap" gap={ props.isMobile ? 1 : 3 } xs={11}  key={idx}>
                 <Grid item>
                     {props.isMobile ?
                     <Avatar sx={{ bgcolor: 'primary.main', width: 36, height: 36 }}>
@@ -52,7 +52,6 @@ const FranchiseProcess = (props) => {
                         {item.content}
                     </Typography>
                 </Grid>
-                
             </Grid>
             ))}
             
