@@ -4,8 +4,12 @@
   opacity: 1;
 }
 
+.highlight {
+  max-width: 160px;
+}
+
 .highlight:hover path {
-  fill: #F48A88;
+  fill: #f48a88;
 }
 
 .menucategory:hover {
@@ -13,7 +17,6 @@
   text-decoration: underline;
   text-underline-offset: 0.3em;
 }
-
 
 .swiper {
   width: 100%;
@@ -55,3 +58,8 @@
 .swiper-pagination .swiper-pagination-bullet {
   opacity: 1;
 }
+
+.display-linebreak {
+  white-space: pre-line;
+}
+
