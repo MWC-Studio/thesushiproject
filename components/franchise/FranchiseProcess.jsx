@@ -23,21 +23,13 @@ const FranchiseProcess = (props) => {
                 <Grid item>
                     {props.isMobile ?
                     <Avatar sx={{ bgcolor: 'primary.main', width: 36, height: 36 }}>
-                        <Typography 
-                            variant={'subtitle1'}
-                            fontFamily={'Nunito'}
-                            fontWeight={'fontWeightBold'}
-                        >
+                        <Typography variant={'subtitle1'} >
                         {item.num}
                         </Typography>
                     </Avatar>                        
                     :
                     <Avatar sx={{ bgcolor: 'primary.main', width: 72, height: 72 }}>
-                        <Typography 
-                            variant={'h2'}
-                            fontFamily={'Nunito'}
-                            fontWeight={'fontWeightBold'}
-                        >
+                        <Typography variant={'h2'} >
                         {item.num}
                         </Typography>
                     </Avatar>
@@ -48,8 +40,6 @@ const FranchiseProcess = (props) => {
                     <Typography 
                         variant={'h4'}
                         color={'secondary.main'}
-                        fontFamily={'Nunito'}
-                        fontWeight={'fontWeightBold'}
                         mb={1}
                     >
                         {item.title}
@@ -57,7 +47,6 @@ const FranchiseProcess = (props) => {
                     <Typography
                         variant={'body1'}
                         color={'text'}
-                        fontFamily={'Nunito'}
                         mb={3}
                     >
                         {item.content}
