@@ -1,7 +1,7 @@
 export const section1 = [{
     id: 1,
     name: 'Shrimp Tempura Chef Special Roll',
-    img: '/menu_page/roll0.svg',
+    img: '/menu_page/roll0.jpg',
     type: 'Special Rolls'
 },
 {
@@ -13,7 +13,7 @@ export const section1 = [{
 {
     id: 3,
     name: 'Flaming Hot Chef Special Roll',
-    img: '/menu_page/roll2.svg',
+    img: '/menu_page/roll2.jpg',
     type: 'Special Rolls'
 },
 {
