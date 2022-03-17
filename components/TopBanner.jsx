@@ -31,7 +31,6 @@ const TopBanner = (props) => {
                 sx={{
                     position: "absolute",
                     inset: 0,
-                    left: props.isMobile ? '24%' : 0,
                 }}
             >
                 <Typography
@@ -43,7 +42,6 @@ const TopBanner = (props) => {
                                 "h2" : "h1" 
                             : 
                             "h1" }
-                    align="center"
                 >
                     {props.description}{<br />}
                     {props.second}
