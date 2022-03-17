@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const TopBanner = (props) => {
     let btn;
-    if (props.title == "Home") {
+    if (props.title == "Home" && !props.isMobile) {
         btn = <Button variant="outlined" sx={{marginTop: '2%'}}>Franchise</Button>
     }
 
@@ -27,11 +27,11 @@ const TopBanner = (props) => {
                 container
                 flexDirection="column"
                 justifyContent="center"
-                alignItems="center"
+                alignItems={props.isMobile ? "right" : "center"}
+                pr={props.isMobile ? 5 : 0}
                 sx={{
                     position: "absolute",
                     inset: 0,
-                    left: props.isMobile ? '24%' : 0,
                 }}
             >
                 <Typography
@@ -43,7 +43,7 @@ const TopBanner = (props) => {
                                 "h2" : "h1" 
                             : 
                             "h1" }
-                    align="center"
+                    align="right"
                 >
                     {props.description}{<br />}
                     {props.second}
