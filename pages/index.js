@@ -19,7 +19,7 @@ const Homepage = (props) => {
       { props.isMobile ? <SectionMenuMobile /> : <SectionMenu/> }
       {/*<SectionMenu isMobile = {props.isMobile} />*/}
       <SectionLocations />
-      <SectionReview />
+      <SectionReview  isMobile={props.isMobile} reviewTitle="Here’s What the Customers Say" />
     </>
   );
 };
