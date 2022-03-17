@@ -28,6 +28,7 @@ const TopBanner = (props) => {
                 flexDirection="column"
                 justifyContent="center"
                 alignItems="center"
+                pl={30}
                 sx={{
                     position: "absolute",
                     inset: 0,
