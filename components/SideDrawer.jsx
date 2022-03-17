@@ -8,8 +8,6 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/icons-material/Menu';
 import MuiNextLink from './MuiNextLink';
-import Link from '@mui/material/Link';
-import Image from 'next/image';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 
