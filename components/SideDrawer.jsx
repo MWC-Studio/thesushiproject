@@ -2,7 +2,6 @@ import Box from '@mui/material/Box';
 import { Container, Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
-import Divider from '@mui/material/Divider';
 
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
@@ -20,8 +19,9 @@ const SideDrawer = ({ navLinks }) => {
   
   const toggleDrawer = (anchor, open) => (event) => {
     if (
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
+      event.type === 'keydown' && 
+      (event.key === 'Tab' || event.key === 'Shift' )
+    
     ) {
       return;
     }
@@ -43,7 +43,6 @@ const SideDrawer = ({ navLinks }) => {
         role="presentation"
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
-        on
       >
         
         {navLinks.map(({ title, path }, i) => (
@@ -178,10 +177,6 @@ const SideDrawer = ({ navLinks }) => {
             </div>
           </MuiNextLink>
         </Grid>
-      
-
-        {/*old */}
-        
     </Box>
       </Stack>
     </Container>
