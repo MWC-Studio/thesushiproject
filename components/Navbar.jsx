@@ -8,7 +8,6 @@ const Navbar = ({ navLinks }) => {
       component="nav"
       sx={{
         display: { xs: `none`, md: `flex` },
-        mr: -2.8,
       }}
     >
       <Stack direction="row" spacing={4}>

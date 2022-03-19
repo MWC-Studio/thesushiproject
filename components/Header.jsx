@@ -19,12 +19,13 @@ const navLinks = [
   { title: `Locations`, path: `/locations` },
 ];
 
-const Header = () => {
+const Header = (isMobile) => {
   return (
     <>
       <HideOnScroll>
         <AppBar sx={{ bgcolor: 'common.beige' }} position="fixed">
-          <Toolbar sx={{ ml: -3, mr: -3 }}>
+          <Toolbar sx={{ ml: isMobile ? 0 : -3, mr: isMobile ? 0 : -3 }}>
+            {/* <Toolbar> */}
             <Container
               maxWidth="lg"
               sx={{
@@ -41,8 +42,10 @@ const Header = () => {
                 <Image
                   src="/rollinlogodark.svg"
                   alt="logo"
-                  width="257"
-                  height="44"
+                  // width="257"
+                  // height="44"
+                  width="205.2"
+                  height="35.2"
                 />
               </MuiNextLink>
               {/* </div> */}
