@@ -88,7 +88,7 @@ export default function SectionLocations() {
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={{ mb: 1, mt: 2 }}
+              sx={{ mb: 1, mt: 1 }}
             >
               Sushi Rollin' Lewisville
             </Typography>
