@@ -9,6 +9,7 @@ import Menu from '@mui/icons-material/Menu';
 import MuiNextLink from './MuiNextLink';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
+import Image from 'next/image';
 
 const SideDrawer = ({ navLinks }) => {
   const [state, setState] = useState({
@@ -236,6 +237,13 @@ const SideDrawer = ({ navLinks }) => {
                     </clipPath>
                   </defs>
                 </svg>
+                {/* <Image
+                  src="/home_page/grubhub.svg"
+                  alt="Grub hub"
+                  // layout="responsive"
+                  width="96"
+                  height="21"
+                /> */}
               </div>
             </MuiNextLink>
           </Grid>
