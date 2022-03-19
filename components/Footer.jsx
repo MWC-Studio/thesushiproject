@@ -52,6 +52,7 @@ const Footer = ({ isMobile }) => {
               {/* Contact us */}
               <Grid item sx={{ mt: 2 }}>
                 <Typography
+                  // TODO MOBILE VERSION SIZE DOESN'T APPLY
                   variant={isMobile ? 'h5' : 'h3'}
                   color="primary.contrastText"
                   fontWeight="700"
