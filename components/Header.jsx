@@ -24,16 +24,19 @@ const Header = () => {
     <>
       <HideOnScroll>
         <AppBar sx={{ bgcolor: 'common.beige' }} position="fixed">
-          <Toolbar>
+          <Toolbar sx={{ ml: -3, mr: -3 }}>
             <Container
               maxWidth="lg"
               sx={{
                 display: `flex`,
                 justifyContent: `space-between`,
                 alignItems: `center`,
+                mb: 1.8,
+                mt: 1.8,
               }}
             >
               <SideDrawer navLinks={navLinks} />
+              {/* <div style={{ height: '1280px', width: '98px' }}> */}
               <MuiNextLink activeClassName="active" href="/">
                 <Image
                   src="/rollinlogodark.svg"
@@ -42,6 +45,7 @@ const Header = () => {
                   height="44"
                 />
               </MuiNextLink>
+              {/* </div> */}
               <Navbar navLinks={navLinks} />
             </Container>
           </Toolbar>
