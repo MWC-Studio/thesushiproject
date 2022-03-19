@@ -39,7 +39,7 @@ const SideDrawer = ({ navLinks }) => {
       </Box>
 
       {/* TODO close Icon added: right */}
-      <Box>
+      {/* <Box>
         <IconButton
           aria-label="close"
           onClick={toggleDrawer(anchor, false)}
@@ -52,7 +52,7 @@ const SideDrawer = ({ navLinks }) => {
         >
           <CloseIcon />
         </IconButton>
-      </Box>
+      </Box> */}
       <Box
         // sx={{ width: 250, marginTop: `auto`, marginBottom: `auto` }}
         sx={{ width: 250, height: '66.6%' }}
