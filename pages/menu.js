@@ -19,7 +19,7 @@ const MenuPage = (props) => {
           <OrderBanner
             bgColor="common.white"
             isMobile={props.isMobile}
-            text="Find us here!"
+            text="Find Us Here"
           />
         </>
       ) : (
