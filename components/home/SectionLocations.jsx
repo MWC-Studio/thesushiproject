@@ -108,7 +108,7 @@ export default function SectionLocations() {
               fontFamily={'Nunito'}
               sx={{ mb: 1 }}
             >
-              Opens Daily 11 a.m. - 9:00
+              Opens Daily 11 a.m. - 9:00 p.m.
             </Typography>
             <Typography
               color="text"
