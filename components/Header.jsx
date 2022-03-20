@@ -36,8 +36,6 @@ const Header = (isMobile) => {
                 mt: 1.8,
               }}
             >
-              <SideDrawer navLinks={navLinks} />
-              {/* <div style={{ height: '1280px', width: '98px' }}> */}
               <MuiNextLink activeClassName="active" href="/">
                 <Image
                   src="/rollinlogodark.svg"
@@ -48,8 +46,9 @@ const Header = (isMobile) => {
                   height="35.2"
                 />
               </MuiNextLink>
-              {/* </div> */}
+
               <Navbar navLinks={navLinks} />
+              <SideDrawer navLinks={navLinks} />
             </Container>
           </Toolbar>
         </AppBar>
