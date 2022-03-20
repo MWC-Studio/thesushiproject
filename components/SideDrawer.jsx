@@ -56,7 +56,7 @@ const SideDrawer = ({ navLinks }) => {
       </Box> */}
       <Box
         // sx={{ width: 250, marginTop: `auto`, marginBottom: `auto` }}
-        sx={{ width: 250, height: '66.6%' }}
+        sx={{ width: 250, height: '75%' }}
         role="presentation"
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
@@ -125,7 +125,7 @@ const SideDrawer = ({ navLinks }) => {
             md={3}
             sm={12}
             xs={12}
-            sx={{ ml: 3, my: 4 }}
+            sx={{ ml: 3, my: 2 }}
           >
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -169,7 +169,7 @@ const SideDrawer = ({ navLinks }) => {
             md={3}
             sm={12}
             xs={12}
-            sx={{ ml: 3, my: 4 }}
+            sx={{ ml: 3, my: 2 }}
           >
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -204,7 +204,7 @@ const SideDrawer = ({ navLinks }) => {
             md={3}
             sm={12}
             xs={12}
-            sx={{ ml: 3, my: 4 }}
+            sx={{ ml: 3, my: 2 }}
           >
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -254,7 +254,7 @@ const SideDrawer = ({ navLinks }) => {
             md={2}
             sm={12}
             xs={12}
-            sx={{ ml: 3, my: 4 }}
+            sx={{ ml: 3, my: 2 }}
           >
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
