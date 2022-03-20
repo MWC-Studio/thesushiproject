@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap");
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .active {
   opacity: 1;
 }
@@ -26,7 +31,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #FBF8ED;
+  background: #fbf8ed;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -52,7 +57,7 @@
 
 .swiper-pagination-bullet-active {
   color: #fff;
-  background: #F48A88;
+  background: #f48a88;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -62,4 +67,3 @@
 .display-linebreak {
   white-space: pre-line;
 }
-
