@@ -51,12 +51,15 @@ const Footer = ({ isMobile }) => {
             >
               {/* Contact us */}
               <Grid item sx={{ mt: 2 }}>
-                <Image
-                  src="/footer/contactus.svg"
-                  alt="email"
-                  width="127"
-                  height="16"
-                />
+                <Typography
+                  // TODO MOBILE VERSION SIZE DOESN'T APPLY
+                  variant={isMobile ? 'h5' : 'h3'}
+                  color="primary.contrastText"
+                  fontWeight="700"
+                  fontFamily="Nunito"
+                >
+                  CONTACT US
+                </Typography>
 
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
@@ -143,13 +146,16 @@ const Footer = ({ isMobile }) => {
               </Grid>
 
               {/* Find us on */}
-              <Grid item sx={{ mt: 4 }}>
-                <Image
-                  src="/footer/findus.svg"
-                  alt="find us"
-                  width="114"
-                  height="16"
-                />
+              <Grid item sx={{ mt: 5.5 }}>
+                <Typography
+                  variant={isMobile ? 'h5' : 'h3'}
+                  // variant="h3"
+                  color="primary.contrastText"
+                  fontWeight="700"
+                  fontFamily="Nunito"
+                >
+                  FIND US ON
+                </Typography>
 
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link

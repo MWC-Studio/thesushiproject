@@ -19,29 +19,36 @@ const navLinks = [
   { title: `Locations`, path: `/locations` },
 ];
 
-const Header = () => {
+const Header = (isMobile) => {
   return (
     <>
       <HideOnScroll>
         <AppBar sx={{ bgcolor: 'common.beige' }} position="fixed">
-          <Toolbar>
+          <Toolbar sx={{ ml: isMobile ? 0 : -3, mr: isMobile ? 0 : -3 }}>
+            {/* <Toolbar> */}
             <Container
               maxWidth="lg"
               sx={{
                 display: `flex`,
                 justifyContent: `space-between`,
                 alignItems: `center`,
+                mb: 1.8,
+                mt: 1.8,
               }}
             >
               <SideDrawer navLinks={navLinks} />
+              {/* <div style={{ height: '1280px', width: '98px' }}> */}
               <MuiNextLink activeClassName="active" href="/">
                 <Image
                   src="/rollinlogodark.svg"
                   alt="logo"
-                  width="257"
-                  height="44"
+                  // width="257"
+                  // height="44"
+                  width="205.2"
+                  height="35.2"
                 />
               </MuiNextLink>
+              {/* </div> */}
               <Navbar navLinks={navLinks} />
             </Container>
           </Toolbar>
