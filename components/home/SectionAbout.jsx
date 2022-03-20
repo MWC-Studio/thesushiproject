@@ -105,7 +105,7 @@ const SectionAbout = ({ isMobile }) => {
           >
             Roll with Us
           </Typography>
-          <Typography textAlign={isMobile? "left": "center"} sx={isMobile ? { my: 1} : { my : 1 , px : 1 }}>
+          <Typography textAlign={isMobile? "left": "center"} sx={isMobile ? { my: 1} : { my : 1}}>
             Sushi Rollin’ started its journey in the middle of Pandemic. Our business model successfully supported delivery focus experience. Over 500+ customer reviews prove that success! Now that we’re expanding, our focus has also evolved to provide a more approachable and enjoyable sushi experience.
             <br/> <br/>
             It’s an opportunity that keeps rolling. Join us today!
