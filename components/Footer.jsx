@@ -30,8 +30,10 @@ const Footer = ({ isMobile }) => {
             <Image
               src="/footer/footer_rollinlogo_white.svg"
               alt="logo"
-              width="205"
-              height="35"
+              // width="205"
+              // height="35"
+              width={isMobile ? '148' : '205'}
+              height={isMobile ? '25' : '35'}
             />
           </MuiNextLink>
         </Grid>
@@ -80,10 +82,10 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/icon_email.svg"
                       alt="email"
-                      // width={isMobile ? '20' : '24'}
-                      // height={isMobile ? '16' : '18.67'}
-                      width="28"
-                      height="28"
+                      width={isMobile ? 20 : 24}
+                      height={isMobile ? 16 : 18.67}
+                      // width="28"
+                      // height="28"
                     />
                     <Typography
                       variant={isMobile ? 'body2' : 'h3'}
@@ -167,8 +169,10 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/insta1.svg"
                       alt="Garland Instagram"
-                      width="240"
-                      height="28"
+                      // width="240"
+                      // height="28"
+                      width={isMobile ? '154.49' : '240'}
+                      height={isMobile ? '19' : '28'}
                     />
                   </Link>
                 </Box>
@@ -183,8 +187,10 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/insta2.svg"
                       alt="Lewisville Instagram"
-                      width="258"
-                      height="28"
+                      // width="258"
+                      // height="28"
+                      width={isMobile ? '167.49' : '258'}
+                      height={isMobile ? '19' : '28'}
                     />
                   </Link>
                 </Box>
