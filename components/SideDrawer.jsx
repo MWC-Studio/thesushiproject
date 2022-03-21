@@ -9,7 +9,9 @@ import Menu from '@mui/icons-material/Menu';
 import MuiNextLink from './MuiNextLink';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
+import Divider from '@mui/material/Divider';
 import Image from 'next/image';
+import { flexbox } from '@mui/system';
 
 const SideDrawer = ({ navLinks }) => {
   const [state, setState] = useState({
@@ -28,19 +30,28 @@ const SideDrawer = ({ navLinks }) => {
   };
 
   const list = (anchor) => (
-    <Container>
+    // <Container>
+    <Container
+    // sx={{
+    //   display: 'flex',
+    //   flexDirection: 'column',
+    //   alignItem: 'center',
+    //   height: '100vh',
+    //   justifyContent: 'center',
+    // }}
+    >
       {/*close Icon added: left*/}
-      <Box>
+      {/* <Box>
         <IconButton
           onClick={toggleDrawer(anchor, false)}
           sx={{ ml: -1, mt: 1, mb: -3, color: 'primary.contrastText' }}
         >
           <CloseIcon />
         </IconButton>
-      </Box>
+      </Box> */}
 
       {/* TODO close Icon added: right */}
-      {/* <Box>
+      <Box sx={{ position: 'absolute', right: '40px', top: '8px' }}>
         <IconButton
           aria-label="close"
           onClick={toggleDrawer(anchor, false)}
@@ -53,59 +64,67 @@ const SideDrawer = ({ navLinks }) => {
         >
           <CloseIcon />
         </IconButton>
-      </Box> */}
-      <Box
-        // sx={{ width: 250, marginTop: `auto`, marginBottom: `auto` }}
-        sx={{ width: 250, height: '66.6%' }}
-        role="presentation"
-        onClick={toggleDrawer(anchor, false)}
-        onKeyDown={toggleDrawer(anchor, false)}
-      >
-        {navLinks.map(({ title, path }, i) => (
-          <Typography
-            variannt="button"
-            vaariant="h3"
-            key={`${title}${i}`}
-            sx={{
-              ml: 4,
-              my: 3,
-              textTransform: `uppercase`,
-              fontSize: 'h3',
-            }}
-          >
-            <MuiNextLink
-              href={path}
-              variant="button"
-              underline="hover"
+      </Box>
+      <Stack direction="column" spacing={2} alignItems="center">
+        <Box
+          // sx={{ width: 250, marginTop: `auto`, marginBottom: `auto` }}
+          // sx={{ width: 250, height: '66.6%' }}
+          sx={{
+            width: 250,
+            pt: 4,
+            pb: 5,
+            textAlign: 'center',
+          }}
+          role="presentation"
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+        >
+          {navLinks.map(({ title, path }, i) => (
+            <Typography
+              variannt="button"
+              vaariant="h3"
+              key={`${title}${i}`}
               sx={{
-                color: 'primary.contrastText',
-                opacity: 1,
-                textTransform: 'none',
-                '&:hover': {
-                  color: 'secondary.main',
-                  backgroundColor: 'transparent',
-                  textUnderlineOffset: '50%',
-                },
+                // ml: 4,
+                my: 3,
+                textTransform: `uppercase`,
+                // fontSize: 'h3',
               }}
             >
-              {title}
-            </MuiNextLink>
-          </Typography>
-        ))}
-      </Box>
+              <MuiNextLink
+                href={path}
+                variant="button"
+                underline="hover"
+                sx={{
+                  color: 'primary.contrastText',
+                  opacity: 1,
+                  textTransform: 'none',
+                  '&:hover': {
+                    color: 'secondary.main',
+                    backgroundColor: 'transparent',
+                    textUnderlineOffset: '50%',
+                  },
+                }}
+              >
+                {title}
+              </MuiNextLink>
+            </Typography>
+          ))}
+        </Box>
+        {/* </Stack> */}
 
-      {/* TODO ICONS */}
+        {/* TODO ICONS */}
 
-      <Stack direction="column" spacing={2}>
-        <Box sx={{ width: 250 }}>
+        {/* <Stack direction="column" spacing={2} alignItems="center"> */}
+        <Box sx={{ width: 250, textAlign: 'center' }}>
           <Typography
             color="primary.contrastText"
-            // variant="h5"
-            variant="button"
-            align="center"
+            variant="h5"
+            // variant="button"
+            textalign="center"
             sx={{
-              ml: 4,
-              my: 2,
+              // ml: 4,
+              // my: 2,
               // textTransform: `uppercase`,
               color: 'secondary.main',
             }}
@@ -113,19 +132,23 @@ const SideDrawer = ({ navLinks }) => {
             Find Sushi Rollin’ On
           </Typography>
         </Box>
-        <hr></hr>
+        {/* <hr /> */}
+        <div></div>
         {/* <Divider variant="middle" /> */}
-        {/* <Divider /> */}
-        <Box sx={{ width: 250 }}>
-          {/*Order banner*/}
+
+        <Box>
           <Grid
+            container
             item
             align="column"
+            alignItems="center"
+            justifyContent="center"
             lg={3}
             md={3}
             sm={12}
             xs={12}
-            sx={{ ml: 3, my: 4 }}
+            // sx={{ ml: 3, my: 4 }}
+            sx={{ my: 2 }}
           >
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -163,13 +186,16 @@ const SideDrawer = ({ navLinks }) => {
           </Grid>
 
           <Grid
+            container
             item
             align="column"
+            alignItems="center"
+            justifyContent="center"
             lg={3}
             md={3}
             sm={12}
             xs={12}
-            sx={{ ml: 3, my: 4 }}
+            sx={{ my: 4 }}
           >
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -198,13 +224,16 @@ const SideDrawer = ({ navLinks }) => {
             </MuiNextLink>
           </Grid>
           <Grid
+            container
             item
             align="column"
+            alignItems="center"
+            justifyContent="center"
             lg={2}
             md={3}
             sm={12}
             xs={12}
-            sx={{ ml: 3, my: 4 }}
+            sx={{ my: 4 }}
           >
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -248,13 +277,16 @@ const SideDrawer = ({ navLinks }) => {
             </MuiNextLink>
           </Grid>
           <Grid
+            container
             item
-            align="colomn"
+            align="column"
+            alignItems="center"
+            justifyContent="center"
             lg={2}
             md={2}
             sm={12}
             xs={12}
-            sx={{ ml: 3, my: 4 }}
+            sx={{ my: 4 }}
           >
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -303,7 +335,7 @@ const SideDrawer = ({ navLinks }) => {
         <Menu fontSize="large" />
       </IconButton>
       <Drawer
-        anchor="left"
+        anchor="top"
         open={state.right}
         onClose={toggleDrawer('right', false)}
         sx={{
