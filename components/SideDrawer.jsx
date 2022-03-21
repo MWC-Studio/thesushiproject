@@ -32,13 +32,13 @@ const SideDrawer = ({ navLinks }) => {
   const list = (anchor) => (
     // <Container>
     <Container
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItem: 'center',
-        height: '100vh',
-        justifyContent: 'center',
-      }}
+    // sx={{
+    //   display: 'flex',
+    //   flexDirection: 'column',
+    //   alignItem: 'center',
+    //   height: '100vh',
+    //   justifyContent: 'center',
+    // }}
     >
       {/*close Icon added: left*/}
       {/* <Box>
@@ -111,11 +111,11 @@ const SideDrawer = ({ navLinks }) => {
             </Typography>
           ))}
         </Box>
-      </Stack>
+        {/* </Stack> */}
 
-      {/* TODO ICONS */}
+        {/* TODO ICONS */}
 
-      <Stack direction="column" spacing={2} alignItems="center">
+        {/* <Stack direction="column" spacing={2} alignItems="center"> */}
         <Box sx={{ width: 250, textAlign: 'center' }}>
           <Typography
             color="primary.contrastText"
@@ -132,8 +132,8 @@ const SideDrawer = ({ navLinks }) => {
             Find Sushi Rollin’ On
           </Typography>
         </Box>
-        {/* <hr></hr>> */}
-        {/* <div></div> */}
+        {/* <hr /> */}
+        <div></div>
         {/* <Divider variant="middle" /> */}
 
         <Box>
@@ -341,10 +341,6 @@ const SideDrawer = ({ navLinks }) => {
         sx={{
           '.MuiDrawer-paper': {
             bgcolor: 'primary.main',
-            // display: 'flex',
-            // justifyContent: 'center',
-            // alignItems: 'center',
-            // flexWrap: 'wrap',
           },
         }}
       >
