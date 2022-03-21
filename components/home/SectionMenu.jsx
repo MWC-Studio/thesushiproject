@@ -17,7 +17,7 @@ export default function SectionMenu() {
       }}
     >
       <Container sx={{ mt: 8 }}>
-        <Typography textAlign="center" color="secondary.main">
+        <Typography fontWeight='bold' textAlign="center" color="secondary.main">
           FAST & TASTY
         </Typography>
         <Typography
