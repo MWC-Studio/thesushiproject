@@ -14,8 +14,8 @@ const AboutPage = (isMobile) => {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      xs={12}
-      md={6}
+    
+      lg={5}
       sx={{ mb: 3, mt: 3 }}
     >
       <Grid
@@ -30,7 +30,6 @@ const AboutPage = (isMobile) => {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          xs={12}
           sx={{ mb: 2, mt: 4 }}
         >
          <Typography fontWeight= 'bold' textAlign="center" color="#F48A88" gutterbottom="true" py={1}>
@@ -52,6 +51,7 @@ const AboutPage = (isMobile) => {
         direction="column"
         justifyContent="center"
         alignItems="center"
+        lg={5}
         > 
           <Image
             src="/aboutpage/about_img.svg"
@@ -93,7 +93,7 @@ const AboutPage = (isMobile) => {
           <MuiNextLink href="/franchise" underline="none" sx={{ mt: 8 }} >
             <Button> Franchise Opportunity</Button>
           </MuiNextLink>
-          <MuiNextLink href="/menu" underline="none" sx={{ mt: 4, mb: 8 }}>
+          <MuiNextLink href="/menu" underline="none" sx={{ mt: 4, mb: 4 }}>
             <Button 
             style={{maxWidth: '263px', minWidth: '263px'}}
             variant="outlined" // black outline
