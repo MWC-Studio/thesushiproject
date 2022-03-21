@@ -17,11 +17,7 @@ export default function SectionMenu() {
       }}
     >
       <Container sx={{ mt: 8 }}>
-<<<<<<< HEAD
-        <Typography fontWeight='bold' textAlign="center" color="secondary.main">
-=======
         <Typography variant="h3" textAlign="center" color="secondary.main">
->>>>>>> dev
           FAST & TASTY
         </Typography>
         <Typography
