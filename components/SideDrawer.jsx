@@ -10,6 +10,7 @@ import MuiNextLink from './MuiNextLink';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
+import { flexbox } from '@mui/system';
 
 const SideDrawer = ({ navLinks }) => {
   const [state, setState] = useState({
@@ -303,12 +304,16 @@ const SideDrawer = ({ navLinks }) => {
         <Menu fontSize="large" />
       </IconButton>
       <Drawer
-        anchor="left"
+        anchor="top"
         open={state.right}
         onClose={toggleDrawer('right', false)}
         sx={{
           '.MuiDrawer-paper': {
             bgcolor: 'primary.main',
+            // display: 'flex',
+            // justifyContent: 'center',
+            // alignItems: 'center',
+            // flexWrap: 'wrap',
           },
         }}
       >
