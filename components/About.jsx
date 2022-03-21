@@ -102,7 +102,6 @@ const AboutPage = (isMobile) => {
               borderColor: "primary.main",
               color: "#40464D",
               '&:hover': {
-                variant: "outline",
                 borderColor: "#F48A88",
             }}}
           >
