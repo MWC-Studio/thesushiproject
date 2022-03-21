@@ -11,7 +11,8 @@ const AboutMobile = () => {
         <Grid container 
             justifyContent="center"
             alignItems="center" 
-            py={8}
+            pt={6}
+            pb={5}
         >
             <Grid item xs={12} md={12}>
             <Typography  
@@ -64,28 +65,32 @@ const AboutMobile = () => {
           direction="column"
           justifyContent="center"
           alignItems="left"
-          width={650} //596으로 하면 줄이 3줄이 됨 604부터 2줄
+          width={610} //596으로 하면 줄이 3줄이 됨 604부터 2줄
         > 
-          <Typography variant="body1" textAlign="center" color="#333333" pt={8}>
+          <Typography width={343} variant="body1" fontStyle='italic' textAlign="center" color="#333333" pt={4}>
           “When people think about Sushi, It’s pricey and not an everyday kind of experience. But with Sushi Rollin, the experience gets more approachable but still unique."
-          <br/><br/>
+          </Typography>
+          <Typography variant="body1"  textAlign="center" color="#333333" py={2}>
           -The Chef CEO, June Kim-
           </Typography>
         </Grid>
         {/*버튼 센터로 맞추기 76줄*/}
         <Grid item lg={7} md={7} sm={9} xs={12} align="center">
-          <MuiNextLink href="/franchise" underline="none" sx={{ mt:1}} >
+          <MuiNextLink href="/franchise" underline="none" sx={{ mt:4}} >
             <Button> Franchise Opportunity</Button>
           </MuiNextLink>
         </Grid>
-          <MuiNextLink href="/menu" alignItems="center" underline="none" >
+          <MuiNextLink href="/menu" alignItems="center" underline="none" sx={{ mt:1}}>
             <Button 
               style={{maxWidth: '230px', minWidth: '230px'}}
               variant="outlined" 
               sx={{ 
-              borderColor: "primary.main", 
-              color: "primary.main"
-              }}
+                backgroundColor: "white",
+                borderColor: "primary.main",
+                color: "#40464D",
+                  '&:hover': {
+                borderColor: "#F48A88",
+                  }}}
             >
             View Our Menu
             </Button>
