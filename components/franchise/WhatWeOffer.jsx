@@ -12,7 +12,7 @@ const WhatWeOffer = (props) => {
         >
             <Grid item lg={12}>
                 <Typography
-                    variant={'h2'}
+                    variant='h2'
                     color={'text'}
                     textAlign="center"
                     mb={4}
