@@ -6,7 +6,7 @@ const TextImgGrid = () => {
         <Grid container 
             justifyContent="center"
             alignItems="center" 
-            py={8}
+            py={6}
         >
             <Grid item xs={12} md={12}>
                 <Typography 
@@ -63,7 +63,7 @@ const TextImgGrid = () => {
                         color={'text'}
                         mb={3}
                     >
-                        Pandemic Proved - Delivery, Dine-in, To-go & more!
+                        Pandemic Proved -<br />Delivery, Dine-in, To-go & more!
                     </Typography>
                     <Typography 
                         variant="body1"
