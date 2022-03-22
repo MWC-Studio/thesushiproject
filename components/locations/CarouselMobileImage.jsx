@@ -32,7 +32,7 @@ const CarouselMobileImage = () => {
 
 function Item(props) {
     return (
-        <Image src={props.item.src} width={343} height={266} layout="responsive" alt={props.item.name} />
+        <Image src={props.item.src} width={343} height={266} layout="responsive" alt={props.item.title} />
     )
 }
  

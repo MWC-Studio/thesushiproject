@@ -30,9 +30,9 @@ export default function QuiltedImages() {
             gap={30}
         >
         {items.map((item) => (
-            <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+            <ImageListItem key={item.src} cols={item.cols || 1} rows={item.rows || 1}>
             <img
-                {...srcset(item.img, 230, item.rows, item.cols)}
+                {...srcset(item.src, 230, item.rows, item.cols)}
                 alt={item.title}
                 loading="lazy"
             />
