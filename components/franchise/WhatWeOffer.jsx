@@ -1,17 +1,18 @@
 import { Grid, Typography } from "@mui/material";
 import Image from "next/dist/client/image";
 
-const WhatWeOffer = () => {
+const WhatWeOffer = (props) => {
     return (
         <Grid container
             justifyContent="center"
             alignItems="center"
-            py={8}
+            py={6}
+            px={2}
             sx={{ backgroundColor: 'common.beige' }}
         >
             <Grid item lg={12}>
                 <Typography
-                    variant="h2"
+                    variant={'h2'}
                     color={'text'}
                     textAlign="center"
                     mb={4}
@@ -19,14 +20,14 @@ const WhatWeOffer = () => {
                     What We Offer
                 </Typography>
                 <Typography
-                    variant="body1"
+                    variant={props.isMobile ? 'body2' : 'body1'}
                     color={'text'}
                     textAlign="center"
                 >
                     From One-on-One sushi training to business advice,
                 </Typography>
                 <Typography
-                    variant="body1"
+                    variant={props.isMobile ? 'body2' : 'body1'}
                     color={'text'}
                     textAlign="center"
                 >
