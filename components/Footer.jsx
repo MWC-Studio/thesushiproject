@@ -32,8 +32,8 @@ const Footer = ({ isMobile }) => {
               alt="logo"
               // width="205"
               // height="35"
-              width={isMobile ? '148' : '205'}
-              height={isMobile ? '25' : '35'}
+              width={isMobile ? '148' : '204.49'}
+              height={isMobile ? '25' : '34.41'}
             />
           </MuiNextLink>
         </Grid>
@@ -55,7 +55,7 @@ const Footer = ({ isMobile }) => {
               <Grid item sx={{ mt: 2 }}>
                 <Typography
                   // TODO MOBILE VERSION SIZE DOESN'T APPLY
-                  variant={isMobile ? 'h5' : 'h3'}
+                  variant={isMobile ? 'body3' : 'h3'}
                   color="primary.contrastText"
                   fontWeight="700"
                   fontFamily="Nunito"
@@ -88,7 +88,7 @@ const Footer = ({ isMobile }) => {
                       // height="28"
                     />
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle3' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
@@ -96,12 +96,12 @@ const Footer = ({ isMobile }) => {
                       Email
                     </Typography>
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="400"
                       fontFamily="Nunito"
                     >
-                      wnsrl91@gmail.com
+                      Sushirollin.us@gmail.com
                     </Typography>
                   </Link>
                 </Box>
@@ -128,7 +128,7 @@ const Footer = ({ isMobile }) => {
                       height="28"
                     />
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle3' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
@@ -136,7 +136,7 @@ const Footer = ({ isMobile }) => {
                       Phone
                     </Typography>
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="400"
                       fontFamily="Nunito"
@@ -150,7 +150,7 @@ const Footer = ({ isMobile }) => {
               {/* Find us on */}
               <Grid item sx={{ mt: 5.5 }}>
                 <Typography
-                  variant={isMobile ? 'h5' : 'h3'}
+                  variant={isMobile ? 'body3' : 'h3'}
                   // variant="h3"
                   color="primary.contrastText"
                   fontWeight="700"
@@ -174,6 +174,12 @@ const Footer = ({ isMobile }) => {
                       width={isMobile ? '154.49' : '240'}
                       height={isMobile ? '19' : '28'}
                     />
+                    <Typography
+                      variant={isMobile ? 'subtitle3' : 'h3'}
+                      color="primary.contrastText"
+                      fontWeight="700"
+                      fontFamily="Nunito"
+                    ></Typography>
                   </Link>
                 </Box>
 
