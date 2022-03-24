@@ -1,25 +1,25 @@
 export const section1 = [{
     id: 1,
     name: 'Shrimp Tempura Chef Special Roll',
-    img: '/home_page/roll0.jpg',
+    img: '/menu_page/roll0.jpg',
     type: 'Special Rolls'
 },
 {
     id: 2,
     name: 'Titanic Chef Special Roll',
-    img: '/home_page/roll1.jpg',
+    img: '/menu_page/roll1.jpg',
     type: 'Special Rolls'
 },
 {
     id: 3,
     name: 'Flaming Hot Chef Special Roll',
-    img: '/home_page/roll2.jpg',
+    img: '/menu_page/roll2.jpg',
     type: 'Special Rolls'
 },
 {
     id: 4,
     name: 'Crispy Rice SpicyTuna',
-    img: '/home_page/roll3.jpg',
+    img: '/menu_page/roll3.svg',
     type: 'Special Rolls'
 },
 {

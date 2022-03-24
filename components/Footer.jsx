@@ -30,8 +30,10 @@ const Footer = ({ isMobile }) => {
             <Image
               src="/footer/footer_rollinlogo_white.svg"
               alt="logo"
-              width="205"
-              height="35"
+              // width="205"
+              // height="35"
+              width={isMobile ? '148' : '204.49'}
+              height={isMobile ? '25' : '34.41'}
             />
           </MuiNextLink>
         </Grid>
@@ -51,12 +53,15 @@ const Footer = ({ isMobile }) => {
             >
               {/* Contact us */}
               <Grid item sx={{ mt: 2 }}>
-                <Image
-                  src="/footer/contactus.svg"
-                  alt="email"
-                  width="127"
-                  height="16"
-                />
+                <Typography
+                  // TODO MOBILE VERSION SIZE DOESN'T APPLY
+                  variant={isMobile ? 'body3' : 'h3'}
+                  color="primary.contrastText"
+                  fontWeight="700"
+                  fontFamily="Nunito"
+                >
+                  CONTACT US
+                </Typography>
 
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
@@ -77,13 +82,13 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/icon_email.svg"
                       alt="email"
-                      // width={isMobile ? '20' : '24'}
-                      // height={isMobile ? '16' : '18.67'}
-                      width="28"
-                      height="28"
+                      width={isMobile ? 20 : 24}
+                      height={isMobile ? 16 : 18.67}
+                      // width="28"
+                      // height="28"
                     />
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle3' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
@@ -91,12 +96,12 @@ const Footer = ({ isMobile }) => {
                       Email
                     </Typography>
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="400"
                       fontFamily="Nunito"
                     >
-                      wnsrl91@gmail.com
+                      Sushirollin.us@gmail.com
                     </Typography>
                   </Link>
                 </Box>
@@ -123,7 +128,7 @@ const Footer = ({ isMobile }) => {
                       height="28"
                     />
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle3' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
@@ -131,7 +136,7 @@ const Footer = ({ isMobile }) => {
                       Phone
                     </Typography>
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="400"
                       fontFamily="Nunito"
@@ -143,13 +148,16 @@ const Footer = ({ isMobile }) => {
               </Grid>
 
               {/* Find us on */}
-              <Grid item sx={{ mt: 4 }}>
-                <Image
-                  src="/footer/findus.svg"
-                  alt="find us"
-                  width="114"
-                  height="16"
-                />
+              <Grid item sx={{ mt: 5.5 }}>
+                <Typography
+                  variant={isMobile ? 'body3' : 'h3'}
+                  // variant="h3"
+                  color="primary.contrastText"
+                  fontWeight="700"
+                  fontFamily="Nunito"
+                >
+                  FIND US ON
+                </Typography>
 
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
@@ -161,9 +169,17 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/insta1.svg"
                       alt="Garland Instagram"
-                      width="240"
-                      height="28"
+                      // width="240"
+                      // height="28"
+                      width={isMobile ? '154.49' : '240'}
+                      height={isMobile ? '19' : '28'}
                     />
+                    <Typography
+                      variant={isMobile ? 'subtitle3' : 'h3'}
+                      color="primary.contrastText"
+                      fontWeight="700"
+                      fontFamily="Nunito"
+                    ></Typography>
                   </Link>
                 </Box>
 
@@ -177,8 +193,10 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/insta2.svg"
                       alt="Lewisville Instagram"
-                      width="258"
-                      height="28"
+                      // width="258"
+                      // height="28"
+                      width={isMobile ? '167.49' : '258'}
+                      height={isMobile ? '19' : '28'}
                     />
                   </Link>
                 </Box>

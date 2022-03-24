@@ -1,6 +1,7 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 const fontBold = 700;
+const fontBold1 = 400;
 
 // Create a theme instance.
 let theme = createTheme({
@@ -14,14 +15,14 @@ let theme = createTheme({
     },
   },
   palette: {
-    primary: { main: "#40464D", contrastText: "#FFFFFF" },
-    secondary: { main: "#F48A88" },
-    text: { main: "#333333" },
-    common: { beige: "#FBF8ED" },
-    footer: { main: "#262626" },
+    primary: { main: '#40464D', contrastText: '#FFFFFF' },
+    secondary: { main: '#F48A88' },
+    text: { main: '#333333' },
+    common: { beige: '#FBF8ED' },
+    footer: { main: '#262626' },
   },
   typography: {
-    fontFamily: ["Nunito", "sans-serif"].join(","),
+    fontFamily: ['Nunito', 'sans-serif'].join(','),
     // fontWeightLight: 400,
     // fontWeightBold: 700,
     h1: {
@@ -55,17 +56,25 @@ let theme = createTheme({
     subtitle2: {
       fontSize: 12,
     },
+    subtitle3: {
+      fontSize: 12,
+      fontweight: fontBold1,
+    },
     body1: {
       fontSize: 16,
     },
     body2: {
       fontSize: 14,
     },
+    body3: {
+      fontSize: 14,
+      fontweight: fontBold,
+    },
     button: {
       fontWeight: fontBold,
       // fontFamily: "Nunito",
       fontSize: 16,
-      textTransform: "none",
+      textTransform: 'none',
     },
   },
 });
@@ -81,24 +90,24 @@ theme.components = {
         paddingTop: 16,
         paddingBottom: 16,
         // mobile button
-        [theme.breakpoints.down("md")]: {
+        [theme.breakpoints.down('md')]: {
           height: 43,
           paddingLeft: 32,
           paddingRight: 32,
           paddingTop: 12,
           paddingBottom: 12,
         },
-        backgroundColor: "#40464D",
-        color: "#FFFFFF",
+        backgroundColor: '#40464D',
+        color: '#FFFFFF',
         '&:hover': {
-          backgroundColor: "#F48A88",
-          color: "#40464D",
-        }
+          backgroundColor: '#F48A88',
+          color: '#40464D',
+        },
       },
       outlined: {
-        backgroundColor: "transparent",
-        color: "#FAF6E8",
-        borderColor: "#FAF6E8",
+        backgroundColor: 'transparent',
+        color: '#FAF6E8',
+        borderColor: '#FAF6E8',
         borderWidth: 2,
       },
     },
@@ -108,10 +117,6 @@ theme.components = {
 theme = responsiveFontSizes(theme);
 
 export default theme;
-
-
-
-
 
 // import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 

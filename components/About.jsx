@@ -14,8 +14,8 @@ const AboutPage = (isMobile) => {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      xs={12}
-      md={6}
+    
+      lg={5}
       sx={{ mb: 3, mt: 3 }}
     >
       <Grid
@@ -30,10 +30,9 @@ const AboutPage = (isMobile) => {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          xs={12}
           sx={{ mb: 2, mt: 4 }}
         >
-         <Typography textAlign="center" color="#F48A88" gutterbottom="true" py={1}>
+         <Typography fontWeight= 'bold' textAlign="center" color="#F48A88" gutterbottom="true" py={1}>
          Fresh, Various, and Authentic
         </Typography>
         <Typography
@@ -52,6 +51,7 @@ const AboutPage = (isMobile) => {
         direction="column"
         justifyContent="center"
         alignItems="center"
+        lg={5}
         > 
           <Image
             src="/aboutpage/about_img.svg"
@@ -80,11 +80,12 @@ const AboutPage = (isMobile) => {
           direction="column"
           justifyContent="center"
           alignItems="left"
-          width={604} //596으로 하면 줄이 3줄이 됨 604부터 2줄
+          width={610} //596으로 하면 줄이 3줄이 됨 604부터 2줄
         > 
-          <Typography variant="body1" textAlign="center" color="#333333" pt={8}>
+          <Typography variant='body1' fontStyle='italic' color="333333" textAlign="center" pt={8}>
           “When people think about Sushi, It’s pricey and not an everyday kind of experience. But with Sushi Rollin, the experience gets more approachable but still unique."
-          <br/><br/>
+          </Typography>
+          <Typography variant='body1' color="333333" textAlign="center" pt={2}>
           -The Chef CEO, June Kim-
           </Typography>
         </Grid>
@@ -92,14 +93,17 @@ const AboutPage = (isMobile) => {
           <MuiNextLink href="/franchise" underline="none" sx={{ mt: 8 }} >
             <Button> Franchise Opportunity</Button>
           </MuiNextLink>
-          <MuiNextLink href="/menu" underline="none" sx={{ mt: 4, mb: 8 }}>
+          <MuiNextLink href="/menu" underline="none" sx={{ mt: 4, mb: 4 }}>
             <Button 
             style={{maxWidth: '263px', minWidth: '263px'}}
-            variant="outlined" 
+            variant="outlined" // black outline
             sx={{ 
-            borderColor: "primary.main", 
-            color: "primary.main"
-            }}
+              backgroundColor: "white",
+              borderColor: "primary.main",
+              color: "#40464D",
+              '&:hover': {
+                borderColor: "#F48A88",
+            }}}
           >
           View Our Menu
           </Button>
