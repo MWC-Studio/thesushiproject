@@ -62,7 +62,7 @@ const CustomerReview = (props) => {
                         </Typography>
                         <Rating name='review_rating' value={ item.rating } size='small' sx={{ color: 'black' }} readOnly />
                     </Grid>
-                    <Grid item minHeight={ isSmall ? 500 : 300 }>
+                    <Grid item minHeight={ isSmall ? 230 : 150 }>
                         <Typography variant='body1' fontStyle='italic'>
                             "{ item.review }"
                         </Typography>
@@ -95,7 +95,7 @@ const CustomerReview = (props) => {
                     </Typography>
                     <Rating name='review_rating' value={ item.rating } size='medium' sx={{ color: 'black' }} readOnly />
                 </Grid>
-                <Grid item minHeight={320}>
+                <Grid item minHeight={150}>
                     <Typography variant='body1' fontStyle='italic'>
                         "{ item.review }"
                     </Typography>
