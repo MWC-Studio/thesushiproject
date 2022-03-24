@@ -1,10 +1,11 @@
 import Box from '@mui/material/Box';
 import MuiNextLink from '@components/MuiNextLink';
-import { Container, Grid, Typography, useMediaQuery } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 //Add logo and icons
 import Link from '@mui/material/Link';
 import NextLink from 'next/link';
 import Image from 'next/image';
+
 
 const Footer = ({ isMobile }) => {
   return (
@@ -205,16 +206,37 @@ const Footer = ({ isMobile }) => {
           </Grid>
         </Container>
         {/* Copyright */}
-        <Grid item xs={12} sx={{ mb: 1, mt: 5 }}>
+        <Grid item 
+        //md={12}
+        //lg={5}
+        xs={6}
+        sx={{ mb: 1, mt: 5 }}>
+        { isMobile ?
+          <>
           <Typography
             align="center"
             color="common.white"
             variant="subtitle2"
             fontFamily="Nunito"
-          >
+          > 
+            Copyright by ©{new Date().getFullYear()} <br/>Sushi Rollin. All rights
+            reserved.
+          </Typography>
+          </>
+          :
+          <>
+          <Typography
+            align="center"
+            color="common.white"
+            variant="subtitle2"
+            fontFamily="Nunito"
+          > 
+            <></>
             Copyright by ©{new Date().getFullYear()} Sushi Rollin. All rights
             reserved.
           </Typography>
+          </>
+          }
         </Grid>
       </Grid>
     </Container>
