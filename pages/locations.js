@@ -2,7 +2,7 @@ import TopBanner from "@components/TopBanner";
 import QuiltedImagesWithText from "@components/locations/QuiltedImagesWithText";
 import OrderBanner from "@components/OrderBanner";
 import CarouselMobileImage from "@components/locations/CarouselMobileImage";
-import LocationsContent from "@components/locations/LocationsContent";
+import LocationsContentMobile from "@components/locations/LocationsContentMobile";
 
 const LocationPage = (props) => {
   const text = "Call for Pickup or Get it Delivered now!";
@@ -15,7 +15,7 @@ const LocationPage = (props) => {
         isMobile={props.isMobile}
       />
       {props.isMobile ? <CarouselMobileImage /> : <QuiltedImagesWithText />}
-      {/* <LocationsContent isMobile={props.isMobile} /> */}
+      <LocationsContentMobile />
         <OrderBanner
           bgColor="common.beige"
           isMobile={props.isMobile}
