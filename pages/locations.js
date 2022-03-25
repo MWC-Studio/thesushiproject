@@ -15,12 +15,12 @@ const LocationPage = (props) => {
         isMobile={props.isMobile}
       />
       {props.isMobile ? <CarouselMobileImage /> : <QuiltedImagesWithText />}
-      <LocationsContentMobile />
-        <OrderBanner
-          bgColor="common.beige"
-          isMobile={props.isMobile}
-          text={props.isMobile ? mtext : text}
-        />
+      {props.isMobile ? <LocationsContentMobile /> : null}
+      <OrderBanner
+        bgColor="common.beige"
+        isMobile={props.isMobile}
+        text={props.isMobile ? mtext : text}
+      />
     </>
   );
 };

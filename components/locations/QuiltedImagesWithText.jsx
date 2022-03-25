@@ -92,7 +92,7 @@ export default function QuiltedImagesWithText() {
               </Grid>
               <Grid item alignSelf="center">
                 <Typography variant={"h2"} sx={{ display: "inline-block" }}>
-                  Sushi Rollin’ Garland
+                  Sushi Rollin’ Lewisville
                 </Typography>
               </Grid>
             </Grid>
@@ -102,10 +102,10 @@ export default function QuiltedImagesWithText() {
                   Contact
                 </Typography>
                 <Typography variant={"body1"}>
-                  6850 N Shiloh Rd, Garland, TX 75044
+                  1288 W Main St #142, Lewisville, TX 75067
                 </Typography>
                 <Typography variant={"body1"}>
-                  (469) 798-7831
+                  (817) 320-3722
                 </Typography>
               </Grid>
               <Grid item xs={12} mb={3}>
@@ -113,10 +113,10 @@ export default function QuiltedImagesWithText() {
                   Hours of Operation
                 </Typography>
                 <Typography variant={"body1"}>
-                  Opens Daily 11 a.m. - 9:30 p.m.
+                  Opens Daily 11 a.m. - 9:00 p.m.
                 </Typography>
                 <Typography variant={"body1"}>
-                  (Last Call: 9:15 p.m.)
+                  (Last Call: 8:45 p.m.)
                 </Typography>
               </Grid>
               <Grid item xs={12} mb={3}>
