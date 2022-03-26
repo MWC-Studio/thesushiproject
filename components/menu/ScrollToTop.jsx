@@ -3,7 +3,6 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import IconButton from "@mui/material/IconButton";
 
 const ScrollToTop = ({ showBelow }) => {
-
   const [show, setShow] = useState(showBelow ? false : true);
 
   const handleScroll = () => {
@@ -47,7 +46,7 @@ const ScrollToTop = ({ showBelow }) => {
           aria-label="to top"
           component="span"
         >
-          <ArrowUpwardIcon />
+          <ArrowUpwardIcon sx={{ fontSize: 40 }} />
         </IconButton>
       )}
     </div>
@@ -55,13 +54,10 @@ const ScrollToTop = ({ showBelow }) => {
 };
 export default ScrollToTop;
 
-
-
 // import React, { useState, useEffect } from 'react'
 // import { makeStyles } from '@material-ui/core/styles';
 // import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 // import IconButton from '@material-ui/core/IconButton';
-
 
 // const useStyles = makeStyles((theme) => ({
 //     toTop: {
@@ -84,7 +80,6 @@ export default ScrollToTop;
 //     }
 // })
 // )
-
 
 // const ScrollToTop = ({
 //     showBelow,
@@ -116,7 +111,7 @@ export default ScrollToTop;
 //     return (
 //         <div>
 //            {show &&
-//                 <IconButton 
+//                 <IconButton
 //                 onClick={handleClick} className={classes.toTop} aria-label="to top" component="span">
 //                     <ArrowUpwardIcon />
 //                 </IconButton>
