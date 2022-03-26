@@ -6,6 +6,7 @@ import Link from '@mui/material/Link';
 import NextLink from 'next/link';
 import Image from 'next/image';
 import { yellow } from '@mui/material/colors';
+import { TabContainer } from 'react-bootstrap';
 
 const Footer = ({ isMobile }) => {
   return (
