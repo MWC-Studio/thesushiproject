@@ -1,3 +1,5 @@
+//
+
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
@@ -23,7 +25,23 @@ const Header = ({ isMobile }) => {
   return (
     <>
       <HideOnScroll>
-        <AppBar sx={{ bgcolor: 'common.beige' }} position="fixed">
+        <AppBar
+          sx={{
+            bgcolor: 'common.beige',
+            display: 'flex',
+            justifyContent: 'center',
+            height: isMobile ? 68 : 98,
+            '& button': {
+              width: 50,
+              height: 50,
+            },
+            '& button > svg': {
+              width: 20,
+              height: 20,
+            },
+          }}
+          position="fixed"
+        >
           <Toolbar sx={{ ml: isMobile ? 0 : -3, mr: isMobile ? 0 : -3 }}>
             {/* <Toolbar> */}
             <Container
@@ -34,10 +52,15 @@ const Header = ({ isMobile }) => {
                 alignItems: `center`,
                 // mb: 1,
                 // mt: 1,
+                // TODO 수정 필요
+                // py: isMobile ? 1 : 1.5,
               }}
             >
-              {/* TODO MOBILE VERSION 적용 필요 */}
-              <MuiNextLink activeClassName="active" href="/">
+              <MuiNextLink
+                activeClassName="active"
+                href="/"
+                sx={{ display: 'flex', justifyContent: 'center' }}
+              >
                 <Image
                   src="/rollinlogodark.svg"
                   alt="logo"
