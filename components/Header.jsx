@@ -19,7 +19,7 @@ const navLinks = [
   { title: `Locations`, path: `/locations` },
 ];
 
-const Header = (isMobile) => {
+const Header = ({ isMobile }) => {
   return (
     <>
       <HideOnScroll>
