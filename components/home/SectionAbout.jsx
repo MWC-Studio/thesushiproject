@@ -5,19 +5,19 @@ import {
   Typography,
   Box,
   useMediaQuery,
-} from '@mui/material';
-import Image from 'next/image';
-import MuiNextLink from '@components/MuiNextLink';
+} from "@mui/material";
+import Image from "next/image";
+import MuiNextLink from "@components/MuiNextLink";
 
 const SectionAbout = ({ isMobile }) => {
   return (
     <Container component="section" maxWidth="lg" sx={{ my: 4 }}>
       <Grid
         container
-        direction={isMobile ? 'column-reverse' : 'row'}
+        direction={isMobile ? "column-reverse" : "row"}
         alignItems="center"
         justifyContent="center"
-        sx={isMobile ? { mb: 2 } : { mb: -3.2 }} // 사진 모서리 맞추기 위한 간격 조절 화면 사이즈에 따라 변화 체크 필요
+        sx={isMobile ? { mb: 2 } : { mb: -0.8 }} // 사진 모서리 맞추기 위한 간격 조절 화면 사이즈에 따라 변화 체크 필요
       >
         {/*top text*/}
         <Grid
@@ -34,13 +34,13 @@ const SectionAbout = ({ isMobile }) => {
             color="text"
             variant="h2"
             align="center"
-            fontWeight={'fontWeightBold'}
-            fontFamily={'Nunito'}
+            fontWeight={"fontWeightBold"}
+            fontFamily={"Nunito"}
           >
             About Us
           </Typography>
           <Typography
-            textAlign={isMobile ? 'left' : 'center'}
+            textAlign={isMobile ? "left" : "center"}
             sx={isMobile ? { my: 2 } : { my: 2, px: 2 }}
           >
             {`Your friendly neighborhood sushi place is here! 
@@ -60,7 +60,7 @@ const SectionAbout = ({ isMobile }) => {
           alignItems="center"
         >
           <Image
-            src="/sectionabout_top.svg"
+            src="/home_page/about_us.jpg"
             alt="about-us"
             width={800}
             height={600}
@@ -70,7 +70,7 @@ const SectionAbout = ({ isMobile }) => {
       {/*bottom*/}
       <Grid
         container
-        direction={isMobile ? 'column' : 'row'}
+        direction={isMobile ? "column" : "row"}
         alignItems="center"
         justifyContent="center"
       >
@@ -83,8 +83,8 @@ const SectionAbout = ({ isMobile }) => {
           alignItems="center"
         >
           <Image
-            src="/sectionabout_bottom.svg"
-            alt="about-us"
+            src="/home_page/roll_with_us.jpg"
+            alt="roll_with_us"
             width={800}
             height={600}
           />
@@ -103,14 +103,14 @@ const SectionAbout = ({ isMobile }) => {
             color="text"
             variant="h2"
             align="center"
-            fontWeight={'fontWeightBold'}
-            fontFamily={'Nunito'}
+            fontWeight={"fontWeightBold"}
+            fontFamily={"Nunito"}
             // sx = {{pt : 2}}
           >
             Roll with Us
           </Typography>
           <Typography
-            textAlign={isMobile ? 'left' : 'center'}
+            textAlign={isMobile ? "left" : "center"}
             sx={isMobile ? { my: 2 } : { my: 2, px: 2 }}
             // sx={isMobile ? { my: 1 } : { my: 1, px: 1 }}
           >
