@@ -32,18 +32,17 @@ const Header = (isMobile) => {
                 display: `flex`,
                 justifyContent: `space-between`,
                 alignItems: `center`,
-                mb: 1.8,
-                mt: 1.8,
+                // mb: 1,
+                // mt: 1,
               }}
             >
+              {/* TODO MOBILE VERSION 적용 필요 */}
               <MuiNextLink activeClassName="active" href="/">
                 <Image
                   src="/rollinlogodark.svg"
                   alt="logo"
-                  // width="257"
-                  // height="44"
-                  width="205.2"
-                  height="35.2"
+                  width={isMobile ? '147.63' : '256.36'}
+                  height={isMobile ? '24.58' : '43.26'}
                 />
               </MuiNextLink>
 
