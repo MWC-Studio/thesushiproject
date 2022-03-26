@@ -32,6 +32,7 @@ const SideDrawer = ({ navLinks }) => {
   const list = (anchor) => (
     // <Container>
     <Container
+  
     // sx={{
     //   display: 'flex',
     //   flexDirection: 'column',
@@ -131,8 +132,9 @@ const SideDrawer = ({ navLinks }) => {
           >
             Find Sushi Rollin’ On
           </Typography>
+          <hr></hr>
         </Box>
-        {/* <hr /> */}
+         
         <div></div>
         {/* <Divider variant="middle" /> */}
 
@@ -143,8 +145,8 @@ const SideDrawer = ({ navLinks }) => {
             align="column"
             alignItems="center"
             justifyContent="center"
-            lg={3}
-            md={3}
+            lg={12}
+            md={12}
             sm={12}
             xs={12}
             // sx={{ ml: 3, my: 4 }}
@@ -191,8 +193,8 @@ const SideDrawer = ({ navLinks }) => {
             align="column"
             alignItems="center"
             justifyContent="center"
-            lg={3}
-            md={3}
+            lg={12}
+            md={12}
             sm={12}
             xs={12}
             sx={{ my: 4 }}
@@ -229,8 +231,8 @@ const SideDrawer = ({ navLinks }) => {
             align="column"
             alignItems="center"
             justifyContent="center"
-            lg={2}
-            md={3}
+            lg={12} //2->12
+            md={12} //2->12
             sm={12}
             xs={12}
             sx={{ my: 4 }}
@@ -282,8 +284,8 @@ const SideDrawer = ({ navLinks }) => {
             align="column"
             alignItems="center"
             justifyContent="center"
-            lg={2}
-            md={2}
+            lg={12}//2에서 12로 변경 for ceter align @Desktop version
+            md={12}//2에서 12로 변경 for ceter align @Desktop version
             sm={12}
             xs={12}
             sx={{ my: 4 }}

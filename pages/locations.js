@@ -1,8 +1,8 @@
 import TopBanner from "@components/TopBanner";
-import QuiltedImages from "@components/locations/QuiltedImages";
+import QuiltedImagesWithText from "@components/locations/QuiltedImagesWithText";
 import OrderBanner from "@components/OrderBanner";
 import CarouselMobileImage from "@components/locations/CarouselMobileImage";
-import LocationsContent from "@components/locations/LocationsContent";
+import LocationsContentMobile from "@components/locations/LocationsContentMobile";
 
 const LocationPage = (props) => {
   const text = "Call for Pickup or Get it Delivered now!";
@@ -14,13 +14,13 @@ const LocationPage = (props) => {
         description="Locations"
         isMobile={props.isMobile}
       />
-      {props.isMobile ? <CarouselMobileImage /> : <QuiltedImages />}
-      <LocationsContent isMobile={props.isMobile} />
-        <OrderBanner
-          bgColor="common.beige"
-          isMobile={props.isMobile}
-          text={props.isMobile ? mtext : text}
-        />
+      {props.isMobile ? <CarouselMobileImage /> : <QuiltedImagesWithText />}
+      {props.isMobile ? <LocationsContentMobile /> : null}
+      <OrderBanner
+        bgColor="common.beige"
+        isMobile={props.isMobile}
+        text={props.isMobile ? mtext : text}
+      />
     </>
   );
 };

@@ -1,10 +1,11 @@
 import Box from '@mui/material/Box';
 import MuiNextLink from '@components/MuiNextLink';
-import { Container, Grid, Typography, useMediaQuery } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 //Add logo and icons
 import Link from '@mui/material/Link';
 import NextLink from 'next/link';
 import Image from 'next/image';
+
 
 const Footer = ({ isMobile }) => {
   return (
@@ -32,8 +33,8 @@ const Footer = ({ isMobile }) => {
               alt="logo"
               // width="205"
               // height="35"
-              width={isMobile ? '148' : '205'}
-              height={isMobile ? '25' : '35'}
+              width={isMobile ? '148' : '204.49'}
+              height={isMobile ? '25' : '34.41'}
             />
           </MuiNextLink>
         </Grid>
@@ -55,7 +56,7 @@ const Footer = ({ isMobile }) => {
               <Grid item sx={{ mt: 2 }}>
                 <Typography
                   // TODO MOBILE VERSION SIZE DOESN'T APPLY
-                  variant={isMobile ? 'h5' : 'h3'}
+                  variant={isMobile ? 'body3' : 'h3'}
                   color="primary.contrastText"
                   fontWeight="700"
                   fontFamily="Nunito"
@@ -88,7 +89,7 @@ const Footer = ({ isMobile }) => {
                       // height="28"
                     />
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle3' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
@@ -96,12 +97,12 @@ const Footer = ({ isMobile }) => {
                       Email
                     </Typography>
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="400"
                       fontFamily="Nunito"
                     >
-                      wnsrl91@gmail.com
+                      Sushirollin.us@gmail.com
                     </Typography>
                   </Link>
                 </Box>
@@ -128,7 +129,7 @@ const Footer = ({ isMobile }) => {
                       height="28"
                     />
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle3' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
@@ -136,7 +137,7 @@ const Footer = ({ isMobile }) => {
                       Phone
                     </Typography>
                     <Typography
-                      variant={isMobile ? 'body2' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'h3'}
                       color="primary.contrastText"
                       fontWeight="400"
                       fontFamily="Nunito"
@@ -150,7 +151,7 @@ const Footer = ({ isMobile }) => {
               {/* Find us on */}
               <Grid item sx={{ mt: 5.5 }}>
                 <Typography
-                  variant={isMobile ? 'h5' : 'h3'}
+                  variant={isMobile ? 'body3' : 'h3'}
                   // variant="h3"
                   color="primary.contrastText"
                   fontWeight="700"
@@ -174,6 +175,12 @@ const Footer = ({ isMobile }) => {
                       width={isMobile ? '154.49' : '240'}
                       height={isMobile ? '19' : '28'}
                     />
+                    <Typography
+                      variant={isMobile ? 'subtitle3' : 'h3'}
+                      color="primary.contrastText"
+                      fontWeight="700"
+                      fontFamily="Nunito"
+                    ></Typography>
                   </Link>
                 </Box>
 
@@ -199,16 +206,37 @@ const Footer = ({ isMobile }) => {
           </Grid>
         </Container>
         {/* Copyright */}
-        <Grid item xs={12} sx={{ mb: 1, mt: 5 }}>
+        <Grid item 
+        //md={12}
+        //lg={5}
+        xs={6}
+        sx={{ mb: 1, mt: 5 }}>
+        { isMobile ?
+          <>
           <Typography
             align="center"
             color="common.white"
             variant="subtitle2"
             fontFamily="Nunito"
-          >
+          > 
+            Copyright by ©{new Date().getFullYear()} <br/>Sushi Rollin. All rights
+            reserved.
+          </Typography>
+          </>
+          :
+          <>
+          <Typography
+            align="center"
+            color="common.white"
+            variant="subtitle2"
+            fontFamily="Nunito"
+          > 
+            <></>
             Copyright by ©{new Date().getFullYear()} Sushi Rollin. All rights
             reserved.
           </Typography>
+          </>
+          }
         </Grid>
       </Grid>
     </Container>

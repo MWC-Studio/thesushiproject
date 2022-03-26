@@ -1,10 +1,9 @@
 import SectionAbout from '@components/home/SectionAbout';
 import SectionMenu from '@components/home/SectionMenu';
 import SectionMenuMobile from '@components/home/SectionMenuMobile';
-import SectionReview from '@components/home/SectionReview';
 import SectionLocations from '@components/home/SectionLocations';
 import TopBanner from '@components/TopBanner';
-
+import CustomerReview from "@components/CustomerReview"
 const Homepage = (props) => {
   return (
     <>
@@ -19,7 +18,7 @@ const Homepage = (props) => {
       { props.isMobile ? <SectionMenuMobile /> : <SectionMenu/> }
       {/*<SectionMenu isMobile = {props.isMobile} />*/}
       <SectionLocations />
-      <SectionReview  isMobile={props.isMobile} reviewTitle="Here’s What the Customers Say" />
+      <CustomerReview  isMobile={props.isMobile} reviewTitle="Here’s What the Customers Say" />
     </>
   );
 };
