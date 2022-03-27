@@ -1,12 +1,9 @@
 import Box from '@mui/material/Box';
 import MuiNextLink from '@components/MuiNextLink';
 import { Container, Grid, Typography } from '@mui/material';
-//Add logo and icons
 import Link from '@mui/material/Link';
 import NextLink from 'next/link';
 import Image from 'next/image';
-import { yellow } from '@mui/material/colors';
-import { TabContainer } from 'react-bootstrap';
 
 const Footer = ({ isMobile }) => {
   return (
@@ -14,6 +11,7 @@ const Footer = ({ isMobile }) => {
       component="footer"
       sx={{
         py: 3,
+        mb: 2,
         bgcolor: 'footer.main',
         textDecoration: 'none',
         color: 'common.white',
@@ -27,13 +25,15 @@ const Footer = ({ isMobile }) => {
         alignItems="center"
       >
         {/* Logo */}
-        <Grid item sx={{ align: 'center', mt: isMobile ? 5 : 2, mb: 3 }}>
-          <MuiNextLink href="/" underline="none">
+        <Grid item sx={{ align: 'center', mt: isMobile ? '29px' : 2, mb: 0 }}>
+          <MuiNextLink
+            href="/"
+            underline="none"
+            sx={{ display: 'flex', justifyContent: 'center' }}
+          >
             <Image
               src="/footer/footer_rollinlogo_white.svg"
               alt="logo"
-              // width="205"
-              // height="35"
               width={isMobile ? '148' : '204.49'}
               height={isMobile ? '25' : '34.41'}
             />
@@ -41,25 +41,28 @@ const Footer = ({ isMobile }) => {
         </Grid>
         {/* Contact us and Find us on */}
         <Container>
-          <Grid item xs={12} sx={{ ml: isMobile ? -4 : 0 }}>
+          {/* <Grid item xs={12} sx={{ ml: isMobile ? -2 : 0 }}> */}
+          <Grid item xs={12}>
             <Grid
               container
               display="flex"
               direction="row"
               wrap="wrap"
               justifyContent="space-between"
-              alignItems="center"
+              alignItems={isMobile ? 'flex-start' : 'center'}
               flexWrap="wrap"
-              px={3}
+              flexDirection={isMobile ? 'column' : 'row'}
+              px={isMobile ? 1 : 5}
+              sx={{ ml: isMobile ? -1 : 0 }}
               // py={2}
             >
               {/* Contact us */}
-              <Grid item sx={{ mt: 2 }}>
+              <Grid item sx={{ mt: isMobile ? 5 : 2 }}>
                 <Typography
                   variant={isMobile ? 'body3' : 'h3'}
                   color="primary.contrastText"
-                  fontWeight="700"
-                  fontFamily="Nunito"
+                  // fontWeight="700"
+                  // fontFamily="Nunito"
                 >
                   CONTACT US
                 </Typography>
@@ -144,7 +147,7 @@ const Footer = ({ isMobile }) => {
               </Grid>
 
               {/* Find us on */}
-              <Grid item sx={{ mt: 5.5 }}>
+              <Grid item sx={{ mt: isMobile ? 6 : 2 }}>
                 <Typography
                   variant={isMobile ? 'body3' : 'h3'}
                   color="primary.contrastText"
@@ -201,7 +204,7 @@ const Footer = ({ isMobile }) => {
           //md={12}
           //lg={5}
           xs={6}
-          sx={{ mb: 1, mt: 5 }}
+          sx={{ mb: 1, mt: 3 }}
         >
           {isMobile ? (
             <>
