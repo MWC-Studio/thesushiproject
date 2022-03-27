@@ -6,8 +6,8 @@ import { items } from 'data/locationsCarouselMobile';
 const CarouselMobileImage = () => {
     return (
            <Carousel
-                duration={500}
-                navButtonsAlwaysInVisible="true"
+                autoPlay={false}
+                navButtonsAlwaysVisible={true}
                 sx={{ p:2, mt:2 }}
                 indicatorIconButtonProps={{
                     style: {
@@ -32,7 +32,7 @@ const CarouselMobileImage = () => {
 
 function Item(props) {
     return (
-        <Image src={props.item.src} width={343} height={266} layout="responsive" alt={props.item.name} />
+        <Image src={props.item.src} width={343} height={266} layout="responsive" alt={props.item.title} />
     )
 }
  

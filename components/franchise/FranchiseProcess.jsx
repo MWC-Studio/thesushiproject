@@ -1,45 +1,35 @@
-import { Grid, Typography, Avatar } from "@mui/material";
+import { Container, Grid, Typography, Avatar } from "@mui/material";
 
 const FranchiseProcess = (props) => {
     return (
+    <Container>
         <Grid container bgcolor=""
-            spacing={2}
+            flexDirection="column"
             justifyContent="center"
-            alignItems="center" 
-            py={8}
+            alignItems="center"
+            py={8} px={ props.isMobile ? 0 : 4}
         >
-            <Grid item lg={12} my={7} bgcolor="">
+            <Grid item xs={12} sx={{ mb:8}} bgcolor="">
                 <Typography 
-                    variant={props.isMobile ? "h3" : "h2"}
+                    variant={'h2'}
                     color={'text'}
-                    fontFamily={'Nunito'}
-                    fontWeight={'fontWeightBold'}
-                    textAlign="center"
                 >
                     Franchise Process
                 </Typography>
             </Grid>
             
             {itemProcess.map((item, idx) => (
-            <Grid container wrap="nowrap" spacing={2} padding={2} lg={9} mx={7}>
+            <Grid container item wrap="nowrap" gap={ props.isMobile ? 1 : 3 } xs={11}  key={idx}>
                 <Grid item>
                     {props.isMobile ?
                     <Avatar sx={{ bgcolor: 'primary.main', width: 36, height: 36 }}>
-                        <Typography 
-                            variant={'subtitle1'}
-                            fontFamily={'Nunito'}
-                            fontWeight={'fontWeightBold'}
-                        >
+                        <Typography variant={'subtitle1'} >
                         {item.num}
                         </Typography>
                     </Avatar>                        
                     :
                     <Avatar sx={{ bgcolor: 'primary.main', width: 72, height: 72 }}>
-                        <Typography 
-                            variant={'h2'}
-                            fontFamily={'Nunito'}
-                            fontWeight={'fontWeightBold'}
-                        >
+                        <Typography variant={'h2'} >
                         {item.num}
                         </Typography>
                     </Avatar>
@@ -48,30 +38,26 @@ const FranchiseProcess = (props) => {
                 </Grid>
                 <Grid item xs zeroMinWidth  bgcolor="">
                     <Typography 
-                        variant={props.isMobile ? "subtitle1" : "h4"}
+                        variant={'h4'}
                         color={'secondary.main'}
-                        fontFamily={'Nunito'}
-                        fontWeight={'fontWeightBold'}
                         mb={1}
                     >
                         {item.title}
                     </Typography>
                     <Typography
-                        variant={props.isMobile ? "body2" : "body1"}
+                        variant={'body1'}
                         color={'text'}
-                        fontFamily={'Nunito'}
                         mb={3}
                     >
                         {item.content}
                     </Typography>
                 </Grid>
-                
             </Grid>
             ))}
             
-            
+              
         </Grid>
-
+    </Container> 
     )
 }
 

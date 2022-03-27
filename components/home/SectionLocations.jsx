@@ -40,7 +40,7 @@ export default function SectionLocations() {
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={{ mb: 1, mt: 1 }}
+              sx={{ mb: 2, mt: 4 }}
             >
               Sushi Rollin'
             </Typography>
@@ -58,7 +58,7 @@ export default function SectionLocations() {
               variant="body1"
               align="center"
               fontFamily={'Nunito'}
-              sx={{ mb: 1 }}
+              sx={{ mb: 2 }}
             >
               6Opens Daily 11 a.m. - 9:30 p.m.
             </Typography>
@@ -77,7 +77,7 @@ export default function SectionLocations() {
             <Image
               src="/home_page/location-lewisville.svg"
               alt="about-us"
-              layout="responsive"
+              // layout="responsive"
               width="592"
               height="420"
             />
@@ -88,7 +88,7 @@ export default function SectionLocations() {
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={{ mb: 1, mt: 2 }}
+              sx={{ mb: 2, mt: 4 }}
             >
               Sushi Rollin' Lewisville
             </Typography>
@@ -106,9 +106,9 @@ export default function SectionLocations() {
               variant="body1"
               align="center"
               fontFamily={'Nunito'}
-              sx={{ mb: 1 }}
+              sx={{ mb: 2 }}
             >
-              Opens Daily 11 a.m. - 9:00
+              Opens Daily 11 a.m. - 9:00 p.m.
             </Typography>
             <Typography
               color="text"
@@ -122,7 +122,7 @@ export default function SectionLocations() {
           </Grid>
         </Grid>
 
-        <Grid align="center" pt={4} pb={4}>
+        <Grid align="center" pt={7} pb={7}>
           <Button>
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'common.white' }}

@@ -6,9 +6,8 @@ import { styled } from '@mui/system';
 import Navbar from './Navbar';
 import SideDrawer from './SideDrawer';
 import Image from 'next/image';
-import Fab from '@mui/material/Fab';
-import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
-import BackToTop from './BackToTop';
+import ScrollToTop from './menu/ScrollToTop';
+import HideOnScroll from './HideOnScroll';
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
@@ -20,42 +19,43 @@ const navLinks = [
   { title: `Locations`, path: `/locations` },
 ];
 
-//test
-const Header = () => {
+const Header = (isMobile) => {
   return (
     <>
-      {/* <HideOnScroll> */}
-      <AppBar sx={{ bgcolor: 'common.beige' }} position="fixed">
-        <Toolbar>
-          <Container
-            maxWidth="lg"
-            sx={{
-              display: `flex`,
-              justifyContent: `space-between`,
-              alignItems: `center`,
-            }}
-          >
-            <MuiNextLink activeClassName="active" href="/">
-              <Image
-                src="/rollinlogodark.svg"
-                alt="logo"
-                width="257"
-                height="44"
-              />
-            </MuiNextLink>
+      <HideOnScroll>
+        <AppBar sx={{ bgcolor: 'common.beige' }} position="fixed">
+          <Toolbar sx={{ ml: isMobile ? 0 : -3, mr: isMobile ? 0 : -3 }}>
+            {/* <Toolbar> */}
+            <Container
+              maxWidth="lg"
+              sx={{
+                display: `flex`,
+                justifyContent: `space-between`,
+                alignItems: `center`,
+                mb: 1.8,
+                mt: 1.8,
+              }}
+            >
+              <MuiNextLink activeClassName="active" href="/">
+                <Image
+                  src="/rollinlogodark.svg"
+                  alt="logo"
+                  // width="257"
+                  // height="44"
+                  width="205.2"
+                  height="35.2"
+                />
+              </MuiNextLink>
 
-            <Navbar navLinks={navLinks} />
-            <SideDrawer navLinks={navLinks} />
-          </Container>
-        </Toolbar>
-      </AppBar>
-      {/* </HideOnScroll> */}
+              <Navbar navLinks={navLinks} />
+              <SideDrawer navLinks={navLinks} />
+            </Container>
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
+
+      <ScrollToTop showBelow={500} />
       <Offset id="back-to-top-anchor" />
-      <BackToTop>
-        <Fab color="secondary" size="large" aria-label="back to top">
-          <KeyboardArrowUp />
-        </Fab>
-      </BackToTop>
     </>
   );
 };
