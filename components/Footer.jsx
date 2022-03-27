@@ -46,11 +46,11 @@ const Footer = ({ isMobile }) => {
             <Grid
               container
               display="flex"
-              direction="row"
-              wrap="wrap"
+              // direction="row"
+              // wrap="wrap"
               justifyContent="space-between"
               alignItems={isMobile ? 'flex-start' : 'center'}
-              flexWrap="wrap"
+              // flexWrap="wrap"
               flexDirection={isMobile ? 'column' : 'row'}
               px={isMobile ? 1 : 5}
               sx={{ ml: isMobile ? -1 : 0 }}
@@ -147,7 +147,7 @@ const Footer = ({ isMobile }) => {
               </Grid>
 
               {/* Find us on */}
-              <Grid item sx={{ mt: isMobile ? 6 : 2 }}>
+              <Grid item sx={{ mt: isMobile ? 6 : 5 }}>
                 <Typography
                   variant={isMobile ? 'body3' : 'h3'}
                   color="primary.contrastText"
