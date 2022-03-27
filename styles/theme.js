@@ -1,7 +1,6 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 const fontBold = 700;
-const fontBold1 = 400;
 
 // Create a theme instance.
 let theme = createTheme({
@@ -55,10 +54,6 @@ let theme = createTheme({
     },
     subtitle2: {
       fontSize: 12,
-    },
-    subtitle3: {
-      fontSize: 12,
-      fontweight: fontBold1,
     },
     body1: {
       fontSize: 16,

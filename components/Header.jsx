@@ -1,3 +1,5 @@
+//
+
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
@@ -19,11 +21,27 @@ const navLinks = [
   { title: `Locations`, path: `/locations` },
 ];
 
-const Header = (isMobile) => {
+const Header = ({ isMobile }) => {
   return (
     <>
       <HideOnScroll>
-        <AppBar sx={{ bgcolor: 'common.beige' }} position="fixed">
+        <AppBar
+          sx={{
+            bgcolor: 'common.beige',
+            display: 'flex',
+            justifyContent: 'center',
+            height: isMobile ? 68 : 98,
+            '& button': {
+              width: 50,
+              height: 50,
+            },
+            '& button > svg': {
+              width: 20,
+              height: 20,
+            },
+          }}
+          position="fixed"
+        >
           <Toolbar sx={{ ml: isMobile ? 0 : -3, mr: isMobile ? 0 : -3 }}>
             {/* <Toolbar> */}
             <Container
@@ -32,18 +50,22 @@ const Header = (isMobile) => {
                 display: `flex`,
                 justifyContent: `space-between`,
                 alignItems: `center`,
-                mb: 1.8,
-                mt: 1.8,
+                // mb: 1,
+                // mt: 1,
+                // TODO 수정 필요
+                // py: isMobile ? 1 : 1.5,
               }}
             >
-              <MuiNextLink activeClassName="active" href="/">
+              <MuiNextLink
+                activeClassName="active"
+                href="/"
+                sx={{ display: 'flex', justifyContent: 'center' }}
+              >
                 <Image
                   src="/rollinlogodark.svg"
                   alt="logo"
-                  // width="257"
-                  // height="44"
-                  width="205.2"
-                  height="35.2"
+                  width={isMobile ? '147.63' : '256.36'}
+                  height={isMobile ? '24.58' : '43.26'}
                 />
               </MuiNextLink>
 
