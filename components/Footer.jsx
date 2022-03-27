@@ -147,7 +147,7 @@ const Footer = ({ isMobile }) => {
               </Grid>
 
               {/* Find us on */}
-              <Grid item sx={{ mt: isMobile ? 6 : '15px' }}>
+              <Grid item sx={{ mt: isMobile ? 6.5 : '15px' }}>
                 <Typography
                   variant={isMobile ? 'body3' : 'h3'}
                   color="primary.contrastText"
