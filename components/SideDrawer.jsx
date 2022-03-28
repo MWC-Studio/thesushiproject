@@ -1,17 +1,17 @@
 import Box from '@mui/material/Box';
 import { Container, Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import Stack from '@mui/material/Stack';
-
-import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/icons-material/Menu';
 import MuiNextLink from './MuiNextLink';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Divider from '@mui/material/Divider';
 import Image from 'next/image';
-import { flexbox } from '@mui/system';
+// import Stack from '@mui/material/Stack';
+// import Drawer from '@mui/material/Drawer';
+// import { flexbox } from '@mui/system';
 
 const SideDrawer = ({ navLinks }) => {
   const [state, setState] = useState({
@@ -20,6 +20,7 @@ const SideDrawer = ({ navLinks }) => {
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
+      event &&
       event.type === 'keydown' &&
       (event.key === 'Tab' || event.key === 'Shift')
     ) {
@@ -30,7 +31,16 @@ const SideDrawer = ({ navLinks }) => {
   };
 
   const list = (anchor) => (
-    <Container sx={{ mt: 4 }}>
+    <Container
+      sx={{
+        // width: 375,
+        width: '100%',
+        height: 812,
+        mt: '28px',
+        overflowX: 'hidden',
+        padding: '0px !important',
+      }}
+    >
       {/*close Icon added: left*/}
       {/* <Box>
         <IconButton
@@ -41,8 +51,8 @@ const SideDrawer = ({ navLinks }) => {
         </IconButton>
       </Box> */}
 
-      {/* TODO close Icon added: right */}
-      <Box sx={{ position: 'absolute', right: 28, top: 8 }}>
+      {/*close Icon added: right */}
+      <Box sx={{ position: 'absolute', right: 9, top: 8 }}>
         <IconButton
           aria-label="close"
           onClick={toggleDrawer(anchor, false)}
@@ -58,12 +68,10 @@ const SideDrawer = ({ navLinks }) => {
       </Box>
 
       <Box
-        // sx={{ width: 250, marginTop: `auto`, marginBottom: `auto` }}
-        // sx={{ width: 250, height: '66.6%' }}
         sx={{
           width: 375,
-          pt: 4,
-          pb: 5,
+          pt: 1,
+          // pb: 1,
           textAlign: 'left',
         }}
         role="presentation"
@@ -72,14 +80,14 @@ const SideDrawer = ({ navLinks }) => {
       >
         {navLinks.map(({ title, path }, i) => (
           <Typography
-            variannt="button"
             variant="h3"
             key={`${title}${i}`}
             sx={{
-              ml: 3,
-              my: 3,
+              ml: 6,
+              // my: 6,
+              mt: '45px',
+              mb: '45px',
               textTransform: `uppercase`,
-              fontSize: 'h3',
             }}
           >
             <MuiNextLink
@@ -102,30 +110,32 @@ const SideDrawer = ({ navLinks }) => {
           </Typography>
         ))}
       </Box>
-      {/* </Stack> */}
 
-      {/* TODO ICONS */}
-
-      <Box sx={{ width: 250, textAlign: 'center' }}>
-        <hr></hr>
+      {/* <Divider
+        sx={{
+          width: '100%',
+          maxWidth: 375,
+          color: 'common.white',
+        }}
+      /> */}
+      <hr />
+      <Box sx={{ textAlign: 'left' }}>
         <Typography
           color="primary.contrastText"
-          variant="h5"
-          // variant="button"
+          // variant="h4"
           textalign="left"
           sx={{
-            ml: 1,
-            my: 2,
-            textTransform: `uppercase`,
-            color: 'common.white',
-            // color: 'secondary.main',
+            ml: 6,
+            my: '31px',
+            color: 'secondary.main',
+            fontSize: '18px', //variant 4 적용이 안됨
           }}
         >
           Find Sushi Rollin’ On
         </Typography>
       </Box>
 
-      <div></div>
+      {/* <div></div> */}
       {/* <Divider variant="middle" /> */}
 
       <Box>
@@ -139,8 +149,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12}
           sm={12}
           xs={12}
-          sx={{ ml: 3, my: 4 }}
-          // sx={{ my: 2 }}
+          sx={{ ml: 6, my: '31px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -187,8 +196,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12} //2->12
           sm={12}
           xs={12}
-          sx={{ ml: 3, my: 4 }}
-          // sx={{ my: 4 }}
+          sx={{ ml: 6, my: '31px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -241,8 +249,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12} //2에서 12로 변경 for ceter align @Desktop version
           sm={12}
           xs={12}
-          sx={{ ml: 3, my: 4 }}
-          // sx={{ my: 4 }}
+          sx={{ ml: 6, my: '31px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -283,8 +290,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12}
           sm={12}
           xs={12}
-          sx={{ ml: 3, my: 4 }}
-          // sx={{ my: 4 }}
+          sx={{ ml: 6, my: '31px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -330,20 +336,25 @@ const SideDrawer = ({ navLinks }) => {
       >
         <Menu fontSize="large" />
       </IconButton>
-      <Drawer
+      <SwipeableDrawer
         anchor="right"
         open={state.right}
         onClose={toggleDrawer('right', false)}
+        onOpen={toggleDrawer('anchor', true)}
         sx={{
           '.MuiDrawer-paper': {
             bgcolor: 'primary.main',
-            width: 375,
+            width: '100%',
+            maxWidth: 375,
             height: 812,
+          },
+          '.MuiBackdrop-root': {
+            backgroundColor: 'rgba(255,255,255,.6)',
           },
         }}
       >
         {list('right')}
-      </Drawer>
+      </SwipeableDrawer>
     </>
   );
 };

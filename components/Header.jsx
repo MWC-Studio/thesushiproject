@@ -36,13 +36,13 @@ const Header = ({ isMobile }) => {
               height: 50,
             },
             '& button > svg': {
-              width: 20,
-              height: 20,
+              width: 21.88,
+              height: 19.14,
             },
           }}
           position="fixed"
         >
-          <Toolbar sx={{ ml: isMobile ? 0 : -3, mr: isMobile ? 0 : -3 }}>
+          <Toolbar sx={{ ml: isMobile ? -2 : -3, mr: isMobile ? -3 : -3 }}>
             {/* <Toolbar> */}
             <Container
               maxWidth="lg"
@@ -50,9 +50,6 @@ const Header = ({ isMobile }) => {
                 display: `flex`,
                 justifyContent: `space-between`,
                 alignItems: `center`,
-                // mb: 1,
-                // mt: 1,
-                // TODO 수정 필요
                 // py: isMobile ? 1 : 1.5,
               }}
             >
@@ -64,8 +61,10 @@ const Header = ({ isMobile }) => {
                 <Image
                   src="/rollinlogodark.svg"
                   alt="logo"
-                  width={isMobile ? '147.63' : '256.36'}
-                  height={isMobile ? '24.58' : '43.26'}
+                  // width={isMobile ? '147.63' : '256.36'}
+                  // height={isMobile ? '24.58' : '43.26'}
+                  width={isMobile ? '147.63' : '208'}
+                  height={isMobile ? '24.58' : '36'}
                 />
               </MuiNextLink>
 
