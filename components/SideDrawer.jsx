@@ -52,7 +52,7 @@ const SideDrawer = ({ navLinks }) => {
       </Box> */}
 
       {/*close Icon added: right */}
-      <Box sx={{ position: 'absolute', right: 28, top: 8 }}>
+      <Box sx={{ position: 'absolute', right: 9, top: 8 }}>
         <IconButton
           aria-label="close"
           onClick={toggleDrawer(anchor, false)}
@@ -347,6 +347,9 @@ const SideDrawer = ({ navLinks }) => {
             width: '100%',
             maxWidth: 375,
             height: 812,
+          },
+          '.MuiBackdrop-root': {
+            backgroundColor: 'rgba(255,255,255,.6)',
           },
         }}
       >
