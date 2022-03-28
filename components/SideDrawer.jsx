@@ -32,7 +32,7 @@ const SideDrawer = ({ navLinks }) => {
   };
 
   const list = (anchor) => (
-    <Container sx={{ width: 375, height: 812, mt: 4 }}>
+    <Container sx={{ width: 375, height: 812, mt: 4, overflowX: 'hidden' }}>
       {/*close Icon added: left*/}
       {/* <Box>
         <IconButton
