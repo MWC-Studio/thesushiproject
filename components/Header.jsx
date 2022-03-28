@@ -52,7 +52,7 @@ const Header = ({ isMobile }) => {
                 alignItems: `center`,
                 // mb: 1,
                 // mt: 1,
-                // TODO 수정 필요
+
                 // py: isMobile ? 1 : 1.5,
               }}
             >
@@ -64,8 +64,10 @@ const Header = ({ isMobile }) => {
                 <Image
                   src="/rollinlogodark.svg"
                   alt="logo"
-                  width={isMobile ? '147.63' : '256.36'}
-                  height={isMobile ? '24.58' : '43.26'}
+                  // width={isMobile ? '147.63' : '256.36'}
+                  // height={isMobile ? '24.58' : '43.26'}
+                  width={isMobile ? '147.63' : '208'}
+                  height={isMobile ? '24.58' : '36'}
                 />
               </MuiNextLink>
 
