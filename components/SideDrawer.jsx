@@ -144,8 +144,8 @@ const SideDrawer = ({ navLinks }) => {
           item
           align="column"
           alignItems="left"
-          justifyContent="left"
-          lg={12}
+          justifycontent="left"
+          // lg={12}
           md={12}
           sm={12}
           xs={12}
@@ -191,8 +191,8 @@ const SideDrawer = ({ navLinks }) => {
           item
           align="column"
           alignItems="left"
-          justifyContent="left"
-          lg={12} //2->12
+          justifycontent="left"
+          // lg={12} //2->12
           md={12} //2->12
           sm={12}
           xs={12}
@@ -244,8 +244,8 @@ const SideDrawer = ({ navLinks }) => {
           item
           align="column"
           alignItems="left"
-          justifyContent="left"
-          lg={12} //2에서 12로 변경 for ceter align @Desktop version
+          justifycontent="left"
+          // lg={12} //2에서 12로 변경 for ceter align @Desktop version
           md={12} //2에서 12로 변경 for ceter align @Desktop version
           sm={12}
           xs={12}
@@ -285,8 +285,8 @@ const SideDrawer = ({ navLinks }) => {
           item
           align="column"
           alignItems="left"
-          justifyContent="left"
-          lg={12}
+          justifycontent="left"
+          // lg={12}
           md={12}
           sm={12}
           xs={12}
