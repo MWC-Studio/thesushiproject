@@ -50,9 +50,6 @@ const Header = ({ isMobile }) => {
                 display: `flex`,
                 justifyContent: `space-between`,
                 alignItems: `center`,
-                // mb: 1,
-                // mt: 1,
-
                 // py: isMobile ? 1 : 1.5,
               }}
             >

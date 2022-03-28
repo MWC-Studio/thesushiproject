@@ -1,9 +1,6 @@
 import Box from '@mui/material/Box';
 import { Container, Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import Stack from '@mui/material/Stack';
-
-import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/icons-material/Menu';
 import MuiNextLink from './MuiNextLink';
@@ -12,7 +9,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Divider from '@mui/material/Divider';
 import Image from 'next/image';
-import { flexbox } from '@mui/system';
+// import Stack from '@mui/material/Stack';
+// import Drawer from '@mui/material/Drawer';
+// import { flexbox } from '@mui/system';
 
 const SideDrawer = ({ navLinks }) => {
   const [state, setState] = useState({
@@ -34,9 +33,10 @@ const SideDrawer = ({ navLinks }) => {
   const list = (anchor) => (
     <Container
       sx={{
-        width: 375,
+        // width: 375,
+        width: '100%',
         height: 812,
-        mt: 4,
+        mt: '28px',
         overflowX: 'hidden',
         padding: '0px !important',
       }}
@@ -68,8 +68,6 @@ const SideDrawer = ({ navLinks }) => {
       </Box>
 
       <Box
-        // sx={{ width: 250, marginTop: `auto`, marginBottom: `auto` }}
-        // sx={{ width: 250, height: '66.6%' }}
         sx={{
           width: 375,
           pt: 1,
@@ -82,14 +80,14 @@ const SideDrawer = ({ navLinks }) => {
       >
         {navLinks.map(({ title, path }, i) => (
           <Typography
-            variannt="button"
             variant="h3"
             key={`${title}${i}`}
             sx={{
               ml: 6,
-              my: 6,
+              // my: 6,
+              mt: '45px',
+              mb: '45px',
               textTransform: `uppercase`,
-              fontSize: 'h3',
             }}
           >
             <MuiNextLink
@@ -112,9 +110,7 @@ const SideDrawer = ({ navLinks }) => {
           </Typography>
         ))}
       </Box>
-      {/* </Stack> */}
 
-      {/* TODO ICONS */}
       {/* <Divider
         sx={{
           width: '100%',
@@ -126,14 +122,13 @@ const SideDrawer = ({ navLinks }) => {
       <Box sx={{ textAlign: 'left' }}>
         <Typography
           color="primary.contrastText"
-          variant="h4"
-          // variant="button"
+          // variant="h4"
           textalign="left"
           sx={{
             ml: 6,
-            my: 4,
-            // textTransform: `uppercase`,
+            my: '31px',
             color: 'secondary.main',
+            fontSize: '18px', //variant 4 적용이 안됨
           }}
         >
           Find Sushi Rollin’ On
@@ -154,7 +149,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12}
           sm={12}
           xs={12}
-          sx={{ ml: 6, my: 4 }}
+          sx={{ ml: 6, my: '31px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -201,7 +196,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12} //2->12
           sm={12}
           xs={12}
-          sx={{ ml: 6, my: 4 }}
+          sx={{ ml: 6, my: '31px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -254,7 +249,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12} //2에서 12로 변경 for ceter align @Desktop version
           sm={12}
           xs={12}
-          sx={{ ml: 6, my: 4 }}
+          sx={{ ml: 6, my: '31px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -295,7 +290,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12}
           sm={12}
           xs={12}
-          sx={{ ml: 6, my: 4 }}
+          sx={{ ml: 6, my: '31px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -349,7 +344,8 @@ const SideDrawer = ({ navLinks }) => {
         sx={{
           '.MuiDrawer-paper': {
             bgcolor: 'primary.main',
-            width: 375,
+            width: '100%',
+            maxWidth: 375,
             height: 812,
           },
         }}
