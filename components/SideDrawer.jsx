@@ -21,6 +21,7 @@ const SideDrawer = ({ navLinks }) => {
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
+      event &&
       event.type === 'keydown' &&
       (event.key === 'Tab' || event.key === 'Shift')
     ) {
@@ -336,6 +337,7 @@ const SideDrawer = ({ navLinks }) => {
         anchor="right"
         open={state.right}
         onClose={toggleDrawer('right', false)}
+        onOpen={toggleDrawer('anchor', true)}
         sx={{
           '.MuiDrawer-paper': {
             bgcolor: 'primary.main',
