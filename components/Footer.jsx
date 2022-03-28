@@ -103,7 +103,7 @@ const Footer = ({ isMobile }) => {
                       fontWeight="400"
                       fontFamily="Nunito"
                     >
-                      Sushirollin.us@gmail.com
+                      sushirollin.us@gmail.com
                     </Typography>
                   </Link>
                 </Box>
