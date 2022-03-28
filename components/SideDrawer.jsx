@@ -32,7 +32,15 @@ const SideDrawer = ({ navLinks }) => {
   };
 
   const list = (anchor) => (
-    <Container sx={{ width: 375, height: 812, mt: 4, overflowX: 'hidden' }}>
+    <Container
+      sx={{
+        width: 375,
+        height: 812,
+        mt: 4,
+        overflowX: 'hidden',
+        padding: '0px !important',
+      }}
+    >
       {/*close Icon added: left*/}
       {/* <Box>
         <IconButton
@@ -78,7 +86,7 @@ const SideDrawer = ({ navLinks }) => {
             variant="h3"
             key={`${title}${i}`}
             sx={{
-              ml: 4,
+              ml: 6,
               my: 6,
               textTransform: `uppercase`,
               fontSize: 'h3',
@@ -122,7 +130,7 @@ const SideDrawer = ({ navLinks }) => {
           // variant="button"
           textalign="left"
           sx={{
-            ml: 4,
+            ml: 6,
             my: 4,
             // textTransform: `uppercase`,
             color: 'secondary.main',
@@ -146,7 +154,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12}
           sm={12}
           xs={12}
-          sx={{ ml: 4, my: 4 }}
+          sx={{ ml: 6, my: 4 }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -193,7 +201,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12} //2->12
           sm={12}
           xs={12}
-          sx={{ ml: 4, my: 4 }}
+          sx={{ ml: 6, my: 4 }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -246,7 +254,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12} //2에서 12로 변경 for ceter align @Desktop version
           sm={12}
           xs={12}
-          sx={{ ml: 4, my: 4 }}
+          sx={{ ml: 6, my: 4 }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -287,7 +295,7 @@ const SideDrawer = ({ navLinks }) => {
           md={12}
           sm={12}
           xs={12}
-          sx={{ ml: 4, my: 4 }}
+          sx={{ ml: 6, my: 4 }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
