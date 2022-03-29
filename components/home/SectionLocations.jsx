@@ -65,7 +65,7 @@ const SectionLocations = ( isMobile )=> {
             </Typography>
             <Typography
               color="text"
-              variant="body1"
+              variant={isMobile ? "body2" : "body1"}
               align="center"
               fontFamily={'Nunito'}
               sx={{ mb: 1 }}
@@ -89,7 +89,7 @@ const SectionLocations = ( isMobile )=> {
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={{ mb: 2, mt: 4 }}
+              sx={isMobile ? {mb: 2, mt: 2} : { mb: 2, mt: 4 }}
             >
               Sushi Rollin' Lewisville
             </Typography>
@@ -105,7 +105,7 @@ const SectionLocations = ( isMobile )=> {
             </Typography>
             <Typography
               color="text"
-              variant="body2"
+              variant={isMobile ? "body2" : "body1"}
               align="center"
               textAlign={isMobile ? "center": "left"}
               fontFamily={'Nunito'}
@@ -115,7 +115,7 @@ const SectionLocations = ( isMobile )=> {
             </Typography>
             <Typography
               color="text"
-              variant="body1"
+              variant={isMobile ? "body2" : "body1"}
               align="center"
               fontFamily={'Nunito'}
             >

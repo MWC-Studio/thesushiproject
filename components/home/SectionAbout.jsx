@@ -29,11 +29,10 @@ const SectionAbout = ({ isMobile }) => {
           justifyContent="center"
           alignItems="center"
           pt={2}
-          //pb={6}
         >
           <Typography
             color="text"
-            variant="h2"
+            variant={isMobile ? "h3" : "h2"}
             align="center"
             fontWeight={"fontWeightBold"}
             fontFamily={"Nunito"}
@@ -41,14 +40,13 @@ const SectionAbout = ({ isMobile }) => {
             About Us
           </Typography>
           <Typography
-            fontSize={14}
             textAlign={isMobile ? "left" : "center"}
             sx={isMobile ? { my: 2 } : { my: 2, px: 2 }}
           >
-            `Your friendly neighborhood sushi place is here!<br/> 
-            In Sushi Rollin’ we offer freshness, variety, and authentic experience. A true hole in the wall where you expect something ordinary but walk out with a content belly and heart. We’ve been rolling since 2019.
+            {`Your friendly neighborhood sushi place is here! 
+            In Sushi Rollin’ we offer freshness, variety, and authentic experience. A true hole in the wall where you expect something ordinary but walk out with a content belly and heart. We’ve been rolling since 2019.`}
           </Typography>
-          <MuiNextLink href="/aboutus" underline="none" sx={ isMobile ? {pb: 4}: {py: 2 }}>
+          <MuiNextLink href="/aboutus" underline="none" sx={{ py: 2 }}>
             <Button> Read More</Button>
           </MuiNextLink>
         </Grid>
@@ -83,7 +81,6 @@ const SectionAbout = ({ isMobile }) => {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          //pb={6}
         >
           <Image
             src="/home_page/roll_with_us.jpg"
@@ -104,7 +101,7 @@ const SectionAbout = ({ isMobile }) => {
         >
           <Typography
             color="text"
-            variant="h2"
+            variant={isMobile ? "h3" : "h2"}
             align="center"
             fontWeight={"fontWeightBold"}
             fontFamily={"Nunito"}
@@ -113,7 +110,6 @@ const SectionAbout = ({ isMobile }) => {
             Roll with Us
           </Typography>
           <Typography
-            fontSize={14}
             textAlign={isMobile ? "left" : "center"}
             sx={isMobile ? { my: 2 } : { my: 2, px: 2 }}
             // sx={isMobile ? { my: 1 } : { my: 1, px: 1 }}
