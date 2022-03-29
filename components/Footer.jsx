@@ -59,11 +59,11 @@ const Footer = ({ isMobile }) => {
               sx={{ ml: isMobile ? -1 : 0 }}
             >
               {/* Contact us */}
-              <Grid item sx={{ mt: isMobile ? 5 : 2 }}>
+              <Grid item sx={{ ml : "17", mt: isMobile ? 5 : 2 }}>
                 <Typography
-                  variant={isMobile ? 'body3' : 'h5'}
+                  variant={isMobile ? 'body2' : 'h5'}
                   color="secondary.main"
-                  fontWeight="700"
+                  fontWeight={'fontWeightBold'}
                   fontFamily="Nunito"
                 >
                   CONTACT US
@@ -88,13 +88,13 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/icon_email.svg"
                       alt="email"
-                      width={isMobile ? 20 : 24}
-                      height={isMobile ? 16 : 18.67}
+                      width={isMobile ? '18' : '22'}
+                      height={isMobile ? '18' : '22'}
                     />
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
-                      fontWeight="700"
+                      //fontWeight="700"
                       fontFamily="Nunito"
                     >
                       Email
@@ -102,7 +102,7 @@ const Footer = ({ isMobile }) => {
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
-                      fontWeight="400"
+                      //fontWeight="400"
                       fontFamily="Nunito"
                     >
                       sushirollin.us@gmail.com
@@ -125,13 +125,13 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/molumen_phone_icon.svg"
                       alt="phone number"
-                      width="28"
-                      height="28"
+                      width={isMobile ? '18' : '22'}
+                      height={isMobile ? '18' : '22'}
                     />
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
-                      fontWeight="700"
+                      fontWeight={'fontWeightBold'}
                       fontFamily="Nunito"
                     >
                       Phone
@@ -140,7 +140,7 @@ const Footer = ({ isMobile }) => {
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       fontWeight="400"
-                      fontFamily="Nunito"
+                      //fontFamily="Nunito"
                     >
                       956-249-0167
                     </Typography>
@@ -149,11 +149,11 @@ const Footer = ({ isMobile }) => {
               </Grid>
 
               {/* Find us on */}
-              <Grid item sx={{ mt: isMobile ? 6.5 : '15px' }}>
+              <Grid item sx={{ml : "15", mt: isMobile ? 6.5 : '15px' }}>
                 <Typography
-                  variant={isMobile ? 'body3' : 'h5'}
+                  variant={isMobile ? 'body2' : 'h5'}
                   color="secondary.main"
-                  fontWeight="700"
+                  fontWeight={'fontWeightBold'}
                   fontFamily="Nunito"
                 >
                   FIND US ON
@@ -176,8 +176,8 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/instagram.svg"
                       alt="Garland Instagram"
-                      width={isMobile ? '18' : '28'}
-                      height={isMobile ? '18' : '28'}
+                      width={isMobile ? '18' : '22'}
+                      height={isMobile ? '18' : '22'}
                     />
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
@@ -207,8 +207,8 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/instagram.svg"
                       alt="Lewisville Instagram"
-                      width={isMobile ? '18' : '28'}
-                      height={isMobile ? '18' : '28'}
+                      width={isMobile ? '18' : '22'}
+                      height={isMobile ? '18' : '22'}
                     />
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
