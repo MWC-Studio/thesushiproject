@@ -135,7 +135,7 @@ const SideDrawer = ({ navLinks, isMobile }) => {
             ml: 6,
             my: '31px',
             color: 'secondary.main',
-            fontSize: '18px', //h4 적용시 fontsixe =16 안됨
+            fontSize: '18px', //h4 적용시 fontsize=18 안됨
             
           }}
         >
