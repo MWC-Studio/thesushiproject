@@ -16,13 +16,7 @@ export default function BottomMenuImageList() {
       }}
     >
       <Container sx={{ mt: 9 }}>
-        <Typography
-          color="text"
-          variant="h2"
-          align="center"
-          fontWeight={"fontWeightBold"}
-          fontFamily={"Nunito"}
-        >
+        <Typography color="text" variant="h2" align="center">
           Sushi Rollin' Experience
         </Typography>
 

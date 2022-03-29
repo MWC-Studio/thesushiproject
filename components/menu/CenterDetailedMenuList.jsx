@@ -25,8 +25,6 @@ export default function CenterDetailedMenuList() {
                   color="text"
                   variant="h2"
                   align="left"
-                  fontWeight={"fontWeightBold"}
-                  fontFamily={"Nunito"}
                   mb={2}
                 >
                   {item.category}
@@ -57,8 +55,6 @@ const MenuDescription = ({ data }) => {
             color="text"
             variant="h3"
             align="left"
-            fontWeight={"fontWeightBold"}
-            fontFamily={"Nunito"}
             mt={2}
             mb={1}
           >
@@ -69,8 +65,6 @@ const MenuDescription = ({ data }) => {
             color="text"
             variant="body1"
             align="left"
-            fontWeight={"fontWeightLight"}
-            fontFamily={"Nunito"}
             fontStyle="italic"
             mb={5}
           >

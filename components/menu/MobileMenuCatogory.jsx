@@ -28,8 +28,6 @@ const categoryCSS = (categoryList) => {
             color="#333333"
             variant="h5"
             align="center"
-            fontWeight={"fontWeightBold"}
-            fontFamily={"Nunito"}
             my={1}
             className="menucategory"
           >
