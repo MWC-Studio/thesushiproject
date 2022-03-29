@@ -82,14 +82,15 @@ const SideDrawer = ({ navLinks, isMobile }) => {
       >
         {navLinks.map(({ title, path }, i) => (
           <Typography
-            variant="h3"
+            variant="h1"
             key={`${title}${i}`}
             sx={{
               ml: 6,
               // my: 6,
-              mt: '45px',
-              mb: '45px',
+              mt: '19px',
+              mb: '29px',
               textTransform: `uppercase`,
+    
             }}
           >
             <MuiNextLink
@@ -97,6 +98,8 @@ const SideDrawer = ({ navLinks, isMobile }) => {
               variant="button"
               underline="hover"
               sx={{
+                fontWeight :'fontWeightBold',
+                fontSize: '24px',
                 color: 'primary.contrastText',
                 opacity: 1,
                 textTransform: 'none',
