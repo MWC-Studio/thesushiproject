@@ -70,7 +70,7 @@ export default function SectionMenuMobile() {
               sx={{ textDecoration: 'none', color: 'common.white' }}
               href="/menu"
             >
-              View Store Menu
+              View More Menu
             </MuiNextLink>
           </Button>
         </Grid>
