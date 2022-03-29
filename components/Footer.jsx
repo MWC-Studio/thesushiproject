@@ -61,8 +61,10 @@ const Footer = ({ isMobile }) => {
               {/* Contact us */}
               <Grid item sx={{ mt: isMobile ? 5 : 2 }}>
                 <Typography
-                  variant={isMobile ? 'body3' : 'h3'}
-                  color="primary.contrastText"
+                  variant={isMobile ? 'body3' : 'h5'}
+                  color="secondary.main"
+                  fontWeight="700"
+                  fontFamily="Nunito"
                 >
                   CONTACT US
                 </Typography>
@@ -90,7 +92,7 @@ const Footer = ({ isMobile }) => {
                       height={isMobile ? 16 : 18.67}
                     />
                     <Typography
-                      variant={isMobile ? 'h6' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
@@ -98,7 +100,7 @@ const Footer = ({ isMobile }) => {
                       Email
                     </Typography>
                     <Typography
-                      variant={isMobile ? 'subtitle2' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       fontWeight="400"
                       fontFamily="Nunito"
@@ -127,7 +129,7 @@ const Footer = ({ isMobile }) => {
                       height="28"
                     />
                     <Typography
-                      variant={isMobile ? 'h6' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
@@ -135,7 +137,7 @@ const Footer = ({ isMobile }) => {
                       Phone
                     </Typography>
                     <Typography
-                      variant={isMobile ? 'subtitle2' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       fontWeight="400"
                       fontFamily="Nunito"
@@ -149,8 +151,8 @@ const Footer = ({ isMobile }) => {
               {/* Find us on */}
               <Grid item sx={{ mt: isMobile ? 6.5 : '15px' }}>
                 <Typography
-                  variant={isMobile ? 'body3' : 'h3'}
-                  color="primary.contrastText"
+                  variant={isMobile ? 'body3' : 'h5'}
+                  color="secondary.main"
                   fontWeight="700"
                   fontFamily="Nunito"
                 >
@@ -178,7 +180,7 @@ const Footer = ({ isMobile }) => {
                       height={isMobile ? '18' : '28'}
                     />
                     <Typography
-                      variant={isMobile ? 'h6' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
@@ -209,7 +211,7 @@ const Footer = ({ isMobile }) => {
                       height={isMobile ? '18' : '28'}
                     />
                     <Typography
-                      variant={isMobile ? 'h6' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
