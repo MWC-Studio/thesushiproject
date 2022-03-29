@@ -46,9 +46,9 @@ const SectionLocations = ( isMobile )=> {
             </Typography>
             <Typography
               color="text"
-              variant="body1"
               //align="center"
               textAlign={isMobile ? "center": "left"}
+              variant={isMobile ? "body2" : "body1"}
               fontFamily={'Nunito'}
             >
               6850 N Shiloh Rd, Garland, TX 75044
@@ -58,7 +58,7 @@ const SectionLocations = ( isMobile )=> {
               variant={isMobile ? "body2" : "body1"}
               //align="center"
               fontFamily={'Nunito'}
-              textAlign={isMobile ? "center": "left"}
+              textAlign={isMobile ? "center": "left"}//Web left align 안됨
               sx={{ mb: 2 }}
             >
               6Opens Daily 11 a.m. - 9:30 p.m.
