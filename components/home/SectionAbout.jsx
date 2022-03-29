@@ -32,7 +32,7 @@ const SectionAbout = ({ isMobile }) => {
         >
           <Typography
             color="text"
-            variant="h2"
+            variant={isMobile ? "h3" : "h2"}
             align="center"
             fontWeight={"fontWeightBold"}
             fontFamily={"Nunito"}
@@ -101,7 +101,7 @@ const SectionAbout = ({ isMobile }) => {
         >
           <Typography
             color="text"
-            variant="h2"
+            variant={isMobile ? "h3" : "h2"}
             align="center"
             fontWeight={"fontWeightBold"}
             fontFamily={"Nunito"}

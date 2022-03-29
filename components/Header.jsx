@@ -68,7 +68,7 @@ const Header = ({ isMobile }) => {
                 />
               </MuiNextLink>
 
-              <Navbar navLinks={navLinks} />
+              <Navbar navLinks={navLinks} />  
               <SideDrawer navLinks={navLinks} />
             </Container>
           </Toolbar>

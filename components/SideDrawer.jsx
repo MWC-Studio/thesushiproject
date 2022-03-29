@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
-import { Container, Grid } from '@mui/material';
+//import { makeStyles } from '@material-ui/core/styles';
+import { Container, Divider, Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/icons-material/Menu';
@@ -7,19 +8,19 @@ import MuiNextLink from './MuiNextLink';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Divider from '@mui/material/Divider';
-import Image from 'next/image';
 // import Stack from '@mui/material/Stack';
 // import Drawer from '@mui/material/Drawer';
 // import { flexbox } from '@mui/system';
 
-const SideDrawer = ({ navLinks }) => {
+const SideDrawer = ({ navLinks, isMobile }) => {
   const [state, setState] = useState({
     right: false,
   });
 
+
   const toggleDrawer = (anchor, open) => (event) => {
     if (
+      
       event &&
       event.type === 'keydown' &&
       (event.key === 'Tab' || event.key === 'Shift')
@@ -32,7 +33,7 @@ const SideDrawer = ({ navLinks }) => {
 
   const list = (anchor) => (
     <Container
-      sx={{
+        sx={{
         // width: 375,
         width: '100%',
         height: 812,
@@ -41,6 +42,7 @@ const SideDrawer = ({ navLinks }) => {
         padding: '0px !important',
       }}
     >
+      
       {/*close Icon added: left*/}
       {/* <Box>
         <IconButton
@@ -118,17 +120,20 @@ const SideDrawer = ({ navLinks }) => {
           color: 'common.white',
         }}
       /> */}
-      <hr />
+      <Divider sx={{ backgroundColor: '#808080' }}  /> 
+      {/*<hr/>*/}
       <Box sx={{ textAlign: 'left' }}>
         <Typography
           color="primary.contrastText"
           // variant="h4"
           textalign="left"
+          fontWeight={'fontWeightBold'}
           sx={{
             ml: 6,
             my: '31px',
             color: 'secondary.main',
-            fontSize: '18px', //variant 4 적용이 안됨
+            fontSize: '18px', //h4 적용시 fontsixe =16 안됨
+            
           }}
         >
           Find Sushi Rollin’ On
@@ -340,13 +345,14 @@ const SideDrawer = ({ navLinks }) => {
         anchor="right"
         open={state.right}
         onClose={toggleDrawer('right', false)}
-        onOpen={toggleDrawer('anchor', true)}
+        //onOpen={  toggleDrawer('anchor', true)}
         sx={{
           '.MuiDrawer-paper': {
             bgcolor: 'primary.main',
-            width: '100%',
+            width:  '100%' ,
             maxWidth: 375,
-            height: 812,
+            //display: { md: `none` }
+            //height: 812,
           },
           '.MuiBackdrop-root': {
             backgroundColor: 'rgba(255,255,255,.6)',

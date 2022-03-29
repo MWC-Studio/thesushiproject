@@ -2,7 +2,7 @@ import { Button, Container, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
 import MuiNextLink from '@components/MuiNextLink';
 
-export default function SectionLocations() {
+const SectionLocations = ( isMobile )=> {
   return (
     <Grid
       component="section"
@@ -12,10 +12,10 @@ export default function SectionLocations() {
         width: '100vw',
       }}
     >
-      <Container sx={{ mt: 8 }}>
+      <Container sx={{ mt: 6 }}>
         <Typography
           color="text"
-          variant="h2"
+          variant={isMobile ? "h3" : "h2"}
           align="center"
           fontWeight={'fontWeightBold'}
           fontFamily={'Nunito'}
@@ -36,35 +36,36 @@ export default function SectionLocations() {
 
             <Typography
               color="text"
-              variant="h3"
+              variant={isMobile ? "h4" : "h3"}
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={{ mb: 2, mt: 4 }}
+              sx={isMobile ? {mb: 2, mt: 2} : { mb: 2, mt: 4 }}
             >
-              Sushi Rollin'
+              Sushi Rollin' Garland
             </Typography>
             <Typography
               color="text"
-              variant="body1"
-              align="center"
+              //align="center"
+              textAlign={isMobile ? "center": "left"}
+              variant={isMobile ? "body2" : "body1"}
               fontFamily={'Nunito'}
-              sx={{ mb: 1 }}
             >
               6850 N Shiloh Rd, Garland, TX 75044
             </Typography>
             <Typography
               color="text"
-              variant="body1"
-              align="center"
+              variant={isMobile ? "body2" : "body1"}
+              //align="center"
               fontFamily={'Nunito'}
+              textAlign={isMobile ? "center": "left"}//Web left align 안됨
               sx={{ mb: 2 }}
             >
               6Opens Daily 11 a.m. - 9:30 p.m.
             </Typography>
             <Typography
               color="text"
-              variant="body1"
+              variant={isMobile ? "body2" : "body1"}
               align="center"
               fontFamily={'Nunito'}
               sx={{ mb: 1 }}
@@ -84,27 +85,29 @@ export default function SectionLocations() {
 
             <Typography
               color="text"
-              variant="h3"
+              variant={isMobile ? "h4" : "h3"}
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={{ mb: 2, mt: 4 }}
+              sx={isMobile ? {mb: 2, mt: 2} : { mb: 2, mt: 4 }}
             >
               Sushi Rollin' Lewisville
             </Typography>
             <Typography
               color="text"
-              variant="body1"
+              variant={isMobile ? "body2" : "body1"}
               align="center"
+              textAlign={isMobile ? "center": "left"}
               fontFamily={'Nunito'}
-              sx={{ mb: 1 }}
+      
             >
               1288 W Main St #142, Lewisville, TX 75067
             </Typography>
             <Typography
               color="text"
-              variant="body1"
+              variant={isMobile ? "body2" : "body1"}
               align="center"
+              textAlign={isMobile ? "center": "left"}
               fontFamily={'Nunito'}
               sx={{ mb: 2 }}
             >
@@ -112,17 +115,16 @@ export default function SectionLocations() {
             </Typography>
             <Typography
               color="text"
-              variant="body1"
+              variant={isMobile ? "body2" : "body1"}
               align="center"
               fontFamily={'Nunito'}
-              sx={{ mb: 1 }}
             >
               (817) 320-3722
             </Typography>
           </Grid>
         </Grid>
 
-        <Grid align="center" pt={7} pb={7}>
+        <Grid align="center" pt={4} pb={6}>
           <Button>
             <MuiNextLink
               sx={{ textDecoration: 'none', color: 'common.white' }}
@@ -136,3 +138,4 @@ export default function SectionLocations() {
     </Grid>
   );
 }
+export default SectionLocations;
