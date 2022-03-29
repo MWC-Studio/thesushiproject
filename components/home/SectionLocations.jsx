@@ -2,7 +2,7 @@ import { Button, Container, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
 import MuiNextLink from '@components/MuiNextLink';
 
-const SectionLocations = ( isMobile )=> {
+const SectionLocations = (props)=> {
   return (
     <Grid
       component="section"
@@ -15,7 +15,8 @@ const SectionLocations = ( isMobile )=> {
       <Container sx={{ mt: 6 }}>
         <Typography
           color="text"
-          variant={isMobile ? "h3" : "h2"}
+          variant={props.isMobile ? "h3" : "h2"}
+          //variant= "h2"
           align="center"
           fontWeight={'fontWeightBold'}
           fontFamily={'Nunito'}
@@ -36,36 +37,36 @@ const SectionLocations = ( isMobile )=> {
 
             <Typography
               color="text"
-              variant={isMobile ? "h4" : "h3"}
+              variant={props.isMobile ? "h4" : "h3"}
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={isMobile ? {mb: 2, mt: 2} : { mb: 2, mt: 4 }}
+              sx={props.isMobile ? {mb: 2, mt: 2} : { mb: 2, mt: 4 }}
             >
               Sushi Rollin' Garland
             </Typography>
             <Typography
               color="text"
-              //align="center"
-              textAlign={isMobile ? "center": "left"}
-              variant={isMobile ? "body2" : "body1"}
+              align="center"
+              //width = {props.isMobile ? null : "277px" }
+              //textAlign={props.isMobile ? "center": "left"}
+              variant={props.isMobile ? "body2" : "body1"}
               fontFamily={'Nunito'}
             >
               6850 N Shiloh Rd, Garland, TX 75044
             </Typography>
             <Typography
               color="text"
-              variant={isMobile ? "body2" : "body1"}
-              //align="center"
-              fontFamily={'Nunito'}
-              textAlign={isMobile ? "center": "left"}//Web left align 안됨
+              variant={props.isMobile ? "body2" : "body1"}
+              align="center"
+              fontFamily={'Nunito'}   
               sx={{ mb: 2 }}
             >
               6Opens Daily 11 a.m. - 9:30 p.m.
             </Typography>
             <Typography
               color="text"
-              variant={isMobile ? "body2" : "body1"}
+              variant={props.isMobile ? "body2" : "body1"}
               align="center"
               fontFamily={'Nunito'}
               sx={{ mb: 1 }}
@@ -85,19 +86,19 @@ const SectionLocations = ( isMobile )=> {
 
             <Typography
               color="text"
-              variant={isMobile ? "h4" : "h3"}
+              variant={props.isMobile ? "h4" : "h3"}
               align="center"
               fontWeight={'fontWeightBold'}
               fontFamily={'Nunito'}
-              sx={isMobile ? {mb: 2, mt: 2} : { mb: 2, mt: 4 }}
+              sx={props.isMobile ? {mb: 2, mt: 2} : { mb: 2, mt: 4 }}
             >
               Sushi Rollin' Lewisville
             </Typography>
             <Typography
               color="text"
-              variant={isMobile ? "body2" : "body1"}
+              variant={props.isMobile ? "body2" : "body1"}
               align="center"
-              textAlign={isMobile ? "center": "left"}
+              //textAlign={props.isMobile ? "center": "left"}
               fontFamily={'Nunito'}
       
             >
@@ -105,9 +106,9 @@ const SectionLocations = ( isMobile )=> {
             </Typography>
             <Typography
               color="text"
-              variant={isMobile ? "body2" : "body1"}
+              variant={props.isMobile ? "body2" : "body1"}
               align="center"
-              textAlign={isMobile ? "center": "left"}
+              //textAlign={props.isMobile ? "center": "left"}
               fontFamily={'Nunito'}
               sx={{ mb: 2 }}
             >
@@ -115,7 +116,7 @@ const SectionLocations = ( isMobile )=> {
             </Typography>
             <Typography
               color="text"
-              variant={isMobile ? "body2" : "body1"}
+              variant={props.isMobile ? "body2" : "body1"}
               align="center"
               fontFamily={'Nunito'}
             >
