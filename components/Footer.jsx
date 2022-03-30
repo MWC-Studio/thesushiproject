@@ -55,11 +55,14 @@ const Footer = ({ isMobile }) => {
               // alignItems={isMobile ? 'flex-start' : 'center'}
               alignItems="flex-start"
               flexDirection={isMobile ? 'column' : 'row'}
-              px={isMobile ? 1 : 5}
-              sx={{ ml: isMobile ? -1 : 0 }}
+              px={isMobile ? 1 : 11}
+              sx={{
+                ml: isMobile ? -1 : 0,
+                mb: isMobile ? 0 : 4,
+              }}
             >
               {/* Contact us */}
-              <Grid item sx={{ ml : "17", mt: isMobile ? 5 : 2 }}>
+              <Grid item sx={{ ml: '17', mt: isMobile ? 5 : '26px' }}>
                 <Typography
                   variant={isMobile ? 'body2' : 'h5'}
                   color="secondary.main"
@@ -76,9 +79,7 @@ const Footer = ({ isMobile }) => {
                     rel="noopener noreferrer"
                     sx={{
                       display: 'grid',
-                      gridTemplateColumns: isMobile
-                        ? '20px 40px 1fr'
-                        : '30px 80px 1fr',
+                      gridTemplateColumns: isMobile ? '20px 1fr' : '30px 1fr',
                       columnGap: '12px',
                       rowGap: '16px',
                       textDecoration: 'none',
@@ -91,14 +92,14 @@ const Footer = ({ isMobile }) => {
                       width={isMobile ? '18' : '22'}
                       height={isMobile ? '18' : '22'}
                     />
-                    <Typography
+                    {/* <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       //fontWeight="700"
                       fontFamily="Nunito"
                     >
                       Email
-                    </Typography>
+                    </Typography> */}
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
@@ -113,9 +114,7 @@ const Footer = ({ isMobile }) => {
                   <Link
                     sx={{
                       display: 'grid',
-                      gridTemplateColumns: isMobile
-                        ? '20px 40px 1fr'
-                        : '30px 80px 1fr',
+                      gridTemplateColumns: isMobile ? '20px 1fr' : '30px 1fr',
                       columnGap: '12px',
                       rowGap: '16px',
                       textDecoration: 'none',
@@ -128,14 +127,14 @@ const Footer = ({ isMobile }) => {
                       width={isMobile ? '18' : '22'}
                       height={isMobile ? '18' : '22'}
                     />
-                    <Typography
+                    {/* <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       fontWeight={'fontWeightBold'}
                       fontFamily="Nunito"
                     >
-                      Phone
-                    </Typography>
+                      Phone */}
+                    {/* </Typography> */}
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
@@ -149,7 +148,7 @@ const Footer = ({ isMobile }) => {
               </Grid>
 
               {/* Find us on */}
-              <Grid item sx={{ml : "15", mt: isMobile ? 6.5 : '15px' }}>
+              <Grid item sx={{ ml: '15', mt: isMobile ? 6.5 : '26px' }}>
                 <Typography
                   variant={isMobile ? 'body2' : 'h5'}
                   color="secondary.main"
@@ -176,8 +175,8 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/instagram.svg"
                       alt="Garland Instagram"
-                      width={isMobile ? '18' : '22'}
-                      height={isMobile ? '18' : '22'}
+                      width={isMobile ? '15.76' : '19.26'}
+                      height={isMobile ? '15.76' : '19.26'}
                     />
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
@@ -190,7 +189,7 @@ const Footer = ({ isMobile }) => {
                   </Link>
                 </Box>
 
-                <Box sx={{ mb: 2, mt: 2 }}>
+                <Box sx={{ mt: 2 }}>
                   <Link
                     sx={{
                       display: 'grid',
@@ -207,8 +206,8 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/instagram.svg"
                       alt="Lewisville Instagram"
-                      width={isMobile ? '18' : '22'}
-                      height={isMobile ? '18' : '22'}
+                      width={isMobile ? '15.76' : '19.26'}
+                      height={isMobile ? '15.76' : '19.26'}
                     />
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
@@ -225,7 +224,7 @@ const Footer = ({ isMobile }) => {
           </Grid>
         </Container>
         {/* Copyright */}
-        <Grid item xs={6} sx={{ mb: 1, mt: 3 }}>
+        <Grid item xs={6} sx={{ mb: isMobile ? 2 : 1, mt: 3 }}>
           {isMobile ? (
             <>
               <Typography
