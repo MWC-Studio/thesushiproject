@@ -43,8 +43,7 @@ const CustomerReview = (props) => {
             style={{ 
                 '--swiper-navigation-size': '20px', 
                 '--swiper-pagination-bullet-size': '8px', 
-                '--swiper-theme-color':'#F48A88' 
-            }}
+                '--swiper-theme-color':'#F48A88' }}
             slidesPerView={1}
             slidesPerGroup={1}
             loop={true}
@@ -81,8 +80,7 @@ const CustomerReview = (props) => {
             '--swiper-navigation-size': '40px', 
             '--swiper-pagination-bullet-horizontal-gap': '15px', 
             '--swiper-pagination-bullet-size': '12px', 
-            '--swiper-theme-color':'#F48A88' 
-        }}
+            '--swiper-theme-color':'#F48A88' }}
         slidesPerView={2}
         slidesPerGroup={2}
         loop={true}
