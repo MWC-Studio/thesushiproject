@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const TopBanner = (props) => {
     let btn;
-    if (props.title == "Home" && !props.isMobile) {
+    if (props.title == "Home") {
         btn = <Button variant="outlined" sx={{marginTop: '2%'}}>Franchise</Button>
     }
 
@@ -36,11 +36,10 @@ const TopBanner = (props) => {
             >
                 <Typography
                     color={'primary.contrastText'}
-                    // TODO: isMobile should be h2 but seems too small.
                     variant={ 
                         props.isMobile ? 
                             props.title == "Home" ?
-                                "h2" : "h1" 
+                                "h3" : "h2" 
                             : 
                             "h1" }
                     align="right"
@@ -48,7 +47,9 @@ const TopBanner = (props) => {
                     {props.description}{<br />}
                     {props.second}
                 </Typography>
+                <Grid sx={{align:"right"}}>
                 {btn}
+                </Grid>
             </Grid>
         </Grid>
     );
