@@ -348,7 +348,7 @@ const SideDrawer = ({ navLinks, isMobile }) => {
         anchor="right"
         open={state.right}
         onClose={toggleDrawer('right', false)}
-        //onOpen={  toggleDrawer('anchor', true)}
+        onOpen={toggleDrawer('anchor', true)}
         sx={{
           '.MuiDrawer-paper': {
             bgcolor: 'primary.main',
