@@ -4,7 +4,7 @@ import Image from "next/image";
 const TopBanner = (props) => {
     let btn;
     if (props.title == "Home") {
-        btn = <Button variant="outlined" sx={{marginTop: '2%'}}>Franchise</Button>
+        btn = <Button variant="outlined" sx={{marginTop: '3%'}}>Franchise</Button>
     }
 
     return ( 
@@ -47,9 +47,9 @@ const TopBanner = (props) => {
                     {props.description}{<br />}
                     {props.second}
                 </Typography>
-                <Grid sx={{align:"right"}}>
+                {/* <Grid container justifyContent="flex-end"> */}
                 {btn}
-                </Grid>
+                {/* </Grid> */}
             </Grid>
         </Grid>
     );
