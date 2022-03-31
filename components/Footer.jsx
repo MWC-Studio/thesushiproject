@@ -1,11 +1,9 @@
 import Box from '@mui/material/Box';
 import MuiNextLink from '@components/MuiNextLink';
 import { Container, Grid, Typography } from '@mui/material';
-//Add logo and icons
 import Link from '@mui/material/Link';
 import NextLink from 'next/link';
 import Image from 'next/image';
-
 
 const Footer = ({ isMobile }) => {
   return (
@@ -26,39 +24,49 @@ const Footer = ({ isMobile }) => {
         alignItems="center"
       >
         {/* Logo */}
-        <Grid item sx={{ align: 'center', mt: 1, mb: 3 }}>
-          <MuiNextLink href="/" underline="none">
+        <Grid
+          item
+          sx={{
+            align: 'center',
+            mt: isMobile ? '29px' : 3,
+            mb: isMobile ? '19px' : 0,
+          }}
+        >
+          <MuiNextLink
+            href="/"
+            underline="none"
+            sx={{ display: 'flex', justifyContent: 'center' }}
+          >
             <Image
               src="/footer/footer_rollinlogo_white.svg"
               alt="logo"
-              // width="205"
-              // height="35"
               width={isMobile ? '148' : '204.49'}
               height={isMobile ? '25' : '34.41'}
             />
           </MuiNextLink>
         </Grid>
-        {/* Contaact us and Find us on */}
+        {/* Contact us and Find us on */}
         <Container>
           <Grid item xs={12}>
             <Grid
               container
               display="flex"
-              direction="row"
-              wrap="wrap"
               justifyContent="space-between"
-              alignItems="center"
-              flexWrap="wrap"
-              px={3}
-              // py={2}
+              // alignItems={isMobile ? 'flex-start' : 'center'}
+              alignItems="flex-start"
+              flexDirection={isMobile ? 'column' : 'row'}
+              px={isMobile ? 1 : 11}
+              sx={{
+                ml: isMobile ? -1 : 0,
+                mb: isMobile ? 0 : 4,
+              }}
             >
               {/* Contact us */}
-              <Grid item sx={{ mt: 2 }}>
+              <Grid item sx={{ ml: '17', mt: isMobile ? 5 : '26px' }}>
                 <Typography
-                  // TODO MOBILE VERSION SIZE DOESN'T APPLY
-                  variant={isMobile ? 'body3' : 'h3'}
-                  color="primary.contrastText"
-                  fontWeight="700"
+                  variant={isMobile ? 'body2' : 'h5'}
+                  color="secondary.main"
+                  fontWeight={'fontWeightBold'}
                   fontFamily="Nunito"
                 >
                   CONTACT US
@@ -71,9 +79,7 @@ const Footer = ({ isMobile }) => {
                     rel="noopener noreferrer"
                     sx={{
                       display: 'grid',
-                      gridTemplateColumns: isMobile
-                        ? '20px 40px 1fr'
-                        : '30px 80px 1fr',
+                      gridTemplateColumns: isMobile ? '20px 1fr' : '30px 1fr',
                       columnGap: '12px',
                       rowGap: '16px',
                       textDecoration: 'none',
@@ -83,39 +89,32 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/icon_email.svg"
                       alt="email"
-                      width={isMobile ? 20 : 24}
-                      height={isMobile ? 16 : 18.67}
-                      // width="28"
-                      // height="28"
+                      width={isMobile ? '18' : '22'}
+                      height={isMobile ? '18' : '22'}
                     />
-                    <Typography
-                      variant={isMobile ? 'subtitle3' : 'h3'}
+                    {/* <Typography
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
-                      fontWeight="700"
+                      //fontWeight="700"
                       fontFamily="Nunito"
                     >
                       Email
-                    </Typography>
+                    </Typography> */}
                     <Typography
-                      variant={isMobile ? 'subtitle2' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
-                      fontWeight="400"
+                      //fontWeight="400"
                       fontFamily="Nunito"
                     >
-                      Sushirollin.us@gmail.com
+                      sushirollin.us@gmail.com
                     </Typography>
                   </Link>
                 </Box>
                 <Box>
                   <Link
-                    // href=""
-                    // target="_blank"
-                    // rel="noopener noreferrer"
                     sx={{
                       display: 'grid',
-                      gridTemplateColumns: isMobile
-                        ? '20px 40px 1fr'
-                        : '30px 80px 1fr',
+                      gridTemplateColumns: isMobile ? '20px 1fr' : '30px 1fr',
                       columnGap: '12px',
                       rowGap: '16px',
                       textDecoration: 'none',
@@ -125,22 +124,22 @@ const Footer = ({ isMobile }) => {
                     <Image
                       src="/footer/molumen_phone_icon.svg"
                       alt="phone number"
-                      width="28"
-                      height="28"
+                      width={isMobile ? '18' : '22'}
+                      height={isMobile ? '18' : '22'}
                     />
-                    <Typography
-                      variant={isMobile ? 'subtitle3' : 'h3'}
+                    {/* <Typography
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
-                      fontWeight="700"
+                      fontWeight={'fontWeightBold'}
                       fontFamily="Nunito"
                     >
-                      Phone
-                    </Typography>
+                      Phone */}
+                    {/* </Typography> */}
                     <Typography
-                      variant={isMobile ? 'subtitle2' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       fontWeight="400"
-                      fontFamily="Nunito"
+                      //fontFamily="Nunito"
                     >
                       956-249-0167
                     </Typography>
@@ -149,12 +148,11 @@ const Footer = ({ isMobile }) => {
               </Grid>
 
               {/* Find us on */}
-              <Grid item sx={{ mt: 5.5 }}>
+              <Grid item sx={{ ml: '15', mt: isMobile ? 6.5 : '26px' }}>
                 <Typography
-                  variant={isMobile ? 'body3' : 'h3'}
-                  // variant="h3"
-                  color="primary.contrastText"
-                  fontWeight="700"
+                  variant={isMobile ? 'body2' : 'h5'}
+                  color="secondary.main"
+                  fontWeight={'fontWeightBold'}
                   fontFamily="Nunito"
                 >
                   FIND US ON
@@ -162,43 +160,63 @@ const Footer = ({ isMobile }) => {
 
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
-                    sx={{ textDecoration: 'none', color: 'common.white' }}
+                    sx={{
+                      display: 'grid',
+                      gridTemplateColumns: isMobile ? '20px 1fr' : '30px 1fr',
+                      columnGap: '12px',
+                      rowGap: '16px',
+                      textDecoration: 'none',
+                      color: 'common.white',
+                    }}
                     href="https://www.instagram.com/sushi__rollin/?hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
-                      src="/footer/insta1.svg"
+                      src="/footer/instagram.svg"
                       alt="Garland Instagram"
-                      // width="240"
-                      // height="28"
-                      width={isMobile ? '154.49' : '240'}
-                      height={isMobile ? '19' : '28'}
+                      width={isMobile ? '15.76' : '19.26'}
+                      height={isMobile ? '15.76' : '19.26'}
                     />
                     <Typography
-                      variant={isMobile ? 'subtitle3' : 'h3'}
+                      variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
                       fontWeight="700"
                       fontFamily="Nunito"
-                    ></Typography>
+                    >
+                      Sushi Rollin’ Garland
+                    </Typography>
                   </Link>
                 </Box>
 
-                <Box sx={{ mb: 2, mt: 2 }}>
+                <Box sx={{ mt: 2 }}>
                   <Link
-                    sx={{ textDecoration: 'none', color: 'common.white' }}
+                    sx={{
+                      display: 'grid',
+                      gridTemplateColumns: isMobile ? '20px 1fr' : '30px 1fr',
+                      columnGap: '12px',
+                      rowGap: '16px',
+                      textDecoration: 'none',
+                      color: 'common.white',
+                    }}
                     href="https://www.instagram.com/sushi_rollin_lewisville/?utm_medium=copy_link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
-                      src="/footer/insta2.svg"
+                      src="/footer/instagram.svg"
                       alt="Lewisville Instagram"
-                      // width="258"
-                      // height="28"
-                      width={isMobile ? '167.49' : '258'}
-                      height={isMobile ? '19' : '28'}
+                      width={isMobile ? '15.76' : '19.26'}
+                      height={isMobile ? '15.76' : '19.26'}
                     />
+                    <Typography
+                      variant={isMobile ? 'subtitle2' : 'body1'}
+                      color="primary.contrastText"
+                      fontWeight="700"
+                      fontFamily="Nunito"
+                    >
+                      Sushi Rollin’ Lewisville
+                    </Typography>
                   </Link>
                 </Box>
               </Grid>
@@ -206,37 +224,32 @@ const Footer = ({ isMobile }) => {
           </Grid>
         </Container>
         {/* Copyright */}
-        <Grid item 
-        //md={12}
-        //lg={5}
-        xs={6}
-        sx={{ mb: 1, mt: 5 }}>
-        { isMobile ?
-          <>
-          <Typography
-            align="center"
-            color="common.white"
-            variant="subtitle2"
-            fontFamily="Nunito"
-          > 
-            Copyright by ©{new Date().getFullYear()} <br/>Sushi Rollin. All rights
-            reserved.
-          </Typography>
-          </>
-          :
-          <>
-          <Typography
-            align="center"
-            color="common.white"
-            variant="subtitle2"
-            fontFamily="Nunito"
-          > 
-            <></>
-            Copyright by ©{new Date().getFullYear()} Sushi Rollin. All rights
-            reserved.
-          </Typography>
-          </>
-          }
+        <Grid item xs={6} sx={{ mb: isMobile ? 2 : 1, mt: 3 }}>
+          {isMobile ? (
+            <>
+              <Typography
+                align="center"
+                color="common.white"
+                variant="subtitle2"
+                fontFamily="Nunito"
+              >
+                Copyright by ©{new Date().getFullYear()} Sushi Rollin. <br />
+                All rights reserved.
+              </Typography>
+            </>
+          ) : (
+            <>
+              <Typography
+                align="center"
+                color="common.white"
+                variant="subtitle2"
+                fontFamily="Nunito"
+              >
+                Copyright by ©{new Date().getFullYear()} Sushi Rollin. All
+                rights reserved.
+              </Typography>
+            </>
+          )}
         </Grid>
       </Grid>
     </Container>

@@ -18,15 +18,15 @@ const CustomerReview = (props) => {
 
     
     return ( 
-        <Grid container bgcolor="common.beige">
-        <Container sx={{ mb: 10, mt: 10 }} >        
         <Grid container
-            flexDirection="column"
             justifyContent="center"
             alignItems="center"
+            py={props.isMobile ? 5 : 9}
+            px={2}
+            sx={{ backgroundColor: 'common.beige' }}
         >
-            <Grid item xs={12} sx={{ my: 0 }} bgcolor="">
-                <Typography variant={'h2'} >
+            <Grid item xs={12} sx={{ my: 0 }} textAlign="center" bgcolor="">
+                <Typography variant={ props.isMobile ? 'h3' : 'h2' } >
                     { props.reviewTitle } 
                 </Typography>
             </Grid>
@@ -35,7 +35,7 @@ const CustomerReview = (props) => {
                 flexDirection="column"
                 justifyContent="center"
                 alignItems="center"
-                sx={{ mt: 7 }}
+                mt={props.isMobile ? 4 : 7}
             >
 
         { props.isMobile ? 
@@ -51,25 +51,25 @@ const CustomerReview = (props) => {
             className="mySwiper"
         >
         
-                {reviewItems.map((item, idx) => (
-                <SwiperSlide key={idx}>
-                <Grid container item xs={9} 
-                    gap={ 2 }
-                >
-                    <Grid item xs={12} align='center'>
-                        <Typography variant='h3' mb={2} color='secondary.main'>
-                            { item.name }
-                        </Typography>
-                        <Rating name='review_rating' value={ item.rating } size='small' sx={{ color: 'black' }} readOnly />
-                    </Grid>
-                    <Grid item minHeight={ isSmall ? 230 : 150 }>
-                        <Typography variant='body1' fontStyle='italic'>
-                            "{ item.review }"
-                        </Typography>
-                    </Grid>
+            {reviewItems.map((item, idx) => (
+            <SwiperSlide key={idx}>
+            <Grid container item xs={9} 
+                gap={ 2 }
+            >
+                <Grid item xs={12} align='center'>
+                    <Typography variant='h3' mb={2} color='secondary.main'>
+                        { item.name }
+                    </Typography>
+                    <Rating name='review_rating' value={ item.rating } size='small' sx={{ color: 'black' }} readOnly />
                 </Grid>
-                </SwiperSlide>
-                ))}          
+                <Grid item minHeight={ isSmall ? 180 : 150 }>
+                    <Typography variant='body2' fontStyle='italic'>
+                        "{ item.review }"
+                    </Typography>
+                </Grid>
+            </Grid>
+            </SwiperSlide>
+            ))}          
         </Swiper>
         :
         <Swiper
@@ -82,7 +82,7 @@ const CustomerReview = (props) => {
         // navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
-    >
+        >
     
             {reviewItems.map((item, idx) => (
             <SwiperSlide key={idx}>
@@ -103,12 +103,10 @@ const CustomerReview = (props) => {
             </Grid>
             </SwiperSlide>
             ))}          
-    </Swiper>
-    }
+        </Swiper>
+        }
       
             </Grid>
-        </Grid>
-        </Container>
         </Grid>
      );
 }
