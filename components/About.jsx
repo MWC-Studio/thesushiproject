@@ -24,7 +24,7 @@ const AboutPage = (isMobile) => {
         container
         justify="center"
         flexDirection="column"
-        justifyItems="center"
+        justifycontent="center"
         alignItems="center" //alignitem으로 변경시 센터 정렬이 안됨. need to fix
         sx={{ mb: 3, mt: 3 }}
       >
