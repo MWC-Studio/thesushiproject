@@ -3,6 +3,15 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { section1 } from "data/menu";
 
+const rollName = [
+  "Shrimp Tempura \nChef Special Roll",
+  "Titanic \nChef Special Roll",
+  "Flaming Hot \nChef Special Roll",
+  "Crispy Rice Spicy Tuna",
+  "Red Dragon Roll",
+  "Rollin Burrito",
+];
+
 export default function MobileSpecialRolls() {
   return (
     <Grid
@@ -47,8 +56,9 @@ export default function MobileSpecialRolls() {
                   fontWeight={"fontWeightBold"}
                   fontFamily={"Nunito"}
                   mt={1}
+                  style={{ whiteSpace: "pre-line" }}
                 >
-                  {item.name}
+                  <div>{rollName[idx]}</div>
                 </Typography>
               </ImageListItem>
             </div>
