@@ -74,7 +74,7 @@ const Footer = ({ isMobile }) => {
 
                 <Box sx={{ mb: 2, mt: 2 }}>
                   <Link
-                    href="mailto:wnsrl91@gmail.com"
+                    href="mailto:sushirollin.us@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     sx={{
@@ -100,6 +100,7 @@ const Footer = ({ isMobile }) => {
                     >
                       Email
                     </Typography> */}
+ 
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
@@ -181,7 +182,6 @@ const Footer = ({ isMobile }) => {
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
-                      fontWeight="700"
                       fontFamily="Nunito"
                     >
                       Sushi Rollin’ Garland
@@ -212,7 +212,6 @@ const Footer = ({ isMobile }) => {
                     <Typography
                       variant={isMobile ? 'subtitle2' : 'body1'}
                       color="primary.contrastText"
-                      fontWeight="700"
                       fontFamily="Nunito"
                     >
                       Sushi Rollin’ Lewisville
