@@ -267,8 +267,8 @@ const SideDrawer = ({ navLinks}) => {
           >
             <div className="highlight">
               <svg
-                width="59"
-                height="21"
+                width="67.18"
+                height="22.56"
                 viewBox="0 0 59 21"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
