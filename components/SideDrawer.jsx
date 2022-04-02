@@ -292,7 +292,6 @@ const SideDrawer = ({ navLinks}) => {
           '.MuiDrawer-paper': {
             bgcolor: 'primary.main',
             width:  '100%' ,
-            maxWidth: 375,
             //display: { md: `none` }
             maxHeight: 812,
           },
