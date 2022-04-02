@@ -27,7 +27,7 @@ export default function MyApp(props) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header />
+        <Header isMobile={isMobile} />
         <Component {...pageProps} isMobile={isMobile} />
         <Footer isMobile={isMobile} />
       </ThemeProvider>

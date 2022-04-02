@@ -7,13 +7,13 @@ export const section1 = [{
 {
     id: 2,
     name: 'Titanic Chef Special Roll',
-    img: '/menu_page/roll1.jpg',
+    img: '/menu_page/roll1.svg',
     type: 'Special Rolls'
 },
 {
     id: 3,
     name: 'Flaming Hot Chef Special Roll',
-    img: '/menu_page/roll2.jpg',
+    img: '/menu_page/roll2.svg',
     type: 'Special Rolls'
 },
 {

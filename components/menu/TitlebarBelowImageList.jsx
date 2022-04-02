@@ -16,19 +16,13 @@ export default function TitlebarBelowImageList() {
       }}
     >
       <Container sx={{ mt: 9 }}>
-        <Typography
-          color="text"
-          variant="h2"
-          align="center"
-          fontWeight={"fontWeightBold"}
-          fontFamily={"Nunito"}
-        >
+        <Typography color="text" variant="h2" align="center">
           Special Rolls
         </Typography>
 
         <ImageList sx={{ p: 7, overflow: "hidden" }} cols={3} gap={33}>
           {section1.map((item) => (
-            <div key={item.img}>
+            <div key={item.id}>
               <ImageListItem>
                 <img
                   src={`${item.img}?w=380&h=380&fit=crop&auto=format`}
@@ -43,7 +37,6 @@ export default function TitlebarBelowImageList() {
                   variant="body1"
                   align="center"
                   fontWeight={"fontWeightBold"}
-                  fontFamily={"Nunito"}
                 >
                   {item.name}
                 </Typography>

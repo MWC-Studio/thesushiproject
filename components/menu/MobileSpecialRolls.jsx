@@ -22,21 +22,19 @@ export default function MobileSpecialRolls() {
         width: "100vw",
         bgcolor: "common.beige",
       }}
-      id='Special Rolls'
+      id="Special Rolls"
       my={2}
       py={4}
     >
       <Container>
-       <Typography
-                    component={"div"}
-                    color="text"
-                    variant="h3"
-                    align="center"
-                    fontWeight={"fontWeightBold"}
-                    fontFamily={"Nunito"}
-                    mb={3}
-                  >
-                    Special Rolls
+        <Typography
+          component={"div"}
+          color="text"
+          variant="h3"
+          align="center"
+          mb={3}
+        >
+          Special Rolls
         </Typography>
         <ImageList sx={{ overflow: "hidden" }} cols={2} gap={16}>
           {section1.map((item, idx) => (
@@ -54,7 +52,6 @@ export default function MobileSpecialRolls() {
                   variant="subtitle2"
                   align="center"
                   fontWeight={"fontWeightBold"}
-                  fontFamily={"Nunito"}
                   mt={1}
                   style={{ whiteSpace: "pre-line" }}
                 >

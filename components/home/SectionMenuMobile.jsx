@@ -20,25 +20,24 @@ export default function SectionMenuMobile() {
     >
       <Container>
       <Typography  
-                    
-                    variant="h6"
-                    color={'secondary.main'}
-                    fontFamily={'Nunito'}
-                    fontWeight={'fontWeightBold'}
-                    textAlign={"center"}
-                    >
-                     FAST & TASTY
-                    </Typography>
+        variant="h6"
+        color={'secondary.main'}
+        fontFamily={'Nunito'}
+        fontWeight={'fontWeightBold'}
+        textAlign={"center"}
+        >
+        FAST & TASTY
+       </Typography>
        <Typography
-                    component={"div"}
-                    color="text"
-                    variant="h3"
-                    align="center"
-                    fontWeight={"fontWeightBold"}
-                    fontFamily={"Nunito"}
-                    mb={3}
-                  >
-                    Rollin’ Experience
+        component={"div"}
+        color="text"
+        variant="h3"
+        align="center"
+        fontWeight={"fontWeightBold"}
+        fontFamily={"Nunito"}
+        mb={3}
+        >
+        Rollin’ Experience
         </Typography>
         <ImageList sx={{ overflow: "hidden" }} cols={2} gap={16}>
           {section1.map((item, idx) => (
@@ -71,7 +70,7 @@ export default function SectionMenuMobile() {
               sx={{ textDecoration: 'none', color: 'common.white' }}
               href="/menu"
             >
-              View Store Menu
+              View More Menu
             </MuiNextLink>
           </Button>
         </Grid>
