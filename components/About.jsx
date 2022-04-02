@@ -60,7 +60,7 @@ const AboutPage = (isMobile) => {
         xs={12}
         > 
           <Image
-            src="/aboutpage/about_img.svg"
+            src="/aboutpage/aboutimg.svg"
             alt="Cooking"
             width={592}
             height={420}

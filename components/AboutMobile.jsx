@@ -44,7 +44,7 @@ const AboutMobile = () => {
                 alignItems="center"  
             >
               <Grid item>
-                <Image src={"/aboutpage/about_img_mobile.svg"} width={343} height={266} />
+                <Image src={"/aboutpage/aboutimgmobile.svg"} width={343} height={266} />
               </Grid>
               <Grid
                 container
