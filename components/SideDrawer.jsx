@@ -12,7 +12,7 @@ import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 // import Drawer from '@mui/material/Drawer';
 // import { flexbox } from '@mui/system';
 
-const SideDrawer = ({ navLinks, isMobile }) => {
+const SideDrawer = ({ navLinks}) => {
   const [state, setState] = useState({
     right: false,
   });
@@ -37,7 +37,7 @@ const SideDrawer = ({ navLinks, isMobile }) => {
         // width: 375,
         width: '100%',
         height: 812,
-        mt: '28px',
+        mt: '19px',
         overflowX: 'hidden',
         padding: '0px !important',
       }}
@@ -87,8 +87,8 @@ const SideDrawer = ({ navLinks, isMobile }) => {
             sx={{
               ml: 6,
               // my: 6,
-              mt: '19px',
-              mb: '29px',
+              mt: '39px',
+              mb: '30px',
               textTransform: `uppercase`,
     
             }}
@@ -123,7 +123,7 @@ const SideDrawer = ({ navLinks, isMobile }) => {
           color: 'common.white',
         }}
       /> */}
-      <Divider sx={{ backgroundColor: '#808080' }}  /> 
+      <Divider sx={{ backgroundColor: '#808080'}}  /> 
       {/*<hr/>*/}
       <Box sx={{ textAlign: 'left' }}>
         <Typography
@@ -133,7 +133,7 @@ const SideDrawer = ({ navLinks, isMobile }) => {
           fontWeight={'fontWeightBold'}
           sx={{
             ml: 6,
-            my: '31px',
+            my: '30px',
             color: 'secondary.main',
             fontSize: '18px', //h4 적용시 fontsize=18 안됨
             
@@ -157,7 +157,7 @@ const SideDrawer = ({ navLinks, isMobile }) => {
           md={12}
           sm={12}
           xs={12}
-          sx={{ ml: 6, my: '31px' }}
+          sx={{ ml: 6, my: '30px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -204,7 +204,7 @@ const SideDrawer = ({ navLinks, isMobile }) => {
           md={12} //2->12
           sm={12}
           xs={12}
-          sx={{ ml: 6, my: '31px' }}
+          sx={{ ml: 6, my: '30px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -257,7 +257,7 @@ const SideDrawer = ({ navLinks, isMobile }) => {
           md={12} //2에서 12로 변경 for ceter align @Desktop version
           sm={12}
           xs={12}
-          sx={{ ml: 6, my: '31px' }}
+          sx={{ ml: 6, my: '30px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
@@ -298,7 +298,7 @@ const SideDrawer = ({ navLinks, isMobile }) => {
           md={12}
           sm={12}
           xs={12}
-          sx={{ ml: 6, my: '31px' }}
+          sx={{ ml: 6, my: '30px' }}
         >
           <MuiNextLink
             sx={{ textDecoration: 'none', color: 'primary.contrastText' }}
