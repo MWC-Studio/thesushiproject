@@ -4,21 +4,21 @@ import SectionMenuMobile from '@components/home/SectionMenuMobile';
 import SectionLocations from '@components/home/SectionLocations';
 import TopBanner from '@components/TopBanner';
 import CustomerReview from "@components/CustomerReview"
-const Homepage = (props) => {
+const Homepage = ({isMobile}) => {
   return (
     <>
       <TopBanner
         title="Home"
-        isMobile={props.isMobile}
+        isMobile={isMobile}
         description="Re-thinking the"
         second="Sushi Experience"
       />
 
-      <SectionAbout isMobile = {props.isMobile} />
-      { props.isMobile ? <SectionMenuMobile /> : <SectionMenu/> }
+      <SectionAbout isMobile = {isMobile} />
+      { isMobile ? <SectionMenuMobile /> : <SectionMenu/> }
       {/*<SectionMenu isMobile = {props.isMobile} />*/}
-      <SectionLocations isMobile={props.isMobile} />
-      <CustomerReview  isMobile={props.isMobile} reviewTitle="Here’s What the Customers Say" />
+      <SectionLocations isMobile={isMobile} />
+      <CustomerReview  isMobile={isMobile} reviewTitle="Here’s What the Customers Say" />
     </>
   );
 };
