@@ -65,14 +65,9 @@ export default function SectionMenuMobile() {
           ))}
         </ImageList>
         <Grid align="center" pt = {2} pb={1}>
-          <Button>
-            <MuiNextLink
-              sx={{ textDecoration: 'none', color: 'common.white' }}
-              href="/menu"
-            >
-              View More Menu
-            </MuiNextLink>
-          </Button>
+          <MuiNextLink href="/menu" underline="none" sx={{ py: 2 }}>
+            <Button> View More Menu</Button>
+          </MuiNextLink>
         </Grid>
       </Container>
     </Grid>

@@ -9,33 +9,34 @@ const AboutPage = (isMobile) => {
   const themes = useTheme();
    const isTablet = useMediaQuery(themes.breakpoints.down('lg'));
   return (
-    <Container
+    <Container 
       justify="center"
       direction="column"
       justifycontent="center"
-      alignItems="center"
+      alignitems="center"
       xl={12}
       lg={12}
       xs={12}
       sm={12}
       sx={{ mb: 3, mt: 3 }}
     >
-      <Grid
+      <Grid item
         container
+        justify="center"
         flexDirection="column"
         justifycontent="center"
-        alignItems="center"
+        alignItems="center" //alignitem으로 변경시 센터 정렬이 안됨. need to fix
         sx={{ mb: 3, mt: 3 }}
       >
         <Grid
           item
           flexDirection="column"
           justifycontent="center"
-          alignItems="center"
+          alignitems="center"
           sx={{ mb: 2, mt: 4 }}
         >
-         <Typography  fontWeight= 'bold' textAlign="center" color="#F48A88" gutterbottom="true" py={1}>
-         Fresh, Various, and Authentic
+          <Typography variant="h3" textAlign="center" color="secondary.main">
+          Fresh, Various, and Authentic
         </Typography>
         <Typography
           color="text"
@@ -48,11 +49,11 @@ const AboutPage = (isMobile) => {
           That’s How We’re Rollin’
         </Typography>
         {/*Image*/}
-         <Grid
+         <Grid item
         container
         direction="column"
         justifyContent="center"
-        alignItems="center"
+        alignitems="center"
         lg={12}
         md={12}
         sm={12}
@@ -66,11 +67,11 @@ const AboutPage = (isMobile) => {
           />
         </Grid>
       </Grid>
-        <Grid
+        <Grid item
           container
           direction="column"
           justifyContent="center"
-          alignItems="left"
+          alignitems="center"
           width={596}
         > 
           <Typography variant="body1" textAlign="left" color="#333333" pt={4}>
@@ -83,7 +84,7 @@ const AboutPage = (isMobile) => {
           container
           direction="column"
           justifyContent="center"
-          alignItems="left"
+          alignitems="left"
           width={596} //596으로 하면 줄이 3줄이 됨 604부터 2줄
         > 
           <Typography variant='body1' fontStyle='italic' color="333333" textAlign="center" pt={8}>

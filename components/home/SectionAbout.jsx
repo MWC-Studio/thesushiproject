@@ -122,7 +122,7 @@ const SectionAbout = ({ isMobile }) => {
             <br /> <br />
             It’s an opportunity that keeps rolling. Join us today!
           </Typography>
-          <MuiNextLink href="/aboutus" underline="none" sx={{ py: 2 }}>
+          <MuiNextLink href="/franchise" underline="none" sx={{ py: 2 }}>
             <Button> Join Us Today</Button>
           </MuiNextLink>
         </Grid>

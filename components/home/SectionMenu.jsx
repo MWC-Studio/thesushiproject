@@ -57,14 +57,11 @@ export default function SectionMenu() {
         {/*<Grid item lg={7} md={7} sm={9} xs={12} align="center">
          */}
         <Grid align="center" pt={7} pb={7}>
-          <Button>
-            <MuiNextLink
-              sx={{ textDecoration: 'none', color: 'common.white' }}
-              href="/menu"
-            >
-              View More Menu
+       
+          <MuiNextLink href="/menu" underline="none" sx={{ py: 2 }}>
+            <Button> View More Menu</Button>
             </MuiNextLink>
-          </Button>
+        
         </Grid>
       </Container>
     </Grid>

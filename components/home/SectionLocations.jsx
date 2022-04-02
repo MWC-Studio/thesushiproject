@@ -126,14 +126,9 @@ const SectionLocations = (props)=> {
         </Grid>
 
         <Grid align="center" pt={4} pb={6}>
-          <Button>
-            <MuiNextLink
-              sx={{ textDecoration: 'none', color: 'common.white' }}
-              href="/"
-            >
-              View Locations
-            </MuiNextLink>
-          </Button>
+        <MuiNextLink href="/locations" underline="none" sx={{ py: 2 }}>
+            <Button> View Locations</Button>
+        </MuiNextLink>
         </Grid>
       </Container>
     </Grid>
