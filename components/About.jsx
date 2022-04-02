@@ -3,11 +3,8 @@ import { Grid, Typography, Container } from '@mui/material';
 import MuiNextLink from '@components/MuiNextLink';
 import Button from '@mui/material/Button';
 import Image from 'next/image';
-import { useTheme, useMediaQuery } from "@mui/material";
 
 const AboutPage = (isMobile) => {
-  const themes = useTheme();
-   const isTablet = useMediaQuery(themes.breakpoints.down('lg'));
   return (
     <Container 
       justify="center"
