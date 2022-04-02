@@ -109,12 +109,11 @@ const AboutPage = ({isMobile}) => {
                 borderColor: "secondary.main",
             }}}
           >
-          View Our Menu
+            View Our Menu
           </Button>
-          </MuiNextLink>
+        </MuiNextLink>
       </Grid>
     </Container>
-
   );
 };
 export default AboutPage;
