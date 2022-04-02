@@ -12,7 +12,7 @@ import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 // import Drawer from '@mui/material/Drawer';
 // import { flexbox } from '@mui/system';
 
-const SideDrawer = ({ navLinks}) => {
+const SideDrawer = ({ navLinks, isMobile}) => {
   const [state, setState] = useState({
     right: false,
   });
@@ -354,7 +354,8 @@ const SideDrawer = ({ navLinks}) => {
           '.MuiDrawer-paper': {
             bgcolor: 'primary.main',
             width:  '100%' ,
-            maxWidth: 375,
+            maxWidth: isMobile ? 'auto': 375,
+            // maxWidth: 375,
             //display: { md: `none` }
             maxHeight: 812,
           },

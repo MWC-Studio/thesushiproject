@@ -69,7 +69,7 @@ const Header = ({ isMobile }) => {
               </MuiNextLink>
 
               <Navbar navLinks={navLinks} />  
-              <SideDrawer navLinks={navLinks} />
+              <SideDrawer navLinks={navLinks} isMobile={isMobile}/>
             </Container>
           </Toolbar>
         </AppBar>
