@@ -1,13 +1,13 @@
-import * as React from 'react';
-import { Grid, Typography, Container } from '@mui/material';
-import MuiNextLink from '@components/MuiNextLink';
-import Button from '@mui/material/Button';
-import Image from 'next/image';
+import * as React from "react";
+import { Grid, Typography, Container } from "@mui/material";
+import MuiNextLink from "@components/MuiNextLink";
+import Button from "@mui/material/Button";
+import Image from "next/image";
 import { useTheme, useMediaQuery } from "@mui/material";
 
 const AboutPage = (isMobile) => {
   const themes = useTheme();
-   const isTablet = useMediaQuery(themes.breakpoints.down('lg'));
+  const isTablet = useMediaQuery(themes.breakpoints.down("lg"));
   return (
     <Container 
       justify="center"
@@ -104,17 +104,14 @@ const AboutPage = (isMobile) => {
             sx={{ 
               backgroundColor: "white",
               borderColor: "primary.main",
-              color: "#40464D",
-              '&:hover': {
-                borderColor: "#F48A88",
-            }}}
+              color: "primary.main",
+            }}
           >
-          View Our Menu
+            View Our Menu
           </Button>
-          </MuiNextLink>
+        </MuiNextLink>
       </Grid>
     </Container>
-
   );
 };
 export default AboutPage;
