@@ -43,10 +43,9 @@ const ContactUsBanner = (props) => {
                     </Typography> }
             </Grid>
       <Grid item xs={12} align="center">
-          {/* TODO: Update an email address */}
         <Button 
             rel="noopener noreferrer"
-            href={`mailto:test@example.com`}
+            href={`mailto:sushirollin.us@gmail.com`}
         >
             Contact Us
         </Button>
