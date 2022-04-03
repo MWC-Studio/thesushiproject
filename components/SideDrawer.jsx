@@ -8,15 +8,19 @@ import MuiNextLink from './MuiNextLink';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+
+import { useTheme, useMediaQuery } from "@mui/material";
 // import Stack from '@mui/material/Stack';
 // import Drawer from '@mui/material/Drawer';
 // import { flexbox } from '@mui/system';
 
-const SideDrawer = ({ navLinks, isMobile}) => {
+const SideDrawer = ({ navLinks}) => {
   const [state, setState] = useState({
     right: false,
   });
 
+  const themes = useTheme();
+  const isSmall = useMediaQuery(themes.breakpoints.down('sm'));
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -37,7 +41,7 @@ const SideDrawer = ({ navLinks, isMobile}) => {
         // width: 375,
         width: '100%',
         height: 812,
-        mt: '19px',
+        mt: '38px',
         overflowX: 'hidden',
         padding: '0px !important',
       }}
@@ -72,7 +76,7 @@ const SideDrawer = ({ navLinks, isMobile}) => {
       <Box
         sx={{
           width: 375,
-          pt: 1,
+          pt: 3,
           // pb: 1,
           textAlign: 'left',
         }}
@@ -87,10 +91,9 @@ const SideDrawer = ({ navLinks, isMobile}) => {
             sx={{
               ml: 6,
               // my: 6,
-              mt: '39px',
-              mb: '30px',
+              mt: '2px',
+              mb: '24px',
               textTransform: `uppercase`,
-    
             }}
           >
             <MuiNextLink
@@ -123,6 +126,7 @@ const SideDrawer = ({ navLinks, isMobile}) => {
           color: 'common.white',
         }}
       /> */}
+      <Box sx={{mt:4}}></Box>
       <Divider sx={{ backgroundColor: '#808080'}}  /> 
       {/*<hr/>*/}
       <Box sx={{ textAlign: 'left' }}>
@@ -354,10 +358,10 @@ const SideDrawer = ({ navLinks, isMobile}) => {
           '.MuiDrawer-paper': {
             bgcolor: 'primary.main',
             width:  '100%' ,
-            maxWidth: isMobile ? 'auto': 375,
+            maxWidth: isSmall ? 'auto': 375,
             // maxWidth: 375,
             //display: { md: `none` }
-            maxHeight: 812,
+            maxHeight: 812
           },
           '.MuiBackdrop-root': {
             backgroundColor: 'rgba(255,255,255,.6)',
