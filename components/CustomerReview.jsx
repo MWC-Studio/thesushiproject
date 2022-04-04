@@ -21,17 +21,17 @@ const CustomerReview = (props) => {
         <Grid container
             justifyContent="center"
             alignItems="center"
-            py={props.isMobile ? 5 : 9}
+            py={props.isMobile ? 6 : 9}
             px={2}
             sx={{ backgroundColor: 'common.beige' }}
         >
             <Grid item xs={12} sx={{ my: 0 }} textAlign="center" bgcolor="">
-                <Typography variant={ props.isMobile ? 'h3' : 'h2' } >
+                <Typography variant={ props.isMobile && props.reviewTitle=='Here’s What the Customers Say' ? 'h3' : 'h2' } >
                     { props.reviewTitle } 
                 </Typography>
             </Grid>
 
-            <Grid container item xs={12}
+            <Grid container item xs={ props.isMobile ? 12 : 10 }
                 flexDirection="column"
                 justifyContent="center"
                 alignItems="center"
@@ -87,7 +87,7 @@ const CustomerReview = (props) => {
         loopFillGroupWithBlank={true}
         pagination={{ clickable: true }}
         // navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation]}next 
         className="mySwiper"
         >
     
