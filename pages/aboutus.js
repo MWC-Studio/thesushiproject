@@ -1,12 +1,15 @@
 import TopBanner from '@components/TopBanner';
 import About from '@components/About';
-import AboutMobile from '@components/AboutMobile' ;
 
-const AboutUsPage = (props) => {
+const AboutUsPage = ({isMobile}) => {
   return (
     <>
-      <TopBanner title="About" description="About" isMobile={props.isMobile} />
-      { props.isMobile ? <AboutMobile /> : <About /> }
+      <TopBanner
+        title="About"
+        isMobile={isMobile}
+        description="About"
+      />
+      <About isMobile ={isMobile} />
     </>
   );
 };
