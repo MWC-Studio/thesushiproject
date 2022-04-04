@@ -132,7 +132,7 @@ const OrderBanner = (props) => {
         </Grid>
       </Grid>
       <Grid item xs={12} align="center">
-        <MuiNextLink underline="none" href="/menu_page/menu.jpg">
+        <MuiNextLink underline="none" href="/menu_page/menu.jpg" target="_blank">
           <Button>View Store Menu</Button>
         </MuiNextLink>
       </Grid>
