@@ -8,17 +8,18 @@
 //   })
 // })
 
-describe("Menu", () => {
-  beforeEach(() => {
-    cy.visit("/menu");
-  })
-  it("has titles", () => {
-    cy.contains('Find Us Here');
-    cy.contains('Menu');
-    cy.contains('Special Rolls');
-    cy.contains('Sushi Rollin\' Experience');
-  })
-  it("has a button", () => {
-    cy.contains('View Store Menu').click();
-  })
-})
+
+// describe("Menu", () => {
+//   beforeEach(() => {
+//     cy.visit("/menu");
+//   })
+//   it("has titles", () => {
+//     cy.contains('Find Us Here');
+//     cy.contains('Menu');
+//     cy.contains('Special Rolls');
+//     cy.contains('Sushi Rollin\' Experience');
+//   })
+//   it("has a button", () => {
+//     cy.contains('View Store Menu').click();
+//   })
+// })
