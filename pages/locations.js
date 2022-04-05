@@ -6,7 +6,7 @@ import LocationsContentMobile from "@components/locations/LocationsContentMobile
 
 const LocationPage = ({isMobile}) => {
   const text = "Call for Pickup or Get it Delivered now!";
-  const mtext = "Call for Pickup \n or \n Get it Delivered now!";
+  const mtext = "Call for Pickup \n or Get it Delivered now!";
   return (
     <>
       <TopBanner

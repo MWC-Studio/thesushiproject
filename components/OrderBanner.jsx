@@ -10,14 +10,13 @@ const OrderBanner = (props) => {
         height: props.isMobile ? "30rem" : "20rem",
         width: "100vw",
         backgroundColor: props.bgColor,
-        py: "2rem",
+        py: "3rem",
       }}
     >
       <Grid item xs={12}>
         <div className="display-linebreak">
           <Typography
             color="text"
-            // TODO: should be h3 in mobile, but seems too small
             variant={props.isMobile ? "h3" : "h2"}
             align="center"
           >
