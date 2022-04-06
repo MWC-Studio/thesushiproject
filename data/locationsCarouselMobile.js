@@ -27,9 +27,8 @@ export const items = [
         title: "Sushi Rollin Image 7",
         src: "/locations/locations-carousel-7.svg",
     },
-    //TODO : svg too slow
     {
         title: "Sushi Rollin Image 8",
-        src: "/locations/locations-carousel-8.png",
+        src: "/locations/locations-carousel-8.svg",
     },
 ]

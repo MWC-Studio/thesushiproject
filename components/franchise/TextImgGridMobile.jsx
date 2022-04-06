@@ -27,7 +27,7 @@ const TextImgGrid = () => {
                 alignItems='center'
             >
                 <Grid item>
-                    <Image src={"/franchise/whychoose-1.svg"} width={592} height={263} />
+                    <Image src={"/franchise/whychoose-1.png"} width={592} height={263} />
                 </Grid>
                 <Grid item>
                     <Typography 
@@ -55,7 +55,7 @@ const TextImgGrid = () => {
                 alignItems='center'
             >
                 <Grid item>
-                    <Image src={"/franchise/whychoose-2.svg"} width={592} height={263} />
+                    <Image src={"/franchise/whychoose-2.png"} width={592} height={263} />
                 </Grid>
                 <Grid item>
                     <Typography 
@@ -83,7 +83,7 @@ const TextImgGrid = () => {
                 alignItems='center'  
             >
                 <Grid item>
-                    <Image src={"/franchise/whychoose-3.svg"} width={592} height={263} />
+                    <Image src={"/franchise/whychoose-3.png"} width={592} height={263} />
                 </Grid>
                 <Grid item>
                     <Typography 
