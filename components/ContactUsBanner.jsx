@@ -8,10 +8,10 @@ const ContactUsBanner = (props) => {
             justifyContent="center"
             alignItems="center"
             sx={{
-                height: props.isMobile ? "60vw" : "29vw",
+                height: props.isMobile ? "60vh" : "45vh",
                 width: "100vw",
                 backgroundColor: "common.white",
-                py: '4%',
+                py: '5%',
               }}
         >
             <Grid item xs={12}>
@@ -29,9 +29,8 @@ const ContactUsBanner = (props) => {
                         color="text"
                         variant={props.isMobile ? "body2" : "body1"}
                         align="center"
-                        mb={2}
                     >
-                        Contact us via Email or call us.<br />You can also visit one of our locations.<br />Open to anyone who is passionate and<br />is ready to get this rollin’.<br />Join us today!
+                        Contact us via Email or call us.<br />You can also visit one of our locations.<br /><br />Open to anyone who is passionate and<br />is ready to get this rollin’.<br /><br />Join us today!
                     </Typography>
                     :
                     <Typography
@@ -43,10 +42,9 @@ const ContactUsBanner = (props) => {
                     </Typography> }
             </Grid>
       <Grid item xs={12} align="center">
-          {/* TODO: Update an email address */}
         <Button 
             rel="noopener noreferrer"
-            href={`mailto:test@example.com`}
+            href={`mailto:sushirollin.us@gmail.com`}
         >
             Contact Us
         </Button>

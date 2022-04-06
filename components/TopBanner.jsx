@@ -1,11 +1,12 @@
 import { Button, Grid, Typography } from "@mui/material";
+import MuiNextLink from "@components/MuiNextLink";
 import Image from "next/image";
 
 const TopBanner = (props) => {
   let btn;
   if (props.title === "Home") {
     btn = (
-      <Button variant="outlined" sx={{ marginTop: "3%" }}>
+      <Button variant="outlined" href="/franchise" sx={{ marginTop: "3%" }}>
         Franchise
       </Button>
     );
