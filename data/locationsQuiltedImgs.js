@@ -33,7 +33,6 @@ export const items = [
         src: '/locations/location-bottomleft-2.svg',
         title: 'location image 7',
     },
-    //TODO: svg loading too slow, png resolution is low.
     {
         src: '/locations/location-bottomleft-3.svg',
         title: 'location image 8',

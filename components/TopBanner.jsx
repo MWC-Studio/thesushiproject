@@ -18,7 +18,7 @@ const TopBanner = (props) => {
       container
       sx={{
         position: "relative",
-        height: props.isMobile ? "30vh" : "60vh",
+        height: props.isMobile ? "25vh" : "55vh",
         width: "100vw",
       }}
     >

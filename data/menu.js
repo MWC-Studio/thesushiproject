@@ -126,7 +126,7 @@ export const section2 = [
   {
     id: 4,
     category: "Fried Rice",
-    img: "/menu_page/section2-fried-img03.svg",
+    img: "/menu_page/section2-Fried-img03.svg",
     mobileImg: "/menu_page/section2-fried-img03_mobile.jpeg",
     menu: [
       {
