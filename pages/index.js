@@ -1,10 +1,10 @@
-import SectionAbout from '@components/home/SectionAbout';
-import SectionMenu from '@components/home/SectionMenu';
-import SectionMenuMobile from '@components/home/SectionMenuMobile';
-import SectionLocations from '@components/home/SectionLocations';
-import TopBanner from '@components/TopBanner';
-import CustomerReview from "@components/CustomerReview"
-const Homepage = ({isMobile}) => {
+import SectionAbout from "@components/home/SectionAbout";
+import SectionMenu from "@components/home/SectionMenu";
+import SectionMenuMobile from "@components/home/SectionMenuMobile";
+import SectionLocations from "@components/home/SectionLocations";
+import TopBanner from "@components/TopBanner";
+import CustomerReview from "@components/CustomerReview";
+const Homepage = ({ isMobile }) => {
   return (
     <>
       <TopBanner
@@ -14,11 +14,22 @@ const Homepage = ({isMobile}) => {
         second="Sushi Experience"
       />
 
-      <SectionAbout isMobile = {isMobile} />
-      { isMobile ? <SectionMenuMobile /> : <SectionMenu/> }
+      <SectionAbout isMobile={isMobile} />
+      {isMobile ? (
+        <SectionMenuMobile />
+      ) : (
+        <SectionMenu
+          subtitle="FAST & TASTY"
+          title="Rollin’ Experience"
+          page="home"
+        />
+      )}
       {/*<SectionMenu isMobile = {props.isMobile} />*/}
       <SectionLocations isMobile={isMobile} />
-      <CustomerReview  isMobile={isMobile} reviewTitle="Here’s What the Customers Say" />
+      <CustomerReview
+        isMobile={isMobile}
+        reviewTitle="Here’s What the Customers Say"
+      />
     </>
   );
 };

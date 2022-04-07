@@ -1,11 +1,11 @@
 import TopBanner from "@components/TopBanner";
-import TitlebarBelowImageList from "@components/menu/TitlebarBelowImageList";
 import BottomMenuImageList from "@components/menu/BottomMenuImageList";
 import CenterDetailedMenuList from "@components/menu/CenterDetailedMenuList";
 import OrderBanner from "@components/OrderBanner";
 import MobileMenuCatogory from "@components/menu/MobileMenuCatogory";
 import MobileSpecialRolls from "@components/menu/MobileSpecialRolls";
 import MobileMenuDetails from "@components/menu/MobileMenuDetails";
+import SectionMenu from "@components/home/SectionMenu";
 
 const MenuPage = (props) => {
   return (
@@ -29,7 +29,7 @@ const MenuPage = (props) => {
             isMobile={props.isMobile}
             text="Find Us Here"
           />
-          <TitlebarBelowImageList />
+          <SectionMenu title="Special Rolls" page="menu" />
           <CenterDetailedMenuList />
           <BottomMenuImageList />
         </>
