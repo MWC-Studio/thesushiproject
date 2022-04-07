@@ -19,7 +19,7 @@ export const section1 = [
   },
   {
     id: 4,
-    name: "Crispy Rice SpicyTuna",
+    name: "Crispy Rice Spicy Tuna",
     img: "/menu_page/roll3.svg",
     type: "Special Rolls",
   },
@@ -42,7 +42,7 @@ export const section2 = [
   {
     id: 1,
     category: "Appetizers",
-    img: "/menu_page/section2-appetizer-img00.svg",
+    img: "/menu_page/section2-appetizer-img00.jpg",
     mobileImg: "/menu_page/section2-appetizer-img00_mobile.jpeg",
     menu: [
       {
@@ -69,7 +69,7 @@ export const section2 = [
   {
     id: 2,
     category: "Fusion Bowls",
-    img: "/menu_page/section2-fusion-img01.svg",
+    img: "/menu_page/section2-fusion-img01.jpg",
     mobileImg: "/menu_page/section2-fusion-img01_mobile.jpeg",
     menu: [
       {
@@ -99,7 +99,7 @@ export const section2 = [
   {
     id: 3,
     category: "Sashimi & Nigiri",
-    img: "/menu_page/section2-sashimi-img02.svg",
+    img: "/menu_page/section2-sashimi-img02.jpg",
     mobileImg: "/menu_page/section2-sashimi-img02_mobile.jpeg",
     menu: [
       {
@@ -126,7 +126,7 @@ export const section2 = [
   {
     id: 4,
     category: "Fried Rice",
-    img: "/menu_page/section2-Fried-img03.svg",
+    img: "/menu_page/section2-fried-img03.jpg",
     mobileImg: "/menu_page/section2-fried-img03_mobile.jpeg",
     menu: [
       {
@@ -146,7 +146,7 @@ export const section2 = [
   {
     id: 5,
     category: "Regular Rolls",
-    img: "/menu_page/section2-regularrolls-img04.svg",
+    img: "/menu_page/section2-regularrolls-img04.jpg",
     mobileImg: "/menu_page/section2-regularrolls-img04_mobile.jpeg",
     menu: [
       {
@@ -178,7 +178,7 @@ export const section2 = [
   {
     id: 6,
     category: "Hand Rolls",
-    img: "/menu_page/section2-handrolls-img05.svg",
+    img: "/menu_page/section2-handrolls-img05.jpg",
     mobileImg: "/menu_page/section2-handrolls-img05_mobile.jpeg",
     menu: [
       {
