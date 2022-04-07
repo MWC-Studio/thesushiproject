@@ -19,7 +19,7 @@ export const section1 = [
   },
   {
     id: 4,
-    name: "Crispy Rice SpicyTuna",
+    name: "Crispy Rice Spicy Tuna",
     img: "/menu_page/roll3.svg",
     type: "Special Rolls",
   },
