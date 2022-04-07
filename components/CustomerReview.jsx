@@ -26,7 +26,7 @@ const CustomerReview = (props) => {
             sx={{ backgroundColor: 'common.beige' }}
         >
             <Grid item xs={12} sx={{ my: 0 }} textAlign="center" bgcolor="">
-                <Typography variant={ props.isMobile && props.reviewTitle=='Here’s What the Customers Say' ? 'h3' : 'h2' } >
+                <Typography variant={ props.isMobile ? 'h3' : 'h2' } >
                     { props.reviewTitle } 
                 </Typography>
             </Grid>
@@ -60,7 +60,7 @@ const CustomerReview = (props) => {
                 gap={ 2 }
             >
                 <Grid item xs={12} align='center'>
-                    <Typography variant='h3' mb={2} color='secondary.main'>
+                    <Typography variant='h5' mb={2} color='secondary.main'>
                         { item.name }
                     </Typography>
                     <Rating name='review_rating' value={ item.rating } size='small' sx={{ color: 'black' }} readOnly />
