@@ -42,8 +42,6 @@ export default function SectionMenuMobile() {
           color="text"
           variant="h3"
           align="center"
-          fontWeight={"fontWeightBold"}
-          fontFamily={"Nunito"}
           mb={3}
         >
           Rollin’ Experience

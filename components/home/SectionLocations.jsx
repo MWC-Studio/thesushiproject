@@ -16,10 +16,7 @@ const SectionLocations = ({ isMobile }) => {
         <Typography
           color="text"
           variant={isMobile ? "h3" : "h2"}
-          //variant= "h2"
           align="center"
-          fontWeight={"fontWeightBold"}
-          fontFamily={"Nunito"}
           sx={{ mb: 4 }}
         >
           Locations
@@ -38,8 +35,6 @@ const SectionLocations = ({ isMobile }) => {
               color="text"
               variant={isMobile ? "h4" : "h3"}
               align="center"
-              fontWeight={"fontWeightBold"}
-              fontFamily={"Nunito"}
               sx={isMobile ? { mb: 2, mt: 2 } : { mb: 2, mt: 4 }}
             >
               Sushi Rollin' Garland
@@ -48,7 +43,6 @@ const SectionLocations = ({ isMobile }) => {
               color="text"
               align="center"
               variant={isMobile ? "body2" : "body1"}
-              fontFamily={"Nunito"}
             >
               6850 N Shiloh Rd, Garland, TX 75044
             </Typography>
@@ -85,8 +79,6 @@ const SectionLocations = ({ isMobile }) => {
               color="text"
               variant={isMobile ? "h4" : "h3"}
               align="center"
-              fontWeight={"fontWeightBold"}
-              fontFamily={"Nunito"}
               sx={isMobile ? { mb: 2, mt: 2 } : { mb: 2, mt: 4 }}
             >
               Sushi Rollin' Lewisville
@@ -95,7 +87,6 @@ const SectionLocations = ({ isMobile }) => {
               color="text"
               variant={isMobile ? "body2" : "body1"}
               align="center"
-              fontFamily={"Nunito"}
             >
               1288 W Main St #142, Lewisville, TX 75067
             </Typography>
@@ -103,7 +94,6 @@ const SectionLocations = ({ isMobile }) => {
               color="text"
               variant={isMobile ? "body2" : "body1"}
               align="center"
-              fontFamily={"Nunito"}
               sx={{ mb: 2 }}
             >
               Opens Daily 11 a.m. - 9:00 p.m.
@@ -112,7 +102,6 @@ const SectionLocations = ({ isMobile }) => {
               color="text"
               variant={isMobile ? "body2" : "body1"}
               align="center"
-              fontFamily={"Nunito"}
             >
               (817) 320-3722
             </Typography>
