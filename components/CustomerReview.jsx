@@ -3,10 +3,9 @@ import React from 'react';
 import { reviewItems } from "data/review";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 
 import { useTheme, useMediaQuery } from "@mui/material";
@@ -41,7 +40,6 @@ const CustomerReview = (props) => {
         { props.isMobile ? 
         <Swiper
             style={{ 
-                '--swiper-navigation-size': '20px', 
                 '--swiper-pagination-bullet-size': '8px', 
                 '--swiper-theme-color':'#F48A88' }}
             slidesPerView={1}
@@ -49,8 +47,7 @@ const CustomerReview = (props) => {
             loop={true}
             loopFillGroupWithBlank={true}
             pagination={{ clickable: true }}
-            // navigation={true}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination]}
             className="mySwiper"
         >
         
@@ -77,7 +74,6 @@ const CustomerReview = (props) => {
         :
         <Swiper
         style={{ 
-            '--swiper-navigation-size': '40px', 
             '--swiper-pagination-bullet-horizontal-gap': '15px', 
             '--swiper-pagination-bullet-size': '12px', 
             '--swiper-theme-color':'#F48A88' }}
@@ -86,8 +82,7 @@ const CustomerReview = (props) => {
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{ clickable: true }}
-        // navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination]}
         className="mySwiper"
         >
     
