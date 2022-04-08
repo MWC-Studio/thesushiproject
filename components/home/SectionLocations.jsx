@@ -1,25 +1,25 @@
-import { Button, Container, Grid, Typography } from '@mui/material';
-import Image from 'next/image';
-import MuiNextLink from '@components/MuiNextLink';
+import { Button, Container, Grid, Typography } from "@mui/material";
+import Image from "next/image";
+import MuiNextLink from "@components/MuiNextLink";
 
-const SectionLocations = (props)=> {
+const SectionLocations = ({ isMobile }) => {
   return (
     <Grid
       component="section"
       container
       sx={{
-        position: 'relative',
-        width: '100vw',
+        position: "relative",
+        width: "100vw",
       }}
     >
       <Container sx={{ mt: 6 }}>
         <Typography
           color="text"
-          variant={props.isMobile ? "h3" : "h2"}
+          variant={isMobile ? "h3" : "h2"}
           //variant= "h2"
           align="center"
-          fontWeight={'fontWeightBold'}
-          fontFamily={'Nunito'}
+          fontWeight={"fontWeightBold"}
+          fontFamily={"Nunito"}
           sx={{ mb: 4 }}
         >
           Locations
@@ -37,11 +37,11 @@ const SectionLocations = (props)=> {
 
             <Typography
               color="text"
-              variant={props.isMobile ? "h4" : "h3"}
+              variant={isMobile ? "h4" : "h3"}
               align="center"
-              fontWeight={'fontWeightBold'}
-              fontFamily={'Nunito'}
-              sx={props.isMobile ? {mb: 2, mt: 2} : { mb: 2, mt: 4 }}
+              fontWeight={"fontWeightBold"}
+              fontFamily={"Nunito"}
+              sx={isMobile ? { mb: 2, mt: 2 } : { mb: 2, mt: 4 }}
             >
               Sushi Rollin' Garland
             </Typography>
@@ -50,25 +50,25 @@ const SectionLocations = (props)=> {
               align="center"
               //width = {props.isMobile ? null : "277px" }
               //textAlign={props.isMobile ? "center": "left"}
-              variant={props.isMobile ? "body2" : "body1"}
-              fontFamily={'Nunito'}
+              variant={isMobile ? "body2" : "body1"}
+              fontFamily={"Nunito"}
             >
               6850 N Shiloh Rd, Garland, TX 75044
             </Typography>
             <Typography
               color="text"
-              variant={props.isMobile ? "body2" : "body1"}
+              variant={isMobile ? "body2" : "body1"}
               align="center"
-              fontFamily={'Nunito'}   
+              fontFamily={"Nunito"}
               sx={{ mb: 2 }}
             >
               6Opens Daily 11 a.m. - 9:30 p.m.
             </Typography>
             <Typography
               color="text"
-              variant={props.isMobile ? "body2" : "body1"}
+              variant={isMobile ? "body2" : "body1"}
               align="center"
-              fontFamily={'Nunito'}
+              fontFamily={"Nunito"}
               sx={{ mb: 1 }}
             >
               (469) 798-7831
@@ -86,39 +86,38 @@ const SectionLocations = (props)=> {
 
             <Typography
               color="text"
-              variant={props.isMobile ? "h4" : "h3"}
+              variant={isMobile ? "h4" : "h3"}
               align="center"
-              fontWeight={'fontWeightBold'}
-              fontFamily={'Nunito'}
-              sx={props.isMobile ? {mb: 2, mt: 2} : { mb: 2, mt: 4 }}
+              fontWeight={"fontWeightBold"}
+              fontFamily={"Nunito"}
+              sx={isMobile ? { mb: 2, mt: 2 } : { mb: 2, mt: 4 }}
             >
               Sushi Rollin' Lewisville
             </Typography>
             <Typography
               color="text"
-              variant={props.isMobile ? "body2" : "body1"}
+              variant={isMobile ? "body2" : "body1"}
               align="center"
               //textAlign={props.isMobile ? "center": "left"}
-              fontFamily={'Nunito'}
-      
+              fontFamily={"Nunito"}
             >
               1288 W Main St #142, Lewisville, TX 75067
             </Typography>
             <Typography
               color="text"
-              variant={props.isMobile ? "body2" : "body1"}
+              variant={isMobile ? "body2" : "body1"}
               align="center"
               //textAlign={props.isMobile ? "center": "left"}
-              fontFamily={'Nunito'}
+              fontFamily={"Nunito"}
               sx={{ mb: 2 }}
             >
               Opens Daily 11 a.m. - 9:00 p.m.
             </Typography>
             <Typography
               color="text"
-              variant={props.isMobile ? "body2" : "body1"}
+              variant={isMobile ? "body2" : "body1"}
               align="center"
-              fontFamily={'Nunito'}
+              fontFamily={"Nunito"}
             >
               (817) 320-3722
             </Typography>
@@ -126,12 +125,12 @@ const SectionLocations = (props)=> {
         </Grid>
 
         <Grid align="center" pt={4} pb={6}>
-        <MuiNextLink href="/locations" underline="none" sx={{ py: 2 }}>
+          <MuiNextLink href="/locations" underline="none" sx={{ py: 2 }}>
             <Button> View Locations</Button>
-        </MuiNextLink>
+          </MuiNextLink>
         </Grid>
       </Container>
     </Grid>
   );
-}
+};
 export default SectionLocations;
