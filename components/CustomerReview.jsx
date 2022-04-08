@@ -87,7 +87,7 @@ const CustomerReview = (props) => {
         loopFillGroupWithBlank={true}
         pagination={{ clickable: true }}
         // navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation]}next 
         className="mySwiper"
         >
     
