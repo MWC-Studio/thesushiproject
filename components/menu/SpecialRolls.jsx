@@ -2,7 +2,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import { section1 } from "../../data/menu";
 import ImageListWithTitle from "./ImageListWithTitle";
 
-const TitlebarBelowImageList = () => {
+const SpecialRolls = (props) => {
   return (
     <Grid
       component="section"
@@ -17,10 +17,10 @@ const TitlebarBelowImageList = () => {
         <Typography color="text" variant="h2" align="center">
           Special Rolls
         </Typography>
-        <ImageListWithTitle imgData={section1} />
+        <ImageListWithTitle imgData={section1} isMobile={props.isMobile}/>
       </Container>
     </Grid>
   );
 };
 
-export default TitlebarBelowImageList;
+export default SpecialRolls;
