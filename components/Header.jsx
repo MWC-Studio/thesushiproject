@@ -1,17 +1,17 @@
 //
 
-import AppBar from '@mui/material/AppBar';
-import Container from '@mui/material/Container';
-import Toolbar from '@mui/material/Toolbar';
-import MuiNextLink from '@components/MuiNextLink';
-import { styled } from '@mui/system';
-import Navbar from './Navbar';
-import SideDrawer from './SideDrawer';
-import Image from 'next/image';
-import ScrollToTop from './menu/ScrollToTop';
-import HideOnScroll from './HideOnScroll';
+import AppBar from "@mui/material/AppBar";
+import Container from "@mui/material/Container";
+import Toolbar from "@mui/material/Toolbar";
+import MuiNextLink from "@components/MuiNextLink";
+import { styled } from "@mui/system";
+import Navbar from "./Navbar";
+import SideDrawer from "./SideDrawer";
+import Image from "next/image";
+import ScrollToTop from "./menu/ScrollToTop";
+import HideOnScroll from "./HideOnScroll";
 
-const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
+const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 const navLinks = [
   { title: `Home`, path: `/` },
@@ -27,15 +27,15 @@ const Header = ({ isMobile }) => {
       <HideOnScroll>
         <AppBar
           sx={{
-            bgcolor: 'common.beige',
-            display: 'flex',
-            justifyContent: 'center',
+            bgcolor: "common.beige",
+            display: "flex",
+            justifyContent: "center",
             height: isMobile ? 68 : 98,
-            '& button': {
+            "& button": {
               width: 50,
               height: 50,
             },
-            '& button > svg': {
+            "& button > svg": {
               width: 21.88,
               height: 19.14,
             },
@@ -50,25 +50,24 @@ const Header = ({ isMobile }) => {
                 display: `flex`,
                 justifyContent: `space-between`,
                 alignItems: `center`,
-                // py: isMobile ? 1 : 1.5,
               }}
             >
               <MuiNextLink
                 activeClassName="active"
                 href="/"
-                sx={{ display: 'flex', justifyContent: 'center' }}
+                sx={{ display: "flex", justifyContent: "center" }}
               >
                 <Image
                   src="/rollinlogodark.svg"
                   alt="logo"
                   // width={isMobile ? '147.63' : '256.36'}
                   // height={isMobile ? '24.58' : '43.26'}
-                  width={isMobile ? '147.63' : '208'}
-                  height={isMobile ? '24.58' : '36'}
+                  width={isMobile ? "147.63" : "208"}
+                  height={isMobile ? "24.58" : "36"}
                 />
               </MuiNextLink>
 
-              <Navbar navLinks={navLinks} />  
+              <Navbar navLinks={navLinks} />
               <SideDrawer navLinks={navLinks} />
             </Container>
           </Toolbar>
