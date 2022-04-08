@@ -28,9 +28,8 @@ const SectionLocations = ({ isMobile }) => {
         <Grid container sx={{ mb: 1 }} spacing={2}>
           <Grid item xs={12} sm={6}>
             <Image
-              src="/home_page/location-garland.svg"
-              alt="Location Shshi Rollin"
-              // layout="responsive"
+              src="/home_page/location-garland.webp"
+              alt="Location Garland"
               width="592"
               height="420"
             />
@@ -48,8 +47,6 @@ const SectionLocations = ({ isMobile }) => {
             <Typography
               color="text"
               align="center"
-              //width = {props.isMobile ? null : "277px" }
-              //textAlign={props.isMobile ? "center": "left"}
               variant={isMobile ? "body2" : "body1"}
               fontFamily={"Nunito"}
             >
@@ -77,9 +74,9 @@ const SectionLocations = ({ isMobile }) => {
 
           <Grid item xs={12} sm={6}>
             <Image
-              src="/home_page/location-lewisville.svg"
-              alt="about-us"
-              // layout="responsive"
+              //
+              src="/home_page/location-lewisville.webp"
+              alt="Location Lewisville"
               width="592"
               height="420"
             />
@@ -98,7 +95,6 @@ const SectionLocations = ({ isMobile }) => {
               color="text"
               variant={isMobile ? "body2" : "body1"}
               align="center"
-              //textAlign={props.isMobile ? "center": "left"}
               fontFamily={"Nunito"}
             >
               1288 W Main St #142, Lewisville, TX 75067
@@ -107,7 +103,6 @@ const SectionLocations = ({ isMobile }) => {
               color="text"
               variant={isMobile ? "body2" : "body1"}
               align="center"
-              //textAlign={props.isMobile ? "center": "left"}
               fontFamily={"Nunito"}
               sx={{ mb: 2 }}
             >
