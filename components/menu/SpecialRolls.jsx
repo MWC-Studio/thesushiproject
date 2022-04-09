@@ -4,6 +4,7 @@ import ImageListWithTitle from "./ImageListWithTitle";
 
 const SpecialRolls = (props) => {
   return (
+    <section id="Special Rolls">
     <Grid
       component="section"
       container
@@ -20,6 +21,7 @@ const SpecialRolls = (props) => {
         <ImageListWithTitle imgData={section1} isMobile={props.isMobile}/>
       </Container>
     </Grid>
+    </section>
   );
 };
 

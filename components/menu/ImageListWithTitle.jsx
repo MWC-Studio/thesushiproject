@@ -24,15 +24,6 @@ const ImageListWithTitle = (props) => {
     variant = "subtitle2";
   }
 
-  const rollName = [
-    "Shrimp Tempura \nChef Special Roll",
-    "Titanic \nChef Special Roll",
-    "Flaming Hot \nChef Special Roll",
-    "Crispy Rice Spicy Tuna",
-    "Red Dragon Roll",
-    "Rollin Burrito",
-  ];
-
   return (
     <ImageList sx={{ p: { p }, overflow: "hidden" }} cols={cols} gap={gap}>
       {props.imgData.map((item, idx) => (
@@ -55,8 +46,7 @@ const ImageListWithTitle = (props) => {
               style={style}
               mt={mt}
             >
-              {props.isMobile ? <div>{rollName[idx]}</div> : item.name}
-              {/* {item.name} */}
+              {props.isMobile ? <div>{item.name_mobile}</div> : item.name}
             </Typography>
           </ImageListItem>
         </div>
