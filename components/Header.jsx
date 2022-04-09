@@ -36,8 +36,8 @@ const Header = ({ isMobile }) => {
               height: 50,
             },
             "& button > svg": {
-              width: 21.88,
-              height: 19.14,
+              width: 25,
+              height: 25,
             },
           }}
           position="fixed"

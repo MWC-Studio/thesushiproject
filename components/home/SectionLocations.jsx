@@ -53,7 +53,7 @@ const SectionLocations = ({ isMobile }) => {
               fontFamily={"Nunito"}
               sx={{ mb: 2 }}
             >
-              6Opens Daily 11 a.m. - 9:30 p.m.
+              Opens Daily 11 a.m. - 9:30 p.m.
             </Typography>
             <Typography
               color="text"
