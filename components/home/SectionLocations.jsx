@@ -25,7 +25,7 @@ const SectionLocations = ({ isMobile }) => {
         <Grid container sx={{ mb: 1 }} spacing={2}>
           <Grid item xs={12} sm={6}>
             <Image
-              src="/home_page/location-garland.webp"
+              src="/home_page/location-garland.jpg"
               alt="Location Garland"
               width="592"
               height="420"
@@ -69,7 +69,7 @@ const SectionLocations = ({ isMobile }) => {
           <Grid item xs={12} sm={6}>
             <Image
               //
-              src="/home_page/location-lewisville.webp"
+              src="/home_page/location-lewisville.jpg"
               alt="Location Lewisville"
               width="592"
               height="420"
