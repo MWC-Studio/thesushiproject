@@ -4,6 +4,7 @@ import CenterDetailedMenuList from "@components/menu/CenterDetailedMenuList";
 import OrderBanner from "@components/OrderBanner";
 import MobileMenuCatogory from "@components/menu/MobileMenuCatogory";
 import MobileMenuDetails from "@components/menu/MobileMenuDetails";
+import ChefSpecialRolls from "@components/menu/ChefSpecialRolls";
 import SpecialRolls from "@components/menu/SpecialRolls";
 
 const MenuPage = (props) => {
@@ -13,11 +14,11 @@ const MenuPage = (props) => {
       {props.isMobile ? (
         <>
           <MobileMenuCatogory />
-          <SpecialRolls isMobile = {props.isMobile} />
-          {/* <MobileSpecialRolls /> */}
+          <ChefSpecialRolls isMobile={props.isMobile} />
+          <SpecialRolls isMobile={props.isMobile} />
           <MobileMenuDetails />
           <OrderBanner
-            bgColor="common.white"
+            bgColor="common.beige"
             isMobile={props.isMobile}
             text="Find Us Here"
           />
@@ -29,6 +30,7 @@ const MenuPage = (props) => {
             isMobile={props.isMobile}
             text="Find Us Here"
           />
+          <ChefSpecialRolls />
           <SpecialRolls />
           <CenterDetailedMenuList />
           <BottomMenuImageList />
