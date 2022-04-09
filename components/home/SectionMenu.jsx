@@ -37,7 +37,7 @@ export default function SectionMenu() {
               <Typography
                 component={"div"}
                 color="text"
-                variant="body1"
+                variant="subtitle1"
                 align="center"
               >
                 {item.name}
