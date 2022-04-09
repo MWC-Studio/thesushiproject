@@ -52,7 +52,7 @@ const SideDrawer = ({ navLinks }) => {
       </Box> */}
 
       {/*close Icon added: right */}
-      <Box sx={{ position: "absolute", right: 9, top: 8 }}>
+      <Box sx={{ position: "absolute", right: 6, top: 10 }}>
         <IconButton
           aria-label="close"
           onClick={toggleDrawer(anchor, false)}
@@ -137,7 +137,7 @@ const SideDrawer = ({ navLinks }) => {
             item
             align="column"
             alignItems="center"
-            justifycontent="center"
+            justifyContent="center"
             md={12}
             sm={12}
             xs={12}
@@ -181,9 +181,9 @@ const SideDrawer = ({ navLinks }) => {
           <Grid
             container
             item
-            align="column"
-            alignitems="center"
-            justifycontent="center"
+            ditection="column"
+            alignItems="center"
+            justifyContent="center"
             md={12} //2->12
             sm={12}
             xs={12}
@@ -230,9 +230,9 @@ const SideDrawer = ({ navLinks }) => {
           <Grid
             container
             item
-            align="column"
-            alignitems="center"
-            justifycontent="center"
+            ditection="column"
+            alignItems="center"
+            justifyContent="center"
             md={12} //2에서 12로 변경 for ceter align @Desktop version
             sm={12}
             xs={12}
@@ -273,9 +273,9 @@ const SideDrawer = ({ navLinks }) => {
           <Grid
             container
             item
-            align="column"
-            alignitems="center"
-            justifycontent="center"
+            ditection="column"
+            alignItems="center"
+            justifyContent="center"
             md={12}
             sm={12}
             xs={12}
