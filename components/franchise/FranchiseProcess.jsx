@@ -7,11 +7,12 @@ const FranchiseProcess = (props) => {
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
-            py={8} px={ props.isMobile ? 0 : 4}
+            px={ props.isMobile ? 0 : 4}
+            sx={{ mt: 8, mb: props.isMobile ? 4 : 6 }}
         >
-            <Grid item xs={12} sx={{ mb:8}} bgcolor="">
+            <Grid item xs={12} sx={{ mb: props.isMobile ? 5 : 6 }} bgcolor="">
                 <Typography 
-                    variant={'h2'}
+                    variant={ props.isMobile ? 'h3' : 'h2' }
                     color={'text'}
                 >
                     Franchise Process
@@ -19,7 +20,7 @@ const FranchiseProcess = (props) => {
             </Grid>
             
             {itemProcess.map((item, idx) => (
-            <Grid container item wrap="nowrap" gap={ props.isMobile ? 1 : 3 } xs={11}  key={idx}>
+            <Grid container item wrap="nowrap" gap={ props.isMobile ? 1 : 4 } xs={ props.isMobile ? 12 : 11 }  key={idx}>
                 <Grid item>
                     {props.isMobile ?
                     <Avatar sx={{ bgcolor: 'primary.main', width: 36, height: 36 }}>
@@ -38,14 +39,14 @@ const FranchiseProcess = (props) => {
                 </Grid>
                 <Grid item xs zeroMinWidth  bgcolor="">
                     <Typography 
-                        variant={'h4'}
+                        variant={ props.isMobile ? 'h5' : 'h4' }
                         color={'secondary.main'}
                         mb={1}
                     >
                         {item.title}
                     </Typography>
                     <Typography
-                        variant={'body1'}
+                        variant={ props.isMobile ? 'body2' : 'body1' }
                         color={'text'}
                         mb={3}
                     >
