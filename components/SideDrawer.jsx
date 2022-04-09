@@ -144,7 +144,12 @@ const SideDrawer = ({ navLinks }) => {
             sx={{ my: "30px" }}
           >
             <MuiNextLink
-              sx={{ textDecoration: "none", color: "primary.contrastText" }}
+              sx={{
+                textDecoration: "none",
+                color: "primary.contrastText",
+                display: "flex",
+                justifyContent: "center",
+              }}
               href="https://www.doordash.com/store/sushi-rollin-garland-1775965/"
               target="_blank"
               rel="noopener noreferrer"
@@ -183,10 +188,12 @@ const SideDrawer = ({ navLinks }) => {
             sm={12}
             xs={12}
             sx={{ my: "30px" }}
-            bgcolor={"red"}
           >
             <MuiNextLink
-              sx={{ textDecoration: "none", color: "primary.contrastText" }}
+              sx={{
+                textDecoration: "none",
+                color: "primary.contrastText",
+              }}
               href="https://www.grubhub.com/restaurant/sushi-rollin-6850-n-shiloh-rd-garland/2769858"
               target="_blank"
               rel="noopener noreferrer"
