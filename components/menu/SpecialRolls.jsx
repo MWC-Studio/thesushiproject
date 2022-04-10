@@ -29,7 +29,7 @@ const SpecialRolls = (props) => {
             gap={props.isMobile ? 5 : 33}
           >
             {section4.map((food, idx) => (
-              <div>
+              <div key={idx}>
                 {props.isMobile && food.id > 6 ? (
                   ""
                 ) : (
