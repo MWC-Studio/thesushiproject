@@ -12,7 +12,7 @@ export default function BottomMenuImageList() {
       sx={{
         position: "relative",
         width: "100vw",
-        bgcolor: "#FAF6E8",
+        bgcolor: "common.beige",
       }}
     >
       <Container sx={{ mt: 9 }}>

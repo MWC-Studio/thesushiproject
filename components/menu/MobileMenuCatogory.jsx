@@ -48,8 +48,8 @@ function MobileMenuCatogory() {
     </Grid>
   );
 }
-const categoryList1 = ["Special Rolls", "Appetizers"];
-const categoryList2 = ["Fusion Bowls", "Sashimi & Nigiri", "Fried Rice"];
-const categoryList3 = ["Regular Rolls", "Hand Rolls"];
+const categoryList1 = ["Chef Special Rolls", "Special Rolls"];
+const categoryList2 = ["Appetizers", "Fusion Bowls", "Sashimi & Nigiri"];
+const categoryList3 = ["Fried Rice", "Regular Rolls", "Hand Rolls"];
 
 export default MobileMenuCatogory;

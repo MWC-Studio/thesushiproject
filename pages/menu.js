@@ -1,11 +1,11 @@
 import TopBanner from "@components/TopBanner";
-import TitlebarBelowImageList from "@components/menu/TitlebarBelowImageList";
 import BottomMenuImageList from "@components/menu/BottomMenuImageList";
 import CenterDetailedMenuList from "@components/menu/CenterDetailedMenuList";
 import OrderBanner from "@components/OrderBanner";
 import MobileMenuCatogory from "@components/menu/MobileMenuCatogory";
-import MobileSpecialRolls from "@components/menu/MobileSpecialRolls";
 import MobileMenuDetails from "@components/menu/MobileMenuDetails";
+import ChefSpecialRolls from "@components/menu/ChefSpecialRolls";
+import SpecialRolls from "@components/menu/SpecialRolls";
 
 const MenuPage = (props) => {
   return (
@@ -14,10 +14,11 @@ const MenuPage = (props) => {
       {props.isMobile ? (
         <>
           <MobileMenuCatogory />
-          <MobileSpecialRolls />
+          <ChefSpecialRolls isMobile={props.isMobile} />
+          <SpecialRolls isMobile={props.isMobile} />
           <MobileMenuDetails />
           <OrderBanner
-            bgColor="common.white"
+            bgColor="common.beige"
             isMobile={props.isMobile}
             text="Find Us Here"
           />
@@ -29,7 +30,8 @@ const MenuPage = (props) => {
             isMobile={props.isMobile}
             text="Find Us Here"
           />
-          <TitlebarBelowImageList />
+          <ChefSpecialRolls />
+          <SpecialRolls />
           <CenterDetailedMenuList />
           <BottomMenuImageList />
         </>

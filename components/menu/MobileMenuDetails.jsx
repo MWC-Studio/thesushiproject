@@ -12,7 +12,7 @@ export default function MobileMenuDetails() {
             sx={{
               position: "relative",
               width: "100vw",
-              bgcolor: idx % 2 === 0 ? "#fff" : "common.beige",
+              bgcolor: idx % 2 === 0 ? "common.beige" : "common.white",
             }}
           >
             <ImageList sx={{ p: 2, overflow: "hidden" }} cols={1}>
