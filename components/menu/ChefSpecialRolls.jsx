@@ -11,7 +11,7 @@ const ChefSpecialRolls = (props) => {
         sx={{
           position: "relative",
           width: "100vw",
-          bgcolor: "#FAF6E8",
+          bgcolor: "common.beige",
         }}
         my={props.isMobile ? 2 : 0}
         py={props.isMobile ? 4 : 0}

@@ -238,10 +238,6 @@ export const section2 = [
         description: "",
       },
       {
-        name: "Rainbow Special Roll",
-        description: "",
-      },
-      {
         name: "Spicy Tuna Roll",
         description: "",
       },

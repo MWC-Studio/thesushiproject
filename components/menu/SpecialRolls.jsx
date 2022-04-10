@@ -13,24 +13,23 @@ const SpecialRolls = (props) => {
           width: "100vw",
           bgcolor: props.isMobile ? "#fff" : "common.beige",
         }}
-        my={props.isMobile ? 2 : 0}
-        py={props.isMobile ? 4 : 0}
       >
         <Container sx={{ mt: props.isMobile ? 0 : 7 }}>
           <Typography
             color="text"
             variant={props.isMobile ? "h3" : "h2"}
             align="center"
+            mt={props.isMobile ? 5 : 0}
           >
             Special Rolls
           </Typography>
           <ImageList
-            sx={{ p: 7, overflow: "hidden" }}
+            sx={{ p: props.isMobile ? 0 : 7, overflow: "hidden" }}
             cols={props.isMobile ? 1 : 3}
-            gap={33}
+            gap={props.isMobile ? 5 : 33}
           >
             {section4.map((food, idx) => (
-              <div>
+              <div key={idx}>
                 {props.isMobile && food.id > 6 ? (
                   ""
                 ) : (
@@ -38,7 +37,7 @@ const SpecialRolls = (props) => {
                     <Typography
                       component={"div"}
                       color="text"
-                      variant="h3"
+                      variant={props.isMobile ? "h4" : "h3"}
                       align="left"
                       mt={2}
                       mb={1}
@@ -48,10 +47,9 @@ const SpecialRolls = (props) => {
                     <Typography
                       component={"div"}
                       color="text"
-                      variant="body1"
+                      variant={props.isMobile ? "body2" : "body1"}
                       align="left"
-                      fontStyle="italic"
-                      mb={5}
+                      fontStyle={props.isMobile ? "" : "italic"}
                     >
                       {food.description}
                     </Typography>
