@@ -109,6 +109,7 @@ const Footer = ({ isMobile }) => {
                 </Box>
                 <Box>
                   <Link
+                    href="tel:+1-956-249-0167"
                     sx={{
                       display: "grid",
                       gridTemplateColumns: isMobile ? "20px 1fr" : "30px 1fr",
@@ -116,6 +117,7 @@ const Footer = ({ isMobile }) => {
                       rowGap: "16px",
                       textDecoration: "none",
                       color: "common.white",
+                      href: "956-249-0167",
                     }}
                   >
                     <Image

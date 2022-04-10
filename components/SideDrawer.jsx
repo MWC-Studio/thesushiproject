@@ -36,7 +36,6 @@ const SideDrawer = ({ navLinks }) => {
         // width: 375,
         width: "100%",
         height: 812,
-        // mt: "38px",
         overflowX: "hidden",
         padding: "0px !important",
       }}
@@ -71,18 +70,20 @@ const SideDrawer = ({ navLinks }) => {
         <Box
           sx={{
             width: 375,
-            // pt: 3,
             pt: "62px",
             textAlign: "center",
           }}
           role="presentation"
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
+
+          // onClick={toggleDrawer(anchor, false)}
+          // onKeyDown={toggleDrawer(anchor, false)}
         >
           {navLinks.map(({ title, path }, i) => (
             <Typography
               variant="h1"
               key={`${title}${i}`}
+              onClick={toggleDrawer(anchor, false)}
+              onKeyDown={toggleDrawer(anchor, false)}
               sx={{
                 mt: "2px",
                 mb: "24px",
@@ -94,6 +95,7 @@ const SideDrawer = ({ navLinks }) => {
                 variant="button"
                 underline="hover"
                 sx={{
+                  display: "block",
                   fontWeight: "fontWeightBold",
                   fontSize: "24px",
                   color: "primary.contrastText",
@@ -113,11 +115,9 @@ const SideDrawer = ({ navLinks }) => {
         </Box>
       </Stack>
 
-      {/* <Box sx={{ mt: 4 }}></Box> */}
       <Divider sx={{ backgroundColor: "#808080" }} />
 
       <Stack alignItems="center">
-        {/* <Box sx={{ textAlign: "center" }}> */}
         <Typography
           color="primary.contrastText"
           textalign="center"
@@ -130,7 +130,6 @@ const SideDrawer = ({ navLinks }) => {
         >
           Find Sushi Rollin’ On
         </Typography>
-        {/* </Box> */}
 
         <Box textAlign="center">
           <Grid
