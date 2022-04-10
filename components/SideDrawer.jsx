@@ -36,7 +36,7 @@ const SideDrawer = ({ navLinks }) => {
         // width: 375,
         width: "100%",
         height: 812,
-        mt: "38px",
+        // mt: "38px",
         overflowX: "hidden",
         padding: "0px !important",
       }}
@@ -71,7 +71,8 @@ const SideDrawer = ({ navLinks }) => {
         <Box
           sx={{
             width: 375,
-            pt: 3,
+            // pt: 3,
+            pt: "62px",
             textAlign: "center",
           }}
           role="presentation"
