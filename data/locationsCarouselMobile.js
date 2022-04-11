@@ -8,8 +8,8 @@ export const items = [
         src: "/locations/locations-carousel-2.svg",
     },
     {
-        title: "Sushi Rollin Image 3",
-        src: "/locations/locations-carousel-3.svg",
+        title: "Sushi Rollin 3",
+        src: "/locations/locations-carousel-3.jpg",
     },
     {
         title: "Sushi Rollin Image 4",
