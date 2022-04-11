@@ -124,14 +124,7 @@ const Footer = ({ isMobile }) => {
                       width={isMobile ? "18" : "22"}
                       height={isMobile ? "18" : "22"}
                     />
-                    {/* <Typography
-                      variant={isMobile ? 'subtitle2' : 'body1'}
-                      color="primary.contrastText"
-                      fontWeight={'fontWeightBold'}
-                      fontFamily="Nunito"
-                    >
-                      Phone */}
-                    {/* </Typography> */}
+
                     <Typography
                       variant={isMobile ? "subtitle2" : "body1"}
                       color="primary.contrastText"

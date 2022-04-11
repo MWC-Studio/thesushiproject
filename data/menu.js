@@ -2,39 +2,115 @@ export const section1 = [
   {
     id: 1,
     name: "Shrimp Tempura Chef Special Roll",
+    name_mobile: "Shrimp Tempura \nChef Special Roll",
     img: "/menu_page/roll0.jpg",
-    type: "Special Rolls",
+    type: "Chef Special Rolls",
   },
   {
     id: 2,
     name: "Titanic Chef Special Roll",
+    name_mobile: "Titanic \nChef Special Roll",
     img: "/menu_page/roll1.svg",
-    type: "Special Rolls",
-  },
-  {
-    id: 3,
-    name: "Flaming Hot Chef Special Roll",
-    img: "/menu_page/roll2.svg",
-    type: "Special Rolls",
-  },
-  {
-    id: 4,
-    name: "Crispy Rice Spicy Tuna",
-    img: "/menu_page/roll3.svg",
-    type: "Special Rolls",
+    type: "Chef Special Rolls",
   },
   {
     id: 5,
     name: "Red Dragon Roll",
+    name_mobile: "Red Dragon Roll",
     img: "/menu_page/roll4.svg",
-    type: "Special Rolls",
+    type: "Chef Special Rolls",
   },
+  {
+    id: 3,
+    name: "Flaming Hot Chef Special Roll",
+    name_mobile: "Flaming Hot \nChef Special Roll",
+    img: "/menu_page/roll2.svg",
+    type: "Chef Special Rolls",
+  },
+
   {
     id: 6,
     name: "Rollin Burrito",
+    name_mobile: "Rollin Burrito",
     img: "/menu_page/roll5.jpg",
     description: "",
-    type: "Special Rolls",
+    type: "Chef Special Rolls",
+  },
+  {
+    id: 7,
+    name: "Golden California Roll",
+    name_mobile: "Golden California Roll",
+    img: "/menu_page/roll6.jpg",
+    description: "",
+    type: "Chef Special Rolls",
+  },
+];
+
+export const section4 = [
+  {
+    id: 1,
+    name: "Crunch Roll",
+    description: "Shrimp, crab, avocado topped w/ spicy crab & crunch",
+  },
+  {
+    id: 2,
+    name: "King Kong",
+    description: "Crab, smoked salmon, avocado, spicy tuna & cream cheese",
+  },
+  {
+    id: 3,
+    name: "Hot Mama",
+    description:
+      "California roll topped w/ salmons, snapper, tuna, w/ shrimp & crab",
+  },
+  {
+    id: 4,
+    name: "Volcano (Baked)",
+    description: "California roll topped w/ spicy crab, scallop",
+  },
+
+  {
+    id: 5,
+    name: "Princess",
+    description: "Tuna, salmon, snapper, avocado, crab wrapped w/ cucumber",
+  },
+  {
+    id: 6,
+    name: "Rainbow",
+    description:
+      "California roll topped w/ salmons, tuna, snapper, avocado & shrimp",
+  },
+  {
+    id: 7,
+    name: "Dynamite",
+    description: "Spicy tuna, cucumber topped w/ spicy crab & crunch",
+  },
+  {
+    id: 8,
+    name: "Cry Baby",
+    description:
+      "Spicy Tuna, cucumber topped w/ fresh tuna, spicy sauce & jalapeno",
+  },
+  {
+    id: 9,
+    name: "Crab Lover",
+    description: "Double crab, cucumber topped w/ spicy crab & crunch",
+  },
+  {
+    id: 10,
+    name: "Angry Wife",
+    description: "Salmon, tuna, white tuna, snapper",
+  },
+  {
+    id: 11,
+    name: "Cry Baby 2",
+    description:
+      "Spicy tuna, cucumber topped w/ fresh salmons, spicy sauce & jalapeno",
+  },
+  {
+    id: 12,
+    name: "Dragon",
+    description: "California roll topped w/ eel & avocado",
   },
 ];
 
@@ -159,10 +235,6 @@ export const section2 = [
       },
       {
         name: "California Roll",
-        description: "",
-      },
-      {
-        name: "Rainbow Special Roll",
         description: "",
       },
       {
