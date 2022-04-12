@@ -8,8 +8,8 @@ export const items = [
         src: "/locations/locations-carousel-2.svg",
     },
     {
-        title: "Sushi Rollin 3",
-        src: "/locations/locations-carousel-3.jpg",
+        title: "Sushi Rollin Image 3",
+        src: "/locations/locations-carousel-3.svg",
     },
     {
         title: "Sushi Rollin Image 4",
@@ -17,18 +17,18 @@ export const items = [
     },
     {
         title: "Sushi Rollin Image 5",
-        src: "/locations/locations-carousel-5.svg",
+        src: "/locations/locations-carousel-5.jpg",
     },
     {
         title: "Sushi Rollin Image 6",
-        src: "/locations/locations-carousel-6.svg",
+        src: "/locations/locations-carousel-6.jpg",
     },
     {
         title: "Sushi Rollin Image 7",
-        src: "/locations/locations-carousel-7.svg",
+        src: "/locations/locations-carousel-7.jpg",
     },
     {
         title: "Sushi Rollin Image 8",
-        src: "/locations/locations-carousel-8.svg",
+        src: "/locations/locations-carousel-8.jpg",
     },
 ]
