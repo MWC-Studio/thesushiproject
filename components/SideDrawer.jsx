@@ -36,7 +36,6 @@ const SideDrawer = ({ navLinks }) => {
         // width: 375,
         width: "100%",
         height: 812,
-        mt: "38px",
         overflowX: "hidden",
         padding: "0px !important",
       }}
@@ -71,17 +70,20 @@ const SideDrawer = ({ navLinks }) => {
         <Box
           sx={{
             width: 375,
-            pt: 3,
+            pt: "62px",
             textAlign: "center",
           }}
           role="presentation"
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
+
+          // onClick={toggleDrawer(anchor, false)}
+          // onKeyDown={toggleDrawer(anchor, false)}
         >
           {navLinks.map(({ title, path }, i) => (
             <Typography
               variant="h1"
               key={`${title}${i}`}
+              onClick={toggleDrawer(anchor, false)}
+              onKeyDown={toggleDrawer(anchor, false)}
               sx={{
                 mt: "2px",
                 mb: "24px",
@@ -93,6 +95,7 @@ const SideDrawer = ({ navLinks }) => {
                 variant="button"
                 underline="hover"
                 sx={{
+                  display: "block",
                   fontWeight: "fontWeightBold",
                   fontSize: "24px",
                   color: "primary.contrastText",
@@ -112,11 +115,9 @@ const SideDrawer = ({ navLinks }) => {
         </Box>
       </Stack>
 
-      {/* <Box sx={{ mt: 4 }}></Box> */}
       <Divider sx={{ backgroundColor: "#808080" }} />
 
       <Stack alignItems="center">
-        {/* <Box sx={{ textAlign: "center" }}> */}
         <Typography
           color="primary.contrastText"
           textalign="center"
@@ -129,15 +130,16 @@ const SideDrawer = ({ navLinks }) => {
         >
           Find Sushi Rollin’ On
         </Typography>
-        {/* </Box> */}
 
-        <Box textAlign="center">
+        <Box textAlign="center" sx={{ width: "100%" }}>
           <Grid
             container
             item
             align="column"
             alignItems="center"
             justifyContent="center"
+            onClick={toggleDrawer(anchor, true)}
+            onKeyDown={toggleDrawer(anchor, true)}
             md={12}
             sm={12}
             xs={12}
@@ -149,6 +151,7 @@ const SideDrawer = ({ navLinks }) => {
                 color: "primary.contrastText",
                 display: "flex",
                 justifyContent: "center",
+                width: "100%",
               }}
               href="https://www.doordash.com/store/sushi-rollin-garland-1775965/"
               target="_blank"
@@ -184,6 +187,8 @@ const SideDrawer = ({ navLinks }) => {
             ditection="column"
             alignItems="center"
             justifyContent="center"
+            onClick={toggleDrawer(anchor, true)}
+            onKeyDown={toggleDrawer(anchor, true)}
             md={12} //2->12
             sm={12}
             xs={12}
@@ -233,6 +238,8 @@ const SideDrawer = ({ navLinks }) => {
             ditection="column"
             alignItems="center"
             justifyContent="center"
+            onClick={toggleDrawer(anchor, true)}
+            onKeyDown={toggleDrawer(anchor, true)}
             md={12} //2에서 12로 변경 for ceter align @Desktop version
             sm={12}
             xs={12}
@@ -242,6 +249,7 @@ const SideDrawer = ({ navLinks }) => {
               sx={{
                 textDecoration: "none",
                 color: "primary.contrastText",
+                // width: "375px",
               }}
               href="https://www.yelp.com/biz/sushi-rollin-garland"
               target="_blank"
@@ -276,13 +284,19 @@ const SideDrawer = ({ navLinks }) => {
             ditection="column"
             alignItems="center"
             justifyContent="center"
+            onClick={toggleDrawer(anchor, true)}
+            onKeyDown={toggleDrawer(anchor, true)}
             md={12}
             sm={12}
             xs={12}
             sx={{ my: "30px" }}
           >
             <MuiNextLink
-              sx={{ textDecoration: "none", color: "primary.contrastText" }}
+              sx={{
+                textDecoration: "none",
+                color: "primary.contrastText",
+                // width: "375px",
+              }}
               href="https://www.ubereats.com/store/sushi-rollin/6P3FSDejTAuapBvlNZGQaQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlN1c2hpJTIwUm9sbGluJUUyJTgwJTk5JTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSnRlSFdmeDBjVElZUkpvOWM3djhrczJJJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTMyLjk3NjUzJTJDJTIybG9uZ2l0dWRlJTIyJTNBLTk2LjY2NDIyMzMlN0Q%3D&ps=1"
               target="_blank"
               rel="noopener noreferrer"
