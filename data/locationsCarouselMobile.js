@@ -12,7 +12,7 @@ export const items = [
         src: "/locations/locations-carousel-3.svg",
     },
     {
-        title: "Sushi Rollin Image 4",
+        title: "Sushi 4",
         src: "/locations/locations-carousel-4.svg",
     },
     {
