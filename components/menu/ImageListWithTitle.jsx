@@ -6,7 +6,9 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 const ImageListWithTitle = (props) => {
   return (
     <ImageList
-      sx={{ p: props.isMobile ? 0 : 7, overflow: "hidden" }}
+      sx={{ px: props.isMobile ? 0 : props.isHome? 0: 7, 
+        py: props.isMobile ? 0 : props.isHome? 7: 7, 
+        overflow: "hidden" }}
       cols={props.isMobile ? 2 : 3}
       gap={props.isMobile ? 16 : 33}
     >
