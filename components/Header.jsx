@@ -1,33 +1,50 @@
+//
+
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import MuiNextLink from "@components/MuiNextLink";
 import { styled } from "@mui/system";
 import Navbar from "./Navbar";
 import SideDrawer from "./SideDrawer";
+import Image from "next/image";
+import ScrollToTop from "./menu/ScrollToTop";
 import HideOnScroll from "./HideOnScroll";
-import Fab from "@mui/material/Fab";
-import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
-import BackToTop from "./BackToTop";
-import Logo from "../public/rollinlogowhite.svg";
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 const navLinks = [
-  { title: `home`, path: `/` },
-  { title: `menu`, path: `/menu` },
-  { title: `about us`, path: `/aboutus` },
-  { title: `franchise`, path: `/franchise` },
-  { title: `location`, path: `/location` },
+  { title: `Home`, path: `/` },
+  { title: `About`, path: `/aboutus` },
+  { title: `Franchise`, path: `/franchise` },
+  { title: `Menu`, path: `/menu` },
+  { title: `Locations`, path: `/locations` },
 ];
 
-const Header = () => {
+const Header = ({ isMobile }) => {
   return (
     <>
       <HideOnScroll>
-        <AppBar position="fixed">
-          <Toolbar>
+        <AppBar
+          sx={{
+            bgcolor: "common.beige",
+            display: "flex",
+            justifyContent: "center",
+            height: isMobile ? 68 : 98,
+            "& button": {
+              width: 50,
+              height: 50,
+            },
+            "& button > svg": {
+              width: 25,
+              height: 25,
+              pt: "5px",
+            },
+          }}
+          position="fixed"
+        >
+          <Toolbar sx={{ ml: isMobile ? -2 : -3, mr: isMobile ? -3 : -3 }}>
+            {/* <Toolbar> */}
             <Container
               maxWidth="lg"
               sx={{
@@ -36,23 +53,30 @@ const Header = () => {
                 alignItems: `center`,
               }}
             >
-              <IconButton edge="start" aria-label="home">
-                <MuiNextLink activeClassName="active" href="/">
-                  <Logo />
-                </MuiNextLink>
-              </IconButton>
+              <MuiNextLink
+                activeClassName="active"
+                href="/"
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
+                <Image
+                  src="/rollinlogodark.svg"
+                  alt="logo"
+                  // width={isMobile ? '147.63' : '256.36'}
+                  // height={isMobile ? '24.58' : '43.26'}
+                  width={isMobile ? "147.63" : "208"}
+                  height={isMobile ? "24.58" : "36"}
+                />
+              </MuiNextLink>
+
               <Navbar navLinks={navLinks} />
               <SideDrawer navLinks={navLinks} />
             </Container>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
+
+      <ScrollToTop showBelow={500} />
       <Offset id="back-to-top-anchor" />
-      <BackToTop>
-        <Fab color="secondary" size="large" aria-label="back to top">
-          <KeyboardArrowUp />
-        </Fab>
-      </BackToTop>
     </>
   );
 };
