@@ -28,6 +28,12 @@ const Navbar = ({ navLinks }) => {
                 backgroundColor: 'transparent',
                 textUnderlineOffset: '50%',
               },
+              '&.active': {
+                color: 'secondary.main',
+                backgroundColor: 'transparent',
+                textDecoration: "underline",
+                textUnderlineOffset: '50%'
+              }
             }}
           >
             {title}
