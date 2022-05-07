@@ -7,6 +7,9 @@ body {
 
 .active {
   opacity: 1;
+  color: #f48a88 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.5em;
 }
 
 .highlight {
