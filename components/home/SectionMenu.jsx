@@ -15,29 +15,32 @@ export default function SectionMenu(props) {
       }}
     >
       <Container sx={{ mt: props.isMobile ? 5 : 8 }}>
-        <Typography variant="h3" textAlign="center" color="secondary.main">
-          FAST & TASTY
-        </Typography>
         <Typography
           color="text"
           variant="h2"
           align="center"
           sx={{ pb: props.isMobile ? 3 : 0 }}
         >
-          Rollin’ Experience
+          What We are Rollin’
         </Typography>
 
-        <ImageListWithTitle
-          imgData={section1}
-          isHome={props.isHome}
-          isMobile={props.isMobile}
-        />
+        <Typography color="text" variant="h3" align="center">
+          Asian cuisine has surpassed all other categories for the last 15
+          years. And it continues to grow. We have 60+ Rolls & Sushi and 30+
+          flavorful dishes on the menu.
+        </Typography>
 
         <Grid align="center" pb={7} pt={props.isMobile ? 3 : 0}>
           <MuiNextLink href="/menu" underline="none" sx={{ py: 2 }}>
             <Button> View More Menu</Button>
           </MuiNextLink>
         </Grid>
+
+        <ImageListWithTitle
+          imgData={section1}
+          isHome={props.isHome}
+          isMobile={props.isMobile}
+        />
       </Container>
     </Grid>
   );
