@@ -5,7 +5,6 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import Image from "next/dist/client/image";
 import { Typography } from "@mui/material";
-import StepConnector from "@mui/material/StepConnector";
 
 const FranchiseTimelineItem = (props) => {
   const position = props.position;
