@@ -4,6 +4,7 @@ import { Grid, Typography, Container } from '@mui/material';
 import MuiNextLink from '@components/MuiNextLink';
 import Button from '@mui/material/Button';
 import Image from 'next/image';
+import FranchiseTimeline from './aboutus/FranchiseTimeline';
 
 const AboutPage = ({isMobile}) => {
 
@@ -48,6 +49,7 @@ const AboutPage = ({isMobile}) => {
         >
           That’s How We’re Rollin’
         </Typography>
+        <FranchiseTimeline />
         {/*Image*/}
          <Grid item
         container
