@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Grid, Container } from "@mui/material";
+import MuiNextLink from "@components/MuiNextLink";
 import Image from "next/image";
 
 const MenuSection = (props) => {
@@ -13,14 +14,16 @@ const MenuSection = (props) => {
         width: "100vw",
       }}
     >
-      <Container sx={{ my: 7 , mx:1}}>
-          <Box sx={{border: 10, borderColor: "secondary.main"}}>  
+      <Container sx={{ my: props.isMobile? 3 : 7 , mx: props.isMobile? 0 : 1}}>
+          <Box sx={{border: props.isMobile ? 3 :10 , borderColor: "secondary.main"}}>  
+          <MuiNextLink underline="none" href="/menu_page/menu.jpg" target="_blank"> 
           <Image
             src={"/menu_page/menu.jpg"}
             width={500}
             height={800}
             layout="responsive"
           />
+          </MuiNextLink>
           </Box>
       </Container>
     </Grid>
