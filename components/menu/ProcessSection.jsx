@@ -4,6 +4,7 @@ import ImageList from "@mui/material/ImageList";
 import { ImageListItem } from "@mui/material";
 import Image from "next/dist/client/image";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 const processdata = [
   {
@@ -35,8 +36,8 @@ const ProcessSection = (props) => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      mt={10}
-      px={12}
+      mt={props.isMobile ? 5 : 10}
+      px={props.isMobile ? 3 : 12}
     >
       <Grid item alignSelf="center">
         <Typography
@@ -50,17 +51,17 @@ const ProcessSection = (props) => {
         <Typography
           variant={"h2"}
           sx={{ display: "inline-block", color: "text.main" }}
-          mb={6}
+          mb={props.isMobile ? 3 : 6}
         >
           Our Process
         </Typography>
       </Grid>
 
-      <ImageList cols={11} align="center">
+      <ImageList cols={props.isMobile ? 1 : 11} align="center">
         <ImageListItem cols={2} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={3}>
+              <Grid item xs={12} mb={props.isMobile? 1: 3}>
                 <Grid>
                   <Typography
                     variant={"h4"}
@@ -89,13 +90,17 @@ const ProcessSection = (props) => {
           justifyContent="center"
           alignItems="center"
         >
-          <ArrowForwardIcon sx={{ color: "#40464D" }} />
+          {props.isMobile ? (
+            <ArrowDownwardIcon sx={{ color: "#40464D" }} />
+          ) : (
+            <ArrowForwardIcon sx={{ color: "#40464D" }} />
+          )}
         </Grid>
 
         <ImageListItem cols={2} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={3}>
+              <Grid item xs={12} mb={props.isMobile? 1: 3}>
                 <Grid>
                   <Typography
                     variant={"h4"}
@@ -124,13 +129,17 @@ const ProcessSection = (props) => {
           justifyContent="center"
           alignItems="center"
         >
-          <ArrowForwardIcon sx={{ color: "#40464D" }} />
+          {props.isMobile ? (
+            <ArrowDownwardIcon sx={{ color: "#40464D" }} />
+          ) : (
+            <ArrowForwardIcon sx={{ color: "#40464D" }} />
+          )}
         </Grid>
 
         <ImageListItem cols={2} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={3}>
+              <Grid item xs={12} mb={props.isMobile? 1: 3}>
                 <Grid>
                   <Typography
                     variant={"h4"}
@@ -159,13 +168,17 @@ const ProcessSection = (props) => {
           justifyContent="center"
           alignItems="center"
         >
-          <ArrowForwardIcon sx={{ color: "#40464D" }} />
+          {props.isMobile ? (
+            <ArrowDownwardIcon sx={{ color: "#40464D" }} />
+          ) : (
+            <ArrowForwardIcon sx={{ color: "#40464D" }} />
+          )}
         </Grid>
 
         <ImageListItem cols={2} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={3}>
+              <Grid item xs={12} mb={props.isMobile? 1: 3}>
                 <Grid>
                   <Typography
                     variant={"h4"}
