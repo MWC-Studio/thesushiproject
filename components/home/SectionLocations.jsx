@@ -19,7 +19,7 @@ const SectionLocations = ({ isMobile }) => {
           align="center"
           sx={{ mb: 4 }}
         >
-          Locations
+          Where We are Rollin’
         </Typography>
 
         <Grid container sx={{ mb: 1 }} spacing={2}>
@@ -30,18 +30,25 @@ const SectionLocations = ({ isMobile }) => {
               width="592"
               height="420"
             />
+            <Grid item display="row">
+              {/* <Image
+                src={"/icons/logo-circle.svg"}
+                width={isMobile ? "18" : "18"}
+                height={isMobile ? "18" : "18"}
+              /> */}
 
+              <Typography
+                color="text"
+                variant={isMobile ? "h4" : "h5"}
+                align="left"
+                sx={isMobile ? { mb: 2, mt: 2 } : { mb: 2, mt: 4 }}
+              >
+                Sushi Rollin' Garland
+              </Typography>
+            </Grid>
             <Typography
               color="text"
-              variant={isMobile ? "h4" : "h3"}
-              align="center"
-              sx={isMobile ? { mb: 2, mt: 2 } : { mb: 2, mt: 4 }}
-            >
-              Sushi Rollin' Garland
-            </Typography>
-            <Typography
-              color="text"
-              align="center"
+              align="left"
               variant={isMobile ? "body2" : "body1"}
             >
               6850 N Shiloh Rd, Garland, TX 75044
@@ -49,7 +56,7 @@ const SectionLocations = ({ isMobile }) => {
             <Typography
               color="text"
               variant={isMobile ? "body2" : "body1"}
-              align="center"
+              align="left"
               fontFamily={"Nunito"}
               sx={{ mb: 2 }}
             >
@@ -58,7 +65,7 @@ const SectionLocations = ({ isMobile }) => {
             <Typography
               color="text"
               variant={isMobile ? "body2" : "body1"}
-              align="center"
+              align="left"
               fontFamily={"Nunito"}
               sx={{ mb: 1 }}
             >
@@ -75,10 +82,16 @@ const SectionLocations = ({ isMobile }) => {
               height="420"
             />
 
+            {/* <Image
+              src={"/icons/logo-circle.svg"}
+              width={isMobile ? "18" : "18"}
+              height={isMobile ? "18" : "18"}
+            /> */}
+
             <Typography
               color="text"
-              variant={isMobile ? "h4" : "h3"}
-              align="center"
+              variant={isMobile ? "h4" : "h5"}
+              align="left"
               sx={isMobile ? { mb: 2, mt: 2 } : { mb: 2, mt: 4 }}
             >
               Sushi Rollin' Lewisville
@@ -86,14 +99,14 @@ const SectionLocations = ({ isMobile }) => {
             <Typography
               color="text"
               variant={isMobile ? "body2" : "body1"}
-              align="center"
+              align="left"
             >
               1288 W Main St #142, Lewisville, TX 75067
             </Typography>
             <Typography
               color="text"
               variant={isMobile ? "body2" : "body1"}
-              align="center"
+              align="left"
               sx={{ mb: 2 }}
             >
               Opens Daily 11 a.m. - 9:00 p.m.
@@ -101,7 +114,7 @@ const SectionLocations = ({ isMobile }) => {
             <Typography
               color="text"
               variant={isMobile ? "body2" : "body1"}
-              align="center"
+              align="left"
             >
               (817) 320-3722
             </Typography>
@@ -110,7 +123,7 @@ const SectionLocations = ({ isMobile }) => {
 
         <Grid align="center" pt={4} pb={6}>
           <MuiNextLink href="/locations" underline="none" sx={{ py: 2 }}>
-            <Button> View Locations</Button>
+            <Button>View More Store Pictures</Button>
           </MuiNextLink>
         </Grid>
       </Container>

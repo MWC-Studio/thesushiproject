@@ -1,41 +1,19 @@
 import TopBanner from "@components/TopBanner";
-import BottomMenuImageList from "@components/menu/BottomMenuImageList";
-import CenterDetailedMenuList from "@components/menu/CenterDetailedMenuList";
 import OrderBanner from "@components/OrderBanner";
-import MobileMenuCatogory from "@components/menu/MobileMenuCatogory";
-import MobileMenuDetails from "@components/menu/MobileMenuDetails";
-import ChefSpecialRolls from "@components/menu/ChefSpecialRolls";
-import SpecialRolls from "@components/menu/SpecialRolls";
+import MenuSection from "@components/menu/MenuSection";
+import ProcessSection from "@components/menu/ProcessSection";
 
 const MenuPage = (props) => {
   return (
     <>
       <TopBanner title="Menu" description="Menu" isMobile={props.isMobile} />
-      {props.isMobile ? (
-        <>
-          <MobileMenuCatogory />
-          <ChefSpecialRolls isMobile={props.isMobile} />
-          <SpecialRolls isMobile={props.isMobile} />
-          <MobileMenuDetails />
-          <OrderBanner
-            bgColor="common.beige"
-            isMobile={props.isMobile}
-            text="Find Us Here"
-          />
-        </>
-      ) : (
-        <>
-          <OrderBanner
-            bgColor="common.white"
-            isMobile={props.isMobile}
-            text="Find Us Here"
-          />
-          <ChefSpecialRolls />
-          <SpecialRolls />
-          <CenterDetailedMenuList />
-          <BottomMenuImageList />
-        </>
-      )}
+      <ProcessSection isMobile={props.isMobile} />
+      <MenuSection isMobile={props.isMobile} />
+      <OrderBanner
+        bgColor="common.beige"
+        isMobile={props.isMobile}
+        text="Find Us Here"
+      />
     </>
   );
 };

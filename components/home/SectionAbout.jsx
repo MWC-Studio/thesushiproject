@@ -33,21 +33,14 @@ const SectionAbout = ({ isMobile }) => {
           <Typography
             color="text"
             variant={isMobile ? "h3" : "h2"}
-            align="center"
-            fontWeight={"fontWeightBold"}
-            fontFamily={"Nunito"}
-          >
-            About Us
-          </Typography>
-          <Typography
             textAlign={isMobile ? "left" : "center"}
             sx={isMobile ? { my: 2 } : { my: 2, px: 2 }}
           >
-            {`Your friendly neighborhood sushi place is here! 
-            In Sushi Rollin’ we offer freshness, variety, and authentic experience. A true hole in the wall where you expect something ordinary but walk out with a content belly and heart. We’ve been rolling since 2019.`}
+            Started in the middle of pandemic, but we kept rolling with xx % of
+            average annual growth.
           </Typography>
           <MuiNextLink href="/aboutus" underline="none" sx={{ py: 2 }}>
-            <Button> Read More</Button>
+            <Button>About Sushi Rollin’</Button>
           </MuiNextLink>
         </Grid>
         {/*top image*/}
@@ -102,28 +95,14 @@ const SectionAbout = ({ isMobile }) => {
           <Typography
             color="text"
             variant={isMobile ? "h3" : "h2"}
-            align="center"
-            fontWeight={"fontWeightBold"}
-            fontFamily={"Nunito"}
-            // sx = {{pt : 2}}
-          >
-            Roll with Us
-          </Typography>
-          <Typography
             textAlign={isMobile ? "left" : "center"}
             sx={isMobile ? { my: 2 } : { my: 2, px: 2 }}
-            // sx={isMobile ? { my: 1 } : { my: 1, px: 1 }}
           >
-            Sushi Rollin’ started its journey in the middle of Pandemic. Our
-            business model successfully supported delivery focus experience.
-            Over 500+ customer reviews prove that success! Now that we’re
-            expanding, our focus has also evolved to provide a more approachable
-            and enjoyable sushi experience.
-            <br /> <br />
-            It’s an opportunity that keeps rolling. Join us today!
+            Adaptable business model with low cost, Great choice for the
+            first-timer franchisees
           </Typography>
           <MuiNextLink href="/franchise" underline="none" sx={{ py: 2 }}>
-            <Button> Join Us Today</Button>
+            <Button>Franchise Opportunity</Button>
           </MuiNextLink>
         </Grid>
       </Grid>
