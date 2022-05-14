@@ -10,22 +10,22 @@ const processdata = [
   {
     id: 1,
     title: "Material",
-    content: "Certified provider brings fresh \nfish 3 times a week",
+    content: "Certified provider brings fresh \nfish 1-2 times a week",
   },
   {
     id: 2,
     title: "Meal Prep",
-    content: "2 Chefs can handle avg xxx \ndishes during peak time",
+    content: "The fresh ingredients are prepped in \nthe morning for the chefs to get Rollin’",
   },
   {
     id: 3,
     title: "Order",
-    content: "It takes about 5 mins to \nmake a sushi roll",
+    content: "2 chefs can cover every 50K \namount of order ",
   },
   {
     id: 4,
     title: "Serve",
-    content: "Delivery, Dine-in, To-go \nWe serve all kinds of orders!",
+    content: "It takes less than10 mins to \nmake the sushi roll",
   },
 ];
 
@@ -57,11 +57,11 @@ const ProcessSection = (props) => {
         </Typography>
       </Grid>
 
-      <ImageList cols={props.isMobile ? 1 : 11} align="center">
-        <ImageListItem cols={2} rows={1} aglign="center">
+      <ImageList cols={props.isMobile ? 1 : 23} align="center">
+        <ImageListItem cols={props.isMobile ? 1 : 5} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={props.isMobile? 1: 3}>
+              <Grid item xs={12} mb={props.isMobile? 1: 0}>
                 <Grid>
                   <Typography
                     variant={"h4"}
@@ -89,6 +89,7 @@ const ProcessSection = (props) => {
           direction="row"
           justifyContent="center"
           alignItems="center"
+          py={2}
         >
           {props.isMobile ? (
             <ArrowDownwardIcon sx={{ color: "#40464D" }} />
@@ -97,10 +98,10 @@ const ProcessSection = (props) => {
           )}
         </Grid>
 
-        <ImageListItem cols={2} rows={1} aglign="center">
+        <ImageListItem cols={props.isMobile ? 1 :5} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={props.isMobile? 1: 3}>
+              <Grid item xs={12} mb={props.isMobile? 1: 0}>
                 <Grid>
                   <Typography
                     variant={"h4"}
@@ -128,6 +129,7 @@ const ProcessSection = (props) => {
           direction="row"
           justifyContent="center"
           alignItems="center"
+          py={2}
         >
           {props.isMobile ? (
             <ArrowDownwardIcon sx={{ color: "#40464D" }} />
@@ -136,10 +138,10 @@ const ProcessSection = (props) => {
           )}
         </Grid>
 
-        <ImageListItem cols={2} rows={1} aglign="center">
+        <ImageListItem cols={props.isMobile ? 1 :5} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={props.isMobile? 1: 3}>
+              <Grid item xs={12} mb={props.isMobile? 1: 0}>
                 <Grid>
                   <Typography
                     variant={"h4"}
@@ -167,6 +169,7 @@ const ProcessSection = (props) => {
           direction="row"
           justifyContent="center"
           alignItems="center"
+          py={2}
         >
           {props.isMobile ? (
             <ArrowDownwardIcon sx={{ color: "#40464D" }} />
@@ -175,10 +178,10 @@ const ProcessSection = (props) => {
           )}
         </Grid>
 
-        <ImageListItem cols={2} rows={1} aglign="center">
+        <ImageListItem cols={props.isMobile ? 1 :5} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={props.isMobile? 1: 3}>
+              <Grid item xs={12} mb={props.isMobile? 1: 0}>
                 <Grid>
                   <Typography
                     variant={"h4"}
