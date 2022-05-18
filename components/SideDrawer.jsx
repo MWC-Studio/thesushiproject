@@ -7,6 +7,7 @@ import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { Stack } from "@mui/material";
+import ContactUsButton from "./ContactUsButton";
 
 import { useTheme, useMediaQuery } from "@mui/material";
 
@@ -112,6 +113,13 @@ const SideDrawer = ({ navLinks }) => {
               </MuiNextLink>
             </Typography>
           ))}
+          <Box
+            sx={{
+              margin: "48px 0px 48px 0px",
+            }}
+          >
+            <ContactUsButton />
+          </Box>
         </Box>
       </Stack>
 
