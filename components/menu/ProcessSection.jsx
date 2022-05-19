@@ -10,22 +10,23 @@ const processdata = [
   {
     id: 1,
     title: "Material",
-    content: "Certified provider brings fresh \nfish 3 times a week",
+    content: "Certified provider brings fresh \nfish 1-2 times a week",
   },
   {
     id: 2,
     title: "Meal Prep",
-    content: "2 Chefs can handle avg xxx \ndishes during peak time",
+    content:
+      "The fresh ingredients are prepped in the morning for the chefs to get Rollin’",
   },
   {
     id: 3,
     title: "Order",
-    content: "It takes about 5 mins to \nmake a sushi roll",
+    content: "2 chefs can cover every 50K \namount of order ",
   },
   {
     id: 4,
     title: "Serve",
-    content: "Delivery, Dine-in, To-go \nWe serve all kinds of orders!",
+    content: "It takes less than10 mins to \nmake the sushi roll",
   },
 ];
 
@@ -41,7 +42,7 @@ const ProcessSection = (props) => {
     >
       <Grid item alignSelf="center">
         <Typography
-          variant={"h3"}
+          variant={props.isMobile ? "h6" : "h3"}
           sx={{ display: "inline-block", color: "secondary.main" }}
         >
           From the Kitchen to the Table
@@ -49,7 +50,7 @@ const ProcessSection = (props) => {
       </Grid>
       <Grid item alignSelf="center">
         <Typography
-          variant={"h2"}
+          variant={props.isMobile ? "h3" : "h2"}
           sx={{ display: "inline-block", color: "text.main" }}
           mb={props.isMobile ? 3 : 6}
         >
@@ -57,14 +58,14 @@ const ProcessSection = (props) => {
         </Typography>
       </Grid>
 
-      <ImageList cols={props.isMobile ? 1 : 11} align="center">
-        <ImageListItem cols={2} rows={1} aglign="center">
+      <ImageList cols={props.isMobile ? 1 : 23} align="center">
+        <ImageListItem cols={props.isMobile ? 1 : 5} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={props.isMobile? 1: 3}>
+              <Grid item xs={12} mb={props.isMobile ? 1 : 0}>
                 <Grid>
                   <Typography
-                    variant={"h4"}
+                    variant={props.isMobile ? "h5" : "h4"}
                     sx={{ display: "inline-block", color: "text.main" }}
                     mb={1}
                   >
@@ -73,7 +74,7 @@ const ProcessSection = (props) => {
                 </Grid>
                 <Image src={"/icons/logo-circle.svg"} width={50} height={50} />
                 <Typography
-                  variant={"body1"}
+                  variant={props.isMobile ? "body2" : "body1"}
                   sx={{ color: "text.main", whiteSpace: "pre-line" }}
                   mt={1}
                 >
@@ -89,6 +90,8 @@ const ProcessSection = (props) => {
           direction="row"
           justifyContent="center"
           alignItems="center"
+          pt={props.isMobile ? 1 : 0}
+          pb={props.isMobile ? 1 : 5}
         >
           {props.isMobile ? (
             <ArrowDownwardIcon sx={{ color: "#40464D" }} />
@@ -97,13 +100,13 @@ const ProcessSection = (props) => {
           )}
         </Grid>
 
-        <ImageListItem cols={2} rows={1} aglign="center">
+        <ImageListItem cols={props.isMobile ? 1 : 5} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={props.isMobile? 1: 3}>
+              <Grid item xs={12} mb={props.isMobile ? 1 : 0}>
                 <Grid>
                   <Typography
-                    variant={"h4"}
+                    variant={props.isMobile ? "h5" : "h4"}
                     sx={{ display: "inline-block", color: "text.main" }}
                     mb={1}
                   >
@@ -112,7 +115,7 @@ const ProcessSection = (props) => {
                 </Grid>
                 <Image src={"/icons/logo-circle.svg"} width={50} height={50} />
                 <Typography
-                  variant={"body1"}
+                  variant={props.isMobile ? "body2" : "body1"}
                   sx={{ color: "text.main", whiteSpace: "pre-line" }}
                   mt={1}
                 >
@@ -128,6 +131,8 @@ const ProcessSection = (props) => {
           direction="row"
           justifyContent="center"
           alignItems="center"
+          pt={props.isMobile ? 1 : 0}
+          pb={props.isMobile ? 1 : 5}
         >
           {props.isMobile ? (
             <ArrowDownwardIcon sx={{ color: "#40464D" }} />
@@ -136,13 +141,13 @@ const ProcessSection = (props) => {
           )}
         </Grid>
 
-        <ImageListItem cols={2} rows={1} aglign="center">
+        <ImageListItem cols={props.isMobile ? 1 : 5} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={props.isMobile? 1: 3}>
+              <Grid item xs={12} mb={props.isMobile ? 1 : 0}>
                 <Grid>
                   <Typography
-                    variant={"h4"}
+                    variant={props.isMobile ? "h5" : "h4"}
                     sx={{ display: "inline-block", color: "text.main" }}
                     mb={1}
                   >
@@ -151,7 +156,7 @@ const ProcessSection = (props) => {
                 </Grid>
                 <Image src={"/icons/logo-circle.svg"} width={50} height={50} />
                 <Typography
-                  variant={"body1"}
+                  variant={props.isMobile ? "body2" : "body1"}
                   sx={{ color: "text.main", whiteSpace: "pre-line" }}
                   mt={1}
                 >
@@ -167,6 +172,8 @@ const ProcessSection = (props) => {
           direction="row"
           justifyContent="center"
           alignItems="center"
+          pt={props.isMobile ? 1 : 0}
+          pb={props.isMobile ? 1 : 5}
         >
           {props.isMobile ? (
             <ArrowDownwardIcon sx={{ color: "#40464D" }} />
@@ -175,13 +182,13 @@ const ProcessSection = (props) => {
           )}
         </Grid>
 
-        <ImageListItem cols={2} rows={1} aglign="center">
+        <ImageListItem cols={props.isMobile ? 1 : 5} rows={1} aglign="center">
           <Grid container gap={2} alignItems="center">
             <Grid container item>
-              <Grid item xs={12} mb={props.isMobile? 1: 3}>
+              <Grid item xs={12} mb={props.isMobile ? 1 : 0}>
                 <Grid>
                   <Typography
-                    variant={"h4"}
+                    variant={props.isMobile ? "h5" : "h4"}
                     sx={{ display: "inline-block", color: "text.main" }}
                     mb={1}
                   >
@@ -190,7 +197,7 @@ const ProcessSection = (props) => {
                 </Grid>
                 <Image src={"/icons/logo-circle.svg"} width={50} height={50} />
                 <Typography
-                  variant={"body1"}
+                  variant={props.isMobile ? "body2" : "body1"}
                   sx={{ color: "text.main", whiteSpace: "pre-line" }}
                   mt={1}
                 >
