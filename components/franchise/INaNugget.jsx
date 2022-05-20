@@ -20,10 +20,17 @@ const INaNugget = (isMobile) => {
             </Grid>
             
             <Grid container item sm={12} md={8} lg={8} gap={ isMobile ? 2 : 3 } justifyContent="center" alignItems='center' bgcolor="">
-                <Grid container item xs={isMobile ? 9 : 5 } sm={5} width={280} height={280} justifyContent="center" alignItems='center' 
+                <Grid container item xs={isMobile ? 9 : 5 } sm={5}  justifyContent="center" alignItems='center' 
                     sx={{ bgcolor: "common.beige" }}
                 >
-                    <Grid item bgcolor="" > 
+                    <Grid container item justifyContent="center" alignItems='center' 
+                        style={{ 
+                            backgroundImage: `url('/franchise/bg_dollar_bigbox.svg')`,
+                            width: 280,
+                            height: 280
+                        }}                        
+                    > 
+                    <Grid item bgcolor="">
                     <Typography 
                         variant='h3'
                         color='secondary.main'
@@ -33,28 +40,37 @@ const INaNugget = (isMobile) => {
                         Initial Investment
                     </Typography>
                     <Typography variant='h1' color='text' align='center' mb={3}>
-                        346K
+                        200K+
                     </Typography>
                     </Grid>
+                    </Grid>
                 </Grid>
-                <Grid container item xs={isMobile ? 9 : 5 } sm={5} width={280} height={280} justifyContent="center" alignItems='center' 
+                <Grid container item xs={isMobile ? 9 : 5 } sm={5} justifyContent="center" alignItems='center' 
                     sx={{ bgcolor: "common.beige" }}
                 >
-                    <Grid item bgcolor="" > 
+                    <Grid container item bgcolor=""  justifyContent="center" alignItems='center' 
+                        style={{ 
+                            backgroundImage: `url('/franchise/bg_line_bigbox.svg')`,
+                            width: 280,
+                            height: 280
+                        }}
+                    >  
+                    <Grid item>
                     <Typography 
                         variant='h3'
                         color='secondary.main'
                         align='center'
                         mb={3}
                     >
-                        Avg. Growth Rate
+                        Avg. Slaes Growth
                     </Typography>
                     <Typography variant='h1' color='text' align='center'>
-                        xx%
+                        x2.05
                     </Typography>
                     <Typography fontSize={24} color='text' align='center'>
-                        (2020 vs 2021)
+                        (2021 vs 2022)
                     </Typography>
+                    </Grid>
                     </Grid>
                 </Grid>
                 <Grid container item xs={isMobile ? 9 : 5 } sm={5} width={280} height={280} sx={{ bgcolor: "common.beige" }} justifyContent="center" alignItems='center' >
@@ -65,13 +81,13 @@ const INaNugget = (isMobile) => {
                         align='center'
                         mb={3}
                     >
-                        Avg. Traffic
+                        Avg. Margin
                     </Typography>
                     <Typography variant='h1' color='text' align='center'>
-                        x.xK
+                        20%
                     </Typography>
                     <Typography fontSize={24} color='text' align='center'>
-                        (Orders per month)
+                        (per month)
                     </Typography>
                     </Grid>
                 </Grid>
