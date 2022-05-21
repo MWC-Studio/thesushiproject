@@ -6,15 +6,15 @@ import WhatWeOffer from "@components/franchise/WhatWeOffer";
 import ReviewSection from "@components/franchise/ReviewSection";
 
 
-const FranchisePage = (isMobile) => {
+const FranchisePage = (props) => {
   return (
     <>
-      <TopBanner title="Franchise" description="Franchise" isMobile={isMobile} />
-      <INaNugget isMobile={isMobile} />
-      <WhatWeOffer isMobile={isMobile} />
-      <FranchiseProcess isMobile={isMobile} />
-      <ReviewSection isMobile={isMobile} />
-      <ContactUsBanner isMobile={isMobile} />
+      <TopBanner title="Franchise" description="Franchise" isMobile={props.isMobile} />
+      <INaNugget isMobile={props.isMobile} />
+      <WhatWeOffer isMobile={props.isMobile} />
+      <FranchiseProcess isMobile={props.isMobile} />
+      <ReviewSection isMobile={props.isMobile} />
+      <ContactUsBanner isMobile={props.isMobile} />
     </>
   )
 };
