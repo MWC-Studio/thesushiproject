@@ -11,6 +11,10 @@ import theme from '../styles/theme';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
 
+import Amplify from '@aws-amplify/core'
+import config from '../aws-exports'
+Amplify.configure(config)
+
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 

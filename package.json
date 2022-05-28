@@ -22,6 +22,8 @@
     "@mui/icons-material": "^5.0.0-rc.1",
     "@mui/lab": "^5.0.0-alpha.80",
     "@mui/material": "^5.0.0-rc.1",
+    "@react-aria/dialog": "^3.1.9",
+    "aws-amplify": "^4.3.23",
     "clsx": "^1.1.1",
     "next": "^11.1.2",
     "next-images": "^1.8.4",
