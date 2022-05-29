@@ -1,7 +1,9 @@
+import * as React from "react";
+import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Toolbar from "@mui/material/Toolbar";
 import MuiNextLink from "./MuiNextLink";
-import ContactUsButton from "./ContactUsButton"
+import ContactUsButton from "./ContactUsButton";
 
 const Navbar = ({ navLinks }) => {
   return (
@@ -12,7 +14,7 @@ const Navbar = ({ navLinks }) => {
         mr: -2.8,
       }}
     >
-      <Stack direction="row" spacing={4}   alignItems="center">
+      <Stack direction="row" spacing={4} alignItems="center">
         {navLinks.map(({ title, path }, i) => (
           <MuiNextLink
             key={`${title}${i}`}
@@ -40,7 +42,9 @@ const Navbar = ({ navLinks }) => {
             {title}
           </MuiNextLink>
         ))}
-        <ContactUsButton />
+        <Box>
+          <ContactUsButton />
+        </Box>
       </Stack>
     </Toolbar>
   );

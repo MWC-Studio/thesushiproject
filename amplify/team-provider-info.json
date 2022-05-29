@@ -1,0 +1,51 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-thesushiproject-dev-212251-authRole",
+      "UnauthRoleArn": "arn:aws:iam::885834570667:role/amplify-thesushiproject-dev-212251-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::885834570667:role/amplify-thesushiproject-dev-212251-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-thesushiproject-dev-212251-deployment",
+      "UnauthRoleName": "amplify-thesushiproject-dev-212251-unauthRole",
+      "StackName": "amplify-thesushiproject-dev-212251",
+      "StackId": "arn:aws:cloudformation:eu-west-1:885834570667:stack/amplify-thesushiproject-dev-212251/83e00de0-dcab-11ec-a26f-0a220fd2f563",
+      "AmplifyAppId": "d3fur9fvzkbyj6"
+    },
+    "categories": {
+      "function": {
+        "thesushiproject2580ea69": {
+          "deploymentBucketName": "amplify-thesushiproject-dev-212251-deployment",
+          "s3Key": "amplify-builds/thesushiproject2580ea69-7a626467336b6469486f-build.zip",
+          "sesEmail": "whitehy@gmail.com"
+        }
+      }
+    }
+  },
+  "devnew": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-thesushiproject-devnew-102125-authRole",
+      "UnauthRoleArn": "arn:aws:iam::787019513083:role/amplify-thesushiproject-devnew-102125-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::787019513083:role/amplify-thesushiproject-devnew-102125-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-thesushiproject-devnew-102125-deployment",
+      "UnauthRoleName": "amplify-thesushiproject-devnew-102125-unauthRole",
+      "StackName": "amplify-thesushiproject-devnew-102125",
+      "StackId": "arn:aws:cloudformation:us-west-1:787019513083:stack/amplify-thesushiproject-devnew-102125/9b19f920-deaa-11ec-b4ba-06775fa3b4e5",
+      "AmplifyAppId": "d1y647wow7tke4"
+    },
+    "categories": {
+      "function": {
+        "thesushiproject2580ea69": {
+          "deploymentBucketName": "amplify-thesushiproject-devnew-102125-deployment",
+          "s3Key": "amplify-builds/thesushiproject2580ea69-7a626467336b6469486f-build.zip",
+          "sesEmail": "sangkee.kiim@gmail.com"
+        },
+        "thesushiproject9fa62d4b": {
+          "sesEmail": "sangkee.kiim@gmail.com",
+          "deploymentBucketName": "amplify-thesushiproject-devnew-102125-deployment",
+          "s3Key": "amplify-builds/thesushiproject9fa62d4b-7a4c35695135324b3542-build.zip"
+        }
+      }
+    }
+  }
+}
