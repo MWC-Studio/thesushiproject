@@ -3,7 +3,6 @@ import * as React from 'react';
 import { Grid, Typography, Container } from '@mui/material';
 import MuiNextLink from '@components/MuiNextLink';
 import Button from '@mui/material/Button';
-import Image from 'next/image';
 import FranchiseTimeline from './aboutus/FranchiseTimeline';
 
 const AboutPage = ({isMobile}) => {
@@ -37,7 +36,7 @@ const AboutPage = ({isMobile}) => {
           sx={{ mb: 1, mt: 3 }}
         >
           <Typography variant= {isMobile ? 'h6' : 'h3'} textAlign="center" color="secondary.main">
-          Fresh, Various, and Authentic
+          Fast, Affordable and Authentic Sushi Experience
         </Typography>
         <Typography
           color="text"
@@ -47,41 +46,24 @@ const AboutPage = ({isMobile}) => {
           fontFamily={"Nunito"}
           sx={{ mb: 4}}
         >
-          That’s How We’re Rollin’
+          The Journey of Sushi Rollin’
         </Typography>
+        <Typography
+          color="text"
+          variant= "h3"
+          align="center"
+          fontWeight={"fontWeightBold"}
+          fontFamily={"Nunito"}
+          sx={{
+            maxWidth: "830px",
+            paddingBottom: {xs: "0", md: "48px"}
+          }}
+        >
+          As a franshisee turned Chef CEO, June Kim has passion for creating a small business and owner-friendly ecosystem. Sushi Rollin’ will be the low startup cost and rewarding business partner that franchisees strive to be a part of.
+        </Typography>
+
         <FranchiseTimeline />
-        {/*Image*/}
-         <Grid item
-        container
-        direction="column"
-        justifyContent="center"
-        alignitems="center"
-        // lg={12}
-        // md={12}
-        // sm={12}
-        // xs={12}
-        > 
-          <Image
-            src="/aboutpage/aboutimg.jpg"
-            alt="Cooking"
-            width={isMobile ? '343' : '592'}
-            height={isMobile ? '266' : '420'}
-          />
-        </Grid>
       </Grid>
-        <Grid item
-          container
-          direction="column"
-          justifyContent="center"
-          alignitems="center"
-          width={isMobile ? 346 : 596}
-        > 
-          <Typography variant="body1" textAlign="left" color="text.main" pt = {isMobile ? 1 : 4 }>
-          Your friendly neighborhood sushi place is here! Founded by June Kim - the Chef CEO, Sushi Rollin has served delicious rolls and premium sushi to fellow Texans since 2019. Our day starts by preparing items with freshly sourced ingredients. We strive to provide a warm atmosphere that encourages people to connect with their community while enjoying delicious rolls. Our team puts a lot of effort into providing excellent service that makes customers feel welcome and comfortable.
-          <br/><br/>
-          If you’re friendly, hardworking, and ambitious, please join our team at Sushi Rollin’! We are also now focusing on expanding our franchise opportunities for those looking for a low start-up cost business. Chef CEO June will be offering one-on-one training sessions and sharing special skills that he learned from his own experience as a head sushi chef at one of the best fine-dining sushi restaurants in town. Please reach out for more details if you are interested!
-          </Typography>
-        </Grid>
         <Grid
           container
           direction="column"
@@ -89,10 +71,17 @@ const AboutPage = ({isMobile}) => {
           alignitems="left"
           width={isMobile ? 346 : 596} 
         > 
-          <Typography variant='body1' fontStyle='italic' color="text.main" textAlign="center" pt = {isMobile ? 6 : 8 } >
-          “When people think about Sushi, It’s pricey and not an everyday kind of experience. But with Sushi Rollin, the experience gets more approachable but still unique."
+          <Typography variant='body1' fontStyle='italic' color="text.main" textAlign="center" pt = {isMobile ? 6 : 8 } 
+            paddingTop={isMobile ? 0 : "68px"}>
+          “Most people consider sushi to be pricey and not an everyday kind of experience. At Sushi Rollin’, the experience is approachable yet still unique.”
           </Typography>
-          <Typography variant='body1' color="333333" textAlign="center" pt = {isMobile ? 0 : 2 }  py = {isMobile ? 2 : 0 } pb = {isMobile ? 6 : 0 }>
+          <Typography variant='body1' color="333333" 
+            textAlign="center"
+            pt = {isMobile ? 0 : 2 }
+            py = {isMobile ? 2 : 0 }
+            pb = {isMobile ? 6 : 0 }
+            paddingTop = "24px"
+            >
           -The Chef CEO, June Kim-
           </Typography>
         </Grid>
