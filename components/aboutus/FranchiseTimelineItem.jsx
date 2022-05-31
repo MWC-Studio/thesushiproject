@@ -7,30 +7,58 @@ import Image from "next/dist/client/image";
 import { Typography } from "@mui/material";
 
 const FranchiseTimelineItem = (props) => {
-  const { date, text, position } = props.data;
+  const { idx,  date, text, position } = props.data;
+  const noPaddingTop = idx === 0 || idx === 1 || idx === 2;
+
+  const dotDiv = (
+    <div>
+      <span className="dot"></span>
+      <Typography
+        variant="body1"
+        align={position == "left" ? "right" : "left"}
+        sx={{
+          paddingRight: position === "left" ? "60px" : "0",
+          paddingLeft: position === "right" ? "60px" : "0"
+        }}
+      >
+        {text}
+      </Typography>
+    </div>
+  )
 
   return (
     <TimelineItem
       position={position}
       sx={{
-        "&::before": {
-          padding: "6px 0",
+        minHeight: {
+          xs: position === "right" ? "initial" : "70px", md: position === "right" ? "initial" : "50px"
         },
+        "&::before": {
+          padding: noPaddingTop ? "0" : "6px 0",
+          minHeight: noPaddingTop ? "0" : {xs: position === "right" ? "initial" : "70px", md: position === "right" ? "initial" : "50px"}
+        }
       }}
     >
       <TimelineSeparator>
         <TimelineConnector
           sx={{
             bgcolor: "secondary.main",
+            width: "3px"
           }}
         />
       </TimelineSeparator>
+
       <TimelineContent
+        data-idx={idx}
         sx={{
-          padding: "6px 0",
+          padding: "0",
+          maxWidth: {
+            xs: position === "left" ? "167px" : "186px", md: "initial"
+          },
+          paddingTop: noPaddingTop ? "0" : idx === 3 ? "0" : "48px"
         }}
-      >
-        {position === "left" && (
+        >
+      {position === "left" && (
           <div
             style={{
               display: "flex",
@@ -50,14 +78,14 @@ const FranchiseTimelineItem = (props) => {
             <Image src={"/icons/logo-circle.svg"} width={18} height={18} />
             <div
               style={{
-                width: "118px",
+                width: "60px",
                 height: "1px",
                 backgroundColor: "#333333",
               }}
             ></div>
           </div>
-        )}
-        {position === "right" && (
+      )}
+      {position === "right" && (
           <div
             style={{
               display: "flex",
@@ -66,7 +94,7 @@ const FranchiseTimelineItem = (props) => {
           >
             <div
               style={{
-                width: "118px",
+                width: "60px",
                 height: "1px",
                 backgroundColor: "#333333",
               }}
@@ -82,24 +110,8 @@ const FranchiseTimelineItem = (props) => {
               {date}
             </Typography>
           </div>
-        )}
-        <div>
-          <span className="dot"></span>
-          <Typography
-            variant="body1"
-            align={position == "left" ? "right" : "left"}
-            sx={{
-              paddingRight: "5px",
-              paddingLeft: "5px",
-              "&::before": {
-                content: '"\\2022"',
-                paddingRight: "8px",
-              },
-            }}
-          >
-            {text}
-          </Typography>
-        </div>
+      )}
+      {dotDiv}
       </TimelineContent>
     </TimelineItem>
   );
